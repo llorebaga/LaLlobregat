@@ -22,7 +22,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="simpleHeroVisual">
+        <Link
+          className="simpleHeroVisual"
+          href="/musics"
+          aria-label="Coneix els músics de La Principal del Llobregat"
+        >
           <Image
             src="/cobla-formacio-actual.jpg"
             alt="La Principal del Llobregat amb els instruments de la cobla"
@@ -30,7 +34,10 @@ export default function Home() {
             priority
             sizes="(max-width: 760px) 100vw, 55vw"
           />
-        </div>
+          <span className="simpleHeroPhotoCta">
+            Coneix els músics <i aria-hidden="true">→</i>
+          </span>
+        </Link>
       </section>
 
       <section className="homeGroupPhoto" aria-label="Membres de La Principal del Llobregat">

@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const navigation = [
   { href: "/", label: "Inici" },
+  { href: "/musics", label: "Músics" },
   { href: "/agenda", label: "Agenda" },
   { href: "/actuacions", label: "Actuacions" },
   { href: "/historia", label: "Història" },
