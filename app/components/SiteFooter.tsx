@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sitePath } from "../site-path";
 
 export function SiteFooter() {
   return (
@@ -8,7 +9,7 @@ export function SiteFooter() {
         <a className="roundLink" href="mailto:representacio@lallobregat.cat">Escriu-nos <span aria-hidden="true">↗</span></a>
       </div>
       <div className="footerBottom">
-        <Link className="footerBrand" href="/">La Principal del Llobregat</Link>
+        <Link className="footerBrand" href={sitePath("/")}>La Principal del Llobregat</Link>
         <div className="footerContact">
           <a href="mailto:representacio@lallobregat.cat">representacio@lallobregat.cat</a>
           <a href="tel:+34629417377">629 417 377</a>

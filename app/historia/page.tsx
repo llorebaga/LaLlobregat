@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { sitePath } from "../site-path";
 
 export const metadata: Metadata = { title: "Història", description: "La història de La Principal del Llobregat, des de Cornellà l’any 1929 fins avui." };
 export const dynamic = "force-static";
@@ -35,7 +36,7 @@ export default function HistoriaPage() {
         <div className="sourceLinks"><a href="https://www.palaumusica.cat/1096647" target="_blank" rel="noreferrer">Palau de la Música Catalana <span>↗</span></a><a href="https://www.enciclopedia.cat/ec-gec-0019925.xml" target="_blank" rel="noreferrer">Enciclopèdia Catalana <span>↗</span></a><a href="https://brufaganya.cat/cobla-la-principal-del-llobregat-i-el-quartet-melt/" target="_blank" rel="noreferrer">Nits Musicals de la Brufaganya <span>↗</span></a></div>
       </section>
 
-      <section className="historyCta"><p>La història continua a la pròxima plaça.</p><Link className="button lightButton" href="/agenda">Veure l’agenda <span>↗</span></Link></section>
+      <section className="historyCta"><p>La història continua a la pròxima plaça.</p><Link className="button lightButton" href={sitePath("/agenda")}>Veure l’agenda <span>↗</span></Link></section>
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { upcomingEvents } from "./data";
+import { sitePath } from "./site-path";
 
 export default function Home() {
   const nextEvent = upcomingEvents[0];
@@ -13,10 +14,10 @@ export default function Home() {
           <h1>La Principal<br /><em>del Llobregat</em></h1>
           <p className="simpleLead">Sardanes, concerts i música catalana amb un so propi.</p>
           <div className="simpleHeroActions">
-            <Link className="simpleLightButton" href="/agenda">
+            <Link className="simpleLightButton" href={sitePath("/agenda")}>
               Consulta l’agenda <span aria-hidden="true">↗</span>
             </Link>
-            <Link className="simpleTextLink" href="/actuacions">
+            <Link className="simpleTextLink" href={sitePath("/actuacions")}>
               Veure actuacions <span aria-hidden="true">→</span>
             </Link>
           </div>
@@ -24,7 +25,7 @@ export default function Home() {
 
         <Link
           className="simpleHeroVisual"
-          href="/musics"
+          href={sitePath("/musics")}
           aria-label="Coneix els músics de La Principal del Llobregat"
         >
           <Image
@@ -66,7 +67,7 @@ export default function Home() {
             Una formació amb gairebé un segle de trajectòria, compromesa amb la
             sardana i amb totes les possibilitats expressives de la cobla.
           </p>
-          <Link className="textLink redLink" href="/historia">
+          <Link className="textLink redLink" href={sitePath("/historia")}>
             Coneix la nostra història <span aria-hidden="true">→</span>
           </Link>
         </div>
@@ -80,7 +81,7 @@ export default function Home() {
       <section className="simpleNextEvent">
         <div className="simpleNextHeading">
           <p>Pròxima actuació</p>
-          <Link href="/agenda">Tota l’agenda <span aria-hidden="true">→</span></Link>
+          <Link href={sitePath("/agenda")}>Tota l’agenda <span aria-hidden="true">→</span></Link>
         </div>
         <time dateTime={nextEvent.dateTime}>
           <strong>{nextEvent.day}</strong>
@@ -91,21 +92,21 @@ export default function Home() {
           <h2>{nextEvent.title}</h2>
           <span>{nextEvent.town} — {nextEvent.place}</span>
         </div>
-        <Link className="simpleNextArrow" href="/agenda" aria-label="Veure tota l’agenda">↗</Link>
+        <Link className="simpleNextArrow" href={sitePath("/agenda")} aria-label="Veure tota l’agenda">↗</Link>
       </section>
 
       <section className="simpleExplore sectionPad">
         <p className="eyebrow">Descobreix la cobla</p>
         <div className="simpleExploreGrid">
-          <Link href="/agenda">
+          <Link href={sitePath("/agenda")}>
             <span>01</span><h2>Agenda</h2><i aria-hidden="true">↗</i>
             <p>Consulta on sonarem pròximament.</p>
           </Link>
-          <Link href="/actuacions">
+          <Link href={sitePath("/actuacions")}>
             <span>02</span><h2>Actuacions</h2><i aria-hidden="true">↗</i>
             <p>Concerts, projectes, vídeos i fotografies.</p>
           </Link>
-          <Link href="/historia">
+          <Link href={sitePath("/historia")}>
             <span>03</span><h2>Història</h2><i aria-hidden="true">↗</i>
             <p>Una trajectòria que continua sonant.</p>
           </Link>

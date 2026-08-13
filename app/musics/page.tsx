@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { sitePath } from "../site-path";
 
 export const metadata: Metadata = {
   title: "Músics",
@@ -123,7 +124,7 @@ export default function MusicsPage() {
           <p className="eyebrow">Escolta’ns en directe</p>
           <h2>La cobla pren vida<br />damunt l’escenari.</h2>
         </div>
-        <Link href="/agenda">Consulta l’agenda <span aria-hidden="true">↗</span></Link>
+        <Link href={sitePath("/agenda")}>Consulta l’agenda <span aria-hidden="true">↗</span></Link>
       </section>
     </main>
   );
