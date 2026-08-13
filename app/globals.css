@@ -450,7 +450,7 @@ img { display: block; }
 .musiciansPortraitHeading { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: clamp(2rem, 4vw, 4rem); }
 .musiciansPortraitHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .82; letter-spacing: -.06em; text-align: right; }
 .musiciansPortraitHeading h2 em { color: var(--red); font-weight: 400; }
-.musiciansPortraitFrame { position: relative; width: 100%; aspect-ratio: 960 / 474; overflow: hidden; background: white; border: 1px solid var(--line); }
+.musiciansPortraitFrame { position: relative; width: 100%; aspect-ratio: 1429 / 625; overflow: hidden; background: white; border: 1px solid var(--line); }
 .musiciansPortraitFrame img { object-fit: contain !important; object-position: center !important; filter: none !important; }
 .musiciansPortraitCaption { display: flex; justify-content: space-between; gap: 2rem; padding: 1rem 0; border-bottom: 1px solid var(--ink); color: var(--muted); font-size: .62rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 

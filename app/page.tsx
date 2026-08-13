@@ -40,22 +40,6 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="homeGroupPhoto" aria-label="Membres de La Principal del Llobregat">
-        <div className="homeGroupPhotoFrame">
-          <Image
-            src="/interprets-2022.avif"
-            alt="Els intèrprets de La Principal del Llobregat amb els seus instruments"
-            fill
-            priority
-            sizes="100vw"
-          />
-        </div>
-        <div className="homeGroupPhotoCaption">
-          <span>La Principal del Llobregat</span>
-          <span>Formació 2022</span>
-        </div>
-      </section>
-
       <section className="simpleIntro sectionPad">
         <div>
           <p className="eyebrow">La nostra música</p>

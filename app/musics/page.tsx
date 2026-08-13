@@ -80,8 +80,8 @@ export default function MusicsPage() {
         </div>
         <div className="musiciansPortraitFrame">
           <Image
-            src="/cobla-formacio-actual.jpg"
-            alt="Els onze músics de La Principal del Llobregat amb els seus instruments"
+            src="/interprets-2022.avif"
+            alt="Els intèrprets de La Principal del Llobregat amb els seus instruments"
             fill
             priority
             sizes="(max-width: 760px) 100vw, 88vw"
