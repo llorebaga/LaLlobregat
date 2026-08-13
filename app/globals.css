@@ -157,6 +157,12 @@ img { display: block; }
 .monthGrid .activeDay { width: 42px; height: 42px; min-height: 0; margin: auto; border-radius: 50%; background: var(--terracotta); color: white; font-weight: 700; }
 .calendarFallback > p { margin: 1rem 0 0; color: var(--muted); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; text-align: center; }
 
+.monthlyCalendar { grid-template-columns: minmax(260px, .48fr) minmax(0, 1.52fr); align-items: start; }
+.monthlyCalendar .calendarCopy { position: sticky; top: 130px; }
+.monthlyCalendarFrame { min-height: 720px; border: 6px solid rgba(255,255,255,.12); border-radius: 2px; overflow: hidden; box-shadow: 0 24px 70px rgba(27, 3, 7, .32); }
+.monthlyCalendarFrame iframe { display: block; width: 100%; height: 720px; background: var(--paper); }
+.calendarExternalLink { grid-column: 2; justify-self: end; display: inline-flex; align-items: center; gap: .8rem; margin-top: -4rem; padding-bottom: .25rem; border-bottom: 1px solid rgba(255,255,255,.55); color: white; font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+
 .archiveSection { background: var(--paper); }
 .archiveIntro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 8rem; align-items: end; margin-bottom: 5rem; }
 .archiveIntro > p { margin: 0; max-width: 560px; font-size: 1.1rem; line-height: 1.8; }
@@ -226,6 +232,10 @@ img { display: block; }
   .historyHero { align-items: start; min-height: auto; }
   .bigYear { text-align: center; }
   .footerBottom { grid-template-columns: 1fr 1fr; }
+  .monthlyCalendar .calendarCopy { position: static; }
+  .monthlyCalendarFrame { min-height: 680px; }
+  .monthlyCalendarFrame iframe { height: 680px; }
+  .calendarExternalLink { grid-column: 1; margin-top: -2rem; }
 }
 
 @media (max-width: 760px) {
@@ -260,6 +270,8 @@ img { display: block; }
   .eventDate strong { font-size: 2.7rem; }
   .calendarFallback { padding: 1.2rem; }
   .monthGrid span { min-height: 44px; }
+  .monthlyCalendarFrame { min-height: 600px; border-width: 3px; }
+  .monthlyCalendarFrame iframe { height: 600px; }
   .archiveIntro br { display: none; }
   .historyHero { padding-top: 6rem; }
   .historyHero h1 { font-size: clamp(3.6rem, 15vw, 5.5rem); }

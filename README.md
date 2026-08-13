@@ -15,10 +15,12 @@ Les dades que canvien sovint són a [`app/data.ts`](app/data.ts). Cada entrada i
 
 ## Connectar Google Calendar
 
-1. A Google Calendar, fes públic el calendari de la cobla.
-2. Copia’n l’identificador a **Configuració i compartició → Integra el calendari**.
-3. Al repositori de GitHub, ves a **Settings → Secrets and variables → Actions → Variables**.
-4. Crea la variable `GOOGLE_CALENDAR_ID` amb l’identificador. La publicació següent mostrarà automàticament el calendari real.
+1. A Google Calendar, obre **Configuració i compartició** del calendari de la cobla.
+2. A **Permisos d’accés**, activa **Disponible públicament**.
+3. A **Integra el calendari**, copia l’**Identificador del calendari**. Normalment acaba en `@group.calendar.google.com`.
+4. Al repositori de GitHub, ves a **Settings → Secrets and variables → Actions → Variables**.
+5. Crea la variable `GOOGLE_CALENDAR_ID` i enganxa-hi l’identificador.
+6. Torna a executar el desplegament o publica qualsevol canvi. La pàgina d’Agenda mostrarà automàticament el mes complet i es mantindrà sincronitzada amb Google Calendar.
 
 ## Publicació a GitHub Pages
 
