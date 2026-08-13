@@ -9,6 +9,10 @@ const prefix = process.env.GITHUB_ACTIONS === "true" && !hasCustomDomain && repo
   ? `/${repository}`
   : "";
 
+// GitHub Pages must not run the exported site through Jekyll, otherwise
+// directories beginning with an underscore (such as Next's `_next`) are hidden.
+await writeFile(path.join(outputDirectory, ".nojekyll"), "", "utf8");
+
 function prefixRootUrls(source) {
   if (!prefix) return source;
   const prefixName = prefix.slice(1);
