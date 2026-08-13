@@ -7,13 +7,13 @@ const isProjectPage =
   !hasCustomDomain &&
   repository !== "" &&
   !repository.endsWith(".github.io");
-const basePath = isProjectPage ? `/${repository}` : "";
+const assetPrefix = isProjectPage ? `/${repository}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: false,
-  basePath,
-  assetPrefix: basePath,
+  basePath: "",
+  assetPrefix,
   images: {
     unoptimized: true,
   },

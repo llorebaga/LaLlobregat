@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     title: "La Principal del Llobregat · Cobla des de 1929",
     description:
       "Arrel, música i futur. Descobreix l’agenda i la trajectòria de La Llobregat.",
-    images: [{ url: "/og.png", width: 1733, height: 907, alt: "La Principal del Llobregat · Cobla des de 1929" }],
+    images: [{ url: `${siteUrl}/og.png`, width: 1733, height: 907, alt: "La Principal del Llobregat · Cobla des de 1929" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "La Principal del Llobregat · Cobla des de 1929",
     description: "Arrel, música i futur. Descobreix l’agenda i la trajectòria de La Llobregat.",
-    images: ["/og.png"],
+    images: [`${siteUrl}/og.png`],
   },
 };
 
