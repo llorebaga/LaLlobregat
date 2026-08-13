@@ -22,14 +22,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="simpleHeroLogo">
+        <div className="simpleHeroVisual">
           <Image
-            src="/logo-lallobregat.png"
-            alt="Logotip de La Principal del Llobregat"
-            width={420}
-            height={420}
+            src="/cobla-formacio-actual.jpg"
+            alt="La Principal del Llobregat amb els instruments de la cobla"
+            fill
             priority
+            sizes="(max-width: 760px) 100vw, 55vw"
           />
+          <span className="simpleHeroPhotoLabel">La cobla</span>
         </div>
       </section>
 
