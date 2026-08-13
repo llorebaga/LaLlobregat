@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { upcomingEvents } from "./data";
 import { sitePath } from "./site-path";
 
@@ -14,16 +13,16 @@ export default function Home() {
           <h1>La Principal<br /><em>del Llobregat</em></h1>
           <p className="simpleLead">Sardanes, concerts i música catalana amb un so propi.</p>
           <div className="simpleHeroActions">
-            <Link className="simpleLightButton" href={sitePath("/agenda")}>
+            <a className="simpleLightButton" href={sitePath("/agenda")}>
               Consulta l’agenda <span aria-hidden="true">↗</span>
-            </Link>
-            <Link className="simpleTextLink" href={sitePath("/actuacions")}>
+            </a>
+            <a className="simpleTextLink" href={sitePath("/actuacions")}>
               Veure actuacions <span aria-hidden="true">→</span>
-            </Link>
+            </a>
           </div>
         </div>
 
-        <Link
+        <a
           className="simpleHeroVisual"
           href={sitePath("/musics")}
           aria-label="Coneix els músics de La Principal del Llobregat"
@@ -38,7 +37,7 @@ export default function Home() {
           <span className="simpleHeroPhotoCta">
             Coneix els músics <i aria-hidden="true">→</i>
           </span>
-        </Link>
+        </a>
       </section>
 
       <section className="homeGroupPhoto" aria-label="Membres de La Principal del Llobregat">
@@ -67,9 +66,9 @@ export default function Home() {
             Una formació amb gairebé un segle de trajectòria, compromesa amb la
             sardana i amb totes les possibilitats expressives de la cobla.
           </p>
-          <Link className="textLink redLink" href={sitePath("/historia")}>
+          <a className="textLink redLink" href={sitePath("/historia")}>
             Coneix la nostra història <span aria-hidden="true">→</span>
-          </Link>
+          </a>
         </div>
         <div className="simpleStats">
           <div><strong>1929</strong><span>Any de fundació</span></div>
@@ -81,7 +80,7 @@ export default function Home() {
       <section className="simpleNextEvent">
         <div className="simpleNextHeading">
           <p>Pròxima actuació</p>
-          <Link href={sitePath("/agenda")}>Tota l’agenda <span aria-hidden="true">→</span></Link>
+          <a href={sitePath("/agenda")}>Tota l’agenda <span aria-hidden="true">→</span></a>
         </div>
         <time dateTime={nextEvent.dateTime}>
           <strong>{nextEvent.day}</strong>
@@ -92,24 +91,24 @@ export default function Home() {
           <h2>{nextEvent.title}</h2>
           <span>{nextEvent.town} — {nextEvent.place}</span>
         </div>
-        <Link className="simpleNextArrow" href={sitePath("/agenda")} aria-label="Veure tota l’agenda">↗</Link>
+        <a className="simpleNextArrow" href={sitePath("/agenda")} aria-label="Veure tota l’agenda">↗</a>
       </section>
 
       <section className="simpleExplore sectionPad">
         <p className="eyebrow">Descobreix la cobla</p>
         <div className="simpleExploreGrid">
-          <Link href={sitePath("/agenda")}>
+          <a href={sitePath("/agenda")}>
             <span>01</span><h2>Agenda</h2><i aria-hidden="true">↗</i>
             <p>Consulta on sonarem pròximament.</p>
-          </Link>
-          <Link href={sitePath("/actuacions")}>
+          </a>
+          <a href={sitePath("/actuacions")}>
             <span>02</span><h2>Actuacions</h2><i aria-hidden="true">↗</i>
             <p>Concerts, projectes, vídeos i fotografies.</p>
-          </Link>
-          <Link href={sitePath("/historia")}>
+          </a>
+          <a href={sitePath("/historia")}>
             <span>03</span><h2>Història</h2><i aria-hidden="true">↗</i>
             <p>Una trajectòria que continua sonant.</p>
-          </Link>
+          </a>
         </div>
       </section>
     </main>
