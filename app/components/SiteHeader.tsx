@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
@@ -12,7 +13,7 @@ export function SiteHeader() {
     <header className="siteHeader">
       <div className="headerInner">
         <Link className="brand" href="/" aria-label="La Principal del Llobregat, inici">
-          <span className="brandMark" aria-hidden="true">LL</span>
+          <Image className="brandLogo" src="/logo-lallobregat.png" alt="" width={46} height={46} priority />
           <span className="brandText"><strong>La Principal</strong><span>del Llobregat</span></span>
         </Link>
         <nav className="desktopNav" aria-label="Navegació principal">
