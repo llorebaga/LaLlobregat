@@ -378,8 +378,8 @@ img { display: block; }
 
 /* Portada simple amb el logotip oficial */
 .simpleHome { background: var(--paper); }
-.simpleHero { min-height: 690px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(520px, 1.1fr); align-items: stretch; background: #be2537; color: white; }
-.simpleHeroCopy { max-width: 950px; padding: clamp(5rem, 9vw, 9rem) clamp(2rem, 6vw, 7rem); align-self: center; }
+.simpleHero { min-height: 610px; padding-right: clamp(1.5rem, 3vw, 3.5rem); display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(430px, .88fr); gap: clamp(1.5rem, 3vw, 3.5rem); align-items: center; background: #be2537; color: white; }
+.simpleHeroCopy { max-width: 900px; padding: clamp(4rem, 7vw, 7rem) 0 clamp(4rem, 7vw, 7rem) clamp(2rem, 6vw, 7rem); align-self: center; }
 .simpleKicker { margin: 0 0 2rem; color: rgba(255,255,255,.7); font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
 .simpleHero h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(4.5rem, 8.8vw, 10rem); font-weight: 400; line-height: .79; letter-spacing: -.065em; }
 .simpleHero h1 em { color: #f4d7d2; font-weight: 400; }
@@ -388,9 +388,8 @@ img { display: block; }
 .simpleLightButton { min-width: 215px; padding: 1rem 1.25rem; display: inline-flex; justify-content: space-between; gap: 2rem; background: white; color: var(--red); font-size: .72rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; transition: .2s ease; }
 .simpleLightButton:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(61,8,14,.22); }
 .simpleTextLink { display: inline-flex; align-items: center; gap: 1rem; padding-bottom: .25rem; border-bottom: 1px solid rgba(255,255,255,.65); font-size: .72rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
-.simpleHeroVisual { position: relative; min-height: 690px; overflow: hidden; background: white; }
-.simpleHeroVisual img { object-fit: contain !important; object-position: center !important; filter: none !important; padding: clamp(1rem, 2.5vw, 3rem); }
-.simpleHeroPhotoLabel { position: absolute; left: 1.5rem; bottom: 1.5rem; padding: .65rem .9rem; background: var(--red); color: white; font-size: .6rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.simpleHeroVisual { position: relative; width: 100%; aspect-ratio: 960 / 590; overflow: hidden; background: white; border: 1px solid rgba(61,8,14,.12); box-shadow: 0 24px 60px rgba(61,8,14,.2); }
+.simpleHeroVisual img { object-fit: contain !important; object-position: center !important; filter: none !important; padding: clamp(1.25rem, 2.2vw, 2.5rem); }
 
 .homeGroupPhoto { padding: clamp(2.5rem, 5vw, 5rem) clamp(1.25rem, 5vw, 6rem) 0; background: var(--paper); }
 .homeGroupPhotoFrame { position: relative; width: 100%; aspect-ratio: 1429 / 625; overflow: hidden; background: white; }
@@ -441,8 +440,7 @@ img { display: block; }
   .homeNextEvent { grid-template-columns: auto 1fr auto; }
   .homeNextLabel { grid-column: 1 / -1; flex-direction: row; }
   .homeDiscoverHeading h2 br { display: none; }
-  .simpleHero { grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr); min-height: 640px; }
-  .simpleHeroVisual { min-height: 640px; }
+  .simpleHero { min-height: 570px; grid-template-columns: minmax(0, 1fr) minmax(390px, .9fr); }
   .simpleIntro { grid-template-columns: 1fr; gap: 3rem; }
   .simpleNextEvent { grid-template-columns: auto 1fr auto; }
   .simpleNextHeading { grid-column: 1 / -1; flex-direction: row; }
@@ -478,12 +476,11 @@ img { display: block; }
   .homeQuote { min-height: 570px; }
   .homeDiscoverLinks > a { min-height: 135px; grid-template-columns: 30px 1fr auto; gap: 1rem; }
   .brandLogo { width: 42px; height: 42px; }
-  .simpleHero { min-height: auto; grid-template-columns: 1fr; }
+  .simpleHero { min-height: auto; padding-right: 0; grid-template-columns: 1fr; gap: 0; }
   .simpleHeroCopy { padding: 5rem 1.25rem 4rem; }
   .simpleHero h1 { font-size: clamp(4rem, 20vw, 6rem); }
-  .simpleHeroVisual { min-height: 390px; grid-row: 2; }
+  .simpleHeroVisual { width: calc(100% - 2.5rem); margin: 0 1.25rem 2.5rem; grid-row: 2; }
   .simpleHeroVisual img { padding: .75rem; }
-  .simpleHeroPhotoLabel { left: 1rem; bottom: 1rem; }
   .simpleHeroActions { align-items: flex-start; flex-direction: column; gap: 1.4rem; }
   .homeGroupPhoto { padding-left: 0; padding-right: 0; }
   .homeGroupPhotoCaption { margin: 0 1.25rem; }

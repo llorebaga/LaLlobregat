@@ -30,7 +30,6 @@ export default function Home() {
             priority
             sizes="(max-width: 760px) 100vw, 55vw"
           />
-          <span className="simpleHeroPhotoLabel">La cobla</span>
         </div>
       </section>
 
