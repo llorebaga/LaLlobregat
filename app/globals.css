@@ -164,6 +164,55 @@ img { display: block; }
 .monthlyCalendarFrame iframe { display: block; width: 100%; height: 720px; background: var(--paper); }
 .calendarExternalLink { grid-column: 2; justify-self: end; display: inline-flex; align-items: center; gap: .8rem; margin-top: -4rem; padding-bottom: .25rem; border-bottom: 1px solid rgba(255,255,255,.55); color: white; font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 
+/* Agenda: mapa i calendari */
+.agendaPage { background: var(--paper); }
+.agendaPageHero { min-height: 520px; padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 7vw, 8rem) clamp(4rem, 7vw, 7rem); display: grid; grid-template-columns: 1.25fr .75fr; gap: 5rem; align-items: end; background: var(--red); color: white; }
+.agendaPageHero h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(6rem, 13vw, 13rem); font-weight: 400; line-height: .7; letter-spacing: -.075em; }
+.agendaHeroCopy { max-width: 470px; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.45); }
+.agendaHeroCopy p { margin: 0 0 3rem; font-family: Georgia, serif; font-size: clamp(1.4rem, 2.1vw, 2rem); line-height: 1.35; }
+.agendaHeroCopy span { color: rgba(255,255,255,.65); font-size: .62rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+
+.agendaMapSection { background: var(--cream); }
+.agendaSectionHeading { display: grid; grid-template-columns: 1.25fr .75fr; gap: 5rem; align-items: end; margin-bottom: clamp(3rem, 6vw, 6rem); }
+.agendaSectionHeading h2, .agendaCalendarIntro h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .86; letter-spacing: -.06em; }
+.agendaSectionHeading h2 em { color: var(--red); font-weight: 400; }
+.agendaSectionHeading > p { max-width: 510px; margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.8; }
+.agendaMapLayout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(340px, .65fr); border-top: 1px solid var(--ink); }
+.agendaCataloniaMap { position: relative; min-height: 720px; overflow: hidden; background: #d9d8d0; border-right: 1px solid var(--ink); }
+.agendaCataloniaMap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: grayscale(1) contrast(.82) brightness(1.07); }
+.agendaMapTint { position: absolute; inset: 0; background: rgba(190,37,55,.08); mix-blend-mode: multiply; pointer-events: none; }
+.agendaMapMarker { position: absolute; z-index: 3; transform: translate(-20px,-20px); display: grid; grid-template-columns: 40px auto; grid-template-rows: 20px 20px; align-items: center; color: var(--burgundy); filter: drop-shadow(0 8px 12px rgba(61,8,14,.18)); }
+.agendaMapMarker > span { grid-row: 1 / 3; width: 40px; height: 40px; display: grid; place-items: center; border: 3px solid white; border-radius: 50%; background: var(--red); color: white; font-size: .72rem; font-weight: 800; transition: .2s ease; }
+.agendaMapMarker strong, .agendaMapMarker small { width: max-content; max-width: 145px; padding: 1px .55rem; background: rgba(255,253,248,.94); }
+.agendaMapMarker strong { align-self: end; font-family: Georgia, serif; font-size: .88rem; font-weight: 700; }
+.agendaMapMarker small { align-self: start; color: var(--red); font-size: .56rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.agendaMapMarker:hover > span, .agendaMapMarker:focus-visible > span { transform: scale(1.14); background: var(--burgundy); }
+.agendaMapMarker:focus-visible { outline: 2px solid var(--burgundy); outline-offset: 5px; }
+.agendaMapLabel { position: absolute; z-index: 2; left: 1.25rem; bottom: 1.25rem; padding: .75rem 1rem; background: var(--burgundy); color: white; font-family: Georgia, serif; font-size: 1.1rem; }
+.agendaMapCredit { position: absolute; z-index: 2; right: .5rem; bottom: .35rem; padding: .2rem .3rem; background: rgba(255,255,255,.82); font-size: .52rem; }
+
+.agendaEventCards { background: var(--paper); }
+.agendaEventCardsHeader { min-height: 74px; padding: 0 1.6rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--ink); color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.agendaEventCard { position: relative; min-height: 160px; padding: 1.5rem 3.7rem 1.5rem 1.6rem; display: grid; grid-template-columns: 24px 70px 1fr; gap: 1rem; align-items: center; border-bottom: 1px solid var(--line); scroll-margin-top: 110px; transition: .2s ease; }
+.agendaEventCard:hover, .agendaEventCard:target { background: #f7e8e5; }
+.agendaEventNumber { align-self: start; color: var(--muted); font-size: .58rem; }
+.agendaEventCard time strong { display: block; font-family: Georgia, serif; font-size: 3.15rem; font-weight: 400; line-height: .85; letter-spacing: -.05em; }
+.agendaEventCard time span, .agendaEventType { color: var(--red); font-size: .58rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.agendaEventCard h3 { margin: .4rem 0; font-family: Georgia, serif; font-size: clamp(1.3rem, 2vw, 1.8rem); font-weight: 400; line-height: 1.05; }
+.agendaEventCard p { margin: 0; color: var(--muted); font-size: .76rem; line-height: 1.4; }
+.agendaEventCard > a { position: absolute; right: 1.2rem; top: 50%; width: 34px; height: 34px; transform: translateY(-50%); display: grid; place-items: center; border: 1px solid var(--ink); border-radius: 50%; transition: .2s; }
+.agendaEventCard > a:hover { background: var(--red); border-color: var(--red); color: white; }
+
+.agendaCalendarSection { background: var(--burgundy); color: white; }
+.agendaCalendarIntro { display: grid; grid-template-columns: 1.15fr .85fr; gap: 5rem; align-items: end; margin-bottom: clamp(3rem, 6vw, 6rem); }
+.agendaCalendarIntro h2 em { color: #efa2aa; font-weight: 400; }
+.agendaCalendarIntro > div:last-child { max-width: 520px; }
+.agendaCalendarIntro > div:last-child p { margin: 0 0 2rem; color: rgba(255,255,255,.68); font-size: 1.02rem; line-height: 1.8; }
+.agendaCalendarIntro a { display: inline-flex; gap: 1rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(255,255,255,.55); font-size: .66rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.agendaCalendarFrame { min-height: 760px; padding: clamp(.6rem, 1vw, 1rem); background: rgba(255,255,255,.12); box-shadow: 0 30px 80px rgba(21,2,5,.35); }
+.agendaCalendarFrame iframe { display: block; width: 100%; height: 740px; border: 0; background: white; }
+.agendaCalendarFooter { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-bottom: 1px solid rgba(255,255,255,.25); color: rgba(255,255,255,.5); font-size: .58rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+
 .archiveSection { background: var(--paper); }
 .archiveIntro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 8rem; align-items: end; margin-bottom: 5rem; }
 .archiveIntro > p { margin: 0; max-width: 560px; font-size: 1.1rem; line-height: 1.8; }
@@ -237,6 +286,14 @@ img { display: block; }
   .monthlyCalendarFrame { min-height: 680px; }
   .monthlyCalendarFrame iframe { height: 680px; }
   .calendarExternalLink { grid-column: 1; margin-top: -2rem; }
+  .agendaPageHero, .agendaSectionHeading, .agendaCalendarIntro { grid-template-columns: 1fr; gap: 3rem; }
+  .agendaPageHero { min-height: 620px; }
+  .agendaHeroCopy { margin-left: auto; }
+  .agendaMapLayout { grid-template-columns: 1fr; }
+  .agendaCataloniaMap { min-height: 620px; border-right: 0; border-bottom: 1px solid var(--ink); }
+  .agendaEventCards { display: grid; grid-template-columns: 1fr 1fr; }
+  .agendaEventCardsHeader { grid-column: 1 / -1; }
+  .agendaEventCard { min-height: 185px; }
 }
 
 @media (max-width: 760px) {
@@ -273,6 +330,20 @@ img { display: block; }
   .monthGrid span { min-height: 44px; }
   .monthlyCalendarFrame { min-height: 600px; border-width: 3px; }
   .monthlyCalendarFrame iframe { height: 600px; }
+  .agendaPageHero { min-height: 500px; padding: 5rem 1.25rem 3.5rem; }
+  .agendaPageHero h1 { font-size: clamp(5.5rem, 27vw, 8rem); }
+  .agendaHeroCopy { margin-left: 0; }
+  .agendaHeroCopy p { margin-bottom: 2rem; }
+  .agendaSectionHeading { gap: 2rem; }
+  .agendaSectionHeading h2, .agendaCalendarIntro h2 { font-size: clamp(3.3rem, 16vw, 5rem); }
+  .agendaCataloniaMap { min-height: 500px; }
+  .agendaMapMarker strong, .agendaMapMarker small { display: none; }
+  .agendaEventCards { grid-template-columns: 1fr; }
+  .agendaEventCard { min-height: 155px; grid-template-columns: 20px 60px 1fr; padding-left: 1rem; padding-right: 3.2rem; }
+  .agendaEventCard time strong { font-size: 2.7rem; }
+  .agendaCalendarFrame { min-height: 620px; padding: 4px; }
+  .agendaCalendarFrame iframe { height: 610px; }
+  .agendaCalendarFooter { padding: 1rem 0; align-items: flex-start; flex-direction: column; gap: .45rem; }
   .archiveIntro br { display: none; }
   .historyHero { padding-top: 6rem; }
   .historyHero h1 { font-size: clamp(3.6rem, 15vw, 5.5rem); }
