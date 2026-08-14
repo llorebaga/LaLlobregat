@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { upcomingEvents } from "../data";
+import calendarEvents from "../calendar-events.generated.json";
 
 export const metadata: Metadata = {
   title: "Agenda",
@@ -32,6 +33,7 @@ function createCalendarUrl() {
 
 export default function AgendaPage() {
   const calendarSrc = createCalendarUrl();
+  const events = calendarEvents.length ? calendarEvents : upcomingEvents;
 
   return (
     <main id="contingut" className="agendaPage">
@@ -66,13 +68,15 @@ export default function AgendaPage() {
               loading="lazy"
             />
             <div className="agendaMapTint" />
-            {upcomingEvents.map((event, index) => (
+            {events.map((event, index) => (
               <a
                 className="agendaMapMarker"
-                href={`#${event.id}`}
+                href={event.source}
                 key={event.id}
                 style={event.mapPosition}
                 aria-label={`${event.day} ${event.month}, ${event.title}, ${event.town}`}
+                target="_blank"
+                rel="noreferrer"
               >
                 <span>{index + 1}</span>
                 <strong>{event.town}</strong>
@@ -86,9 +90,9 @@ export default function AgendaPage() {
           <div className="agendaEventCards" aria-label="Properes actuacions">
             <div className="agendaEventCardsHeader">
               <span>Properament</span>
-              <strong>{upcomingEvents.length} dates</strong>
+              <strong>{events.length} dates</strong>
             </div>
-            {upcomingEvents.map((event, index) => (
+            {events.map((event, index) => (
               <article className="agendaEventCard" id={event.id} key={event.id}>
                 <span className="agendaEventNumber">0{index + 1}</span>
                 <time dateTime={event.dateTime}>
@@ -135,7 +139,6 @@ export default function AgendaPage() {
         <div className="agendaCalendarFooter">
           <span>Calendari públic</span>
           <span>lallobregat@gmail.com</span>
-          <span>Zona horària · Europa/Madrid</span>
         </div>
       </section>
     </main>

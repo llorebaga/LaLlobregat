@@ -1,0 +1,210 @@
+[
+  {
+    "id": "calendar-1va534rmsr52d4o0ptakm6dtio-google-com",
+    "day": "14",
+    "month": "AG.",
+    "dateTime": "2026-08-14T15:00:00.000Z",
+    "title": "Ribes de Freser",
+    "place": "Plaça del Mercat",
+    "town": "Ribes de Freser",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MXZhNTM0cm1zcjUyZDRvMHB0YWttNmR0aW8gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "66.72%",
+      "top": "25.75%"
+    }
+  },
+  {
+    "id": "calendar-3j7enk6d7l0rmgpmlduibs3kdq-google-com",
+    "day": "15",
+    "month": "AG.",
+    "dateTime": "2026-08-15T16:30:00.000Z",
+    "title": "CONCERT La Bisbal d'Empordà",
+    "place": "Plaça del Castell",
+    "town": "La Bisbal d'Empordà",
+    "time": "18.30 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=M2o3ZW5rNmQ3bDBybWdwbWxkdWliczNrZHEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "88.44%",
+      "top": "39.63%"
+    }
+  },
+  {
+    "id": "calendar-6t2cafq16n4jlvk1h4v9almuhr-google-com",
+    "day": "16",
+    "month": "AG.",
+    "dateTime": "2026-08-16T18:00:00.000Z",
+    "title": "Arenys de Mar",
+    "place": "Riera d'Arenys",
+    "town": "Arenys de Mar",
+    "time": "20.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NnQyY2FmcTE2bjRqbHZrMWg0djlhbG11aHIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "76.21%",
+      "top": "54.69%"
+    }
+  },
+  {
+    "id": "calendar-6gp36oplckpjcb9n75i6cb9k6hij0b9oc5h3gbb4clh3eopn61i34d9mcg-google-com",
+    "day": "17",
+    "month": "AG.",
+    "dateTime": "2026-08-17T10:00:00.000Z",
+    "title": "Torrelavit",
+    "place": "Parc de les pubilles",
+    "town": "Torrelavit",
+    "time": "12.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmdwMzZvcGxja3BqY2I5bjc1aTZjYjlrNmhpajBiOW9jNWgzZ2JiNGNsaDNlb3BuNjFpMzRkOW1jZyBsYWxsb2JyZWdhdEBnbWFpbC5jb20",
+    "mapPosition": {
+      "left": "55.82%",
+      "top": "60.14%"
+    }
+  },
+  {
+    "id": "calendar-5pgrrj3rbapa7hgiqouqvtr8v7-google-com",
+    "day": "20",
+    "month": "AG.",
+    "dateTime": "2026-08-20T20:00:00.000Z",
+    "title": "CONCERT Calonge",
+    "place": "Castell de Calonge",
+    "town": "Calonge",
+    "time": "22.00 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=NXBncnJqM3JiYXBhN2hnaXFvdXF2dHI4djcgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "89.33%",
+      "top": "43.48%"
+    }
+  },
+  {
+    "id": "calendar-324o5ofutrsgn3g420uprisjcd-google-com",
+    "day": "22",
+    "month": "AG.",
+    "dateTime": "2026-08-22T14:30:00.000Z",
+    "title": "Ripoll",
+    "place": "Passeig de Ragull",
+    "town": "Ripoll",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MzI0bzVvZnV0cnNnbjNnNDIwdXByaXNqY2QgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "67.27%",
+      "top": "30.12%"
+    }
+  },
+  {
+    "id": "calendar-2t8li1dcjvrqa338fbcel3p0vp-google-com",
+    "day": "23",
+    "month": "AG.",
+    "dateTime": "2026-08-23T17:30:00.000Z",
+    "title": "Sant Pol de Mar",
+    "place": "Avinguda Doctor Furest",
+    "town": "Sant Pol de Mar",
+    "time": "19.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MnQ4bGkxZGNqdnJxYTMzOGZiY2VsM3AwdnAgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "78.15%",
+      "top": "53.95%"
+    }
+  },
+  {
+    "id": "calendar-0rqsdlgoaj70aq034h55ftvmmt-google-com",
+    "day": "24",
+    "month": "AG.",
+    "dateTime": "2026-08-24T11:00:00.000Z",
+    "title": "Roda de Berà",
+    "place": "Plaça dels Pins",
+    "town": "Roda de Berà",
+    "time": "13.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MHJxc2RsZ29hajcwYXEwMzRoNTVmdHZtbXQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "48.89%",
+      "top": "70.58%"
+    }
+  },
+  {
+    "id": "calendar-46b1eip3s8gen8qbffh6b5ca0q-google-com",
+    "day": "26",
+    "month": "AG.",
+    "dateTime": "2026-08-26T10:30:00.000Z",
+    "title": "Barcelona",
+    "place": "Carrer del Vallespir",
+    "town": "Barcelona",
+    "time": "12.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NDZiMWVpcDNzOGdlbjhxYmZmaDZiNWNhMHEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "65.94%",
+      "top": "62.85%"
+    }
+  },
+  {
+    "id": "calendar-1pqpuq1fh7h6isv26d1o47ah7h-google-com",
+    "day": "26",
+    "month": "AG.",
+    "dateTime": "2026-08-26T15:30:00.000Z",
+    "title": "Barcelona",
+    "place": "Carrer del Vallespir",
+    "town": "Barcelona",
+    "time": "17.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MXBxcHVxMWZoN2g2aXN2MjZkMW80N2FoN2ggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "65.94%",
+      "top": "62.85%"
+    }
+  },
+  {
+    "id": "calendar-65d8q2deb08t0bav1f28546epu-google-com",
+    "day": "28",
+    "month": "AG.",
+    "dateTime": "2026-08-28T20:00:00.000Z",
+    "title": "Llagostera",
+    "place": "Plaça Catalunya",
+    "town": "Llagostera",
+    "time": "22.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NjVkOHEyZGViMDh0MGJhdjFmMjg1NDZlcHUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "84.83%",
+      "top": "44.96%"
+    }
+  },
+  {
+    "id": "calendar-0op7j40bcb4q22992iq8ejbcg3-google-com",
+    "day": "29",
+    "month": "AG.",
+    "dateTime": "2026-08-29T19:00:00.000Z",
+    "title": "Vidreres",
+    "place": "Plaça de Lluís Companys",
+    "town": "Vidreres",
+    "time": "21.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MG9wN2o0MGJjYjRxMjI5OTJpcThlamJjZzMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "81.97%",
+      "top": "46.43%"
+    }
+  },
+  {
+    "id": "calendar-6cnm3iecr9k7nc6ka64r14o5pj-google-com",
+    "day": "30",
+    "month": "AG.",
+    "dateTime": "2026-08-30T17:00:00.000Z",
+    "title": "El Vendrell",
+    "place": "La Rambla",
+    "town": "El Vendrell",
+    "time": "19.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmNubTNpZWNyOWs3bmM2a2E2NHIxNG81cGogbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "mapPosition": {
+      "left": "50.92%",
+      "top": "69.17%"
+    }
+  }
+]
