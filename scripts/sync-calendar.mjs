@@ -16,6 +16,13 @@ const monthNamesLong = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Ju
 const knownPlaces = {
   "bufraganya": { lat: 41.48455, lon: 1.44838, town: "Sant Magí de Brufaganya" },
 };
+// The northern part of the composite map is an illustrated montage rather than
+// a single uniform projection. These two places need a small visual calibration
+// so their markers align with the shapes drawn on the fixed map.
+const mapVisualOverrides = {
+  "ceret": { left: "70.47%", top: "22.70%" },
+  "encamp": { left: "50.20%", top: "23.20%" },
+};
 const ignoredTownNames = new Set([
   "coco", "catedral", "enregistrament cd", "festa privada", "gravacio", "grabacio",
   "mati", "ocupat", "palau de la musica", "palau de la musica catalana", "petit palau",
@@ -279,7 +286,7 @@ async function synchronizeEvent(event, includeLocation) {
     resolvedTown = {
       town: verifiedPlace?.town ?? knownPlace?.town ?? originalTown,
       coordinates,
-      mapPosition: mapPosition(coordinates.lat, coordinates.lon),
+      mapPosition: mapVisualOverrides[townKey] ?? mapPosition(coordinates.lat, coordinates.lon),
     };
     resolvedTowns.set(townKey, resolvedTown);
   }

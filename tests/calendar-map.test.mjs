@@ -35,3 +35,11 @@ test("les poblacions ambigües tenen coordenades municipals verificades", async 
   assert.deepEqual({ lat: places["prada de conflent"].lat, lon: places["prada de conflent"].lon }, { lat: 42.6181232, lon: 2.4230925 });
   assert.deepEqual({ lat: places.castellar.lat, lon: places.castellar.lon }, { lat: 41.6138122, lon: 2.0875963 });
 });
+
+test("Encamp i Céret estan calibrats amb el dibuix del mapa", async () => {
+  const events = JSON.parse(await readFile("app/calendar-history.generated.json", "utf8"));
+  const byTown = new Map(events.map((event) => [event.town, event]));
+
+  assert.deepEqual(byTown.get("Encamp")?.mapPosition, { left: "50.20%", top: "23.20%" });
+  assert.deepEqual(byTown.get("Céret")?.mapPosition, { left: "70.47%", top: "22.70%" });
+});
