@@ -1,5 +1,6 @@
 import Image from "next/image";
 import calendarEvents from "./calendar-events.generated.json";
+import { HomeNextEvent } from "./components/HomeNextEvent";
 import { upcomingEvents } from "./data";
 import { sitePath } from "./site-path";
 
@@ -61,30 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="simpleNextEvent">
-        <div className="simpleNextHeading">
-          <p>Pròxima actuació</p>
-          <a href={sitePath("/agenda")}>Tota l’agenda <span aria-hidden="true">→</span></a>
-        </div>
-        <time dateTime={nextEvent.dateTime}>
-          <strong>{nextEvent.day}</strong>
-          <span>{nextEvent.month}</span>
-        </time>
-        <div className="simpleNextDetails">
-          <p>{nextEvent.type} · {nextEvent.time}</p>
-          <h2>{nextEvent.title}</h2>
-          <span>{nextEvent.town} — {nextEvent.place}</span>
-        </div>
-        <a
-          className="simpleNextArrow"
-          href={nextEvent.source}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Veure aquesta actuació al calendari"
-        >
-          ↗
-        </a>
-      </section>
+      <HomeNextEvent events={calendarEvents} initialEvent={nextEvent} />
 
       <section className="simpleExplore sectionPad">
         <p className="eyebrow">Descobreix la cobla</p>

@@ -3,8 +3,9 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("el web es publica en català i sense el contingut temporal", async () => {
-  const [page, layout, header, agenda, styledCalendar, archive, history, musicians, css] = await Promise.all([
+  const [page, nextEvent, layout, header, agenda, styledCalendar, archive, history, musicians, css, calendarWorkflow] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/components/HomeNextEvent.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/SiteHeader.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/agenda/page.tsx", import.meta.url), "utf8"),
@@ -13,6 +14,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
     readFile(new URL("../app/historia/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/musics/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
+    readFile(new URL("../.github/workflows/sync-calendar.yml", import.meta.url), "utf8"),
   ]);
   assert.match(layout, /lang="ca"/);
   assert.match(page, /La nostra música/);
@@ -28,6 +30,12 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.doesNotMatch(musicians, /className="musicianDirector"/);
   assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Actuacions"[\s\S]*label: "Músics"[\s\S]*label: "Història"/);
   assert.match(page, /calendar-events\.generated\.json/);
+  assert.match(page, /<HomeNextEvent events=\{calendarEvents\}/);
+  assert.match(nextEvent, /setInterval\(updateCurrentTime, 60_000\)/);
+  assert.match(nextEvent, /dateTime\)\.getTime\(\) >= currentTime/);
+  assert.match(calendarWorkflow, /cron: "17 \* \* \* \*"/);
+  assert.match(calendarWorkflow, /actions: write/);
+  assert.match(calendarWorkflow, /gh workflow run deploy-pages\.yml --ref main/);
   assert.match(archive, /MÈLT[\s\S]*Concerts[\s\S]*Ballades/);
   assert.doesNotMatch(archive, /ActuacionsGrid|archiveEvents/);
   assert.doesNotMatch(page, /simpleStats|<strong>1929<\/strong>|<strong>11<\/strong>|<strong>1<\/strong>/);

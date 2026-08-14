@@ -2,15 +2,16 @@ name: Sincronitza el calendari
 
 on:
   schedule:
-    - cron: "17 4 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: calendar-sync
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
@@ -25,13 +26,28 @@ jobs:
       - name: Llegeix el calendari i actualitza el mapa
         run: node scripts/sync-calendar.mjs
       - name: Desa les actuacions noves
+        id: update
         run: |
-          if git diff --quiet -- app/calendar-events.generated.json scripts/calendar-geocode-cache.json; then
-            echo "El calendari no ha canviat."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/calendar-events.generated.json scripts/calendar-geocode-cache.json
-          git commit -m "Actualitza les actuacions del calendari"
+
+          if git diff --quiet -- app/calendar-events.generated.json scripts/calendar-geocode-cache.json; then
+            echo "El calendari no ha canviat."
+            if [ "$(date -u +%H)" = "04" ]; then
+              echo "publish=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "publish=false" >> "$GITHUB_OUTPUT"
+            fi
+            exit 0
+          else
+            git add app/calendar-events.generated.json scripts/calendar-geocode-cache.json
+            git commit -m "Actualitza les actuacions del calendari"
+          fi
+
           git push
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+      - name: Publica els canvis al web
+        if: steps.update.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main --repo "$GITHUB_REPOSITORY"
