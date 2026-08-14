@@ -10,49 +10,18 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-const instruments = [
-  {
-    number: "01",
-    name: "Flabiol i tamborí",
-    musicians: "1 músic",
-    text: "El gest que obre la rotllana i dona l’entrada a tota la cobla.",
-  },
-  {
-    number: "02",
-    name: "Tibles",
-    musicians: "2 músics",
-    text: "Una veu brillant, incisiva i plena de caràcter.",
-  },
-  {
-    number: "03",
-    name: "Tenores",
-    musicians: "2 músics",
-    text: "El timbre més emblemàtic de la cobla: càlid, ampli i expressiu.",
-  },
-  {
-    number: "04",
-    name: "Trompetes",
-    musicians: "2 músics",
-    text: "Claredat, energia i impuls per fer créixer cada frase.",
-  },
-  {
-    number: "05",
-    name: "Trombó",
-    musicians: "1 músic",
-    text: "El pont entre les veus de metall, amb força i flexibilitat.",
-  },
-  {
-    number: "06",
-    name: "Fiscorns",
-    musicians: "2 músics",
-    text: "Profunditat i calidesa per sostenir el cos sonor del conjunt.",
-  },
-  {
-    number: "07",
-    name: "Contrabaix",
-    musicians: "1 músic",
-    text: "L’arrel rítmica i harmònica sobre la qual descansa la formació.",
-  },
+const members = [
+  { name: "Josep Llauradó Cardona", instrument: "Flabiol" },
+  { name: "Jordi Campos Temporal", instrument: "Tible" },
+  { name: "Oriol Oller Torró", instrument: "Tible" },
+  { name: "Jordi Guixé Torres", instrument: "Tenora" },
+  { name: "Jordi Molina Membrives", instrument: "Tenora" },
+  { name: "Roger Santiago Casasses", instrument: "Trompeta" },
+  { name: "Jorge Serrano Quevedo", instrument: "Trompeta" },
+  { name: "Toni Balada Aguilà", instrument: "Trombó" },
+  { name: "Ivan Babiloni Porqueras", instrument: "Fiscorn" },
+  { name: "Joan Ballart Pedret", instrument: "Fiscorn" },
+  { name: "Eduard Arribas Montagut", instrument: "Contrabaix" },
 ];
 
 export default function MusicsPage() {
@@ -89,7 +58,7 @@ export default function MusicsPage() {
         </div>
         <div className="musiciansPortraitCaption">
           <span>Cobla La Principal del Llobregat</span>
-          <span>Onze músics · Una cobla</span>
+          <span>Onze músics · Un director · Una cobla</span>
         </div>
       </section>
 
@@ -103,16 +72,26 @@ export default function MusicsPage() {
         </p>
       </section>
 
-      <section className="musicianSeats sectionPad" aria-label="Instruments de la cobla">
-        <div className="musicianSeatGrid">
-          {instruments.map((instrument) => (
-            <article className="musicianSeat" key={instrument.name}>
-              <div className="musicianSeatTop">
-                <span>{instrument.number}</span>
-                <span>{instrument.musicians}</span>
+      <section className="musicianRoster sectionPad" aria-labelledby="membres-2026">
+        <div className="musicianRosterHeading">
+          <p className="eyebrow">Membres 2026</p>
+          <h2 id="membres-2026">Noms propis.<br /><em>Un sol so.</em></h2>
+        </div>
+
+        <article className="musicianDirector">
+          <span>Direcció</span>
+          <h3>Marcel Sabaté Reixach</h3>
+          <p>Director</p>
+        </article>
+
+        <div className="musicianMemberGrid">
+          {members.map((member, index) => (
+            <article className="musicianMember" key={member.name}>
+              <div className="musicianMemberTop">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <span>{member.instrument}</span>
               </div>
-              <h3>{instrument.name}</h3>
-              <p>{instrument.text}</p>
+              <h3>{member.name}</h3>
             </article>
           ))}
         </div>

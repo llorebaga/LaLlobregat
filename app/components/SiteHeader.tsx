@@ -3,10 +3,9 @@ import { sitePath } from "../site-path";
 
 const navigation = [
   { href: sitePath("/"), label: "Inici" },
-  { href: sitePath("/musics"), label: "Músics" },
   { href: sitePath("/agenda"), label: "Agenda" },
   { href: sitePath("/actuacions"), label: "Actuacions" },
-  { href: sitePath("/historia"), label: "Història" },
+  { href: sitePath("/musics"), label: "Músics" },
 ];
 
 export function SiteHeader() {

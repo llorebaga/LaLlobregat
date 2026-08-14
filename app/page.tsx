@@ -54,11 +54,6 @@ export default function Home() {
             Coneix la nostra història <span aria-hidden="true">→</span>
           </a>
         </div>
-        <div className="simpleStats">
-          <div><strong>1929</strong><span>Any de fundació</span></div>
-          <div><strong>11</strong><span>Músics</span></div>
-          <div><strong>1</strong><span>So inconfusible</span></div>
-        </div>
       </section>
 
       <section className="simpleNextEvent">

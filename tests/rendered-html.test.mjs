@@ -3,9 +3,10 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("el web es publica en català i sense el contingut temporal", async () => {
-  const [page, layout, agenda, history, musicians, css] = await Promise.all([
+  const [page, layout, header, agenda, history, musicians, css] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/components/SiteHeader.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/agenda/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/historia/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/musics/page.tsx", import.meta.url), "utf8"),
@@ -16,7 +17,11 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(agenda, /Mapa de Catalunya/);
   assert.match(history, /Una història/);
   assert.match(musicians, /Onze intèrprets/);
-  assert.match(musicians, /Flabiol i tamborí/);
+  assert.match(musicians, /Josep Llauradó Cardona/);
+  assert.match(musicians, /Marcel Sabaté Reixach/);
+  assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Actuacions"[\s\S]*label: "Músics"/);
+  assert.doesNotMatch(header, /label: "Història"/);
+  assert.doesNotMatch(page, /simpleStats|<strong>1929<\/strong>|<strong>11<\/strong>|<strong>1<\/strong>/);
   assert.match(css, /prefers-reduced-motion/);
   assert.doesNotMatch(page + layout, /SkeletonPreview|codex-preview|Your site is taking shape/);
 });

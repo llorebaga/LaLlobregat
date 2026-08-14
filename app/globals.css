@@ -535,15 +535,20 @@ img { display: block; }
 .musiciansIntro h2 em { color: var(--red); font-weight: 400; }
 .musiciansIntroText { margin: 0; color: var(--muted); font-size: 1.04rem; line-height: 1.85; }
 
-.musicianSeats { padding-top: 0; background: var(--cream); }
-.musicianSeatGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--line); }
-.musicianSeat { min-height: 300px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: .25s ease; }
-.musicianSeat:hover { background: var(--red); color: white; }
-.musicianSeatTop { display: flex; justify-content: space-between; color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.musicianSeat:hover .musicianSeatTop, .musicianSeat:hover p { color: rgba(255,255,255,.72); }
-.musicianSeat h3 { margin: auto 0 1.2rem; font-family: Georgia, serif; font-size: clamp(2rem, 3.2vw, 3.5rem); font-weight: 400; line-height: .96; letter-spacing: -.04em; }
-.musicianSeat p { max-width: 320px; margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.65; }
-.musicianSeats .musicianSeat:last-child { grid-column: 2; }
+.musicianRoster { padding-top: 0; background: var(--cream); }
+.musicianRosterHeading { padding: 0 0 clamp(3rem, 6vw, 6rem); display: grid; grid-template-columns: .55fr 1.45fr; gap: clamp(2rem, 5vw, 7rem); align-items: end; }
+.musicianRosterHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.2rem, 6vw, 6.8rem); font-weight: 400; line-height: .9; letter-spacing: -.055em; }
+.musicianRosterHeading h2 em { color: var(--red); font-weight: 400; }
+.musicianDirector { min-height: 210px; padding: clamp(2rem, 4vw, 4rem); display: grid; grid-template-columns: .45fr 1.2fr .35fr; gap: 2rem; align-items: end; background: var(--burgundy); color: white; }
+.musicianDirector > span, .musicianDirector p { margin: 0; color: #efa2aa; font-size: .64rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.musicianDirector h3 { margin: 0; font-family: Georgia, serif; font-size: clamp(2.6rem, 5vw, 5.5rem); font-weight: 400; line-height: .9; letter-spacing: -.05em; }
+.musicianDirector p { text-align: right; }
+.musicianMemberGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--line); }
+.musicianMember { min-height: 235px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: .25s ease; }
+.musicianMember:hover { background: var(--red); color: white; }
+.musicianMemberTop { display: flex; justify-content: space-between; gap: 1rem; color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.musicianMember:hover .musicianMemberTop { color: rgba(255,255,255,.75); }
+.musicianMember h3 { max-width: 360px; margin: auto 0 0; font-family: Georgia, serif; font-size: clamp(1.8rem, 2.7vw, 3rem); font-weight: 400; line-height: .96; letter-spacing: -.04em; }
 
 .musiciansCta { min-height: 340px; padding: clamp(4rem, 7vw, 7rem) clamp(1.25rem, 7vw, 8rem); display: flex; align-items: flex-end; justify-content: space-between; gap: 4rem; background: var(--burgundy); color: white; }
 .musiciansCta h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3rem, 5.5vw, 6rem); font-weight: 400; line-height: .9; letter-spacing: -.05em; }
@@ -565,8 +570,7 @@ img { display: block; }
   .musiciansHero { grid-template-columns: 1fr .65fr; }
   .musiciansIntro { grid-template-columns: 1fr 1.4fr; }
   .musiciansIntro .eyebrow { grid-column: 1 / -1; }
-  .musicianSeatGrid { grid-template-columns: repeat(2, 1fr); }
-  .musicianSeats .musicianSeat:last-child { grid-column: auto; }
+  .musicianMemberGrid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -629,8 +633,12 @@ img { display: block; }
   .musiciansPortraitCaption { margin: 0 1.25rem; align-items: flex-start; flex-direction: column; gap: .35rem; }
   .musiciansIntro { grid-template-columns: 1fr; gap: 2rem; }
   .musiciansIntro .eyebrow { grid-column: auto; }
-  .musicianSeatGrid { grid-template-columns: 1fr; }
-  .musicianSeat { min-height: 235px; }
+  .musicianRosterHeading { grid-template-columns: 1fr; gap: 2rem; }
+  .musicianDirector { min-height: 250px; padding: 2rem 1.25rem; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
+  .musicianDirector h3 { margin-top: auto; }
+  .musicianDirector p { text-align: left; }
+  .musicianMemberGrid { grid-template-columns: 1fr; }
+  .musicianMember { min-height: 190px; }
   .musiciansCta { min-height: 410px; align-items: flex-start; flex-direction: column; }
   .musiciansCta > a { width: 100%; }
 }
