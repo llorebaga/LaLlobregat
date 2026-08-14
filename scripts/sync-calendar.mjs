@@ -6,6 +6,7 @@ const calendarFeed = `https://calendar.google.com/calendar/ical/${encodeURICompo
 const outputPath = path.resolve("app/calendar-events.generated.json");
 const historyOutputPath = path.resolve("app/calendar-history.generated.json");
 const cachePath = path.resolve("scripts/calendar-geocode-cache.json");
+const townCoordinatesPath = path.resolve("scripts/calendar-town-coordinates.json");
 const maximumEvents = 180;
 const geocodeDelay = Number(process.env.GEOCODE_DELAY_MS ?? 1200);
 // Equirectangular bounds calibrated to the fixed Catalonia and Northern Catalonia map.
@@ -103,7 +104,12 @@ function eventTown(summary, location) {
 }
 
 function normalizeText(value) {
-  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
 function eventQueries(town, location) {
@@ -138,6 +144,14 @@ async function readCache() {
   }
 }
 
+async function readTownCoordinates() {
+  try {
+    return JSON.parse(await readFile(townCoordinatesPath, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
 async function geocode(query, cache, lastRequest) {
   if (Object.prototype.hasOwnProperty.call(cache, query)) {
     return { coordinates: cache[query], lastRequest };
@@ -151,8 +165,9 @@ async function geocode(query, cache, lastRequest) {
   const parameters = new URLSearchParams({
     q: query,
     format: "jsonv2",
-    limit: "1",
-    countrycodes: "es,fr",
+    limit: "5",
+    countrycodes: "es,fr,ad",
+    addressdetails: "1",
     viewbox: `${cataloniaBounds.west},${cataloniaBounds.north},${cataloniaBounds.east},${cataloniaBounds.south}`,
     bounded: "1",
   });
@@ -164,7 +179,12 @@ async function geocode(query, cache, lastRequest) {
   });
   if (!response.ok) throw new Error(`La geocodificació ha respost ${response.status}`);
 
-  const [result] = await response.json();
+  const results = await response.json();
+  const result = results.find((candidate) => {
+    if (["natural", "highway", "railway", "waterway"].includes(candidate.category)) return false;
+    if (["peak", "ridge", "river", "reservoir", "station", "halt", "stop"].includes(candidate.type)) return false;
+    return true;
+  }) ?? results[0];
   const candidate = result ? { lat: Number(result.lat), lon: Number(result.lon) } : null;
   const coordinates = candidate
     && candidate.lat >= cataloniaBounds.south
@@ -211,7 +231,7 @@ const parsedHistoryEvents = allParsedEvents
   .filter((event) => event.date < now)
   .sort((first, second) => second.date - first.date);
 
-const cache = await readCache();
+const [cache, townCoordinates] = await Promise.all([readCache(), readTownCoordinates()]);
 let lastRequest = 0;
 const synchronizedEvents = [];
 const synchronizedHistoryEvents = [];
@@ -237,7 +257,12 @@ async function synchronizeEvent(event, includeLocation) {
 
   if (!resolvedTown) {
     const { knownPlace, queries } = eventQueries(originalTown, includeLocation ? event.location : "");
-    let coordinates = knownPlace ? { lat: knownPlace.lat, lon: knownPlace.lon } : null;
+    const verifiedPlace = townCoordinates[townKey];
+    let coordinates = verifiedPlace
+      ? { lat: verifiedPlace.lat, lon: verifiedPlace.lon }
+      : knownPlace
+        ? { lat: knownPlace.lat, lon: knownPlace.lon }
+        : null;
 
     for (const query of queries) {
       if (coordinates) break;
@@ -252,7 +277,8 @@ async function synchronizeEvent(event, includeLocation) {
     }
 
     resolvedTown = {
-      town: knownPlace?.town ?? originalTown,
+      town: verifiedPlace?.town ?? knownPlace?.town ?? originalTown,
+      coordinates,
       mapPosition: mapPosition(coordinates.lat, coordinates.lon),
     };
     resolvedTowns.set(townKey, resolvedTown);

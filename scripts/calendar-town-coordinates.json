@@ -1,0 +1,1757 @@
+{
+  "agramunt": {
+    "town": "Agramunt",
+    "lat": 41.787076,
+    "lon": 1.0985119,
+    "verifiedQuery": "Agramunt, Catalunya, Espanya",
+    "displayName": "Agramunt, Urgell, Lleida, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348147"
+  },
+  "alcarras": {
+    "town": "Alcarràs",
+    "lat": 41.5632578,
+    "lon": 0.5240396,
+    "verifiedQuery": "Alcarràs, Catalunya, Espanya",
+    "displayName": "Alcarràs, Segrià, Lleida, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343632"
+  },
+  "alella": {
+    "town": "Alella",
+    "lat": 41.4955603,
+    "lon": 2.2935325,
+    "verifiedQuery": "Alella, Catalunya, Espanya",
+    "displayName": "Alella, Maresme, Barcelona, Catalunya, 08328, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343410"
+  },
+  "alfes": {
+    "town": "Alfés",
+    "lat": 41.5214162,
+    "lon": 0.6200114,
+    "verifiedQuery": "Alfés, Catalunya, Espanya",
+    "displayName": "Alfés, Segrià, Lleida, Catalunya, 25161, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343637"
+  },
+  "almacelles": {
+    "town": "Almacelles",
+    "lat": 41.7294989,
+    "lon": 0.4404763,
+    "verifiedQuery": "Almacelles, Catalunya, Espanya",
+    "displayName": "Almacelles, Segrià, Lleida, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343629"
+  },
+  "alpicat": {
+    "town": "Alpicat",
+    "lat": 41.6666421,
+    "lon": 0.5554774,
+    "verifiedQuery": "Alpicat, Catalunya, Espanya",
+    "displayName": "Alpicat, Segrià, Lleida, Catalunya, 25110, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347865"
+  },
+  "arenys de mar": {
+    "town": "Arenys de Mar",
+    "lat": 41.5797031,
+    "lon": 2.5491562,
+    "verifiedQuery": "Arenys de Mar, Catalunya, Espanya",
+    "displayName": "Arenys de Mar, Maresme, Barcelona, Catalunya, 08350, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343407"
+  },
+  "arenys de munt": {
+    "town": "Arenys de Munt",
+    "lat": 41.6095429,
+    "lon": 2.5400513,
+    "verifiedQuery": "Arenys de Munt, Catalunya, Espanya",
+    "displayName": "Arenys de Munt, Maresme, Barcelona, Catalunya, 08358, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343406"
+  },
+  "argelaguer": {
+    "town": "Argelaguer",
+    "lat": 42.2145207,
+    "lon": 2.6414922,
+    "verifiedQuery": "Argelaguer, Catalunya, Espanya",
+    "displayName": "Argelaguer, Garrotxa, Girona, Catalunya, 17853, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343838"
+  },
+  "argentona": {
+    "town": "Argentona",
+    "lat": 41.5554326,
+    "lon": 2.4002787,
+    "verifiedQuery": "Argentona, Catalunya, Espanya",
+    "displayName": "Argentona, Maresme, Barcelona, Catalunya, 08310, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343396"
+  },
+  "artes": {
+    "town": "Artés",
+    "lat": 41.7973321,
+    "lon": 1.9551567,
+    "verifiedQuery": "Artés, Catalunya, Espanya",
+    "displayName": "Artés, Bages, Barcelona, Catalunya, 08271, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347957"
+  },
+  "artesa de segre": {
+    "town": "Artesa de Segre",
+    "lat": 41.9376976,
+    "lon": 1.098281,
+    "verifiedQuery": "Artesa de Segre, Catalunya, Espanya",
+    "displayName": "Artesa de Segre, Noguera, Lleida, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343318"
+  },
+  "badalona": {
+    "town": "Badalona",
+    "lat": 41.4493539,
+    "lon": 2.248254,
+    "verifiedQuery": "Badalona, Catalunya, Espanya",
+    "displayName": "Badalona, Barcelonès, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347954"
+  },
+  "balaguer": {
+    "town": "Balaguer",
+    "lat": 41.7896408,
+    "lon": 0.8050711,
+    "verifiedQuery": "Balaguer, Catalunya, Espanya",
+    "displayName": "Balaguer, Noguera, Lleida, Catalunya, 25600, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339817"
+  },
+  "banyeres del penedes": {
+    "town": "Banyeres del Penedès",
+    "lat": 41.2791532,
+    "lon": 1.5813324,
+    "verifiedQuery": "Banyeres del Penedès, Catalunya, Espanya",
+    "displayName": "Banyeres del Penedès, Baix Penedès, Tarragona, Catalunya, 43711, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342337"
+  },
+  "banyoles": {
+    "town": "Banyoles",
+    "lat": 42.1180477,
+    "lon": 2.7653607,
+    "verifiedQuery": "Banyoles, Catalunya, Espanya",
+    "displayName": "Banyoles, Pla de l'Estany, Girona, Catalunya, 17820, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343842"
+  },
+  "barcelona": {
+    "town": "Barcelona",
+    "lat": 41.3825802,
+    "lon": 2.177073,
+    "verifiedQuery": "Barcelona, Catalunya, Espanya",
+    "displayName": "Barcelona, Barcelonès, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347950"
+  },
+  "barcelona sants": {
+    "town": "Barcelona · Sants",
+    "lat": 41.3753288,
+    "lon": 2.1349117,
+    "verifiedQuery": "Sants, Barcelona, Catalunya, Espanya",
+    "displayName": "Sants, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalunya, 08014, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/4130117"
+  },
+  "bcn sants": {
+    "town": "Barcelona · Sants",
+    "lat": 41.3753288,
+    "lon": 2.1349117,
+    "verifiedQuery": "Sants, Barcelona, Catalunya, Espanya",
+    "displayName": "Sants, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalunya, 08014, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/4130117"
+  },
+  "begues": {
+    "town": "Begues",
+    "lat": 41.3328119,
+    "lon": 1.925468,
+    "verifiedQuery": "Begues, Catalunya, Espanya",
+    "displayName": "Begues, Baix Llobregat, Barcelona, Catalunya, 08859, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343715"
+  },
+  "bellpuig": {
+    "town": "Bellpuig",
+    "lat": 41.6254383,
+    "lon": 1.0117111,
+    "verifiedQuery": "Bellpuig, Catalunya, Espanya",
+    "displayName": "Bellpuig, Urgell, Lleida, Catalunya, 25250, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344262"
+  },
+  "bellvitge": {
+    "town": "Bellvitge",
+    "lat": 41.3509388,
+    "lon": 2.1076003,
+    "verifiedQuery": "Bellvitge, Catalunya, Espanya",
+    "displayName": "Bellvitge, Districte VI, l'Hospitalet de Llobregat, Barcelonès, Barcelona, Catalunya, 08907, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/10401822"
+  },
+  "besalu": {
+    "town": "Besalú",
+    "lat": 42.1986443,
+    "lon": 2.6959559,
+    "verifiedQuery": "Besalú, Catalunya, Espanya",
+    "displayName": "Besalú, Garrotxa, Girona, Catalunya, 17850, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343835"
+  },
+  "blanes": {
+    "town": "Blanes",
+    "lat": 41.6756178,
+    "lon": 2.7932391,
+    "verifiedQuery": "Blanes, Catalunya, Espanya",
+    "displayName": "Blanes, la Selva, Girona, Catalunya, 17300, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348890"
+  },
+  "cabrera de mar": {
+    "town": "Cabrera de Mar",
+    "lat": 41.5276986,
+    "lon": 2.3925117,
+    "verifiedQuery": "Cabrera de Mar, Catalunya, Espanya",
+    "displayName": "Cabrera de Mar, Maresme, Barcelona, Catalunya, 08349, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343710"
+  },
+  "cabrils": {
+    "town": "Cabrils",
+    "lat": 41.5262354,
+    "lon": 2.3676258,
+    "verifiedQuery": "Cabrils, Catalunya, Espanya",
+    "displayName": "Cabrils, Maresme, Barcelona, Catalunya, 08348, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348824"
+  },
+  "calafell": {
+    "town": "Calafell",
+    "lat": 41.2010618,
+    "lon": 1.5686734,
+    "verifiedQuery": "Calafell, Catalunya, Espanya",
+    "displayName": "Calafell, Baix Penedès, Tarragona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346549"
+  },
+  "caldes de malavella": {
+    "town": "Caldes de Malavella",
+    "lat": 41.8282907,
+    "lon": 2.8073845,
+    "verifiedQuery": "Caldes de Malavella, Catalunya, Espanya",
+    "displayName": "Caldes de Malavella, la Selva, Girona, Catalunya, 17455, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344129"
+  },
+  "caldes de montbui": {
+    "town": "Caldes de Montbui",
+    "lat": 41.6344802,
+    "lon": 2.1626124,
+    "verifiedQuery": "Caldes de Montbui, Catalunya, Espanya",
+    "displayName": "Caldes de Montbui, Vallès Oriental, Barcelona, Catalunya, 08140, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348827"
+  },
+  "calella": {
+    "town": "Calella",
+    "lat": 41.6132925,
+    "lon": 2.6576102,
+    "verifiedQuery": "Calella, Catalunya, Espanya",
+    "displayName": "Calella, Maresme, Barcelona, Catalunya, 08370, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348412"
+  },
+  "calldetenes": {
+    "town": "Calldetenes",
+    "lat": 41.9257651,
+    "lon": 2.2834318,
+    "verifiedQuery": "Calldetenes, Catalunya, Espanya",
+    "displayName": "Calldetenes, Osona, Barcelona, Catalunya, 08506, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348823"
+  },
+  "calonge": {
+    "town": "Calonge",
+    "lat": 41.8621982,
+    "lon": 3.0747803,
+    "verifiedQuery": "Calonge, Catalunya, Espanya",
+    "displayName": "Calonge, Calonge i Sant Antoni, Baix Empordà, Girona, Catalunya, 17251, Espanya",
+    "osmType": "village",
+    "osmId": "node/1470838168"
+  },
+  "cambrils": {
+    "town": "Cambrils",
+    "lat": 41.0679423,
+    "lon": 1.0657579,
+    "verifiedQuery": "Cambrils, Catalunya, Espanya",
+    "displayName": "Cambrils, Baix Camp, Tarragona, Catalunya, 43850, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346541"
+  },
+  "campdevanol": {
+    "town": "Campdevànol",
+    "lat": 42.2230582,
+    "lon": 2.1680717,
+    "verifiedQuery": "Campdevànol, Catalunya, Espanya",
+    "displayName": "Campdevànol, Ripollès, Girona, Catalunya, 17530, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344132"
+  },
+  "campllong": {
+    "town": "Campllong",
+    "lat": 41.8948831,
+    "lon": 2.8309625,
+    "verifiedQuery": "Campllong, Catalunya, Espanya",
+    "displayName": "Campllong, Gironès, Girona, Catalunya, 17459, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344134"
+  },
+  "camprodon": {
+    "town": "Camprodon",
+    "lat": 42.3127896,
+    "lon": 2.364926,
+    "verifiedQuery": "Camprodon, Catalunya, Espanya",
+    "displayName": "Camprodon, Ripollès, Girona, Catalunya, 17867, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344135"
+  },
+  "canet de mar": {
+    "town": "Canet de Mar",
+    "lat": 41.5900933,
+    "lon": 2.5777998,
+    "verifiedQuery": "Canet de Mar, Catalunya, Espanya",
+    "displayName": "Canet de Mar, Maresme, Barcelona, Catalunya, 08360, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344061"
+  },
+  "capellades": {
+    "town": "Capellades",
+    "lat": 41.53,
+    "lon": 1.684787,
+    "verifiedQuery": "Capellades, Catalunya, Espanya",
+    "displayName": "Capellades, Anoia, Barcelona, Catalunya, 08786, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344065"
+  },
+  "cardedeu": {
+    "town": "Cardedeu",
+    "lat": 41.6385167,
+    "lon": 2.3558408,
+    "verifiedQuery": "Cardedeu, Catalunya, Espanya",
+    "displayName": "Cardedeu, Vallès Oriental, Barcelona, Catalunya, 08440, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344067"
+  },
+  "cassa de la selva": {
+    "town": "Cassà de la Selva",
+    "lat": 41.8874685,
+    "lon": 2.8742461,
+    "verifiedQuery": "Cassà de la Selva, Catalunya, Espanya",
+    "displayName": "Cassà de la Selva, Gironès, Girona, Catalunya, 17244, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347510"
+  },
+  "castellar": {
+    "town": "Castellar del Vallès",
+    "lat": 41.6138122,
+    "lon": 2.0875963,
+    "verifiedQuery": "Castellar del Vallès, Catalunya, Espanya",
+    "displayName": "Castellar del Vallès, Vallès Occidental, Barcelona, Catalunya, 08211, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339616"
+  },
+  "castellar del valles": {
+    "town": "Castellar del Vallès",
+    "lat": 41.6138122,
+    "lon": 2.0875963,
+    "verifiedQuery": "Castellar del Vallès, Catalunya, Espanya",
+    "displayName": "Castellar del Vallès, Vallès Occidental, Barcelona, Catalunya, 08211, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339616"
+  },
+  "castello d empuries": {
+    "town": "Castelló d'Empúries",
+    "lat": 42.2591074,
+    "lon": 3.0746425,
+    "verifiedQuery": "Castelló d'Empúries, Catalunya, Espanya",
+    "displayName": "Castelló d'Empúries, Alt Empordà, Girona, Catalunya, 17486, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347511"
+  },
+  "centelles": {
+    "town": "Centelles",
+    "lat": 41.7981296,
+    "lon": 2.2218056,
+    "verifiedQuery": "Centelles, Catalunya, Espanya",
+    "displayName": "Centelles, Osona, Barcelona, Catalunya, 08540, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344374"
+  },
+  "cerdanyola del valles": {
+    "town": "Cerdanyola del Vallés",
+    "lat": 41.4909972,
+    "lon": 2.1405506,
+    "verifiedQuery": "Cerdanyola del Vallés, Catalunya, Espanya",
+    "displayName": "Cerdanyola del Vallès, Vallès Occidental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346442"
+  },
+  "ceret": {
+    "town": "Céret",
+    "lat": 42.485804,
+    "lon": 2.7488069,
+    "verifiedQuery": "Céret, Pyrénées-Orientales, France",
+    "displayName": "Ceret, Pirineus Orientals, Occitània, França metropolitana, 66400, França",
+    "osmType": "administrative",
+    "osmId": "relation/23266"
+  },
+  "collbato": {
+    "town": "Collbató",
+    "lat": 41.570256,
+    "lon": 1.8285814,
+    "verifiedQuery": "Collbató, Catalunya, Espanya",
+    "displayName": "Collbató, Baix Llobregat, Barcelona, Catalunya, 08293, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344372"
+  },
+  "coma ruga": {
+    "town": "Coma-ruga",
+    "lat": 41.181593,
+    "lon": 1.5230383,
+    "verifiedQuery": "Coma-ruga, Catalunya, Espanya",
+    "displayName": "Coma-ruga, el Vendrell, Baix Penedès, Tarragona, Catalunya, 43880, Espanya",
+    "osmType": "neighbourhood",
+    "osmId": "node/440667419"
+  },
+  "comarruga": {
+    "town": "Coma-ruga",
+    "lat": 41.181593,
+    "lon": 1.5230383,
+    "verifiedQuery": "Coma-ruga, Catalunya, Espanya",
+    "displayName": "Coma-ruga, el Vendrell, Baix Penedès, Tarragona, Catalunya, 43880, Espanya",
+    "osmType": "neighbourhood",
+    "osmId": "node/440667419"
+  },
+  "cornella": {
+    "town": "Cornellà de Llobregat",
+    "lat": 41.355724,
+    "lon": 2.0706225,
+    "verifiedQuery": "Cornellà de Llobregat, Catalunya, Espanya",
+    "displayName": "Cornellà de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08940, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339968"
+  },
+  "cornella de llobregat": {
+    "town": "Cornellà de Llobregat",
+    "lat": 41.355724,
+    "lon": 2.0706225,
+    "verifiedQuery": "Cornellà de Llobregat, Catalunya, Espanya",
+    "displayName": "Cornellà de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08940, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339968"
+  },
+  "cubelles": {
+    "town": "Cubelles",
+    "lat": 41.2083363,
+    "lon": 1.6730541,
+    "verifiedQuery": "Cubelles, Catalunya, Espanya",
+    "displayName": "Cubelles, Garraf, Barcelona, Catalunya, 08880, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339969"
+  },
+  "cunit": {
+    "town": "Cunit",
+    "lat": 41.197596,
+    "lon": 1.6344596,
+    "verifiedQuery": "Cunit, Catalunya, Espanya",
+    "displayName": "Cunit, Baix Penedès, Tarragona, Catalunya, 43881, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346230"
+  },
+  "el catllar": {
+    "town": "El Catllar",
+    "lat": 41.1748794,
+    "lon": 1.3256814,
+    "verifiedQuery": "El Catllar, Catalunya, Espanya",
+    "displayName": "el Catllar, Tarragonès, Tarragona, Catalunya, 43150, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342007"
+  },
+  "el masnou": {
+    "town": "El Masnou",
+    "lat": 41.4796899,
+    "lon": 2.3118347,
+    "verifiedQuery": "El Masnou, Catalunya, Espanya",
+    "displayName": "el Masnou, Maresme, Barcelona, Catalunya, 08320, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340689"
+  },
+  "el morell": {
+    "town": "El Morell",
+    "lat": 41.1923512,
+    "lon": 1.2071006,
+    "verifiedQuery": "El Morell, Catalunya, Espanya",
+    "displayName": "el Morell, Tarragonès, Tarragona, Catalunya, 43760, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348135"
+  },
+  "el prat de llobregat": {
+    "town": "El Prat de Llobregat",
+    "lat": 41.3305918,
+    "lon": 2.0930815,
+    "verifiedQuery": "El Prat de Llobregat, Catalunya, Espanya",
+    "displayName": "el Prat de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08820, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345761"
+  },
+  "el vendrell": {
+    "town": "El Vendrell",
+    "lat": 41.2199677,
+    "lon": 1.5348566,
+    "verifiedQuery": "El Vendrell, Catalunya, Espanya",
+    "displayName": "el Vendrell, Baix Penedès, Tarragona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340193"
+  },
+  "encamp": {
+    "town": "Encamp",
+    "lat": 42.5360425,
+    "lon": 1.5836096,
+    "verifiedQuery": "Encamp, Andorra",
+    "displayName": "Encamp, AD200, Andorra",
+    "osmType": "administrative",
+    "osmId": "relation/2804755"
+  },
+  "esparreguera": {
+    "town": "Esparreguera",
+    "lat": 41.5389434,
+    "lon": 1.8705935,
+    "verifiedQuery": "Esparreguera, Catalunya, Espanya",
+    "displayName": "Esparreguera, Baix Llobregat, Barcelona, Catalunya, 08292, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339971"
+  },
+  "esplugues": {
+    "town": "Esplugues de Llobregat",
+    "lat": 41.3778094,
+    "lon": 2.0886257,
+    "verifiedQuery": "Esplugues de Llobregat, Catalunya, Espanya",
+    "displayName": "Esplugues de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08950, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339972"
+  },
+  "esplugues de llobregat": {
+    "town": "Esplugues de Llobregat",
+    "lat": 41.3778094,
+    "lon": 2.0886257,
+    "verifiedQuery": "Esplugues de Llobregat, Catalunya, Espanya",
+    "displayName": "Esplugues de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08950, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339972"
+  },
+  "falset": {
+    "town": "Falset",
+    "lat": 41.1450982,
+    "lon": 0.8196237,
+    "verifiedQuery": "Falset, Catalunya, Espanya",
+    "displayName": "Falset, Priorat, Tarragona, Catalunya, 43730, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346234"
+  },
+  "figueres": {
+    "town": "Figueres",
+    "lat": 42.2666314,
+    "lon": 2.9638434,
+    "verifiedQuery": "Figueres, Catalunya, Espanya",
+    "displayName": "Figueres, Alt Empordà, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347769"
+  },
+  "gava": {
+    "town": "Gavà",
+    "lat": 41.3050933,
+    "lon": 2.0063126,
+    "verifiedQuery": "Gavà, Catalunya, Espanya",
+    "displayName": "Gavà, Baix Llobregat, Barcelona, Catalunya, 08850, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342072"
+  },
+  "girona": {
+    "town": "Girona",
+    "lat": 41.9793006,
+    "lon": 2.8199439,
+    "verifiedQuery": "Girona, Catalunya, Espanya",
+    "displayName": "Girona, Gironès, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343535"
+  },
+  "granollers": {
+    "town": "Granollers",
+    "lat": 41.6079555,
+    "lon": 2.2876008,
+    "verifiedQuery": "Granollers, Catalunya, Espanya",
+    "displayName": "Granollers, Vallès Oriental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346608"
+  },
+  "guineueta": {
+    "town": "Guineueta",
+    "lat": 41.4399106,
+    "lon": 2.1736655,
+    "verifiedQuery": "Guineueta, Catalunya, Espanya",
+    "displayName": "Guineueta, Carrer de l'Artesania, la Guineueta, Nou Barris, Barcelona, Barcelonès, Barcelona, Catalunya, 08042, Espanya",
+    "osmType": "artwork",
+    "osmId": "node/6875182086"
+  },
+  "horta de sant joan": {
+    "town": "Horta de Sant Joan",
+    "lat": 40.9554904,
+    "lon": 0.315402,
+    "verifiedQuery": "Horta de Sant Joan, Catalunya, Espanya",
+    "displayName": "Horta de Sant Joan, Terra Alta, Tarragona, Catalunya, 43596, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345943"
+  },
+  "hospitalet de llobregat": {
+    "town": "L'Hospitalet de Llobregat",
+    "lat": 41.3595118,
+    "lon": 2.0996318,
+    "verifiedQuery": "L'Hospitalet de Llobregat, Catalunya, Espanya",
+    "displayName": "l'Hospitalet de Llobregat, Barcelonès, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345401"
+  },
+  "hostalets de balenya": {
+    "town": "Hostalets de Balenyà",
+    "lat": 41.812365,
+    "lon": 2.2349568,
+    "verifiedQuery": "Hostalets de Balenyà, Catalunya, Espanya",
+    "displayName": "els Hostalets de Balenyà, Balenyà, Osona, Barcelona, Catalunya, 08550, Espanya",
+    "osmType": "village",
+    "osmId": "node/393934080"
+  },
+  "igualada": {
+    "town": "Igualada",
+    "lat": 41.5790182,
+    "lon": 1.617346,
+    "verifiedQuery": "Igualada, Catalunya, Espanya",
+    "displayName": "Igualada, Anoia, Barcelona, Catalunya, 08700, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345402"
+  },
+  "isil": {
+    "town": "Isil",
+    "lat": 42.678953,
+    "lon": 1.085161,
+    "verifiedQuery": "Isil, Catalunya, Espanya",
+    "displayName": "Isil, Alt Àneu, Pallars Sobirà, Lleida, Catalunya, 25586, Espanya",
+    "osmType": "hamlet",
+    "osmId": "node/280718788"
+  },
+  "jafre": {
+    "town": "Jafre",
+    "lat": 42.0726347,
+    "lon": 3.0107448,
+    "verifiedQuery": "Jafre, Catalunya, Espanya",
+    "displayName": "Jafre, Baix Empordà, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340345"
+  },
+  "l arboc": {
+    "town": "L'Arboç",
+    "lat": 41.2677369,
+    "lon": 1.6037535,
+    "verifiedQuery": "L'Arboç, Catalunya, Espanya",
+    "displayName": "l'Arboç, Baix Penedès, Tarragona, Catalunya, 43720, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346856"
+  },
+  "l escala": {
+    "town": "L'Escala",
+    "lat": 42.113535,
+    "lon": 3.1387422,
+    "verifiedQuery": "L'Escala, Catalunya, Espanya",
+    "displayName": "l'Escala, Alt Empordà, Girona, Catalunya, 17130, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347765"
+  },
+  "l esquirol": {
+    "town": "L'Esquirol",
+    "lat": 42.0340216,
+    "lon": 2.3697082,
+    "verifiedQuery": "L'Esquirol, Catalunya, Espanya",
+    "displayName": "l'Esquirol, Osona, Barcelona, Catalunya, 08511, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339488"
+  },
+  "l hospitalet de llobregat": {
+    "town": "L'Hospitalet de Llobregat",
+    "lat": 41.3595118,
+    "lon": 2.0996318,
+    "verifiedQuery": "L'Hospitalet de Llobregat, Catalunya, Espanya",
+    "displayName": "l'Hospitalet de Llobregat, Barcelonès, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345401"
+  },
+  "la bisbal d emporda": {
+    "town": "La Bisbal d'Empordà",
+    "lat": 41.9598687,
+    "lon": 3.039616,
+    "verifiedQuery": "La Bisbal d'Empordà, Catalunya, Espanya",
+    "displayName": "la Bisbal d'Empordà, Baix Empordà, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348891"
+  },
+  "la bisbal de l emporda": {
+    "town": "La Bisbal d'Empordà",
+    "lat": 41.9598687,
+    "lon": 3.039616,
+    "verifiedQuery": "La Bisbal d'Empordà, Catalunya, Espanya",
+    "displayName": "la Bisbal d'Empordà, Baix Empordà, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348891"
+  },
+  "la floresta": {
+    "town": "La Floresta",
+    "lat": 41.5103082,
+    "lon": 0.9195489,
+    "verifiedQuery": "La Floresta, Catalunya, Espanya",
+    "displayName": "la Floresta, Garrigues, Lleida, Catalunya, 25413, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342359"
+  },
+  "la galera": {
+    "town": "La Galera",
+    "lat": 40.6823929,
+    "lon": 0.4637029,
+    "verifiedQuery": "La Galera, Catalunya, Espanya",
+    "displayName": "la Galera, Montsià, Tarragona, Catalunya, 43515, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341700"
+  },
+  "la garriga": {
+    "town": "La Garriga",
+    "lat": 41.6849111,
+    "lon": 2.2865796,
+    "verifiedQuery": "La Garriga, Catalunya, Espanya",
+    "displayName": "la Garriga, Vallès Oriental, Barcelona, Catalunya, 08530, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342073"
+  },
+  "la guineueta": {
+    "town": "La Guineueta",
+    "lat": 41.4403026,
+    "lon": 2.1704023,
+    "verifiedQuery": "La Guineueta, Catalunya, Espanya",
+    "displayName": "la Guineueta, Nou Barris, Barcelona, Barcelonès, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/4143624"
+  },
+  "la llagosta": {
+    "town": "La Llagosta",
+    "lat": 41.5131188,
+    "lon": 2.1931226,
+    "verifiedQuery": "La Llagosta, Catalunya, Espanya",
+    "displayName": "la Llagosta, Vallès Oriental, Barcelona, Catalunya, 08120, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345397"
+  },
+  "la pobla de claramunt": {
+    "town": "La Pobla de Claramunt",
+    "lat": 41.5551874,
+    "lon": 1.6747485,
+    "verifiedQuery": "La Pobla de Claramunt, Catalunya, Espanya",
+    "displayName": "la Pobla de Claramunt, Anoia, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340843"
+  },
+  "la vall de bianya": {
+    "town": "La Vall de Bianya",
+    "lat": 42.2415208,
+    "lon": 2.4326305,
+    "verifiedQuery": "La Vall de Bianya, Catalunya, Espanya",
+    "displayName": "la Vall de Bianya, Garrotxa, Girona, Catalunya, 17813, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343306"
+  },
+  "les franqueses del valles": {
+    "town": "Les Franqueses del Vallès",
+    "lat": 41.647559,
+    "lon": 2.3091778,
+    "verifiedQuery": "Les Franqueses del Vallès, Catalunya, Espanya",
+    "displayName": "les Franqueses del Vallès, Vallès Oriental, Barcelona, Catalunya, 08520, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342067"
+  },
+  "les masies de roda": {
+    "town": "Les Masies de Roda",
+    "lat": 41.9900725,
+    "lon": 2.3064465,
+    "verifiedQuery": "Les Masies de Roda, Catalunya, Espanya",
+    "displayName": "les Masies de Roda, Osona, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340697"
+  },
+  "les masies de voltrega": {
+    "town": "Les Masies de Voltregà",
+    "lat": 42.0267288,
+    "lon": 2.2347147,
+    "verifiedQuery": "Les Masies de Voltregà, Catalunya, Espanya",
+    "displayName": "les Masies de Voltregà, Osona, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340696"
+  },
+  "les planes d hostoles": {
+    "town": "Les Planes d'Hostoles",
+    "lat": 42.0565983,
+    "lon": 2.5384283,
+    "verifiedQuery": "Les Planes d'Hostoles, Catalunya, Espanya",
+    "displayName": "les Planes d'Hostoles, Garrotxa, Girona, Catalunya, 17172, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345220"
+  },
+  "les preses": {
+    "town": "Les Preses",
+    "lat": 42.1450901,
+    "lon": 2.4592158,
+    "verifiedQuery": "Les Preses, Catalunya, Espanya",
+    "displayName": "les Preses, Garrotxa, Girona, Catalunya, 17178, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345216"
+  },
+  "llagostera": {
+    "town": "Llagostera",
+    "lat": 41.8289064,
+    "lon": 2.8920386,
+    "verifiedQuery": "Llagostera, Catalunya, Espanya",
+    "displayName": "Llagostera, Gironès, Girona, Catalunya, 17240, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340349"
+  },
+  "llavaneres": {
+    "town": "Sant Andreu de Llavaneres",
+    "lat": 41.5739524,
+    "lon": 2.4828158,
+    "verifiedQuery": "Sant Andreu de Llavaneres, Catalunya, Espanya",
+    "displayName": "Sant Andreu de Llavaneres, Maresme, Barcelona, Catalunya, 08392, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348947"
+  },
+  "llica de vall": {
+    "town": "Lliça de Vall",
+    "lat": 41.5863002,
+    "lon": 2.2391397,
+    "verifiedQuery": "Lliça de Vall, Catalunya, Espanya",
+    "displayName": "Lliçà de Vall, Vallès Oriental, Barcelona, Catalunya, 08185, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345405"
+  },
+  "llinars del valles": {
+    "town": "Llinars del Vallès",
+    "lat": 41.6400252,
+    "lon": 2.3978389,
+    "verifiedQuery": "Llinars del Vallès, Catalunya, Espanya",
+    "displayName": "Llinars del Vallès, Vallès Oriental, Barcelona, Catalunya, 08450, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345398"
+  },
+  "llorenc del penedes": {
+    "town": "Llorenç del Penedès",
+    "lat": 41.2831394,
+    "lon": 1.5533507,
+    "verifiedQuery": "Llorenç del Penedès, Catalunya, Espanya",
+    "displayName": "Llorenç del Penedès, Baix Penedès, Tarragona, Catalunya, 43712, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342470"
+  },
+  "lloret de mar": {
+    "town": "Lloret de Mar",
+    "lat": 41.6973503,
+    "lon": 2.8392392,
+    "verifiedQuery": "Lloret de Mar, Catalunya, Espanya",
+    "displayName": "Lloret de Mar, la Selva, Girona, Catalunya, 17310, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345039"
+  },
+  "malgrat de mar": {
+    "town": "Malgrat de Mar",
+    "lat": 41.6459118,
+    "lon": 2.7414054,
+    "verifiedQuery": "Malgrat de Mar, Catalunya, Espanya",
+    "displayName": "Malgrat de Mar, Maresme, Barcelona, Catalunya, 08380, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346734"
+  },
+  "manlleu": {
+    "town": "Manlleu",
+    "lat": 41.9999811,
+    "lon": 2.2841159,
+    "verifiedQuery": "Manlleu, Catalunya, Espanya",
+    "displayName": "Manlleu, Osona, Barcelona, Catalunya, 08560, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340920"
+  },
+  "manresa": {
+    "town": "Manresa",
+    "lat": 41.7288939,
+    "lon": 1.8286765,
+    "verifiedQuery": "Manresa, Catalunya, Espanya",
+    "displayName": "Manresa, Bages, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346721"
+  },
+  "martorell": {
+    "town": "Martorell",
+    "lat": 41.4743886,
+    "lon": 1.9307159,
+    "verifiedQuery": "Martorell, Catalunya, Espanya",
+    "displayName": "Martorell, Baix Llobregat, Barcelona, Catalunya, 08760, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346746"
+  },
+  "martorelles": {
+    "town": "Martorelles",
+    "lat": 41.52851,
+    "lon": 2.2374755,
+    "verifiedQuery": "Martorelles, Catalunya, Espanya",
+    "displayName": "Martorelles, Vallès Oriental, Barcelona, Catalunya, 08107, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340908"
+  },
+  "masnou": {
+    "town": "El Masnou",
+    "lat": 41.4796899,
+    "lon": 2.3118347,
+    "verifiedQuery": "El Masnou, Catalunya, Espanya",
+    "displayName": "el Masnou, Maresme, Barcelona, Catalunya, 08320, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340689"
+  },
+  "masquefa": {
+    "town": "Masquefa",
+    "lat": 41.5026351,
+    "lon": 1.8110722,
+    "verifiedQuery": "Masquefa, Catalunya, Espanya",
+    "displayName": "Masquefa, Anoia, Barcelona, Catalunya, 08783, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340791"
+  },
+  "matadepera": {
+    "town": "Matadepera",
+    "lat": 41.6012311,
+    "lon": 2.0275199,
+    "verifiedQuery": "Matadepera, Catalunya, Espanya",
+    "displayName": "Matadepera, Vallès Occidental, Barcelona, Catalunya, 08230, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345823"
+  },
+  "mataro": {
+    "town": "Mataró",
+    "lat": 41.5399994,
+    "lon": 2.4448577,
+    "verifiedQuery": "Mataró, Catalunya, Espanya",
+    "displayName": "Mataró, Maresme, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345587"
+  },
+  "moia": {
+    "town": "Moià",
+    "lat": 41.8130391,
+    "lon": 2.0978412,
+    "verifiedQuery": "Moià, Catalunya, Espanya",
+    "displayName": "Moià, Moianès, Barcelona, Catalunya, 08180, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340374"
+  },
+  "molins de rei": {
+    "town": "Molins de Rei",
+    "lat": 41.4138087,
+    "lon": 2.0159626,
+    "verifiedQuery": "Molins de Rei, Catalunya, Espanya",
+    "displayName": "Molins de Rei, Baix Llobregat, Barcelona, Catalunya, 08750, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345583"
+  },
+  "mollet": {
+    "town": "Mollet del Vallès",
+    "lat": 41.5393484,
+    "lon": 2.2130934,
+    "verifiedQuery": "Mollet del Vallès, Catalunya, Espanya",
+    "displayName": "Mollet del Vallès, Vallès Oriental, Barcelona, Catalunya, 08100, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345553"
+  },
+  "mollet del valles": {
+    "town": "Mollet del Vallès",
+    "lat": 41.5393484,
+    "lon": 2.2130934,
+    "verifiedQuery": "Mollet del Vallès, Catalunya, Espanya",
+    "displayName": "Mollet del Vallès, Vallès Oriental, Barcelona, Catalunya, 08100, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345553"
+  },
+  "montesquiu": {
+    "town": "Montesquiu",
+    "lat": 42.108728,
+    "lon": 2.2086111,
+    "verifiedQuery": "Montesquiu, Catalunya, Espanya",
+    "displayName": "Montesquiu, Osona, Barcelona, Catalunya, 08585, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340379"
+  },
+  "montmelo": {
+    "town": "Montmeló",
+    "lat": 41.5515189,
+    "lon": 2.2480812,
+    "verifiedQuery": "Montmeló, Catalunya, Espanya",
+    "displayName": "Montmeló, Vallès Oriental, Barcelona, Catalunya, 08160, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340375"
+  },
+  "montserrat": {
+    "town": "Montserrat",
+    "lat": 41.5941815,
+    "lon": 1.8395857,
+    "verifiedQuery": "Monestir de Montserrat, Catalunya, Espanya",
+    "displayName": "Monestir de Montserrat, Monistrol de Montserrat, Bages, Barcelona, Catalunya, 08199, Espanya",
+    "osmType": "hamlet",
+    "osmId": "node/12638528830"
+  },
+  "navarcles": {
+    "town": "Navarcles",
+    "lat": 41.7531567,
+    "lon": 1.9033612,
+    "verifiedQuery": "Navarcles, Catalunya, Espanya",
+    "displayName": "Navarcles, Bages, Barcelona, Catalunya, 08270, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345999"
+  },
+  "navas": {
+    "town": "Navàs",
+    "lat": 41.8895711,
+    "lon": 1.7940495,
+    "verifiedQuery": "Navàs, Catalunya, Espanya",
+    "displayName": "Navars, Bages, Barcelona, Catalunya, 08670, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346000"
+  },
+  "odena": {
+    "town": "Òdena",
+    "lat": 41.6068791,
+    "lon": 1.6422209,
+    "verifiedQuery": "Òdena, Catalunya, Espanya",
+    "displayName": "Òdena, Anoia, Barcelona, Catalunya, 08711, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345423"
+  },
+  "olesa de montserrat": {
+    "town": "Olesa de Montserrat",
+    "lat": 41.5439614,
+    "lon": 1.8913809,
+    "verifiedQuery": "Olesa de Montserrat, Catalunya, Espanya",
+    "displayName": "Olesa de Montserrat, Baix Llobregat, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342826"
+  },
+  "olot": {
+    "town": "Olot",
+    "lat": 42.1822177,
+    "lon": 2.4890211,
+    "verifiedQuery": "Olot, Catalunya, Espanya",
+    "displayName": "Olot, Garrotxa, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348970"
+  },
+  "osseja": {
+    "town": "Osséja",
+    "lat": 42.4150541,
+    "lon": 1.9811191,
+    "verifiedQuery": "Osséja, Pyrénées-Orientales, France",
+    "displayName": "Oceja, Prada, Pirineus Orientals, Occitània, França metropolitana, 66340, França",
+    "osmType": "administrative",
+    "osmId": "relation/80067"
+  },
+  "palamos": {
+    "town": "Palamós",
+    "lat": 41.8495354,
+    "lon": 3.1278785,
+    "verifiedQuery": "Palamós, Catalunya, Espanya",
+    "displayName": "Palamós, Baix Empordà, Girona, Catalunya, 17230, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345522"
+  },
+  "palau solita i plegamans": {
+    "town": "Palau-solità i Plegamans",
+    "lat": 41.5875286,
+    "lon": 2.1786438,
+    "verifiedQuery": "Palau-solità i Plegamans, Catalunya, Espanya",
+    "displayName": "Palau-solità i Plegamans, Vallès Occidental, Barcelona, Catalunya, 08184, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341789"
+  },
+  "palleja": {
+    "town": "Pallejà",
+    "lat": 41.4223067,
+    "lon": 1.9967356,
+    "verifiedQuery": "Pallejà, Catalunya, Espanya",
+    "displayName": "Pallejà, Baix Llobregat, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341413"
+  },
+  "pals": {
+    "town": "Pals",
+    "lat": 41.9709891,
+    "lon": 3.1460371,
+    "verifiedQuery": "Pals, Catalunya, Espanya",
+    "displayName": "Pals, Baix Empordà, Girona, Catalunya, 17256, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340871"
+  },
+  "parets del valles": {
+    "town": "Parets del Vallès",
+    "lat": 41.5729405,
+    "lon": 2.2338087,
+    "verifiedQuery": "Parets del Vallès, Catalunya, Espanya",
+    "displayName": "Parets del Vallès, Vallès Oriental, Barcelona, Catalunya, 08150, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341410"
+  },
+  "pineda de mar": {
+    "town": "Pineda de Mar",
+    "lat": 41.6276807,
+    "lon": 2.6898707,
+    "verifiedQuery": "Pineda de Mar, Catalunya, Espanya",
+    "displayName": "Pineda de Mar, Maresme, Barcelona, Catalunya, 08397, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345696"
+  },
+  "pobla de claramunt": {
+    "town": "La Pobla de Claramunt",
+    "lat": 41.5551874,
+    "lon": 1.6747485,
+    "verifiedQuery": "La Pobla de Claramunt, Catalunya, Espanya",
+    "displayName": "la Pobla de Claramunt, Anoia, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340843"
+  },
+  "ponts": {
+    "town": "Ponts",
+    "lat": 41.9154944,
+    "lon": 1.1863072,
+    "verifiedQuery": "Ponts, Catalunya, Espanya",
+    "displayName": "Ponts, Noguera, Lleida, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342834"
+  },
+  "prada de conflent": {
+    "town": "Prada de Conflent",
+    "lat": 42.6181232,
+    "lon": 2.4230925,
+    "verifiedQuery": "Prades, Pyrénées-Orientales, France",
+    "displayName": "Prada, Pirineus Orientals, Occitània, França metropolitana, 66500, França",
+    "osmType": "administrative",
+    "osmId": "relation/20224"
+  },
+  "prats de llucanes": {
+    "town": "Prats de Lluçanès",
+    "lat": 42.0085421,
+    "lon": 2.0298689,
+    "verifiedQuery": "Prats de Lluçanès, Catalunya, Espanya",
+    "displayName": "Prats de Lluçanès, Lluçanès, Barcelona, Catalunya, 08513, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341046"
+  },
+  "premia de mar": {
+    "town": "Premià de Mar",
+    "lat": 41.4926822,
+    "lon": 2.3605846,
+    "verifiedQuery": "Premià de Mar, Catalunya, Espanya",
+    "displayName": "Premià de Mar, Maresme, Barcelona, Catalunya, 08330, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341049"
+  },
+  "ribes de freser": {
+    "town": "Ribes de Freser",
+    "lat": 42.3057283,
+    "lon": 2.167817,
+    "verifiedQuery": "Ribes de Freser, Catalunya, Espanya",
+    "displayName": "Ribes de Freser, Ripollès, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340542"
+  },
+  "ripoll": {
+    "town": "Ripoll",
+    "lat": 42.1982391,
+    "lon": 2.1932496,
+    "verifiedQuery": "Ripoll, Catalunya, Espanya",
+    "displayName": "Ripoll, Ripollès, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340544"
+  },
+  "ripollet": {
+    "town": "Ripollet",
+    "lat": 41.4993372,
+    "lon": 2.1573095,
+    "verifiedQuery": "Ripollet, Catalunya, Espanya",
+    "displayName": "Ripollet, Vallès Occidental, Barcelona, Catalunya, 08291, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344203"
+  },
+  "riudellots de la selva": {
+    "town": "Riudellots de la Selva",
+    "lat": 41.8954981,
+    "lon": 2.8022296,
+    "verifiedQuery": "Riudellots de la Selva, Catalunya, Espanya",
+    "displayName": "Riudellots de la Selva, la Selva, Girona, Catalunya, 17457, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344932"
+  },
+  "riudoms": {
+    "town": "Riudoms",
+    "lat": 41.1390915,
+    "lon": 1.0519702,
+    "verifiedQuery": "Riudoms, Catalunya, Espanya",
+    "displayName": "Riudoms, Baix Camp, Tarragona, Catalunya, 43330, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340858"
+  },
+  "roda de bara": {
+    "town": "Roda de Barà",
+    "lat": 41.1857961,
+    "lon": 1.4569904,
+    "verifiedQuery": "Roda de Barà, Catalunya, Espanya",
+    "displayName": "Roda de Berà, Tarragonès, Tarragona, Catalunya, 43883, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345490"
+  },
+  "roda de bera": {
+    "town": "Roda de Berà",
+    "lat": 41.1857961,
+    "lon": 1.4569904,
+    "verifiedQuery": "Roda de Berà, Catalunya, Espanya",
+    "displayName": "Roda de Berà, Tarragonès, Tarragona, Catalunya, 43883, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345490"
+  },
+  "roda de ter": {
+    "town": "Roda de Ter",
+    "lat": 41.9814126,
+    "lon": 2.3096755,
+    "verifiedQuery": "Roda de Ter, Catalunya, Espanya",
+    "displayName": "Roda de Ter, Osona, Barcelona, Catalunya, 08510, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344206"
+  },
+  "rubi": {
+    "town": "Rubí",
+    "lat": 41.4936194,
+    "lon": 2.0319476,
+    "verifiedQuery": "Rubí, Catalunya, Espanya",
+    "displayName": "Rubí, Vallès Occidental, Barcelona, Catalunya, 08191, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344200"
+  },
+  "s perpetua de mogoda": {
+    "town": "Santa Perpètua de Mogoda",
+    "lat": 41.5343245,
+    "lon": 2.1835803,
+    "verifiedQuery": "Santa Perpètua de Mogoda, Catalunya, Espanya",
+    "displayName": "Santa Perpètua de Mogoda, Vallès Occidental, Barcelona, Catalunya, 08130, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346444"
+  },
+  "s vicenc dels horts": {
+    "town": "Sant Vicenç dels Horts",
+    "lat": 41.3934193,
+    "lon": 2.0099482,
+    "verifiedQuery": "Sant Vicenç dels Horts, Catalunya, Espanya",
+    "displayName": "Sant Vicenç dels Horts, Baix Llobregat, Barcelona, Catalunya, 08620, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346445"
+  },
+  "sabadell": {
+    "town": "Sabadell",
+    "lat": 41.5460801,
+    "lon": 2.1083214,
+    "verifiedQuery": "Sabadell, Catalunya, Espanya",
+    "displayName": "Sabadell, Vallès Occidental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344202"
+  },
+  "sant andreu de llavaneres": {
+    "town": "Sant Andreu de Llavaneres",
+    "lat": 41.5739524,
+    "lon": 2.4828158,
+    "verifiedQuery": "Sant Andreu de Llavaneres, Catalunya, Espanya",
+    "displayName": "Sant Andreu de Llavaneres, Maresme, Barcelona, Catalunya, 08392, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/348947"
+  },
+  "sant boi": {
+    "town": "Sant Boi de Llobregat",
+    "lat": 41.3241016,
+    "lon": 2.0511278,
+    "verifiedQuery": "Sant Boi de Llobregat, Catalunya, Espanya",
+    "displayName": "Sant Boi de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08830, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347545"
+  },
+  "sant boi de llobregat": {
+    "town": "Sant Boi de Llobregat",
+    "lat": 41.3241016,
+    "lon": 2.0511278,
+    "verifiedQuery": "Sant Boi de Llobregat, Catalunya, Espanya",
+    "displayName": "Sant Boi de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08830, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347545"
+  },
+  "sant carles de la rapita": {
+    "town": "Sant Carles de la Ràpita",
+    "lat": 40.6178149,
+    "lon": 0.5900091,
+    "verifiedQuery": "Sant Carles de la Ràpita, Catalunya, Espanya",
+    "displayName": "la Ràpita, Montsià, Tarragona, Catalunya, 43540, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/345495"
+  },
+  "sant climent de llobregat": {
+    "town": "Sant Climent de Llobregat",
+    "lat": 41.3366993,
+    "lon": 1.9970575,
+    "verifiedQuery": "Sant Climent de Llobregat, Catalunya, Espanya",
+    "displayName": "Sant Climent de Llobregat, Baix Llobregat, Barcelona, Catalunya, 08849, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347541"
+  },
+  "sant cugat": {
+    "town": "Sant Cugat del Vallès",
+    "lat": 41.4707933,
+    "lon": 2.0848815,
+    "verifiedQuery": "Sant Cugat del Vallès, Catalunya, Espanya",
+    "displayName": "Sant Cugat del Vallès, Vallès Occidental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347540"
+  },
+  "sant cugat del valles": {
+    "town": "Sant Cugat del Vallès",
+    "lat": 41.4707933,
+    "lon": 2.0848815,
+    "verifiedQuery": "Sant Cugat del Vallès, Catalunya, Espanya",
+    "displayName": "Sant Cugat del Vallès, Vallès Occidental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347540"
+  },
+  "sant esteve sesrovires": {
+    "town": "Sant Esteve Sesrovires",
+    "lat": 41.4932429,
+    "lon": 1.8747348,
+    "verifiedQuery": "Sant Esteve Sesrovires, Catalunya, Espanya",
+    "displayName": "Sant Esteve Sesrovires, Baix Llobregat, Barcelona, Catalunya, 08635, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342427"
+  },
+  "sant feliu de guixols": {
+    "town": "Sant Feliu de Guíxols",
+    "lat": 41.7838827,
+    "lon": 3.0283195,
+    "verifiedQuery": "Sant Feliu de Guíxols, Catalunya, Espanya",
+    "displayName": "Sant Feliu de Guíxols, Baix Empordà, Girona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340210"
+  },
+  "sant feliu de pallerols": {
+    "town": "Sant Feliu de Pallerols",
+    "lat": 42.0758164,
+    "lon": 2.5078037,
+    "verifiedQuery": "Sant Feliu de Pallerols, Catalunya, Espanya",
+    "displayName": "Sant Feliu de Pallerols, Garrotxa, Girona, Catalunya, 17174, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340211"
+  },
+  "sant hipolit de voltrega": {
+    "town": "Sant Hipòlit de Voltregà",
+    "lat": 42.0152733,
+    "lon": 2.2376471,
+    "verifiedQuery": "Sant Hipòlit de Voltregà, Catalunya, Espanya",
+    "displayName": "Sant Hipòlit de Voltregà, Osona, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343447"
+  },
+  "sant joan de les abadesses": {
+    "town": "Sant Joan de les Abadesses",
+    "lat": 42.233743,
+    "lon": 2.2854845,
+    "verifiedQuery": "Sant Joan de les Abadesses, Catalunya, Espanya",
+    "displayName": "Sant Joan de les Abadesses, Ripollès, Girona, Catalunya, 17860, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340204"
+  },
+  "sant joan despi": {
+    "town": "Sant Joan Despí",
+    "lat": 41.3667951,
+    "lon": 2.0570346,
+    "verifiedQuery": "Sant Joan Despí, Catalunya, Espanya",
+    "displayName": "Sant Joan Despí, Baix Llobregat, Barcelona, Catalunya, 08970, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343449"
+  },
+  "sant julia de vilatorta": {
+    "town": "Sant Julià de Vilatorta",
+    "lat": 41.9219404,
+    "lon": 2.3240651,
+    "verifiedQuery": "Sant Julià de Vilatorta, Catalunya, Espanya",
+    "displayName": "Sant Julià de Vilatorta, Osona, Barcelona, Catalunya, 08504, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340438"
+  },
+  "sant just desvern": {
+    "town": "Sant Just Desvern",
+    "lat": 41.3858295,
+    "lon": 2.0757651,
+    "verifiedQuery": "Sant Just Desvern, Catalunya, Espanya",
+    "displayName": "Sant Just Desvern, Baix Llobregat, Barcelona, Catalunya, 08960, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347180"
+  },
+  "sant llorenc savall": {
+    "town": "Sant Llorenç Savall",
+    "lat": 41.6794647,
+    "lon": 2.0579669,
+    "verifiedQuery": "Sant Llorenç Savall, Catalunya, Espanya",
+    "displayName": "Sant Llorenç Savall, Vallès Occidental, Barcelona, Catalunya, 08212, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340439"
+  },
+  "sant magi de brufaganya": {
+    "town": "Sant Magí de Brufaganya",
+    "lat": 41.484539,
+    "lon": 1.4483835,
+    "verifiedQuery": "Sant Magí de Brufaganya, Catalunya, Espanya",
+    "displayName": "Sant Magí de Brufaganya, Ramal a Sant Magí de Brufaganya, Valldeperes, Pontils, Conca de Barberà, Tarragona, Catalunya, 43421, Espanya",
+    "osmType": "place_of_worship",
+    "osmId": "way/1177681700"
+  },
+  "sant pol de mar": {
+    "town": "Sant Pol de Mar",
+    "lat": 41.6030132,
+    "lon": 2.6238092,
+    "verifiedQuery": "Sant Pol de Mar, Catalunya, Espanya",
+    "displayName": "Sant Pol de Mar, Maresme, Barcelona, Catalunya, 08395, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341355"
+  },
+  "sant quirze de besora": {
+    "town": "Sant Quirze de Besora",
+    "lat": 42.101426,
+    "lon": 2.2170289,
+    "verifiedQuery": "Sant Quirze de Besora, Catalunya, Espanya",
+    "displayName": "Sant Quirze de Besora, Osona, Barcelona, Catalunya, 08580, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341484"
+  },
+  "sant sadurni d anoia": {
+    "town": "Sant Sadurní d'Anoia",
+    "lat": 41.4244663,
+    "lon": 1.7863949,
+    "verifiedQuery": "Sant Sadurní d'Anoia, Catalunya, Espanya",
+    "displayName": "Sant Sadurní d'Anoia, Alt Penedès, Barcelona, Catalunya, 08770, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347477"
+  },
+  "sant salvador del vendrell": {
+    "town": "Sant Salvador del Vendrell",
+    "lat": 41.2200764,
+    "lon": 1.5352296,
+    "verifiedQuery": "Sant Salvador del Vendrell, Catalunya, Espanya",
+    "displayName": "Església Parroquial de Sant Salvador del Vendrell, 9, Plaça Vella, el Puig, el Vendrell, Baix Penedès, Tarragona, Catalunya, 43700, Espanya",
+    "osmType": "place_of_worship",
+    "osmId": "way/938818178"
+  },
+  "sant vicenc dels horts": {
+    "town": "Sant Vicenç dels Horts",
+    "lat": 41.3934193,
+    "lon": 2.0099482,
+    "verifiedQuery": "Sant Vicenç dels Horts, Catalunya, Espanya",
+    "displayName": "Sant Vicenç dels Horts, Baix Llobregat, Barcelona, Catalunya, 08620, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346445"
+  },
+  "santa eulalia de roncana": {
+    "town": "Santa Eulàlia de Ronçana",
+    "lat": 41.6523952,
+    "lon": 2.229264,
+    "verifiedQuery": "Santa Eulàlia de Ronçana, Catalunya, Espanya",
+    "displayName": "Santa Eulàlia de Ronçana, Vallès Oriental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346759"
+  },
+  "santa maria de besora": {
+    "town": "Santa Maria de Besora",
+    "lat": 42.1272818,
+    "lon": 2.2589189,
+    "verifiedQuery": "Santa Maria de Besora, Catalunya, Espanya",
+    "displayName": "Santa Maria de Besora, Osona, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341733"
+  },
+  "santa pau": {
+    "town": "Santa Pau",
+    "lat": 42.153847,
+    "lon": 2.5832151,
+    "verifiedQuery": "Santa Pau, Catalunya, Espanya",
+    "displayName": "Santa Pau, Garrotxa, Girona, Catalunya, 17811, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342523"
+  },
+  "santa perpetua de la mogoda": {
+    "town": "Santa Perpètua de Mogoda",
+    "lat": 41.5343245,
+    "lon": 2.1835803,
+    "verifiedQuery": "Santa Perpètua de Mogoda, Catalunya, Espanya",
+    "displayName": "Santa Perpètua de Mogoda, Vallès Occidental, Barcelona, Catalunya, 08130, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346444"
+  },
+  "santa perpetua de mogoda": {
+    "town": "Santa Perpètua de Mogoda",
+    "lat": 41.5343245,
+    "lon": 2.1835803,
+    "verifiedQuery": "Santa Perpètua de Mogoda, Catalunya, Espanya",
+    "displayName": "Santa Perpètua de Mogoda, Vallès Occidental, Barcelona, Catalunya, 08130, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346444"
+  },
+  "seva": {
+    "town": "Seva",
+    "lat": 41.8361292,
+    "lon": 2.2835441,
+    "verifiedQuery": "Seva, Catalunya, Espanya",
+    "displayName": "Seva, Osona, Barcelona, Catalunya, 08554, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346437"
+  },
+  "sils": {
+    "town": "Sils",
+    "lat": 41.8098347,
+    "lon": 2.743055,
+    "verifiedQuery": "Sils, Catalunya, Espanya",
+    "displayName": "Sils, la Selva, Girona, Catalunya, 17410, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346728"
+  },
+  "sitges": {
+    "town": "Sitges",
+    "lat": 41.2353596,
+    "lon": 1.8114102,
+    "verifiedQuery": "Sitges, Catalunya, Espanya",
+    "displayName": "Sitges, Garraf, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342217"
+  },
+  "st cugat": {
+    "town": "Sant Cugat del Vallès",
+    "lat": 41.4707933,
+    "lon": 2.0848815,
+    "verifiedQuery": "Sant Cugat del Vallès, Catalunya, Espanya",
+    "displayName": "Sant Cugat del Vallès, Vallès Occidental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347540"
+  },
+  "st joan despi": {
+    "town": "Sant Joan Despí",
+    "lat": 41.3667951,
+    "lon": 2.0570346,
+    "verifiedQuery": "Sant Joan Despí, Catalunya, Espanya",
+    "displayName": "Sant Joan Despí, Baix Llobregat, Barcelona, Catalunya, 08970, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343449"
+  },
+  "st vicenc dels horts": {
+    "town": "Sant Vicenç dels Horts",
+    "lat": 41.3934193,
+    "lon": 2.0099482,
+    "verifiedQuery": "Sant Vicenç dels Horts, Catalunya, Espanya",
+    "displayName": "Sant Vicenç dels Horts, Baix Llobregat, Barcelona, Catalunya, 08620, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346445"
+  },
+  "tarragona": {
+    "town": "Tarragona",
+    "lat": 41.1172364,
+    "lon": 1.2546057,
+    "verifiedQuery": "Tarragona, Catalunya, Espanya",
+    "displayName": "Tarragona, Tarragonès, Tarragona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/339887"
+  },
+  "terrassa": {
+    "town": "Terrassa",
+    "lat": 41.5629623,
+    "lon": 2.0100492,
+    "verifiedQuery": "Terrassa, Catalunya, Espanya",
+    "displayName": "Terrassa, Vallès Occidental, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/342210"
+  },
+  "tiana": {
+    "town": "Tiana",
+    "lat": 41.4819226,
+    "lon": 2.2689473,
+    "verifiedQuery": "Tiana, Catalunya, Espanya",
+    "displayName": "Tiana, Maresme, Barcelona, Catalunya, 08391, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343671"
+  },
+  "tona": {
+    "town": "Tona",
+    "lat": 41.8538039,
+    "lon": 2.2280115,
+    "verifiedQuery": "Tona, Catalunya, Espanya",
+    "displayName": "Tona, Osona, Barcelona, Catalunya, 08551, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343670"
+  },
+  "torello": {
+    "town": "Torelló",
+    "lat": 42.0478304,
+    "lon": 2.2643391,
+    "verifiedQuery": "Torelló, Catalunya, Espanya",
+    "displayName": "Torelló, Osona, Barcelona, Catalunya, 08570, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343668"
+  },
+  "torredembarra": {
+    "town": "Torredembarra",
+    "lat": 41.146155,
+    "lon": 1.3959508,
+    "verifiedQuery": "Torredembarra, Catalunya, Espanya",
+    "displayName": "Torredembarra, Tarragonès, Tarragona, Catalunya, 43830, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344615"
+  },
+  "torrelavit": {
+    "town": "Torrelavit",
+    "lat": 41.4432636,
+    "lon": 1.7266773,
+    "verifiedQuery": "Torrelavit, Catalunya, Espanya",
+    "displayName": "Terrassola i Lavit, Alt Penedès, Barcelona, Catalunya, 08775, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346131"
+  },
+  "torroella de montgri": {
+    "town": "Torroella de Montgrí",
+    "lat": 42.040982,
+    "lon": 3.1262041,
+    "verifiedQuery": "Torroella de Montgrí, Catalunya, Espanya",
+    "displayName": "Torroella de Montgrí, Baix Empordà, Girona, Catalunya, 17130, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/346722"
+  },
+  "tossa": {
+    "town": "Tossa de Mar",
+    "lat": 41.7197773,
+    "lon": 2.9312155,
+    "verifiedQuery": "Tossa de Mar, Catalunya, Espanya",
+    "displayName": "Tossa de Mar, la Selva, Girona, Catalunya, 17320, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343308"
+  },
+  "tossa de mar": {
+    "town": "Tossa de Mar",
+    "lat": 41.7197773,
+    "lon": 2.9312155,
+    "verifiedQuery": "Tossa de Mar, Catalunya, Espanya",
+    "displayName": "Tossa de Mar, la Selva, Girona, Catalunya, 17320, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343308"
+  },
+  "ullastrell": {
+    "town": "Ullastrell",
+    "lat": 41.5265763,
+    "lon": 1.9560471,
+    "verifiedQuery": "Ullastrell, Catalunya, Espanya",
+    "displayName": "Ullastrell, Vallès Occidental, Barcelona, Catalunya, 08231, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341894"
+  },
+  "valls": {
+    "town": "Valls",
+    "lat": 41.2835355,
+    "lon": 1.2473637,
+    "verifiedQuery": "Valls, Catalunya, Espanya",
+    "displayName": "Valls, Alt Camp, Tarragona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/340195"
+  },
+  "vic": {
+    "town": "Vic",
+    "lat": 41.9302021,
+    "lon": 2.2545943,
+    "verifiedQuery": "Vic, Catalunya, Espanya",
+    "displayName": "Vic, Osona, Barcelona, Catalunya, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/341903"
+  },
+  "vidreres": {
+    "town": "Vidreres",
+    "lat": 41.7888681,
+    "lon": 2.7792768,
+    "verifiedQuery": "Vidreres, Catalunya, Espanya",
+    "displayName": "Vidreres, la Selva, Girona, Catalunya, 17411, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/347896"
+  },
+  "viladecans": {
+    "town": "Viladecans",
+    "lat": 41.3163083,
+    "lon": 2.0156034,
+    "verifiedQuery": "Viladecans, Catalunya, Espanya",
+    "displayName": "Viladecans, Baix Llobregat, Barcelona, Catalunya, 08840, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344522"
+  },
+  "vilafranca del penedes": {
+    "town": "Vilafranca del Penèdes",
+    "lat": 41.3463825,
+    "lon": 1.6995213,
+    "verifiedQuery": "Vilafranca del Penèdes, Catalunya, Espanya",
+    "displayName": "Vilafranca del Penedès, Alt Penedès, Barcelona, Catalunya, 08720, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344518"
+  },
+  "vilanova i la geltru": {
+    "town": "Vilanova i La Geltrú",
+    "lat": 41.2241992,
+    "lon": 1.7256327,
+    "verifiedQuery": "Vilanova i La Geltrú, Catalunya, Espanya",
+    "displayName": "Vilanova i la Geltrú, Garraf, Barcelona, Catalunya, 08800, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/344516"
+  },
+  "vilassar de dalt": {
+    "town": "Vilassar de Dalt",
+    "lat": 41.5163595,
+    "lon": 2.3592879,
+    "verifiedQuery": "Vilassar de Dalt, Catalunya, Espanya",
+    "displayName": "Vilassar de Dalt, Maresme, Barcelona, Catalunya, 08339, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343445"
+  },
+  "vilassar de mar": {
+    "town": "Vilassar de Mar",
+    "lat": 41.5064041,
+    "lon": 2.3913883,
+    "verifiedQuery": "Vilassar de Mar, Catalunya, Espanya",
+    "displayName": "Vilassar de Mar, Maresme, Barcelona, Catalunya, 08340, Espanya",
+    "osmType": "administrative",
+    "osmId": "relation/343236"
+  }
+}

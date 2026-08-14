@@ -24,3 +24,14 @@ test("el mapa històric recupera el registre geolocalitzable del calendari", asy
   assert.ok(events.some((event) => event.dateTime.startsWith("2026")));
   assert.ok(events.every((event) => event.mapPosition?.left && event.mapPosition?.top));
 });
+
+test("les poblacions ambigües tenen coordenades municipals verificades", async () => {
+  const places = JSON.parse(await readFile("scripts/calendar-town-coordinates.json", "utf8"));
+
+  assert.deepEqual({ lat: places.ceret.lat, lon: places.ceret.lon }, { lat: 42.485804, lon: 2.7488069 });
+  assert.deepEqual({ lat: places.camprodon.lat, lon: places.camprodon.lon }, { lat: 42.3127896, lon: 2.364926 });
+  assert.deepEqual({ lat: places.encamp.lat, lon: places.encamp.lon }, { lat: 42.5360425, lon: 1.5836096 });
+  assert.deepEqual({ lat: places.masnou.lat, lon: places.masnou.lon }, { lat: 41.4796899, lon: 2.3118347 });
+  assert.deepEqual({ lat: places["prada de conflent"].lat, lon: places["prada de conflent"].lon }, { lat: 42.6181232, lon: 2.4230925 });
+  assert.deepEqual({ lat: places.castellar.lat, lon: places.castellar.lon }, { lat: 41.6138122, lon: 2.0875963 });
+});
