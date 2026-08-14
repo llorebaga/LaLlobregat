@@ -7,7 +7,8 @@ const outputPath = path.resolve("app/calendar-events.generated.json");
 const cachePath = path.resolve("scripts/calendar-geocode-cache.json");
 const maximumEvents = 16;
 const geocodeDelay = Number(process.env.GEOCODE_DELAY_MS ?? 16000);
-const cataloniaBounds = { west: -0.5, south: 40.45, east: 3.5, north: 42.95 };
+// Exact equirectangular bounds of the fixed Catalonia location map.
+const cataloniaBounds = { west: -0.5481, south: 40.4079, east: 4.0243, north: 42.9978 };
 const monthNames = ["GEN.", "FEBR.", "MARÇ", "ABR.", "MAIG", "JUNY", "JUL.", "AG.", "SET.", "OCT.", "NOV.", "DES."];
 
 function unfoldIcs(source) {

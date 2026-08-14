@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { upcomingEvents } from "../data";
 import calendarEvents from "../calendar-events.generated.json";
 
@@ -62,29 +63,47 @@ export default function AgendaPage() {
 
         <div className="agendaMapLayout">
           <div className="agendaCataloniaMap" aria-label="Mapa de Catalunya amb les pròximes actuacions">
-            <iframe
-              title="Mapa de Catalunya"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-0.5%2C40.45%2C3.5%2C42.95&layer=mapnik"
-              loading="lazy"
+            <Image
+              className="agendaFixedMapImage"
+              src="/catalunya-mapa-fix.png"
+              alt="Mapa fix de Catalunya dividit per comarques"
+              width={1920}
+              height={1724}
+              sizes="(max-width: 1100px) 100vw, 66vw"
             />
             <div className="agendaMapTint" />
-            {events.map((event, index) => (
-              <a
-                className="agendaMapMarker"
-                href={event.source}
-                key={event.id}
-                style={event.mapPosition}
-                aria-label={`${event.day} ${event.month}, ${event.title}, ${event.town}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>{index + 1}</span>
-                <strong>{event.town}</strong>
-                <small>{event.day} {event.month}</small>
-              </a>
-            ))}
+            {events.map((event, index) => {
+              const repeatedPosition = events
+                .slice(0, index)
+                .filter((previousEvent) => previousEvent.mapPosition.left === event.mapPosition.left
+                  && previousEvent.mapPosition.top === event.mapPosition.top)
+                .length;
+
+              return (
+                <a
+                  className="agendaMapMarker"
+                  href={event.source}
+                  key={event.id}
+                  style={{
+                    ...event.mapPosition,
+                    marginLeft: repeatedPosition ? `${repeatedPosition * 14}px` : undefined,
+                    marginTop: repeatedPosition ? `${repeatedPosition % 2 ? -14 : 14}px` : undefined,
+                  }}
+                  aria-label={`${event.day} ${event.month}, ${event.title}, ${event.town}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>{index + 1}</span>
+                  <strong>{event.town}</strong>
+                  <small>{event.day} {event.month}</small>
+                </a>
+              );
+            })}
             <div className="agendaMapLabel">Catalunya</div>
-            <a className="agendaMapCredit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap</a>
+            <div className="agendaMapCredits">
+              <a href="https://commons.wikimedia.org/wiki/File:Catalonia_location_map_2023_counties.svg" target="_blank" rel="noreferrer">Mapa · Wikimedia Commons</a>
+              <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Coordenades · OpenStreetMap</a>
+            </div>
           </div>
 
           <div className="agendaEventCards" aria-label="Properes actuacions">
