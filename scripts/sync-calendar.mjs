@@ -150,7 +150,7 @@ async function geocode(query, cache, lastRequest) {
   const response = await fetch(`https://nominatim.openstreetmap.org/search?${parameters}`, {
     headers: {
       "Accept-Language": "ca",
-      "User-Agent": "LaPrincipalDelLlobregatCalendarSync/1.0 (https://github.com/llorebaga/la-principal-del-llobregat)",
+      "User-Agent": "LaPrincipalDelLlobregatCalendarSync/1.0 (https://github.com/llorebaga/LaLlobregat)",
     },
   });
   if (!response.ok) throw new Error(`La geocodificació ha respost ${response.status}`);
