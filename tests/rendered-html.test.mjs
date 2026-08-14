@@ -26,6 +26,8 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(history, /Una història/);
   assert.doesNotMatch(musicians, /Onze intèrprets|11<\/strong>|veus/);
   assert.match(musicians, /Josep Llauradó Cardona/);
+  assert.match(musicians, /Jordi Serrano Quevedo/);
+  assert.doesNotMatch(musicians, /Jorge Serrano Quevedo/);
   assert.match(musicians, /Marcel Sabaté Reixach/);
   assert.doesNotMatch(musicians, /className="musicianDirector"/);
   assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Actuacions"[\s\S]*label: "Músics"[\s\S]*label: "Història"/);

@@ -17,7 +17,7 @@ const members = [
   { name: "Jordi Guixé Torres", instrument: "Tenora" },
   { name: "Jordi Molina Membrives", instrument: "Tenora" },
   { name: "Roger Santiago Casasses", instrument: "Trompeta" },
-  { name: "Jorge Serrano Quevedo", instrument: "Trompeta" },
+  { name: "Jordi Serrano Quevedo", instrument: "Trompeta" },
   { name: "Toni Balada Aguilà", instrument: "Trombó" },
   { name: "Ivan Babiloni Porqueras", instrument: "Fiscorn" },
   { name: "Joan Ballart Pedret", instrument: "Fiscorn" },
