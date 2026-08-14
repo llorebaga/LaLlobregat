@@ -40,6 +40,6 @@ test("Encamp i Céret estan calibrats amb el dibuix del mapa", async () => {
   const events = JSON.parse(await readFile("app/calendar-history.generated.json", "utf8"));
   const byTown = new Map(events.map((event) => [event.town, event]));
 
-  assert.deepEqual(byTown.get("Encamp")?.mapPosition, { left: "50.20%", top: "23.20%" });
+  assert.deepEqual(byTown.get("Encamp")?.mapPosition, { left: "40.10%", top: "20.55%" });
   assert.deepEqual(byTown.get("Céret")?.mapPosition, { left: "70.47%", top: "22.70%" });
 });

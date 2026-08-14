@@ -21,7 +21,7 @@ const knownPlaces = {
 // so their markers align with the shapes drawn on the fixed map.
 const mapVisualOverrides = {
   "ceret": { left: "70.47%", top: "22.70%" },
-  "encamp": { left: "50.20%", top: "23.20%" },
+  "encamp": { left: "40.10%", top: "20.55%" },
 };
 const ignoredTownNames = new Set([
   "coco", "catedral", "enregistrament cd", "festa privada", "gravacio", "grabacio",
