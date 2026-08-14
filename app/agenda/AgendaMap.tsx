@@ -25,7 +25,7 @@ type EventGroup = {
   events: AgendaEvent[];
 };
 
-export function AgendaMap({ events }: { events: AgendaEvent[] }) {
+export function AgendaMap({ events, mapSrc }: { events: AgendaEvent[]; mapSrc: string }) {
   const monthOptions = useMemo(() => {
     const months = new Map<string, { key: string; label: string; count: number }>();
 
@@ -101,10 +101,10 @@ export function AgendaMap({ events }: { events: AgendaEvent[] }) {
       <div className="agendaCataloniaMap" aria-label={`Mapa de Catalunya · ${monthOptions.find((month) => month.key === selectedMonthKey)?.label ?? "Agenda"}`}>
         <Image
           className="agendaFixedMapImage"
-          src="/catalunya-mapa-fix.png"
-          alt="Mapa fix de Catalunya dividit per comarques"
-          width={1920}
-          height={1724}
+          src={mapSrc}
+          alt="Mapa fix de Catalunya i la Catalunya Nord dividit per comarques"
+          width={1280}
+          height={1280}
           sizes="(max-width: 900px) 100vw, 86vw"
           priority
         />
@@ -154,9 +154,9 @@ export function AgendaMap({ events }: { events: AgendaEvent[] }) {
           </aside>
         ) : null}
 
-        <div className="agendaMapLabel">Catalunya</div>
+        <div className="agendaMapLabel">Catalunya · Catalunya Nord</div>
         <div className="agendaMapCredits">
-          <a href="https://commons.wikimedia.org/wiki/File:Catalonia_location_map_2023_counties.svg" target="_blank" rel="noreferrer">Mapa · Wikimedia Commons</a>
+          <a href="https://commons.wikimedia.org/wiki/File:Mapa_de_localitzaci%C3%B3_a_les_comarques_catalanes.svg" target="_blank" rel="noreferrer">Mapa · Wikimedia Commons</a>
           <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Coordenades · OpenStreetMap</a>
         </div>
       </div>

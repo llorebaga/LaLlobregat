@@ -186,7 +186,7 @@ img { display: block; }
 .agendaMonthSelector button:focus-visible { position: relative; z-index: 2; outline: 2px solid var(--burgundy); outline-offset: -4px; }
 .agendaMonthSelector span { font-family: Georgia, serif; font-size: 1.08rem; text-transform: capitalize; }
 .agendaMonthSelector small { opacity: .7; font-size: .55rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
-.agendaCataloniaMap { position: relative; width: min(100%, 1240px); aspect-ratio: 1920 / 1724; min-height: 0; margin: 0 auto; overflow: hidden; isolation: isolate; background: #e9e2d8; border: 1px solid var(--ink); }
+.agendaCataloniaMap { position: relative; width: min(100%, 1120px); aspect-ratio: 1; min-height: 0; margin: 0 auto; overflow: hidden; isolation: isolate; background: #e9e2d8; border: 1px solid var(--ink); }
 .agendaFixedMapImage { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: grayscale(1) sepia(.12) contrast(.9) brightness(1.04); pointer-events: none; user-select: none; }
 .agendaMapTint { position: absolute; z-index: 1; inset: 0; background: linear-gradient(135deg, rgba(255,248,238,.12), rgba(190,37,55,.09)); mix-blend-mode: multiply; pointer-events: none; }
 .agendaMapPoint { position: absolute; z-index: 3; width: 15px; height: 15px; padding: 0; transform: translate(-50%,-50%); border: 3px solid white; border-radius: 50%; background: var(--red); box-shadow: 0 3px 11px rgba(61,8,14,.48); cursor: pointer; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
@@ -220,6 +220,12 @@ img { display: block; }
 .archiveSection { background: var(--paper); }
 .archiveIntro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 8rem; align-items: end; margin-bottom: 5rem; }
 .archiveIntro > p { margin: 0; max-width: 560px; font-size: 1.1rem; line-height: 1.8; }
+.emptyArchivePage { min-height: 70vh; background: white; }
+.emptyArchive { min-height: 70vh; padding-top: clamp(7rem, 13vw, 12rem); padding-bottom: clamp(6rem, 11vw, 10rem); }
+.emptyArchive h1 { margin: 1.2rem 0 2rem; font-family: Georgia, serif; font-size: clamp(5rem, 12vw, 11rem); font-weight: 400; line-height: .8; letter-spacing: -.07em; }
+.emptyArchiveLead { max-width: 650px; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.7vw, 1.3rem); line-height: 1.7; }
+.emptyArchiveCategories { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 3rem; }
+.emptyArchiveCategories span { padding: .7rem 1rem; border: 1px solid var(--line); border-radius: 99px; color: var(--burgundy); font-size: .65rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .filterBar { display: flex; gap: .6rem; padding-bottom: 2rem; border-bottom: 1px solid var(--ink); }
 .filterBar button { padding: .65rem 1rem; border: 1px solid var(--line); border-radius: 99px; background: transparent; color: var(--ink); cursor: pointer; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
 .filterBar button.active, .filterBar button:hover { background: var(--ink); color: white; border-color: var(--ink); }

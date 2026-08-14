@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { upcomingEvents } from "../data";
 import calendarEvents from "../calendar-events.generated.json";
+import { sitePath } from "../site-path";
 import { AgendaMap } from "./AgendaMap";
 
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ export default function AgendaPage() {
         </div>
 
         <div aria-label="Mapa de Catalunya">
-          <AgendaMap events={events} />
+          <AgendaMap events={events} mapSrc={sitePath("/catalunya-mapa-complet.png")} />
         </div>
       </section>
 

@@ -281,5 +281,146 @@
   "Sant Joan Despí, Catalunya, Espanya": {
     "lat": 41.3667951,
     "lon": 2.0570346
+  },
+  "Castelló d'Empúries, Catalunya": {
+    "lat": 42.2591074,
+    "lon": 3.0746425
+  },
+  "Palamós, Catalunya": {
+    "lat": 41.8495354,
+    "lon": 3.1278785
+  },
+  "Arbres d'en Casals, Sant Feliu de Pallerols": null,
+  "Sant Feliu de Pallerols, Catalunya": {
+    "lat": 42.0758164,
+    "lon": 2.5078037
+  },
+  "La Bisbal d'Empordà, Catalunya": {
+    "lat": 41.9598687,
+    "lon": 3.039616
+  },
+  "Parc de les pubilles, Torrelavit": {
+    "lat": 41.4463906,
+    "lon": 1.7329808
+  },
+  "Caldes de Malavella, Catalunya": {
+    "lat": 41.8282907,
+    "lon": 2.8073845
+  },
+  "Roda de Berà, Catalunya": {
+    "lat": 41.1857961,
+    "lon": 1.4569904
+  },
+  "Matadepera, Catalunya": {
+    "lat": 41.6012311,
+    "lon": 2.0275199
+  },
+  "La Casa De La Plaça De L'Esglesia, Carrer d'Anselm Clavé, 2, 08130 Santa Perpètua de Mogoda, Barcelona, Espanya, Santa Perpètua de la Mogoda": null,
+  "Santa Perpètua de la Mogoda, Catalunya": {
+    "lat": 41.5216802,
+    "lon": 2.1943095
+  },
+  "Alella, Catalunya": {
+    "lat": 41.4955603,
+    "lon": 2.2935325
+  },
+  "Cambrils, Catalunya": {
+    "lat": 41.0679423,
+    "lon": 1.0657579
+  },
+  "Rubí, Catalunya": {
+    "lat": 41.4936194,
+    "lon": 2.0319476
+  },
+  "Hospitalet de Llobregat, Catalunya": {
+    "lat": 41.3595118,
+    "lon": 2.0996318
+  },
+  "Plaça de l'Església, Sant Llorenç Savall": null,
+  "Sant Llorenç Savall, Catalunya": {
+    "lat": 41.6794647,
+    "lon": 2.0579669
+  },
+  "Alfés, Catalunya": {
+    "lat": 41.5214162,
+    "lon": 0.6200114
+  },
+  "Jafre, Catalunya": {
+    "lat": 42.0726347,
+    "lon": 3.0107448
+  },
+  "Sant Joan de les Abadesses, Catalunya": {
+    "lat": 42.233743,
+    "lon": 2.2854845
+  },
+  "Plaça de l'Església, Rubí": null,
+  "Malgrat de Mar, Catalunya": {
+    "lat": 41.6459118,
+    "lon": 2.7414054
+  },
+  "Alpicat, Catalunya": {
+    "lat": 41.6666421,
+    "lon": 0.5554774
+  },
+  "Tossa de Mar, Catalunya": {
+    "lat": 41.7197773,
+    "lon": 2.9312155
+  },
+  "Cunit, Catalunya": {
+    "lat": 41.197596,
+    "lon": 1.6344596
+  },
+  "Sant Sadurní d'Anoia, Catalunya": {
+    "lat": 41.4244663,
+    "lon": 1.7863949
+  },
+  "Esplugues de Llobregat, Catalunya": {
+    "lat": 41.3778094,
+    "lon": 2.0886257
+  },
+  "Sant Quirze de Besora, Catalunya": {
+    "lat": 42.101426,
+    "lon": 2.2170289
+  },
+  "Pista Poliesportiva, Sant Vicenç dels Horts": {
+    "lat": 41.3809313,
+    "lon": 2.0116806
+  },
+  "Artesa de Segre, Catalunya": {
+    "lat": 41.9376976,
+    "lon": 1.098281
+  },
+  "La Torre de Codorniu, Carrer Can Codorniu, 08770, Barcelona, Espanya, Sant Sadurní d'Anoia": null,
+  "Sils, Catalunya": {
+    "lat": 41.8098347,
+    "lon": 2.743055
+  },
+  "Pavelló Municipal, Artés": {
+    "lat": 41.795137,
+    "lon": 1.9496737
+  },
+  "El Vendrell, Catalunya": {
+    "lat": 41.2199677,
+    "lon": 1.5348566
+  },
+  "Les Preses, Catalunya": {
+    "lat": 42.1450901,
+    "lon": 2.4592158
+  },
+  "Falset, Catalunya": {
+    "lat": 41.1450982,
+    "lon": 0.8196237
+  },
+  "Martorell, Catalunya": {
+    "lat": 41.4743886,
+    "lon": 1.9307159
+  },
+  "Calella, Catalunya": {
+    "lat": 41.6132925,
+    "lon": 2.6576102
+  },
+  "Sant Joan Despí, Catalunya": {
+    "lat": 41.3667951,
+    "lon": 2.0570346
   }
 }

@@ -6,6 +6,7 @@ const navigation = [
   { href: sitePath("/agenda"), label: "Agenda" },
   { href: sitePath("/actuacions"), label: "Actuacions" },
   { href: sitePath("/musics"), label: "Músics" },
+  { href: sitePath("/historia"), label: "Història" },
 ];
 
 export function SiteHeader() {

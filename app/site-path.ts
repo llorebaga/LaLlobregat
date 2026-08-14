@@ -7,5 +7,7 @@ const basePath =
 
 export function sitePath(path: string) {
   if (path === "/") return basePath ? `${basePath}/` : "/";
-  return `${basePath}${path}`;
+  const isFile = /\/[^/]+\.[^/]+$/.test(path);
+  const directoryPath = isFile || path.endsWith("/") ? path : `${path}/`;
+  return `${basePath}${directoryPath}`;
 }

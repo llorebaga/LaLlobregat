@@ -1,9 +1,14 @@
 import Image from "next/image";
+import calendarEvents from "./calendar-events.generated.json";
 import { upcomingEvents } from "./data";
 import { sitePath } from "./site-path";
 
+const buildTime = Date.now();
+
 export default function Home() {
-  const nextEvent = upcomingEvents[0];
+  const nextEvent = calendarEvents.find(
+    (event) => new Date(event.dateTime).getTime() >= buildTime,
+  ) ?? upcomingEvents[0];
 
   return (
     <main id="contingut" className="simpleHome">
@@ -70,7 +75,15 @@ export default function Home() {
           <h2>{nextEvent.title}</h2>
           <span>{nextEvent.town} — {nextEvent.place}</span>
         </div>
-        <a className="simpleNextArrow" href={sitePath("/agenda")} aria-label="Veure tota l’agenda">↗</a>
+        <a
+          className="simpleNextArrow"
+          href={nextEvent.source}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Veure aquesta actuació al calendari"
+        >
+          ↗
+        </a>
       </section>
 
       <section className="simpleExplore sectionPad">

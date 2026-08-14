@@ -7,8 +7,8 @@ const outputPath = path.resolve("app/calendar-events.generated.json");
 const cachePath = path.resolve("scripts/calendar-geocode-cache.json");
 const maximumEvents = 180;
 const geocodeDelay = Number(process.env.GEOCODE_DELAY_MS ?? 1200);
-// Exact equirectangular bounds of the fixed Catalonia location map.
-const cataloniaBounds = { west: -0.5481, south: 40.4079, east: 4.0243, north: 42.9978 };
+// Equirectangular bounds calibrated to the fixed Catalonia and Northern Catalonia map.
+const cataloniaBounds = { west: -0.2395, south: 40.2431, east: 4.0013, north: 43.0225 };
 const monthNames = ["GEN.", "FEBR.", "MARÇ", "ABR.", "MAIG", "JUNY", "JUL.", "AG.", "SET.", "OCT.", "NOV.", "DES."];
 const monthNamesLong = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"];
 const knownPlaces = {
@@ -105,9 +105,10 @@ function eventQueries(town, location) {
   const queries = [];
   if (location) {
     const includesTown = normalizeText(location).includes(normalizedTown);
-    queries.push(includesTown ? location : `${location}, ${town}, Catalunya, Espanya`);
+    queries.push(includesTown ? location : `${location}, ${town}`);
   }
-  queries.push(`${town}, Catalunya, Espanya`);
+  queries.push(`${town}, Catalunya`);
+  queries.push(town);
   return { knownPlace: null, queries: [...new Set(queries)] };
 }
 
@@ -142,7 +143,7 @@ async function geocode(query, cache, lastRequest) {
     q: query,
     format: "jsonv2",
     limit: "1",
-    countrycodes: "es",
+    countrycodes: "es,fr",
     viewbox: `${cataloniaBounds.west},${cataloniaBounds.north},${cataloniaBounds.east},${cataloniaBounds.south}`,
     bounded: "1",
   });
