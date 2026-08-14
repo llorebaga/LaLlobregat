@@ -31,8 +31,6 @@ export default function AgendaPage() {
         </div>
       </header>
 
-      <AgendaTownSearch events={events} />
-
       <section className="agendaMapSection sectionPad" aria-labelledby="agenda-mapa-title">
         <div className="agendaSectionHeading">
           <div>
@@ -49,6 +47,8 @@ export default function AgendaPage() {
           <AgendaMap events={events} mapSrc={sitePath("/catalunya-mapa-complet.png")} />
         </div>
       </section>
+
+      <AgendaTownSearch events={events} />
 
       <section className="agendaCalendarSection sectionPad" id="calendari" aria-labelledby="agenda-calendar-title">
         <div className="agendaCalendarIntro">

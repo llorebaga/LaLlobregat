@@ -59,16 +59,6 @@ export default function MusicsPage() {
         </div>
       </section>
 
-      <section className="musiciansIntro sectionPad">
-        <p className="eyebrow">El so de la cobla</p>
-        <h2>Una formació petita.<br /><em>Un univers sonor.</em></h2>
-        <p className="musiciansIntroText">
-          La cobla reuneix instruments de fusta, metall, corda i percussió en
-          una combinació única. Cada músic hi aporta una veu pròpia; plegats,
-          donem forma a sardanes, concerts i nous projectes.
-        </p>
-      </section>
-
       <section className="musicianRoster sectionPad" aria-labelledby="membres-2026">
         <div className="musicianRosterHeading">
           <p className="eyebrow">Membres 2026</p>
