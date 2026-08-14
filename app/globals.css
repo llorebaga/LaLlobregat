@@ -172,6 +172,30 @@ img { display: block; }
 .agendaHeroCopy p { margin: 0 0 3rem; font-family: Georgia, serif; font-size: clamp(1.4rem, 2.1vw, 2rem); line-height: 1.35; }
 .agendaHeroCopy span { color: rgba(255,255,255,.65); font-size: .62rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 
+.agendaTownSearch { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(3rem, 8vw, 9rem); align-items: start; background: var(--paper); }
+.agendaTownSearchIntro { position: sticky; top: 120px; }
+.agendaTownSearchIntro h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.7rem, 7vw, 7.4rem); font-weight: 400; line-height: .84; letter-spacing: -.06em; }
+.agendaTownSearchIntro h2 em { color: var(--red); font-weight: 400; }
+.agendaTownSearchIntro > p:last-child { max-width: 460px; margin: 2rem 0 0; color: var(--muted); line-height: 1.8; }
+.agendaTownSearchPanel { min-height: 370px; padding: clamp(1.5rem, 4vw, 3.5rem); background: var(--cream); border-top: 5px solid var(--red); }
+.agendaTownSearchPanel > label { display: block; margin-bottom: .7rem; color: var(--red); font-size: .61rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.agendaTownSearchField { position: relative; }
+.agendaTownSearchField input { width: 100%; height: 72px; padding: 0 4rem 0 1.25rem; border: 1px solid var(--ink); border-radius: 0; background: #fffdf8; color: var(--ink); font-family: Georgia, serif; font-size: clamp(1.25rem, 2.4vw, 2rem); outline: none; }
+.agendaTownSearchField input:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(188,23,38,.14); }
+.agendaTownSearchField input::placeholder { color: #918482; }
+.agendaTownSearchField button { position: absolute; top: 50%; right: 1rem; width: 38px; height: 38px; padding: 0; transform: translateY(-50%); display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--burgundy); color: white; cursor: pointer; font-size: 1.2rem; }
+.agendaTownSearchResults { margin-top: 1.5rem; }
+.agendaTownSearchHint, .agendaTownSearchStatus { margin: 0; color: var(--muted); }
+.agendaTownSearchStatus { padding: 1rem 0; border-bottom: 1px solid var(--line); font-family: Georgia, serif; font-size: 1.2rem; }
+.agendaTownSearchStatus.isFound { color: var(--burgundy); }
+.agendaTownMatchList { max-height: 430px; overflow-y: auto; border-bottom: 1px solid var(--ink); }
+.agendaTownMatchList a { position: relative; min-height: 112px; padding: 1.15rem 3rem 1.15rem 0; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid var(--line); transition: padding .2s ease, background .2s ease; }
+.agendaTownMatchList a:hover, .agendaTownMatchList a:focus-visible { padding-left: 1rem; background: rgba(255,255,255,.58); }
+.agendaTownMatchList time { color: var(--red); font-size: .6rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.agendaTownMatchList strong { margin: .3rem 0 .1rem; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 400; }
+.agendaTownMatchList span { color: var(--muted); font-size: .78rem; }
+.agendaTownMatchList i { position: absolute; right: .6rem; top: 50%; transform: translateY(-50%); font-size: 1.25rem; font-style: normal; }
+
 .agendaMapSection { background: var(--cream); }
 .agendaSectionHeading { display: grid; grid-template-columns: 1.25fr .75fr; gap: 5rem; align-items: end; margin-bottom: clamp(3rem, 6vw, 6rem); }
 .agendaSectionHeading h2, .agendaCalendarIntro h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .86; letter-spacing: -.06em; }
@@ -281,6 +305,29 @@ img { display: block; }
 .timelineItem time { font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 4.5rem); color: var(--terracotta); line-height: 1; }
 .timelineItem h2 { margin: 0 0 1rem; font-family: Georgia, serif; font-size: clamp(1.8rem, 3vw, 3.2rem); font-weight: 400; }
 .timelineItem p { max-width: 650px; margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.75; }
+.historyMapSection { background: var(--cream); }
+.historyMapHeading { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(3rem, 8vw, 9rem); align-items: end; margin-bottom: clamp(3rem, 6vw, 6rem); }
+.historyMapHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .86; letter-spacing: -.06em; }
+.historyMapHeading h2 em { color: var(--red); font-weight: 400; }
+.historyMapHeading > p { max-width: 520px; margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.8; }
+.historyMapExperience { width: min(100%, 1240px); margin: 0 auto; }
+.historyMapToolbar { min-height: 112px; display: grid; grid-template-columns: 1fr 1fr 1.3fr; border: 1px solid var(--ink); border-bottom: 0; background: var(--paper); }
+.historyMapToolbar > div, .historyMapToolbar > label { min-height: 112px; padding: 1.2rem 1.5rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid var(--line); }
+.historyMapToolbar > label { border-right: 0; }
+.historyMapToolbar strong { font-family: Georgia, serif; font-size: clamp(2rem, 3.6vw, 3.4rem); font-weight: 400; line-height: .9; color: var(--red); }
+.historyMapToolbar span { margin-top: .45rem; color: var(--muted); font-size: .57rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.historyMapToolbar label > span { margin: 0 0 .5rem; color: var(--red); }
+.historyMapToolbar select { width: 100%; padding: .7rem .8rem; border: 1px solid var(--line); border-radius: 0; background: white; color: var(--ink); font-family: Georgia, serif; font-size: 1.05rem; }
+.historyMapPoint { position: absolute; z-index: 3; width: 10px; height: 10px; padding: 0; transform: translate(-50%,-50%); border: 2px solid rgba(255,255,255,.9); border-radius: 50%; background: var(--red); box-shadow: 0 2px 8px rgba(61,8,14,.42); cursor: pointer; transition: transform .18s ease, background .18s ease; }
+.historyMapPoint:hover, .historyMapPoint:focus-visible, .historyMapPoint.isSelected { z-index: 6; transform: translate(-50%,-50%) scale(1.65); background: var(--burgundy); outline: 1px solid rgba(89,11,20,.35); outline-offset: 3px; }
+.historyMapInfo > h3 { margin: 0 0 1rem; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 400; }
+.historyMapEventList { border-top: 1px solid var(--line); }
+.historyMapEventList a { padding: .9rem 0; display: flex; flex-direction: column; border-bottom: 1px solid var(--line); }
+.historyMapEventList a:hover strong { color: var(--red); }
+.historyMapEventList time { color: var(--red); font-size: .58rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.historyMapEventList strong { margin: .22rem 0; font-family: Georgia, serif; font-size: 1.08rem; font-weight: 400; line-height: 1.15; }
+.historyMapEventList span { color: var(--muted); font-size: .72rem; }
+.historyMapInfo > small { display: block; margin-top: 1rem; color: var(--muted); font-size: .65rem; }
 .namesSection { background: var(--blue); color: white; }
 .namesSection > p:not(.eyebrow) { max-width: 750px; margin: 3rem 0; font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,.7); }
 .nameCloud { display: flex; flex-wrap: wrap; gap: .8rem; }
@@ -318,9 +365,10 @@ img { display: block; }
   .monthlyCalendarFrame { min-height: 680px; }
   .monthlyCalendarFrame iframe { height: 680px; }
   .calendarExternalLink { grid-column: 1; margin-top: -2rem; }
-  .agendaPageHero, .agendaSectionHeading, .agendaCalendarIntro { grid-template-columns: 1fr; gap: 3rem; }
+  .agendaPageHero, .agendaTownSearch, .agendaSectionHeading, .agendaCalendarIntro, .historyMapHeading { grid-template-columns: 1fr; gap: 3rem; }
   .agendaPageHero { min-height: 620px; }
   .agendaHeroCopy { margin-left: auto; }
+  .agendaTownSearchIntro { position: static; }
   .agendaCataloniaMap { width: 100%; }
   .agendaMonthlyMap { width: 100%; }
 }
@@ -363,6 +411,7 @@ img { display: block; }
   .agendaPageHero h1 { font-size: clamp(5.5rem, 27vw, 8rem); }
   .agendaHeroCopy { margin-left: 0; }
   .agendaHeroCopy p { margin-bottom: 2rem; }
+  .agendaTownSearchField input { height: 64px; }
   .agendaSectionHeading { gap: 2rem; }
   .agendaSectionHeading h2, .agendaCalendarIntro h2 { font-size: clamp(3.3rem, 16vw, 5rem); }
   .agendaCataloniaMap { min-height: 0; }
@@ -384,6 +433,10 @@ img { display: block; }
   .historyHero h1 { font-size: clamp(3.6rem, 15vw, 5.5rem); }
   .timelineItem { grid-template-columns: 40px 1fr; gap: 1.5rem; }
   .timelineItem > div { grid-column: 2; }
+  .historyMapToolbar { grid-template-columns: 1fr 1fr; }
+  .historyMapToolbar > label { grid-column: 1 / -1; border-top: 1px solid var(--line); }
+  .historyMapToolbar > div:nth-child(2) { border-right: 0; }
+  .historyMapPoint { width: 8px; height: 8px; border-width: 1px; }
   .footerTop, .historyCta { align-items: flex-start; flex-direction: column; }
   .footerTop { padding-bottom: 4rem; }
   .roundLink { width: 115px; height: 115px; }

@@ -14,3 +14,13 @@ test("el mapa inclou totes les actuacions i els mesos disponibles", async () => 
   );
   assert.ok(events.every((event) => event.mapPosition?.left && event.mapPosition?.top));
 });
+
+test("el mapa històric recupera el registre geolocalitzable del calendari", async () => {
+  const events = JSON.parse(await readFile("app/calendar-history.generated.json", "utf8"));
+
+  assert.ok(events.length > 2100);
+  assert.equal(new Set(events.map((event) => event.id)).size, events.length);
+  assert.ok(events.some((event) => event.dateTime.startsWith("2008")));
+  assert.ok(events.some((event) => event.dateTime.startsWith("2026")));
+  assert.ok(events.every((event) => event.mapPosition?.left && event.mapPosition?.top));
+});

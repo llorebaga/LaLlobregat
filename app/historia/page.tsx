@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import historyEvents from "../calendar-history.generated.json";
 import { sitePath } from "../site-path";
+import { HistoryMap } from "./HistoryMap";
 
 export const metadata: Metadata = { title: "Història", description: "La història de La Principal del Llobregat, des de Cornellà l’any 1929 fins avui." };
 export const dynamic = "force-static";
@@ -22,6 +24,20 @@ export default function HistoriaPage() {
 
       <section className="timeline sectionPad" aria-label="Cronologia de La Principal del Llobregat">
         {milestones.map((item, index) => <article className="timelineItem" key={item.year}><span className="timelineIndex">0{index + 1}</span><time>{item.year}</time><div><h2>{item.title}</h2><p>{item.text}</p></div></article>)}
+      </section>
+
+      <section className="historyMapSection sectionPad" aria-labelledby="history-map-title">
+        <div className="historyMapHeading">
+          <div>
+            <p className="eyebrow">La memòria del calendari</p>
+            <h2 id="history-map-title">Una història<br /><em>sobre el territori.</em></h2>
+          </div>
+          <p>
+            Explora les actuacions conservades al calendari de La Llobregat.
+            Tria un any i clica qualsevol punt per descobrir on hem sonat.
+          </p>
+        </div>
+        <HistoryMap events={historyEvents} mapSrc={sitePath("/catalunya-mapa-complet.png")} />
       </section>
 
       <section className="namesSection sectionPad">

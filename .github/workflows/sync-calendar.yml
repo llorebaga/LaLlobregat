@@ -31,7 +31,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- app/calendar-events.generated.json scripts/calendar-geocode-cache.json; then
+          if git diff --quiet -- app/calendar-events.generated.json app/calendar-history.generated.json scripts/calendar-geocode-cache.json; then
             echo "El calendari no ha canviat."
             if [ "$(date -u +%H)" = "04" ]; then
               echo "publish=true" >> "$GITHUB_OUTPUT"
@@ -40,7 +40,7 @@ jobs:
             fi
             exit 0
           else
-            git add app/calendar-events.generated.json scripts/calendar-geocode-cache.json
+            git add app/calendar-events.generated.json app/calendar-history.generated.json scripts/calendar-geocode-cache.json
             git commit -m "Actualitza les actuacions del calendari"
           fi
 

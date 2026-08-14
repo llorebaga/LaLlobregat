@@ -422,5 +422,823 @@
   "Sant Joan Despí, Catalunya": {
     "lat": 41.3667951,
     "lon": 2.0570346
+  },
+  "Riudoms, Catalunya": {
+    "lat": 41.1390915,
+    "lon": 1.0519702
+  },
+  "Mataró, Catalunya": {
+    "lat": 41.5398348,
+    "lon": 2.4448926
+  },
+  "Castellar del Vallès, Catalunya": {
+    "lat": 41.6138122,
+    "lon": 2.0875963
+  },
+  "Sant Feliu de Guíxols, Catalunya": {
+    "lat": 41.7838827,
+    "lon": 3.0283195
+  },
+  "Terrassa, Catalunya": {
+    "lat": 41.5629623,
+    "lon": 2.0100492
+  },
+  "Ceret, Catalunya": {
+    "lat": 42.3498706,
+    "lon": 2.2104839
+  },
+  "Pals, Catalunya": {
+    "lat": 41.9709891,
+    "lon": 3.1460371
+  },
+  "Vilassar de Mar, Catalunya": {
+    "lat": 41.5064041,
+    "lon": 2.3913883
+  },
+  "Rubí Ballets, Catalunya": null,
+  "Rubí Ballets": null,
+  "Olesa de Montserrat, Catalunya": {
+    "lat": 41.5439614,
+    "lon": 1.8913809
+  },
+  "Esparreguera, Catalunya": {
+    "lat": 41.5389434,
+    "lon": 1.8705935
+  },
+  "Vic, Catalunya": {
+    "lat": 41.9302021,
+    "lon": 2.2545943
+  },
+  "Centelles, Catalunya": {
+    "lat": 41.7981296,
+    "lon": 2.2218056
+  },
+  "Manlleu, Catalunya": {
+    "lat": 41.9999811,
+    "lon": 2.2841159
+  },
+  "Palau Solità i Plegamans, Catalunya": {
+    "lat": 41.5875286,
+    "lon": 2.1786438
+  },
+  "Coral Xalesta - L'Hospitalet de Llobregat, Catalunya": null,
+  "Coral Xalesta - L'Hospitalet de Llobregat": null,
+  "Llavaneres, Catalunya": {
+    "lat": 41.5739524,
+    "lon": 2.4828158
+  },
+  "Argelaguer, Catalunya": {
+    "lat": 42.2145207,
+    "lon": 2.6414922
+  },
+  "Agramunt, Catalunya": {
+    "lat": 41.787076,
+    "lon": 1.0985119
+  },
+  "Coral d'Avui - Agramunt, Catalunya": null,
+  "Coral d'Avui - Agramunt": null,
+  "Campllong, Catalunya": {
+    "lat": 41.8948831,
+    "lon": 2.8309625
+  },
+  "Les Masies de Voltregà, Catalunya": {
+    "lat": 42.0267288,
+    "lon": 2.2347147
+  },
+  "Llinars del Vallès, Catalunya": {
+    "lat": 41.6400252,
+    "lon": 2.3978389
+  },
+  "El Prat de Llobregat, Catalunya": {
+    "lat": 41.3305918,
+    "lon": 2.0930815
+  },
+  "Riudellots de la Selva, Catalunya": {
+    "lat": 41.8954981,
+    "lon": 2.8022296
+  },
+  "Arenys de Munt, Catalunya": {
+    "lat": 41.6095429,
+    "lon": 2.5400513
+  },
+  "Girona, Catalunya": {
+    "lat": 41.9793006,
+    "lon": 2.8199439
+  },
+  "Parets del Vallès, Catalunya": {
+    "lat": 41.5729405,
+    "lon": 2.2338087
+  },
+  "GRAN FINAL PREMIS PRELUDI, Catalunya": null,
+  "GRAN FINAL PREMIS PRELUDI": null,
+  "PREMIS PRELUDI, Catalunya": null,
+  "PREMIS PRELUDI": null,
+  "Badalona, Catalunya": {
+    "lat": 41.4493539,
+    "lon": 2.248254
+  },
+  "Torelló, Catalunya": {
+    "lat": 42.0478304,
+    "lon": 2.2643391
+  },
+  "Mollet del Vallès, Catalunya": {
+    "lat": 41.5393484,
+    "lon": 2.2130934
+  },
+  "Navarcles, Catalunya": {
+    "lat": 41.7531567,
+    "lon": 1.9033612
+  },
+  "Aplec Catedral Barcelona, Catalunya": null,
+  "Aplec Catedral Barcelona": null,
+  "Montmeló, Catalunya": {
+    "lat": 41.5515189,
+    "lon": 2.2480812
+  },
+  "Vilassar de Dalt, Catalunya": {
+    "lat": 41.5163595,
+    "lon": 2.3592879
+  },
+  "Barcelona-Sants, Catalunya": {
+    "lat": 41.3790068,
+    "lon": 2.1400042
+  },
+  "Bellvitge, Catalunya": {
+    "lat": 41.3509388,
+    "lon": 2.1076003
+  },
+  "Besalú, Catalunya": {
+    "lat": 42.1986443,
+    "lon": 2.6959559
+  },
+  "Cassà de la Selva, Catalunya": {
+    "lat": 41.8874685,
+    "lon": 2.8742461
+  },
+  "Corals Cabrera de Mar, Catalunya": null,
+  "Corals Cabrera de Mar": null,
+  "Ripollet, Catalunya": {
+    "lat": 41.4993372,
+    "lon": 2.1573095
+  },
+  "Prats de Lluçanès, Catalunya": {
+    "lat": 42.0085421,
+    "lon": 2.0298689
+  },
+  "La Garriga, Catalunya": {
+    "lat": 41.6849111,
+    "lon": 2.2865796
+  },
+  "Santa Eulàlia de Ronçana, Catalunya": {
+    "lat": 41.6523952,
+    "lon": 2.229264
+  },
+  "Calella Concertàs, Catalunya": null,
+  "Calella Concertàs": null,
+  "Figueres, Catalunya": {
+    "lat": 42.2666314,
+    "lon": 2.9638434
+  },
+  "Miguel Poveda, Catalunya": null,
+  "Miguel Poveda": null,
+  "Sant Cugat, Catalunya": {
+    "lat": 41.4707933,
+    "lon": 2.0848815
+  },
+  "Barítona Figueres, Catalunya": null,
+  "Barítona Figueres": null,
+  "50 Aniversari Coral, Catalunya": null,
+  "50 Aniversari Coral": null,
+  "Viladecans, Catalunya": {
+    "lat": 41.3163083,
+    "lon": 2.0156034
+  },
+  "Cabrera de Mar Concert, Catalunya": null,
+  "Cabrera de Mar Concert": null,
+  "Navàs, Catalunya": {
+    "lat": 41.8895711,
+    "lon": 1.7940495
+  },
+  "Seva, Catalunya": {
+    "lat": 41.8361292,
+    "lon": 2.2835441
+  },
+  "Olot, Catalunya": {
+    "lat": 42.1822177,
+    "lon": 2.4890211
+  },
+  "Camprodon, Catalunya": {
+    "lat": 42.3127896,
+    "lon": 2.364926
+  },
+  "Isil, Catalunya": {
+    "lat": 42.678953,
+    "lon": 1.085161
+  },
+  "Manresa, Catalunya": {
+    "lat": 41.7288939,
+    "lon": 1.8286765
+  },
+  "Ceret Concert, Catalunya": null,
+  "Ceret Concert": null,
+  "L'Esquirol, Catalunya": {
+    "lat": 42.0340216,
+    "lon": 2.3697082
+  },
+  "La Pobla de Claramunt, Catalunya": {
+    "lat": 41.5551874,
+    "lon": 1.6747485
+  },
+  "Santa Pau, Catalunya": {
+    "lat": 42.153847,
+    "lon": 2.5832151
+  },
+  "les 2 Barítones, Catalunya": null,
+  "les 2 Barítones": null,
+  "Ballets Terrassa, Catalunya": null,
+  "Ballets Terrassa": null,
+  "Sabadell, Catalunya": {
+    "lat": 41.5460801,
+    "lon": 2.1083214
+  },
+  "Barcelona-Guineueta, Catalunya": {
+    "lat": 41.4375848,
+    "lon": 2.1722977
+  },
+  "Mollet, Catalunya": {
+    "lat": 41.5393484,
+    "lon": 2.2130934
+  },
+  "Sant Carles de la Ràpita, Catalunya": {
+    "lat": 40.6178149,
+    "lon": 0.5900091
+  },
+  "Gavà, Catalunya": {
+    "lat": 41.3050933,
+    "lon": 2.0063126
+  },
+  "Tossa, Catalunya": {
+    "lat": 41.7197773,
+    "lon": 2.9312155
+  },
+  "S. Perpètua de Mogoda, Catalunya": {
+    "lat": 41.5371705,
+    "lon": 2.1880545
+  },
+  "La Galera, Catalunya": {
+    "lat": 40.6823929,
+    "lon": 0.4637029
+  },
+  "Horta de Sant Joan, Catalunya": {
+    "lat": 40.9554904,
+    "lon": 0.315402
+  },
+  "Sant Just Desvern, Catalunya": {
+    "lat": 41.3858295,
+    "lon": 2.0757651
+  },
+  "La Vall de Bianya, Catalunya": {
+    "lat": 42.2415208,
+    "lon": 2.4326305
+  },
+  "Tiana, Catalunya": {
+    "lat": 41.4819226,
+    "lon": 2.2689473
+  },
+  "Calldetenes, Catalunya": {
+    "lat": 41.9257651,
+    "lon": 2.2834318
+  },
+  "Sant Andreu de Llavaneres, Catalunya": {
+    "lat": 41.5739524,
+    "lon": 2.4828158
+  },
+  "Gravació Ballets, Catalunya": null,
+  "Gravació Ballets": null,
+  "Olesa de Montserrat, Concert 1001 Nits, Catalunya": null,
+  "Olesa de Montserrat, Concert 1001 Nits": null,
+  "Vilassar de Mar/Cabrera de Mar, Catalunya": {
+    "lat": 41.5103941,
+    "lon": 2.3982555
+  },
+  "Ponts, Catalunya": {
+    "lat": 41.9154944,
+    "lon": 1.1863072
+  },
+  "Moià, Catalunya": {
+    "lat": 41.8130391,
+    "lon": 2.0978412
+  },
+  "Escola Thau Sant Cugat, Catalunya": {
+    "lat": 41.492401,
+    "lon": 2.0697962
+  },
+  "Enregistrament CD, Catalunya": null,
+  "Enregistrament CD": null,
+  "CoCo, Catalunya": {
+    "lat": 41.4037227,
+    "lon": 2.1547784
+  },
+  "L'Hospitalet de Llobregat, Catalunya": {
+    "lat": 41.3595118,
+    "lon": 2.0996318
+  },
+  "Alcarràs, Catalunya": {
+    "lat": 41.5632578,
+    "lon": 0.5240396
+  },
+  "Blanes, Catalunya": {
+    "lat": 41.6756178,
+    "lon": 2.7932391
+  },
+  "Les Planes d'Hostoles, Catalunya": {
+    "lat": 42.0565983,
+    "lon": 2.5384283
+  },
+  "Granollers, Catalunya": {
+    "lat": 41.6079555,
+    "lon": 2.2876008
+  },
+  "Pobla de Claramunt, Catalunya": {
+    "lat": 41.555056,
+    "lon": 1.6751151
+  },
+  "Almacelles, Catalunya": {
+    "lat": 41.7294989,
+    "lon": 0.4404763
+  },
+  "Madrid, Catalunya": {
+    "lat": 41.5590525,
+    "lon": 2.0839883
+  },
+  "50è Aniversari Elèctrica Dharma, Catalunya": null,
+  "50è Aniversari Elèctrica Dharma": null,
+  "Les Franqueses del Vallès, Catalunya": {
+    "lat": 41.647559,
+    "lon": 2.3091778
+  },
+  "Palau de la Música Catalana, Catalunya": {
+    "lat": 41.3875837,
+    "lon": 2.1752316
+  },
+  "1001 Nits Parets del Vallès, Catalunya": null,
+  "1001 Nits Parets del Vallès": null,
+  "Cabrils, Catalunya": {
+    "lat": 41.5262354,
+    "lon": 2.3676258
+  },
+  "1001 Nits Balaguer, Catalunya": null,
+  "1001 Nits Balaguer": null,
+  "Enregistrament dansa Esbart Egarenc i LSDA, Catalunya": null,
+  "Enregistrament dansa Esbart Egarenc i LSDA": null,
+  "Acte Centenari Esbart Dansaire de Rubí, Catalunya": null,
+  "Acte Centenari Esbart Dansaire de Rubí": null,
+  "Presentació CD Jordi Leon, Catalunya": null,
+  "Presentació CD Jordi Leon": null,
+  "Acte Inauguració Centenari ACFB, Catalunya": null,
+  "Acte Inauguració Centenari ACFB": null,
+  "Gravació CD, Catalunya": null,
+  "Gravació CD": null,
+  "Castellgalí Espectacle amb Esbart, Catalunya": null,
+  "Castellgalí Espectacle amb Esbart": null,
+  "Calonge i Sant Antoni, Catalunya": {
+    "lat": 41.8621762,
+    "lon": 3.0660825
+  },
+  "Aplec Comarcal, Catalunya": null,
+  "Aplec Comarcal": null,
+  "1001 nits Cornellà, Catalunya": null,
+  "1001 nits Cornellà": null,
+  "Esplugues de Llobregat Concert i Ballets amb l'Esbart de Rubí, Catalunya": null,
+  "Esplugues de Llobregat Concert i Ballets amb l'Esbart de Rubí": null,
+  "Gravació, Catalunya": null,
+  "Gravació": null,
+  "La Sardana de l'Any, Catalunya": null,
+  "La Sardana de l'Any": null,
+  "Cabrera/Vilassar de Mar, Catalunya": {
+    "lat": 41.5103941,
+    "lon": 2.3982555
+  },
+  "Cerdanyola del Vallés, Catalunya": {
+    "lat": 41.4909972,
+    "lon": 2.1405506
+  },
+  "Barcelona Roquetes, Catalunya": {
+    "lat": 41.2298164,
+    "lon": 1.7449582
+  },
+  "Gravació Sabadell, Catalunya": null,
+  "Gravació Sabadell": null,
+  "L´Hospitalet de Llobregat, Catalunya": {
+    "lat": 41.3595118,
+    "lon": 2.0996318
+  },
+  "La Bisbal de l'Empordà, Catalunya": {
+    "lat": 41.9295363,
+    "lon": 3.036196
+  },
+  "Montesquiu, Catalunya": {
+    "lat": 42.108728,
+    "lon": 2.2086111
+  },
+  "Sant Julià de Vilatorta, Catalunya": {
+    "lat": 41.9219404,
+    "lon": 2.3240651
+  },
+  "Sant Esteve Sesrovires, Catalunya": {
+    "lat": 41.4932429,
+    "lon": 1.8747348
+  },
+  "Gravació Audició de Santa Eulàlia, Catalunya": null,
+  "Gravació Audició de Santa Eulàlia": null,
+  "Petit Palau, Catalunya": {
+    "lat": 41.387377,
+    "lon": 2.1753482
+  },
+  "Roda de Barà, Catalunya": {
+    "lat": 41.1857961,
+    "lon": 1.4569904
+  },
+  "Cardedeu, Catalunya": {
+    "lat": 41.6385167,
+    "lon": 2.3558408
+  },
+  "L'Escala, Catalunya": {
+    "lat": 42.113535,
+    "lon": 3.1387422
+  },
+  "Barcelona-Roquetes, Catalunya": {
+    "lat": 41.2298164,
+    "lon": 1.7449582
+  },
+  "Acte de presentació del CD \"90\", Catalunya": null,
+  "Acte de presentació del CD \"90\"": null,
+  "Gravació 90è Aniversari, Catalunya": null,
+  "Gravació 90è Aniversari": null,
+  "Hostalets de Balenyà, Catalunya": {
+    "lat": 41.81489,
+    "lon": 2.2333234
+  },
+  "Barcelona-Ciutadella, Catalunya": {
+    "lat": 41.3879621,
+    "lon": 2.1887022
+  },
+  "Palau de la Música, Catalunya": {
+    "lat": 41.3875837,
+    "lon": 2.1752316
+  },
+  "Roda de Ter, Catalunya": {
+    "lat": 41.9814126,
+    "lon": 2.3096755
+  },
+  "Barcelona-Gràcia, Catalunya": {
+    "lat": 41.4168107,
+    "lon": 2.1482073
+  },
+  "Òdena, Catalunya": {
+    "lat": 41.6068791,
+    "lon": 1.6422209
+  },
+  "Encamp, Catalunya": {
+    "lat": 42.2476846,
+    "lon": 1.1756588
+  },
+  "Santa Maria de Besora, Catalunya": {
+    "lat": 42.1272818,
+    "lon": 2.2589189
+  },
+  "Caldes de Montbui, Catalunya": {
+    "lat": 41.6344802,
+    "lon": 2.1626124
+  },
+  "Sitges, Catalunya": {
+    "lat": 41.2353596,
+    "lon": 1.8114102
+  },
+  "La Llagosta, Catalunya": {
+    "lat": 41.5131188,
+    "lon": 2.1931226
+  },
+  "El Masnou, Catalunya": {
+    "lat": 41.4796899,
+    "lon": 2.3118347
+  },
+  "Festa privada, Catalunya": null,
+  "Festa privada": null,
+  "Ocupat, Catalunya": null,
+  "Ocupat": null,
+  "Osseja, Catalunya": {
+    "lat": 42.4082919,
+    "lon": 1.9546096
+  },
+  "Malgrat de Mar cotxe jo, Catalunya": null,
+  "Malgrat de Mar cotxe jo": null,
+  "Mataró cotxe jo+juny, Catalunya": null,
+  "Mataró cotxe jo+juny": null,
+  "Les Masies de Roda, Catalunya": {
+    "lat": 41.9900725,
+    "lon": 2.3064465
+  },
+  "Grabació, Catalunya": null,
+  "Grabació": null,
+  "El Morell, Catalunya": {
+    "lat": 41.1923512,
+    "lon": 1.2071006
+  },
+  "Tarragona, Catalunya": {
+    "lat": 41.1172364,
+    "lon": 1.2546057
+  },
+  "Barcelana, Catalunya": null,
+  "Barcelana": null,
+  "Masquefa, Catalunya": {
+    "lat": 41.5026351,
+    "lon": 1.8110722
+  },
+  "Grabació Barítona, Catalunya": null,
+  "Grabació Barítona": null,
+  "Sant Pere de Torelló, Catalunya": {
+    "lat": 42.0754755,
+    "lon": 2.2955862
+  },
+  "Cornellà, Catalunya": {
+    "lat": 41.355724,
+    "lon": 2.0706225
+  },
+  "Cornellà Concert Falla, Catalunya": null,
+  "Cornellà Concert Falla": null,
+  "Liceu Concert, Catalunya": null,
+  "Liceu Concert": null,
+  "Ripoll Concert, Catalunya": null,
+  "Ripoll Concert": null,
+  "Banyoles CoCo, Catalunya": null,
+  "Banyoles CoCo": null,
+  "Argentona, Catalunya": {
+    "lat": 41.5554326,
+    "lon": 2.4002787
+  },
+  "Barcelona Cobla i Barítona, Catalunya": null,
+  "Barcelona Cobla i Barítona": null,
+  "Llorenç del Penedès, Catalunya": {
+    "lat": 41.2831394,
+    "lon": 1.5533507
+  },
+  "Sant Martí de Centelles, Catalunya": {
+    "lat": 41.7540904,
+    "lon": 2.2195762
+  },
+  "Cabrera de  Mar, Catalunya": {
+    "lat": 41.5276986,
+    "lon": 2.3925117
+  },
+  "Concert. L'Hospitalet de Llobregat, Catalunya": null,
+  "Concert. L'Hospitalet de Llobregat": null,
+  "Sant Vicens dels Horts, Catalunya": null,
+  "Sant Vicens dels Horts": null,
+  "Matí, Catalunya": {
+    "lat": 41.3529169,
+    "lon": 2.1100591
+  },
+  "Retaule Santa Tecla Tarragona, Catalunya": null,
+  "Retaule Santa Tecla Tarragona": null,
+  "Pallejà, Catalunya": {
+    "lat": 41.4223067,
+    "lon": 1.9967356
+  },
+  "Martorelles, Catalunya": {
+    "lat": 41.52851,
+    "lon": 2.2374755
+  },
+  "Tarda, Catalunya": {
+    "lat": 41.2987527,
+    "lon": 1.9518762
+  },
+  "Igualada, Catalunya": {
+    "lat": 41.5790182,
+    "lon": 1.617346
+  },
+  "a Sabadell, Catalunya": {
+    "lat": 41.5460801,
+    "lon": 2.1083214
+  },
+  "Ullastrell, Catalunya": {
+    "lat": 41.5265763,
+    "lon": 1.9560471
+  },
+  "Ballets Sant Cugat, Catalunya": null,
+  "Ballets Sant Cugat": null,
+  "Torredembarra, Catalunya": {
+    "lat": 41.146155,
+    "lon": 1.3959508
+  },
+  "Collbató, Catalunya": {
+    "lat": 41.570256,
+    "lon": 1.8285814
+  },
+  "S. Vicenç dels Horts, Catalunya": {
+    "lat": 41.3932588,
+    "lon": 2.0114334
+  },
+  "Barcelona Catedral, Catalunya": {
+    "lat": 41.3828401,
+    "lon": 2.1767417
+  },
+  "Capellades, Catalunya": {
+    "lat": 41.53,
+    "lon": 1.684787
+  },
+  "Catedral Barcelona, Catalunya": {
+    "lat": 41.3828401,
+    "lon": 2.1767417
+  },
+  "Esplugues, Catalunya": {
+    "lat": 41.3778094,
+    "lon": 2.0886257
+  },
+  "Sitges Concert, Catalunya": null,
+  "Sitges Concert": null,
+  "La Floresta, Catalunya": {
+    "lat": 41.5103082,
+    "lon": 0.9195489
+  },
+  "Begues, Catalunya": {
+    "lat": 41.3328119,
+    "lon": 1.925468
+  },
+  "Comarruga, Catalunya": {
+    "lat": 41.1937762,
+    "lon": 1.5189606
+  },
+  "Castellar, Catalunya": {
+    "lat": 41.7288703,
+    "lon": 1.6542612
+  },
+  "Lliça de Vall, Catalunya": {
+    "lat": 41.5863002,
+    "lon": 2.2391397
+  },
+  "Canet de Mar, Catalunya": {
+    "lat": 41.5900933,
+    "lon": 2.5777998
+  },
+  "L'Arboç, Catalunya": {
+    "lat": 41.2677369,
+    "lon": 1.6037535
+  },
+  "Vilafranca del Penèdes, Catalunya": {
+    "lat": 41.3463825,
+    "lon": 1.6995213
+  },
+  "Sant Boi, Catalunya": {
+    "lat": 41.3241016,
+    "lon": 2.0511278
+  },
+  "Lleida Ballets, Catalunya": null,
+  "Lleida Ballets": null,
+  "La Guineueta, Catalunya": {
+    "lat": 41.4403026,
+    "lon": 2.1704023
+  },
+  "SGAE, Catalunya": null,
+  "SGAE": null,
+  "Barcelona. Casal Calasanç, Catalunya": null,
+  "Barcelona. Casal Calasanç": null,
+  "Aplec Ciutadella Barcelona, Catalunya": null,
+  "Aplec Ciutadella Barcelona": null,
+  "doble Malgrat de Mar, Catalunya": null,
+  "doble Malgrat de Mar": null,
+  "Aplec Sant Vicenç dels Horts, Catalunya": null,
+  "Aplec Sant Vicenç dels Horts": null,
+  "Ballets Barcelona Esbart Sant Martí, Catalunya": null,
+  "Ballets Barcelona Esbart Sant Martí": null,
+  "Barcelona-Sarrià, Catalunya": {
+    "lat": 41.3972785,
+    "lon": 2.1269497
+  },
+  "doble Cornellà, Catalunya": null,
+  "doble Cornellà": null,
+  "Cornellà Ritmes d'anada i tornada, Catalunya": null,
+  "Cornellà Ritmes d'anada i tornada": null,
+  "Aplec Esplugues de Llobregat, Catalunya": null,
+  "Aplec Esplugues de Llobregat": null,
+  "Ballets Capellades, Catalunya": null,
+  "Ballets Capellades": null,
+  "Aplec Barcelona Guineueta, Catalunya": null,
+  "Aplec Barcelona Guineueta": null,
+  "Aplec Tossa de Mar, Catalunya": null,
+  "Aplec Tossa de Mar": null,
+  "Aplec Malgrat, Catalunya": null,
+  "Aplec Malgrat": null,
+  "El Prat de Llobregat Concert Ritmes d'Anada i Tornada, Catalunya": null,
+  "El Prat de Llobregat Concert Ritmes d'Anada i Tornada": null,
+  "Aplec Sant Cugat, Catalunya": null,
+  "Aplec Sant Cugat": null,
+  "Aplec Rubí, Catalunya": null,
+  "Aplec Rubí": null,
+  "Processó i Concert Sitges, Catalunya": null,
+  "Processó i Concert Sitges": null,
+  "Aplec Badalona, Catalunya": null,
+  "Aplec Badalona": null,
+  "Aplec Bellpuig, Catalunya": null,
+  "Aplec Bellpuig": null,
+  "Aplec Encamp, Catalunya": null,
+  "Aplec Encamp": null,
+  "Barcelona Sants, Catalunya": {
+    "lat": 41.3790068,
+    "lon": 2.1400042
+  },
+  "Ballet i Mitja Audició Arenys de Mar, Catalunya": null,
+  "Ballet i Mitja Audició Arenys de Mar": null,
+  "Aplec Sant Feliu de Pallerols, Catalunya": null,
+  "Aplec Sant Feliu de Pallerols": null,
+  "Prada de Conflent, Catalunya": {
+    "lat": 42.5543449,
+    "lon": 2.5464247
+  },
+  "Aplec Osseja, Catalunya": null,
+  "Aplec Osseja": null,
+  "Sant Climent de Llobregat, Catalunya": {
+    "lat": 41.3366993,
+    "lon": 1.9970575
+  },
+  "Tossa de Nar, Catalunya": null,
+  "Tossa de Nar": null,
+  "Bellpuig, Catalunya": {
+    "lat": 41.6254383,
+    "lon": 1.0117111
+  },
+  "Valls, Catalunya": {
+    "lat": 41.2835355,
+    "lon": 1.2473637
+  },
+  "El Catllar, Catalunya": {
+    "lat": 41.1748794,
+    "lon": 1.3256814
+  },
+  "Cubelles, Catalunya": {
+    "lat": 41.2083363,
+    "lon": 1.6730541
+  },
+  "Mataró - Isla Fantasía, Catalunya": null,
+  "Mataró - Isla Fantasía": null,
+  "BCN - Sants, Catalunya": {
+    "lat": 41.3699882,
+    "lon": 2.1557139
+  },
+  "Campdevànol, Catalunya": {
+    "lat": 42.2230582,
+    "lon": 2.1680717
+  },
+  "Sant Esteve ses Rovires, Catalunya": null,
+  "Sant Esteve ses Rovires": null,
+  "St. Vicenç dels Horts, Catalunya": {
+    "lat": 41.3934193,
+    "lon": 2.0099482
+  },
+  "Montserrat, Catalunya": {
+    "lat": 41.6067129,
+    "lon": 1.8108377
+  },
+  "Barcelona - Gràcia, Catalunya": {
+    "lat": 41.4168107,
+    "lon": 2.1482073
+  },
+  "Sant Salvador del Vendrell, Catalunya": {
+    "lat": 41.2200764,
+    "lon": 1.5352296
+  },
+  "Vilanova i La Geltrú, Catalunya": {
+    "lat": 41.2241992,
+    "lon": 1.7256327
+  },
+  "L'Ivan se'ns casa!!, Catalunya": null,
+  "L'Ivan se'ns casa!!": null,
+  "Banyeres del Penedès, Catalunya": {
+    "lat": 41.2791532,
+    "lon": 1.5813324
+  },
+  "St. Joan Despí, Catalunya": {
+    "lat": 41.3667951,
+    "lon": 2.0570346
+  },
+  "St. Cugat, Catalunya": {
+    "lat": 41.4707933,
+    "lon": 2.0848815
+  },
+  "Catedral, Catalunya": {
+    "lat": 41.3839296,
+    "lon": 2.1765539
+  },
+  "Sants, Catalunya": {
+    "lat": 41.3753288,
+    "lon": 2.1349117
+  },
+  "Masnou, Catalunya": {
+    "lat": 42.2355446,
+    "lon": 2.2631993
+  },
+  "Guineueta, Catalunya": {
+    "lat": 41.4399106,
+    "lon": 2.1736655
   }
 }

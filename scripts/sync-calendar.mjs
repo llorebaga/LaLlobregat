@@ -4,6 +4,7 @@ import path from "node:path";
 const calendarId = "lallobregat@gmail.com";
 const calendarFeed = `https://calendar.google.com/calendar/ical/${encodeURIComponent(calendarId)}/public/basic.ics`;
 const outputPath = path.resolve("app/calendar-events.generated.json");
+const historyOutputPath = path.resolve("app/calendar-history.generated.json");
 const cachePath = path.resolve("scripts/calendar-geocode-cache.json");
 const maximumEvents = 180;
 const geocodeDelay = Number(process.env.GEOCODE_DELAY_MS ?? 1200);
@@ -14,6 +15,11 @@ const monthNamesLong = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Ju
 const knownPlaces = {
   "bufraganya": { lat: 41.48455, lon: 1.44838, town: "Sant Magí de Brufaganya" },
 };
+const ignoredTownNames = new Set([
+  "coco", "catedral", "enregistrament cd", "festa privada", "gravacio", "grabacio",
+  "mati", "ocupat", "palau de la musica", "palau de la musica catalana", "petit palau",
+  "sants", "sgae", "tarda", "madrid",
+]);
 
 function unfoldIcs(source) {
   return source.replace(/\r?\n[ \t]/g, "");
@@ -89,7 +95,10 @@ function eventType(summary) {
 }
 
 function eventTown(summary, location) {
-  const cleaned = summary.replace(/^(concertàs|concert|mèlt|coco)\s+/i, "").trim();
+  const cleaned = summary
+    .replace(/^(concertàs|concert|mèlt|coco|sardanes?|ballada|audició)\s*[-:·]?\s+/i, "")
+    .replace(/\s*\([^)]*\)\s*$/g, "")
+    .trim();
   return cleaned || location.split(",")[0].trim();
 }
 
@@ -173,13 +182,14 @@ const response = await fetch(calendarFeed);
 if (!response.ok) throw new Error(`El calendari públic ha respost ${response.status}`);
 
 const source = unfoldIcs(await response.text());
+const now = new Date();
 const startOfPeriod = new Date();
 startOfPeriod.setDate(1);
 startOfPeriod.setHours(0, 0, 0, 0);
 const endOfPeriod = new Date(startOfPeriod);
 endOfPeriod.setMonth(endOfPeriod.getMonth() + 12);
 
-const parsedEvents = source
+const allParsedEvents = source
   .split("BEGIN:VEVENT")
   .slice(1)
   .map((block) => {
@@ -187,53 +197,108 @@ const parsedEvents = source
     const location = decodeIcsText(readProperty(block, "LOCATION"));
     const uid = readProperty(block, "UID");
     const calendarDate = parseCalendarDate(readProperty(block, "DTSTART"));
-    if (!summary || !uid || !calendarDate || calendarDate.date < startOfPeriod || calendarDate.date >= endOfPeriod) return null;
+    if (!summary || !uid || !calendarDate) return null;
     return { summary, location, uid, ...calendarDate };
   })
   .filter(Boolean)
-  .sort((first, second) => first.date - second.date)
+  .sort((first, second) => first.date - second.date);
+
+const parsedEvents = allParsedEvents
+  .filter((event) => event.date >= startOfPeriod && event.date < endOfPeriod)
   .slice(0, maximumEvents);
+
+const parsedHistoryEvents = allParsedEvents
+  .filter((event) => event.date < now)
+  .sort((first, second) => second.date - first.date);
 
 const cache = await readCache();
 let lastRequest = 0;
 const synchronizedEvents = [];
+const synchronizedHistoryEvents = [];
+const resolvedTowns = new Map();
 
-for (const event of parsedEvents) {
+function findTownInsideTitle(townKey) {
+  const searchableTitle = ` ${townKey.replace(/[^a-z0-9]+/g, " ").trim()} `;
+  const matches = [...resolvedTowns.entries()].filter(([key]) => {
+    if (ignoredTownNames.has(key) || key.length < 4) return false;
+    const searchableKey = ` ${key.replace(/[^a-z0-9]+/g, " ").trim()} `;
+    return searchableTitle.includes(searchableKey);
+  });
+
+  return matches.sort(([first], [second]) => second.length - first.length)[0]?.[1] ?? null;
+}
+
+async function synchronizeEvent(event, includeLocation) {
   const originalTown = eventTown(event.summary, event.location);
-  const { knownPlace, queries } = eventQueries(originalTown, event.location);
-  let coordinates = knownPlace ? { lat: knownPlace.lat, lon: knownPlace.lon } : null;
+  if (!originalTown) return null;
+  const townKey = normalizeText(originalTown);
+  if (ignoredTownNames.has(townKey)) return null;
+  let resolvedTown = resolvedTowns.get(townKey) ?? findTownInsideTitle(townKey);
 
-  for (const query of queries) {
-    if (coordinates) break;
-    const geocoded = await geocode(query, cache, lastRequest);
-    lastRequest = geocoded.lastRequest;
-    coordinates = geocoded.coordinates;
+  if (!resolvedTown) {
+    const { knownPlace, queries } = eventQueries(originalTown, includeLocation ? event.location : "");
+    let coordinates = knownPlace ? { lat: knownPlace.lat, lon: knownPlace.lon } : null;
+
+    for (const query of queries) {
+      if (coordinates) break;
+      const geocoded = await geocode(query, cache, lastRequest);
+      lastRequest = geocoded.lastRequest;
+      coordinates = geocoded.coordinates;
+    }
+
+    if (!coordinates) {
+      console.warn(`Sense coordenades: ${event.summary}`);
+      return null;
+    }
+
+    resolvedTown = {
+      town: knownPlace?.town ?? originalTown,
+      mapPosition: mapPosition(coordinates.lat, coordinates.lon),
+    };
+    resolvedTowns.set(townKey, resolvedTown);
   }
 
-  if (!coordinates) {
-    console.warn(`Sense coordenades: ${event.summary}`);
-    continue;
-  }
-
-  const town = knownPlace?.town ?? originalTown;
-
-  synchronizedEvents.push({
-    id: `calendar-${event.uid.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}`,
+  return {
+    id: `calendar-${event.uid.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}-${event.dateTime.replace(/[^0-9]+/g, "-")}`,
     day: event.day,
     month: event.month,
     dateTime: event.dateTime,
     title: event.summary,
     place: event.location ? event.location.split(",")[0].trim() : "Ubicació no indicada al calendari",
-    town,
+    town: resolvedTown.town,
     time: event.time,
     type: eventType(event.summary),
     source: eventUrl(event.uid),
     monthKey: event.monthKey,
     monthLabel: event.monthLabel,
-    mapPosition: mapPosition(coordinates.lat, coordinates.lon),
-  });
+    mapPosition: resolvedTown.mapPosition,
+  };
 }
+
+for (const event of parsedEvents) {
+  const synchronizedEvent = await synchronizeEvent(event, true);
+  if (synchronizedEvent) synchronizedEvents.push(synchronizedEvent);
+}
+
+for (const event of parsedHistoryEvents) {
+  const synchronizedEvent = await synchronizeEvent(event, false);
+  if (synchronizedEvent) synchronizedHistoryEvents.push(synchronizedEvent);
+}
+
+const synchronizedHistoryIds = new Set(synchronizedHistoryEvents.map((event) => event.id));
+for (const event of parsedHistoryEvents) {
+  const eventId = `calendar-${event.uid.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}-${event.dateTime.replace(/[^0-9]+/g, "-")}`;
+  if (synchronizedHistoryIds.has(eventId)) continue;
+  const synchronizedEvent = await synchronizeEvent(event, false);
+  if (synchronizedEvent) {
+    synchronizedHistoryEvents.push(synchronizedEvent);
+    synchronizedHistoryIds.add(synchronizedEvent.id);
+  }
+}
+synchronizedHistoryEvents.sort((first, second) => second.dateTime.localeCompare(first.dateTime));
 
 await writeFile(cachePath, `${JSON.stringify(cache, null, 2)}\n`, "utf8");
 await writeFile(outputPath, `${JSON.stringify(synchronizedEvents, null, 2)}\n`, "utf8");
+await writeFile(historyOutputPath, `${JSON.stringify(synchronizedHistoryEvents, null, 2)}\n`, "utf8");
 console.log(`${synchronizedEvents.length} actuacions sincronitzades.`);
+console.log(`${synchronizedHistoryEvents.length} actuacions incorporades al mapa històric.`);

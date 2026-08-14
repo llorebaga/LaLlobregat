@@ -4,6 +4,7 @@ import calendarEvents from "../calendar-events.generated.json";
 import { sitePath } from "../site-path";
 import { AgendaCalendar } from "./AgendaCalendar";
 import { AgendaMap } from "./AgendaMap";
+import { AgendaTownSearch } from "./AgendaTownSearch";
 
 export const metadata: Metadata = {
   title: "Agenda",
@@ -29,6 +30,8 @@ export default function AgendaPage() {
           <span>Calendari actualitzat · La Principal del Llobregat</span>
         </div>
       </header>
+
+      <AgendaTownSearch events={events} />
 
       <section className="agendaMapSection sectionPad" aria-labelledby="agenda-mapa-title">
         <div className="agendaSectionHeading">
