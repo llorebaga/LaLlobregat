@@ -1,5 +1,149 @@
 [
   {
+    "id": "calendar-7pql8ujuqllsjjrti0guloamns-google-com",
+    "day": "01",
+    "month": "AG.",
+    "dateTime": "2026-08-01T15:00:00.000Z",
+    "title": "Ribes de Freser",
+    "place": "Plaça del Mercat",
+    "town": "Ribes de Freser",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N3BxbDh1anVxbGxzampydGkwZ3Vsb2FtbnMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "59.42%",
+      "top": "26.70%"
+    }
+  },
+  {
+    "id": "calendar-0010vk7pdihoohoicr4nlqohjn-google-com",
+    "day": "01",
+    "month": "AG.",
+    "dateTime": "2026-08-01T18:30:00.000Z",
+    "title": "Tona",
+    "place": "Plaça Major",
+    "town": "Tona",
+    "time": "20.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MDAxMHZrN3BkaWhvb2hvaWNyNG5scW9oam4gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "60.73%",
+      "top": "44.31%"
+    }
+  },
+  {
+    "id": "calendar-034q6hql62886l8mjf5b85cd2n-google-com",
+    "day": "02",
+    "month": "AG.",
+    "dateTime": "2026-08-02T17:30:00.000Z",
+    "title": "Pineda de Mar",
+    "place": "Plaça de les Melies",
+    "town": "Pineda de Mar",
+    "time": "19.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MDM0cTZocWw2Mjg4Nmw4bWpmNWI4NWNkMm4gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "70.80%",
+      "top": "52.96%"
+    }
+  },
+  {
+    "id": "calendar-49hm2gp66qjaar76l3i3id0504-google-com",
+    "day": "06",
+    "month": "AG.",
+    "dateTime": "2026-08-06T16:00:00.000Z",
+    "title": "Castelló d'Empúries",
+    "place": "Pati del Palau dels Comtes",
+    "town": "Castelló d'Empúries",
+    "time": "18.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NDlobTJncDY2cWphYXI3NmwzaTNpZDA1MDQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "79.23%",
+      "top": "28.52%"
+    }
+  },
+  {
+    "id": "calendar-40r2j6i5pvos1pidg5olc5lvp5-google-com",
+    "day": "06",
+    "month": "AG.",
+    "dateTime": "2026-08-06T20:00:00.000Z",
+    "title": "CONCERT Palamós",
+    "place": "Plaça Josep Sarquella",
+    "town": "Palamós",
+    "time": "22.00 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=NDByMmo2aTVwdm9zMXBpZGc1b2xjNWx2cDUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "80.39%",
+      "top": "44.34%"
+    }
+  },
+  {
+    "id": "calendar-5t67m74pjnpd3np36frn4iuen5-google-com",
+    "day": "07",
+    "month": "AG.",
+    "dateTime": "2026-08-07T19:30:00.000Z",
+    "title": "Premià de Mar",
+    "place": "Plaça de l'Ajuntament",
+    "town": "Premià de Mar",
+    "time": "21.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NXQ2N203NHBqbnBkM25wMzZmcm40aXVlbjUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "63.53%",
+      "top": "58.23%"
+    }
+  },
+  {
+    "id": "calendar-2lir1cn6crc3t5d2oo2kabf1pf-google-com",
+    "day": "08",
+    "month": "AG.",
+    "dateTime": "2026-08-08T19:30:00.000Z",
+    "title": "MÈLT Bufraganya",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Sant Magí de Brufaganya",
+    "time": "21.30 h",
+    "type": "Projecte",
+    "source": "https://calendar.google.com/calendar/event?eid=MmxpcjFjbjZjcmMzdDVkMm9vMmthYmYxcGYgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "43.66%",
+      "top": "58.43%"
+    }
+  },
+  {
+    "id": "calendar-7ojbio3ig42g648vksoitafhc6-google-com",
+    "day": "09",
+    "month": "AG.",
+    "dateTime": "2026-08-09T14:00:00.000Z",
+    "title": "Sant Feliu de Pallerols",
+    "place": "Arbres d'en Casals",
+    "town": "Sant Feliu de Pallerols",
+    "time": "16.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N29qYmlvM2lnNDJnNjQ4dmtzb2l0YWZoYzYgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "66.83%",
+      "top": "35.60%"
+    }
+  },
+  {
     "id": "calendar-1va534rmsr52d4o0ptakm6dtio-google-com",
     "day": "14",
     "month": "AG.",
@@ -10,9 +154,29 @@
     "time": "17.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=MXZhNTM0cm1zcjUyZDRvMHB0YWttNmR0aW8gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "59.42%",
       "top": "26.70%"
+    }
+  },
+  {
+    "id": "calendar-7905rhn5cdt1aml17j45uhl93h-google-com",
+    "day": "15",
+    "month": "AG.",
+    "dateTime": "2026-08-15T09:15:00.000Z",
+    "title": "La Bisbal d'Empordà",
+    "place": "Ajuntament de la Bisbal d'Empordà",
+    "town": "La Bisbal d'Empordà",
+    "time": "11.15 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NzkwNXJobjVjZHQxYW1sMTdqNDV1aGw5M2ggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "78.46%",
+      "top": "40.08%"
     }
   },
   {
@@ -26,9 +190,29 @@
     "time": "18.30 h",
     "type": "Concert",
     "source": "https://calendar.google.com/calendar/event?eid=M2o3ZW5rNmQ3bDBybWdwbWxkdWliczNrZHEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "78.42%",
       "top": "40.10%"
+    }
+  },
+  {
+    "id": "calendar-3ueb4cr1pkrvfl2d8kck6u7l69-google-com",
+    "day": "15",
+    "month": "AG.",
+    "dateTime": "2026-08-15T20:30:00.000Z",
+    "title": "La Bisbal d'Empordà",
+    "place": "Ubicació no indicada al calendari",
+    "town": "La Bisbal d'Empordà",
+    "time": "22.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=M3VlYjRjcjFwa3J2ZmwyZDhrY2s2dTdsNjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "78.46%",
+      "top": "40.08%"
     }
   },
   {
@@ -42,6 +226,8 @@
     "time": "20.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=NnQyY2FmcTE2bjRqbHZrMWg0djlhbG11aHIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "67.72%",
       "top": "54.63%"
@@ -58,6 +244,8 @@
     "time": "12.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=NmdwMzZvcGxja3BqY2I5bjc1aTZjYjlrNmhpajBiOW9jNWgzZ2JiNGNsaDNlb3BuNjFpMzRkOW1jZyBsYWxsb2JyZWdhdEBnbWFpbC5jb20",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "49.89%",
       "top": "59.90%"
@@ -74,6 +262,8 @@
     "time": "22.00 h",
     "type": "Concert",
     "source": "https://calendar.google.com/calendar/event?eid=NXBncnJqM3JiYXBhN2hnaXFvdXF2dHI4djcgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "79.20%",
       "top": "43.81%"
@@ -90,9 +280,29 @@
     "time": "16.30 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=MzI0bzVvZnV0cnNnbjNnNDIwdXByaXNqY2QgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "59.90%",
       "top": "30.92%"
+    }
+  },
+  {
+    "id": "calendar-2c2m0thli1toqp4s98463914pa-google-com",
+    "day": "22",
+    "month": "AG.",
+    "dateTime": "2026-08-22T20:00:00.000Z",
+    "title": "Caldes de Malavella",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Caldes de Malavella",
+    "time": "22.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MmMybTB0aGxpMXRvcXA0czk4NDYzOTE0cGEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "73.39%",
+      "top": "45.16%"
     }
   },
   {
@@ -106,9 +316,29 @@
     "time": "19.30 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=MnQ4bGkxZGNqdnJxYTMzOGZiY2VsM3AwdnAgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "69.42%",
       "top": "53.92%"
+    }
+  },
+  {
+    "id": "calendar-4v4ocsfe98bpbmd83dvt2kkj29-google-com",
+    "day": "24",
+    "month": "AG.",
+    "dateTime": "2026-08-24T08:30:00.000Z",
+    "title": "Roda de Berà",
+    "place": "Ajuntament de Roda de Berà",
+    "town": "Roda de Berà",
+    "time": "10.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NHY0b2NzZmU5OGJwYm1kODNkdnQya2tqMjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "43.85%",
+      "top": "69.96%"
     }
   },
   {
@@ -122,9 +352,29 @@
     "time": "13.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=MHJxc2RsZ29hajcwYXEwMzRoNTVmdHZtbXQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "43.82%",
       "top": "69.98%"
+    }
+  },
+  {
+    "id": "calendar-3obuohq4cmcoughsvdgm50o3ed-google-com",
+    "day": "24",
+    "month": "AG.",
+    "dateTime": "2026-08-24T16:30:00.000Z",
+    "title": "Roda de Berà",
+    "place": "Ajuntament de Roda de Berà",
+    "town": "Roda de Berà",
+    "time": "18.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=M29idW9ocTRjbWNvdWdoc3ZkZ201MG8zZWQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "43.85%",
+      "top": "69.96%"
     }
   },
   {
@@ -138,6 +388,8 @@
     "time": "12.30 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=NDZiMWVpcDNzOGdlbjhxYmZmaDZiNWNhMHEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "58.74%",
       "top": "62.51%"
@@ -154,6 +406,8 @@
     "time": "17.30 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=MXBxcHVxMWZoN2g2aXN2MjZkMW80N2FoN2ggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "58.74%",
       "top": "62.51%"
@@ -170,6 +424,8 @@
     "time": "22.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=NjVkOHEyZGViMDh0MGJhdjFmMjg1NDZlcHUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "75.26%",
       "top": "45.25%"
@@ -186,6 +442,8 @@
     "time": "21.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=MG9wN2o0MGJjYjRxMjI5OTJpcThlamJjZzMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "72.76%",
       "top": "46.66%"
@@ -202,9 +460,1145 @@
     "time": "19.00 h",
     "type": "Sardanes",
     "source": "https://calendar.google.com/calendar/event?eid=NmNubTNpZWNyOWs3bmM2a2E2NHIxNG81cGogbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
     "mapPosition": {
       "left": "45.59%",
       "top": "68.62%"
+    }
+  },
+  {
+    "id": "calendar-58rrhh4kprb9so89mhda3b4t0o-google-com",
+    "day": "31",
+    "month": "AG.",
+    "dateTime": "2026-08-31T09:30:00.000Z",
+    "title": "MÈLT Matadepera",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Matadepera",
+    "time": "11.30 h",
+    "type": "Projecte",
+    "source": "https://calendar.google.com/calendar/event?eid=NThycmhoNGtwcmI5c284OW1oZGEzYjR0MG8gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "56.33%",
+      "top": "53.92%"
+    }
+  },
+  {
+    "id": "calendar-13p0cucra48n5glpf5ptdumuod-google-com",
+    "day": "04",
+    "month": "SET.",
+    "dateTime": "2026-09-04T16:00:00.000Z",
+    "title": "CONCERT Cabrera de Mar",
+    "place": "Cal Conde",
+    "town": "Cabrera de Mar",
+    "time": "18.00 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=MTNwMGN1Y3JhNDhuNWdscGY1cHRkdW11b2QgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "64.36%",
+      "top": "56.82%"
+    }
+  },
+  {
+    "id": "calendar-4n0282qtvqbtebb7o1a254fv3s-google-com",
+    "day": "04",
+    "month": "SET.",
+    "dateTime": "2026-09-04T18:00:00.000Z",
+    "title": "Santa Perpètua de la Mogoda",
+    "place": "La Casa De La Plaça De L'Esglesia",
+    "town": "Santa Perpètua de la Mogoda",
+    "time": "20.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NG4wMjgycXR2cWJ0ZWJiN28xYTI1NGZ2M3MgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "59.98%",
+      "top": "57.00%"
+    }
+  },
+  {
+    "id": "calendar-1902khf1d8hodl87auuqdo83mu-google-com",
+    "day": "05",
+    "month": "SET.",
+    "dateTime": "2026-09-05T16:00:00.000Z",
+    "title": "Alella",
+    "place": "Plaça Antoni Pujadas i Nirell",
+    "town": "Alella",
+    "time": "18.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MTkwMmtoZjFkOGhvZGw4N2F1dXFkbzgzbXUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "62.15%",
+      "top": "58.00%"
+    }
+  },
+  {
+    "id": "calendar-614dvqm6vssd7s4igqoo88g6pj-google-com",
+    "day": "05",
+    "month": "SET.",
+    "dateTime": "2026-09-05T20:00:00.000Z",
+    "title": "Lloret de Mar",
+    "place": "Plaça de la Vila",
+    "town": "Lloret de Mar",
+    "time": "22.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NjE0ZHZxbTZ2c3NkN3M0aWdxb284OGc2cGogbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "74.27%",
+      "top": "50.16%"
+    }
+  },
+  {
+    "id": "calendar-3ok9e4ur4p4e030diqbsjdlvh0-google-com",
+    "day": "06",
+    "month": "SET.",
+    "dateTime": "2026-09-06T09:15:00.000Z",
+    "title": "Barcelona",
+    "place": "Avinguda de la Catedral",
+    "town": "Barcelona",
+    "time": "11.15 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=M29rOWU0dXI0cDRlMDMwZGlxYnNqZGx2aDAgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "59.58%",
+      "top": "62.28%"
+    }
+  },
+  {
+    "id": "calendar-00t1cifs19n9rs282j60ujvl26-google-com",
+    "day": "06",
+    "month": "SET.",
+    "dateTime": "2026-09-06T17:30:00.000Z",
+    "title": "Calella",
+    "place": "passeig Puigvert",
+    "town": "Calella",
+    "time": "19.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MDB0MWNpZnMxOW45cnMyODJqNjB1anZsMjYgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "70.12%",
+      "top": "53.51%"
+    }
+  },
+  {
+    "id": "calendar-6gagkedg83f111cj2mf702k4jc-google-com",
+    "day": "08",
+    "month": "SET.",
+    "dateTime": "2026-09-08T10:30:00.000Z",
+    "title": "Cambrils",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Cambrils",
+    "time": "12.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmdhZ2tlZGc4M2YxMTFjajJtZjcwMms0amMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "35.30%",
+      "top": "74.51%"
+    }
+  },
+  {
+    "id": "calendar-6ptl4elma60kgmr6gk2rborlq3-google-com",
+    "day": "10",
+    "month": "SET.",
+    "dateTime": "2026-09-10T17:00:00.000Z",
+    "title": "Calafell",
+    "place": "Plaça del Manila",
+    "town": "Calafell",
+    "time": "19.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NnB0bDRlbG1hNjBrZ21yNmdrMnJib3JscTMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "46.32%",
+      "top": "69.93%"
+    }
+  },
+  {
+    "id": "calendar-436i1bhkuanuki57pedi5s65sd-google-com",
+    "day": "11",
+    "month": "SET.",
+    "dateTime": "2026-09-11T07:30:00.000Z",
+    "title": "Rubí",
+    "place": "Plaça Onze de Setembre",
+    "town": "Rubí",
+    "time": "09.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NDM2aTFiaGt1YW51a2k1N3BlZGk1czY1c2QgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "56.43%",
+      "top": "58.08%"
+    }
+  },
+  {
+    "id": "calendar-48ii5fj0jksfog9m6fii2ns719-google-com",
+    "day": "11",
+    "month": "SET.",
+    "dateTime": "2026-09-11T10:00:00.000Z",
+    "title": "Hospitalet de Llobregat",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Hospitalet de Llobregat",
+    "time": "12.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NDhpaTVmajBqa3Nmb2c5bTZmaWkybnM3MTkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "57.91%",
+      "top": "63.26%"
+    }
+  },
+  {
+    "id": "calendar-5vdoecuge0t95q87s80u43g6ie-google-com",
+    "day": "11",
+    "month": "SET.",
+    "dateTime": "2026-09-11T16:00:00.000Z",
+    "title": "Sant Llorenç Savall",
+    "place": "Plaça de l'Església",
+    "town": "Sant Llorenç Savall",
+    "time": "18.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NXZkb2VjdWdlMHQ5NXE4N3M4MHU0M2c2aWUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "57.00%",
+      "top": "50.90%"
+    }
+  },
+  {
+    "id": "calendar-4n79hti8vtai84ftppncagf066-google-com",
+    "day": "12",
+    "month": "SET.",
+    "dateTime": "2026-09-12T17:00:00.000Z",
+    "title": "Alfés",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Alfés",
+    "time": "19.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NG43OWh0aTh2dGFpODRmdHBwbmNhZ2YwNjYgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "25.55%",
+      "top": "57.01%"
+    }
+  },
+  {
+    "id": "calendar-4r7ng4rok8erdrl80udl49i3rd-google-com",
+    "day": "12",
+    "month": "SET.",
+    "dateTime": "2026-09-12T20:00:00.000Z",
+    "title": "Alfés",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Alfés",
+    "time": "22.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NHI3bmc0cm9rOGVyZHJsODB1ZGw0OWkzcmQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "25.55%",
+      "top": "57.01%"
+    }
+  },
+  {
+    "id": "calendar-3j8qlgiclgemjkqj533pqjkkjd-google-com",
+    "day": "13",
+    "month": "SET.",
+    "dateTime": "2026-09-13T16:00:00.000Z",
+    "title": "CONCERT Jafre",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Jafre",
+    "time": "18.00 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=M2o4cWxnaWNsZ2VtamtxajUzM3BxamtramQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "77.83%",
+      "top": "35.72%"
+    }
+  },
+  {
+    "id": "calendar-2ldn28p29eql3uoeuvbe27alau-google-com",
+    "day": "13",
+    "month": "SET.",
+    "dateTime": "2026-09-13T17:30:00.000Z",
+    "title": "Jafre",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Jafre",
+    "time": "19.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MmxkbjI4cDI5ZXFsM3VvZXV2YmUyN2FsYXUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "77.83%",
+      "top": "35.72%"
+    }
+  },
+  {
+    "id": "calendar-1c27k851lkjeg3e6f6ee18mbbk-google-com",
+    "day": "14",
+    "month": "SET.",
+    "dateTime": "2026-09-14T16:30:00.000Z",
+    "title": "Sant Joan de les Abadesses",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Sant Joan de les Abadesses",
+    "time": "18.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MWMyN2s4NTFsa2plZzNlNmY2ZWUxOG1iYmsgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "61.97%",
+      "top": "29.50%"
+    }
+  },
+  {
+    "id": "calendar-0c8mf2qv9o5s3k8333tkq9mvdt-google-com",
+    "day": "20",
+    "month": "SET.",
+    "dateTime": "2026-09-20T09:15:00.000Z",
+    "title": "Barcelona",
+    "place": "Avinguda de la Catedral",
+    "town": "Barcelona",
+    "time": "11.15 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGM4bWYycXY5bzVzM2s4MzMzdGtxOW12ZHQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "59.58%",
+      "top": "62.28%"
+    }
+  },
+  {
+    "id": "calendar-1ajjiq5211t0hibkd8igfgu64i-google-com",
+    "day": "20",
+    "month": "SET.",
+    "dateTime": "2026-09-20T14:30:00.000Z",
+    "title": "Torroella de Montgrí",
+    "place": "Plaça de la Vila",
+    "town": "Torroella de Montgrí",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MWFqamlxNTIxMXQwaGlia2Q4aWdmZ3U2NGkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "80.36%",
+      "top": "36.94%"
+    }
+  },
+  {
+    "id": "calendar-0fj6vi1u6dttris692gn015kfc-google-com",
+    "day": "24",
+    "month": "SET.",
+    "dateTime": "2026-09-24T16:00:00.000Z",
+    "title": "Barcelona",
+    "place": "Plaça de la Mercè",
+    "town": "Barcelona",
+    "time": "18.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGZqNnZpMXU2ZHR0cmlzNjkyZ24wMTVrZmMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "59.65%",
+      "top": "62.49%"
+    }
+  },
+  {
+    "id": "calendar-7s4gf2si5qt2b3djeupnu24ma0-google-com",
+    "day": "26",
+    "month": "SET.",
+    "dateTime": "2026-09-26T15:00:00.000Z",
+    "title": "Caldes de Malavella",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Caldes de Malavella",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N3M0Z2Yyc2k1cXQyYjNkamV1cG51MjRtYTAgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "73.39%",
+      "top": "45.16%"
+    }
+  },
+  {
+    "id": "calendar-68djg58kkm9ocllalom1qe74a1-google-com",
+    "day": "26",
+    "month": "SET.",
+    "dateTime": "2026-09-26T19:00:00.000Z",
+    "title": "Rubí",
+    "place": "Plaça de l'Església",
+    "town": "Rubí",
+    "time": "21.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=Njhkamc1OGtrbTlvY2xsYWxvbTFxZTc0YTEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "56.43%",
+      "top": "58.08%"
+    }
+  },
+  {
+    "id": "calendar-ccom2e9o6sojeb9j6sojeb9kchj3abb2chijcb9n65hm2ohk70pjcc31co-google-com",
+    "day": "27",
+    "month": "SET.",
+    "dateTime": "2026-09-27T09:00:00.000Z",
+    "title": "Barcelona",
+    "place": "Avinguda de la Catedral",
+    "town": "Barcelona",
+    "time": "11.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=Y2NvbTJlOW82c29qZWI5ajZzb2plYjlrY2hqM2FiYjJjaGlqY2I5bjY1aG0yb2hrNzBwamNjMzFjbyBsYWxsb2JyZWdhdEBnbWFpbC5jb20",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "59.58%",
+      "top": "62.28%"
+    }
+  },
+  {
+    "id": "calendar-7lkf37haeggqcs94pnkqoitph1-google-com",
+    "day": "27",
+    "month": "SET.",
+    "dateTime": "2026-09-27T14:30:00.000Z",
+    "title": "Sant Cugat del Vallès",
+    "place": "Plaça d'Octavià",
+    "town": "Sant Cugat del Vallès",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N2xrZjM3aGFlZ2dxY3M5NHBua3FvaXRwaDEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "57.57%",
+      "top": "58.86%"
+    }
+  },
+  {
+    "id": "calendar-0aii5m65nk0dpvika77ei9te2b-google-com",
+    "day": "29",
+    "month": "SET.",
+    "dateTime": "2026-09-29T10:00:00.000Z",
+    "title": "Molins de Rei",
+    "place": "Plaça de l'Església",
+    "town": "Molins de Rei",
+    "time": "12.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGFpaTVtNjVuazBkcHZpa2E3N2VpOXRlMmIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "56.11%",
+      "top": "61.19%"
+    }
+  },
+  {
+    "id": "calendar-3lh3pmtojc3bkn9birm7jp01f0-google-com",
+    "day": "03",
+    "month": "OCT.",
+    "dateTime": "2026-10-03T15:00:00.000Z",
+    "title": "Balaguer",
+    "place": "Plaça Mercadal",
+    "town": "Balaguer",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=M2xoM3BtdG9qYzNia245YmlybTdqcDAxZjAgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "29.60%",
+      "top": "46.64%"
+    }
+  },
+  {
+    "id": "calendar-2bg27rnfbadsiiqqatkoij2cet-google-com",
+    "day": "04",
+    "month": "OCT.",
+    "dateTime": "2026-10-04T09:45:00.000Z",
+    "title": "Barcelona",
+    "place": "Plaça de Can Fabra",
+    "town": "Barcelona",
+    "time": "11.45 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MmJnMjdybmZiYWRzaWlxcWF0a29pajJjZXQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "59.91%",
+      "top": "60.36%"
+    }
+  },
+  {
+    "id": "calendar-0459i06t7meb0k5k9b69ihd9kq-google-com",
+    "day": "04",
+    "month": "OCT.",
+    "dateTime": "2026-10-04T14:00:00.000Z",
+    "title": "Malgrat de Mar",
+    "place": "Parc polivalent Francesc Macià",
+    "town": "Malgrat de Mar",
+    "time": "16.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MDQ1OWkwNnQ3bWViMGs1azliNjlpaGQ5a3EgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "71.94%",
+      "top": "52.20%"
+    }
+  },
+  {
+    "id": "calendar-0arnise1scd6alng3m56ftc77o-google-com",
+    "day": "10",
+    "month": "OCT.",
+    "dateTime": "2026-10-10T09:30:00.000Z",
+    "title": "Alpicat",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Alpicat",
+    "time": "11.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGFybmlzZTFzY2Q2YWxuZzNtNTZmdGM3N28gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "24.14%",
+      "top": "51.40%"
+    }
+  },
+  {
+    "id": "calendar-0jl7gi1abi7hl84jhg0fhv6ugo-google-com",
+    "day": "10",
+    "month": "OCT.",
+    "dateTime": "2026-10-10T14:30:00.000Z",
+    "title": "Alpicat",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Alpicat",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGpsN2dpMWFiaTdobDg0amhnMGZodjZ1Z28gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "24.14%",
+      "top": "51.40%"
+    }
+  },
+  {
+    "id": "calendar-4gkadfjhlos588lg5tuh3jlonu-google-com",
+    "day": "11",
+    "month": "OCT.",
+    "dateTime": "2026-10-11T08:30:00.000Z",
+    "title": "Tossa de Mar",
+    "place": "Passeig Mossèn Cinto Verdaguer",
+    "town": "Tossa de Mar",
+    "time": "10.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NGdrYWRmamhsb3M1ODhsZzV0dWgzamxvbnUgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "76.09%",
+      "top": "49.35%"
+    }
+  },
+  {
+    "id": "calendar-06a4a2u69vtbh7h9ll0bsm9bgn-google-com",
+    "day": "11",
+    "month": "OCT.",
+    "dateTime": "2026-10-11T14:00:00.000Z",
+    "title": "Tossa de Mar",
+    "place": "Passeig Mossèn Cinto Verdaguer",
+    "town": "Tossa de Mar",
+    "time": "16.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MDZhNGEydTY5dnRiaDdoOWxsMGJzbTliZ24gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "76.09%",
+      "top": "49.35%"
+    }
+  },
+  {
+    "id": "calendar-6mcscgfqvji0kpdmfeph5qd2r8-google-com",
+    "day": "17",
+    "month": "OCT.",
+    "dateTime": "2026-10-17T09:00:00.000Z",
+    "title": "Cabrera de Mar",
+    "place": "Cal Conde",
+    "town": "Cabrera de Mar",
+    "time": "11.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=Nm1jc2NnZnF2amkwa3BkbWZlcGg1cWQycjggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "64.36%",
+      "top": "56.82%"
+    }
+  },
+  {
+    "id": "calendar-1ouca4n4mpiqc0r0095dugrglk-google-com",
+    "day": "17",
+    "month": "OCT.",
+    "dateTime": "2026-10-17T14:30:00.000Z",
+    "title": "Cunit",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Cunit",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MW91Y2E0bjRtcGlxYzByMDA5NWR1Z3JnbGsgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "47.73%",
+      "top": "69.51%"
+    }
+  },
+  {
+    "id": "calendar-24k89of5333i257n2fh3etl4tb-google-com",
+    "day": "18",
+    "month": "OCT.",
+    "dateTime": "2026-10-18T08:00:00.000Z",
+    "title": "Barcelona",
+    "place": "Parc de la Guineueta",
+    "town": "Barcelona",
+    "time": "10.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MjRrODlvZjUzMzNpMjU3bjJmaDNldGw0dGIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "59.47%",
+      "top": "60.04%"
+    }
+  },
+  {
+    "id": "calendar-64id97h0iq8rts7ln6o0p4nnsj-google-com",
+    "day": "18",
+    "month": "OCT.",
+    "dateTime": "2026-10-18T14:00:00.000Z",
+    "title": "Barcelona",
+    "place": "Parc de la Guineueta",
+    "town": "Barcelona",
+    "time": "16.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NjRpZDk3aDBpcThydHM3bG42bzBwNG5uc2ogbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "59.47%",
+      "top": "60.04%"
+    }
+  },
+  {
+    "id": "calendar-6u7p7f2arj3fduc9cot5rnv1l8-google-com",
+    "day": "24",
+    "month": "OCT.",
+    "dateTime": "2026-10-24T16:00:00.000Z",
+    "title": "MÈLT Hospitalet de Llobregat",
+    "place": "Auditori Barradas",
+    "town": "Hospitalet de Llobregat",
+    "time": "18.00 h",
+    "type": "Projecte",
+    "source": "https://calendar.google.com/calendar/event?eid=NnU3cDdmMmFyajNmZHVjOWNvdDVybnYxbDggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "57.91%",
+      "top": "63.26%"
+    }
+  },
+  {
+    "id": "calendar-2tcumad87pijkct251ut11sr29-google-com",
+    "day": "25",
+    "month": "OCT.",
+    "dateTime": "2026-10-25T10:15:00.000Z",
+    "title": "Barcelona",
+    "place": "Avinguda de la Catedral",
+    "town": "Barcelona",
+    "time": "11.15 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MnRjdW1hZDg3cGlqa2N0MjUxdXQxMXNyMjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "59.58%",
+      "top": "62.28%"
+    }
+  },
+  {
+    "id": "calendar-4n4qj7rg4qmi16crmfva3n8ek4-google-com",
+    "day": "25",
+    "month": "OCT.",
+    "dateTime": "2026-10-25T15:30:00.000Z",
+    "title": "CoCo Banyoles",
+    "place": "Plaça Major",
+    "town": "Banyoles",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NG40cWo3cmc0cW1pMTZjcm1mdmEzbjhlazQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "72.47%",
+      "top": "33.97%"
+    }
+  },
+  {
+    "id": "calendar-7ikkmhi6qlomt9p3u1s81iff4t-google-com",
+    "day": "31",
+    "month": "OCT.",
+    "dateTime": "2026-10-31T17:30:00.000Z",
+    "title": "CONCERT Sant Sadurní d'Anoia",
+    "place": "Cava Centre | Visita audiovisual i experiencial",
+    "town": "Sant Sadurní d'Anoia",
+    "time": "18.30 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=N2lra21oaTZxbG9tdDlwM3UxczgxaWZmNHQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-10",
+    "monthLabel": "Octubre 2026",
+    "mapPosition": {
+      "left": "51.06%",
+      "top": "60.75%"
+    }
+  },
+  {
+    "id": "calendar-0ip1iro331p83mmvcri73ap0o1-google-com",
+    "day": "01",
+    "month": "NOV.",
+    "dateTime": "2026-11-01T09:30:00.000Z",
+    "title": "Esplugues de Llobregat",
+    "place": "Parc Pou d’en Fèlix",
+    "town": "Esplugues de Llobregat",
+    "time": "10.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGlwMWlybzMzMXA4M21tdmNyaTczYXAwbzEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "57.67%",
+      "top": "62.55%"
+    }
+  },
+  {
+    "id": "calendar-7tddsu7hr7p8tf9s1tdih76m69-google-com",
+    "day": "01",
+    "month": "NOV.",
+    "dateTime": "2026-11-01T15:30:00.000Z",
+    "title": "Esplugues de Llobregat",
+    "place": "Parc Pou d’en Fèlix",
+    "town": "Esplugues de Llobregat",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N3RkZHN1N2hyN3A4dGY5czF0ZGloNzZtNjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "57.67%",
+      "top": "62.55%"
+    }
+  },
+  {
+    "id": "calendar-54irvn0nhe138l42u8h5kd5uqg-google-com",
+    "day": "07",
+    "month": "NOV.",
+    "dateTime": "2026-11-07T10:30:00.000Z",
+    "title": "Alella",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Alella",
+    "time": "11.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NTRpcnZuMG5oZTEzOGw0MnU4aDVrZDV1cWcgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "62.15%",
+      "top": "58.00%"
+    }
+  },
+  {
+    "id": "calendar-0bbknvcrl5dtt720h0rtngfjnt-google-com",
+    "day": "07",
+    "month": "NOV.",
+    "dateTime": "2026-11-07T16:00:00.000Z",
+    "title": "Barcelona",
+    "place": "Avinguda de la Catedral",
+    "town": "Barcelona",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGJia252Y3JsNWR0dDcyMGgwcnRuZ2ZqbnQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "59.58%",
+      "top": "62.28%"
+    }
+  },
+  {
+    "id": "calendar-5kpno5j7qq9pdbt387rk3je35g-google-com",
+    "day": "08",
+    "month": "NOV.",
+    "dateTime": "2026-11-08T10:30:00.000Z",
+    "title": "Cornellà de Llobregat",
+    "place": "Plaça de l'Església",
+    "town": "Cornellà de Llobregat",
+    "time": "11.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NWtwbm81ajdxcTlwZGJ0Mzg3cmszamUzNWcgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "57.27%",
+      "top": "63.41%"
+    }
+  },
+  {
+    "id": "calendar-7dtp4rr6f7288467uhmcatbq3a-google-com",
+    "day": "08",
+    "month": "NOV.",
+    "dateTime": "2026-11-08T15:00:00.000Z",
+    "title": "Sant Quirze de Besora",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Sant Quirze de Besora",
+    "time": "16.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N2R0cDRycjZmNzI4ODQ2N3VobWNhdGJxM2EgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "60.47%",
+      "top": "34.61%"
+    }
+  },
+  {
+    "id": "calendar-6ac85agvlcrc3umjm52dnplkkh-google-com",
+    "day": "15",
+    "month": "NOV.",
+    "dateTime": "2026-11-15T09:00:00.000Z",
+    "title": "Sant Vicenç dels Horts",
+    "place": "Pista Poliesportiva",
+    "town": "Sant Vicenç dels Horts",
+    "time": "10.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmFjODVhZ3ZsY3JjM3Vtam01MmRucGxra2ggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "55.57%",
+      "top": "62.21%"
+    }
+  },
+  {
+    "id": "calendar-4rm3qjbc2feag32qc9bmishc29-google-com",
+    "day": "15",
+    "month": "NOV.",
+    "dateTime": "2026-11-15T15:30:00.000Z",
+    "title": "Sant Hipòlit de Voltregà",
+    "place": "Pavelló Sant Hipòlit de Voltregà",
+    "town": "Sant Hipòlit de Voltregà",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NHJtM3FqYmMyZmVhZzMycWM5Ym1pc2hjMjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "60.94%",
+      "top": "37.99%"
+    }
+  },
+  {
+    "id": "calendar-5q3vgh4nfj0h68klsj17f4hs5b-google-com",
+    "day": "21",
+    "month": "NOV.",
+    "dateTime": "2026-11-21T10:30:00.000Z",
+    "title": "Artesa de Segre",
+    "place": "Plaça del Ball",
+    "town": "Artesa de Segre",
+    "time": "11.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NXEzdmdoNG5majBoNjhrbHNqMTdmNGhzNWIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "34.92%",
+      "top": "42.54%"
+    }
+  },
+  {
+    "id": "calendar-7ukmesm8kmas969bic3h9qltbl-google-com",
+    "day": "21",
+    "month": "NOV.",
+    "dateTime": "2026-11-21T15:30:00.000Z",
+    "title": "Artesa de Segre",
+    "place": "Pavelló Municipal",
+    "town": "Artesa de Segre",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N3VrbWVzbThrbWFzOTY5YmljM2g5cWx0YmwgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "36.01%",
+      "top": "40.93%"
+    }
+  },
+  {
+    "id": "calendar-00kln1tuqmls21lakiigkm2kem-google-com",
+    "day": "22",
+    "month": "NOV.",
+    "dateTime": "2026-11-22T16:00:00.000Z",
+    "title": "Sant Llorenç Savall",
+    "place": "Plaça de l'Església",
+    "town": "Sant Llorenç Savall",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MDBrbG4xdHVxbWxzMjFsYWtpaWdrbTJrZW0gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "57.00%",
+      "top": "50.90%"
+    }
+  },
+  {
+    "id": "calendar-7limbnlps785hu76je476fqat1-google-com",
+    "day": "28",
+    "month": "NOV.",
+    "dateTime": "2026-11-28T10:00:00.000Z",
+    "title": "Sant Sadurní d'Anoia",
+    "place": "La Torre de Codorniu",
+    "town": "Sant Sadurní d'Anoia",
+    "time": "11.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=N2xpbWJubHBzNzg1aHU3NmplNDc2ZnFhdDEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "51.06%",
+      "top": "60.75%"
+    }
+  },
+  {
+    "id": "calendar-1k7idhlh9aib2dftpn597i41rn-google-com",
+    "day": "29",
+    "month": "NOV.",
+    "dateTime": "2026-11-29T10:00:00.000Z",
+    "title": "Rubí",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Rubí",
+    "time": "11.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MWs3aWRobGg5YWliMmRmdHBuNTk3aTQxcm4gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "56.43%",
+      "top": "58.08%"
+    }
+  },
+  {
+    "id": "calendar-1gi81qvijmusa05fnsguoie07i-google-com",
+    "day": "29",
+    "month": "NOV.",
+    "dateTime": "2026-11-29T15:30:00.000Z",
+    "title": "Sils",
+    "place": "Pavelló Municipal de Sils",
+    "town": "Sils",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MWdpODFxdmlqbXVzYTA1Zm5zZ3VvaWUwN2kgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-11",
+    "monthLabel": "Novembre 2026",
+    "mapPosition": {
+      "left": "71.98%",
+      "top": "45.87%"
+    }
+  },
+  {
+    "id": "calendar-0dlt2bip1638g48tq8e2v3iheo-google-com",
+    "day": "05",
+    "month": "DES.",
+    "dateTime": "2026-12-05T10:30:00.000Z",
+    "title": "Artés",
+    "place": "Pavelló Municipal",
+    "town": "Artés",
+    "time": "11.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MGRsdDJiaXAxNjM4ZzQ4dHE4ZTJ2M2loZW8gbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "54.63%",
+      "top": "46.44%"
+    }
+  },
+  {
+    "id": "calendar-6jebuk5pmvsfesstnr7mnf86k6-google-com",
+    "day": "05",
+    "month": "DES.",
+    "dateTime": "2026-12-05T15:00:00.000Z",
+    "title": "Artés",
+    "place": "Pavelló Municipal",
+    "town": "Artés",
+    "time": "16.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmplYnVrNXBtdnNmZXNzdG5yN21uZjg2azYgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "54.63%",
+      "top": "46.44%"
+    }
+  },
+  {
+    "id": "calendar-13skdk8a37v6sgqa1oi682otrq-google-com",
+    "day": "08",
+    "month": "DES.",
+    "dateTime": "2026-12-08T16:00:00.000Z",
+    "title": "Malgrat de Mar",
+    "place": "Pavelló Municipal Germans Margall",
+    "town": "Malgrat de Mar",
+    "time": "17.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MTNza2RrOGEzN3Y2c2dxYTFvaTY4Mm90cnEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "71.94%",
+      "top": "52.20%"
+    }
+  },
+  {
+    "id": "calendar-6go3adj5c9j3cb9k70pmcb9k75j32bb265hj4bb6corj8e1lcgrm4dr4c4-google-com",
+    "day": "13",
+    "month": "DES.",
+    "dateTime": "2026-12-13T11:00:00.000Z",
+    "title": "El Vendrell",
+    "place": "Ubicació no indicada al calendari",
+    "town": "El Vendrell",
+    "time": "12.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmdvM2FkajVjOWozY2I5azcwcG1jYjlrNzVqMzJiYjI2NWhqNGJiNmNvcmo4ZTFsY2dybTRkcjRjNCBsYWxsb2JyZWdhdEBnbWFpbC5jb20",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "45.55%",
+      "top": "68.64%"
+    }
+  },
+  {
+    "id": "calendar-22b5bo8n2885a0oasp0fojqk6q-google-com",
+    "day": "13",
+    "month": "DES.",
+    "dateTime": "2026-12-13T15:30:00.000Z",
+    "title": "Les Preses",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Les Preses",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MjJiNWJvOG4yODg1YTBvYXNwMGZvanFrNnEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "65.77%",
+      "top": "32.92%"
+    }
+  },
+  {
+    "id": "calendar-6h8oled84s94r43fuk6gu7a6pb-google-com",
+    "day": "18",
+    "month": "DES.",
+    "dateTime": "2026-12-18T18:00:00.000Z",
+    "title": "MÈLT Falset",
+    "place": "Teatre Municipal L’Artesana de Falset",
+    "town": "Falset",
+    "time": "19.00 h",
+    "type": "Projecte",
+    "source": "https://calendar.google.com/calendar/event?eid=Nmg4b2xlZDg0czk0cjQzZnVrNmd1N2E2cGIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "29.91%",
+      "top": "71.54%"
+    }
+  },
+  {
+    "id": "calendar-60s36c366dj36bb661i3ib9k6koj0b9ocgpm6b9m6hgmcp9mc9hjco9l74-google-com",
+    "day": "19",
+    "month": "DES.",
+    "dateTime": "2026-12-19T17:00:00.000Z",
+    "title": "MÈLT Martorell",
+    "place": "Centre de Martorell El Progrés",
+    "town": "Martorell",
+    "time": "18.00 h",
+    "type": "Projecte",
+    "source": "https://calendar.google.com/calendar/event?eid=NjBzMzZjMzY2ZGozNmJiNjYxaTNpYjlrNmtvajBiOW9jZ3BtNmI5bTZoZ21jcDltYzloamNvOWw3NCBsYWxsb2JyZWdhdEBnbWFpbC5jb20",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "54.21%",
+      "top": "58.82%"
+    }
+  },
+  {
+    "id": "calendar-0575lglu5tasak9a9ori8sqtts-google-com",
+    "day": "20",
+    "month": "DES.",
+    "dateTime": "2026-12-20T17:30:00.000Z",
+    "title": "CONCERTÀS Calella",
+    "place": "Sala Mozart",
+    "town": "Calella",
+    "time": "18.30 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=MDU3NWxnbHU1dGFzYWs5YTlvcmk4c3F0dHMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "70.11%",
+      "top": "53.46%"
+    }
+  },
+  {
+    "id": "calendar-1uhcai8t4jhllc0u1l0kvni7ok-google-com",
+    "day": "26",
+    "month": "DES.",
+    "dateTime": "2026-12-26T10:30:00.000Z",
+    "title": "Sant Joan Despí",
+    "place": "Plaça de l'Ermita",
+    "town": "Sant Joan Despí",
+    "time": "11.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MXVoY2FpOHQ0amhsbGMwdTFsMGt2bmk3b2sgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-12",
+    "monthLabel": "Desembre 2026",
+    "mapPosition": {
+      "left": "56.98%",
+      "top": "62.98%"
     }
   }
 ]

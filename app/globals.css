@@ -177,6 +177,15 @@ img { display: block; }
 .agendaSectionHeading h2, .agendaCalendarIntro h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .86; letter-spacing: -.06em; }
 .agendaSectionHeading h2 em { color: var(--red); font-weight: 400; }
 .agendaSectionHeading > p { max-width: 510px; margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.8; }
+.agendaMonthlyMap { width: min(100%, 1240px); margin: 0 auto; }
+.agendaMonthSelector { display: flex; overflow-x: auto; border: 1px solid var(--ink); border-bottom: 0; background: var(--paper); scrollbar-width: thin; }
+.agendaMonthSelector button { flex: 1 0 170px; min-height: 82px; padding: 1rem 1.2rem; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: .25rem; border: 0; border-right: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; text-align: left; transition: .2s ease; }
+.agendaMonthSelector button:last-child { border-right: 0; }
+.agendaMonthSelector button:hover, .agendaMonthSelector button:focus-visible { background: #f7e8e5; }
+.agendaMonthSelector button.isActive { background: var(--red); color: white; }
+.agendaMonthSelector button:focus-visible { position: relative; z-index: 2; outline: 2px solid var(--burgundy); outline-offset: -4px; }
+.agendaMonthSelector span { font-family: Georgia, serif; font-size: 1.08rem; text-transform: capitalize; }
+.agendaMonthSelector small { opacity: .7; font-size: .55rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .agendaCataloniaMap { position: relative; width: min(100%, 1240px); aspect-ratio: 1920 / 1724; min-height: 0; margin: 0 auto; overflow: hidden; isolation: isolate; background: #e9e2d8; border: 1px solid var(--ink); }
 .agendaFixedMapImage { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: grayscale(1) sepia(.12) contrast(.9) brightness(1.04); pointer-events: none; user-select: none; }
 .agendaMapTint { position: absolute; z-index: 1; inset: 0; background: linear-gradient(135deg, rgba(255,248,238,.12), rgba(190,37,55,.09)); mix-blend-mode: multiply; pointer-events: none; }
@@ -285,6 +294,7 @@ img { display: block; }
   .agendaPageHero { min-height: 620px; }
   .agendaHeroCopy { margin-left: auto; }
   .agendaCataloniaMap { width: 100%; }
+  .agendaMonthlyMap { width: 100%; }
 }
 
 @media (max-width: 760px) {
@@ -328,6 +338,8 @@ img { display: block; }
   .agendaSectionHeading { gap: 2rem; }
   .agendaSectionHeading h2, .agendaCalendarIntro h2 { font-size: clamp(3.3rem, 16vw, 5rem); }
   .agendaCataloniaMap { min-height: 0; }
+  .agendaMonthSelector button { flex-basis: 145px; min-height: 72px; padding: .8rem 1rem; }
+  .agendaMonthSelector span { font-size: .95rem; }
   .agendaMapPoint { width: 13px; height: 13px; border-width: 2px; }
   .agendaMapInfo { top: .65rem; right: .65rem; width: min(300px, calc(100% - 1.3rem)); max-height: calc(100% - 1.3rem); padding: 1rem; }
   .agendaMapInfo h3 { font-size: 1.2rem; }

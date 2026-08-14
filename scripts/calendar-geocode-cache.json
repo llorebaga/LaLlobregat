@@ -48,5 +48,238 @@
   "La Rambla, 43700 El Vendrell, Tarragona, Espanya": {
     "lat": 41.2206838,
     "lon": 1.5366824
+  },
+  "Plaça Major, 08551 Tona, Barcelona, Espanya": {
+    "lat": 41.8503015,
+    "lon": 2.2285368
+  },
+  "Plaça de les Melies, 08397 Pineda de Mar, Barcelona, Espanya": {
+    "lat": 41.6261414,
+    "lon": 2.6892083
+  },
+  "Pati del Palau dels Comtes, Plaça Joc de la Pilota, 1, 17486 Castelló d'Empúries, Girona, Espanya": null,
+  "Castelló d'Empúries, Catalunya, Espanya": {
+    "lat": 42.2591074,
+    "lon": 3.0746425
+  },
+  "Plaça Josep Sarquella, Avinguda Catalunya, 17230 Palamós, Girona, Espanya": null,
+  "Palamós, Catalunya, Espanya": {
+    "lat": 41.8495354,
+    "lon": 3.1278785
+  },
+  "Plaça de l'Ajuntament, 08330 Premià de Mar, Barcelona, Espanya": {
+    "lat": 41.4896636,
+    "lon": 2.3569455
+  },
+  "Arbres d'en Casals, Sant Feliu de Pallerols, Catalunya, Espanya": null,
+  "Sant Feliu de Pallerols, Catalunya, Espanya": {
+    "lat": 42.0758164,
+    "lon": 2.5078037
+  },
+  "La Bisbal d'Empordà, Catalunya, Espanya": {
+    "lat": 41.9598687,
+    "lon": 3.039616
+  },
+  "Parc de les pubilles, Torrelavit, Catalunya, Espanya": {
+    "lat": 41.4463906,
+    "lon": 1.7329808
+  },
+  "Caldes de Malavella, Catalunya, Espanya": {
+    "lat": 41.8282907,
+    "lon": 2.8073845
+  },
+  "Roda de Berà, Catalunya, Espanya": {
+    "lat": 41.1857961,
+    "lon": 1.4569904
+  },
+  "Matadepera, Catalunya, Espanya": {
+    "lat": 41.6012311,
+    "lon": 2.0275199
+  },
+  "Cal Conde, Carrer Mossèn Cinto Verdaguer, 16, 08349 Cabrera de Mar, Barcelona, Espanya": {
+    "lat": 41.526124,
+    "lon": 2.3946609
+  },
+  "La Casa De La Plaça De L'Esglesia, Carrer d'Anselm Clavé, 2, 08130 Santa Perpètua de Mogoda, Barcelona, Espanya, Santa Perpètua de la Mogoda, Catalunya, Espanya": null,
+  "Santa Perpètua de la Mogoda, Catalunya, Espanya": {
+    "lat": 41.5216802,
+    "lon": 2.1943095
+  },
+  "Plaça Antoni Pujadas i Nirell, Carrer de la Riera Principal, 24B, 08328 Alella, Barcelona, Espanya": null,
+  "Alella, Catalunya, Espanya": {
+    "lat": 41.4955603,
+    "lon": 2.2935325
+  },
+  "Plaça de la Vila, 17310 Lloret de Mar, Girona, Espanya": {
+    "lat": 41.698701,
+    "lon": 2.847854
+  },
+  "Avinguda de la Catedral, Av. de la Catedral, Ciutat Vella, Barcelona, Espanya": {
+    "lat": 41.3848547,
+    "lon": 2.1761332
+  },
+  "passeig Puigvert, 08370 Calella, Barcelona, Espanya": {
+    "lat": 41.6119318,
+    "lon": 2.6581749
+  },
+  "Cambrils, Catalunya, Espanya": {
+    "lat": 41.0679423,
+    "lon": 1.0657579
+  },
+  "Plaça del Manila, 43820 Calafell, Tarragona, Espanya": {
+    "lat": 41.1867009,
+    "lon": 1.5700535
+  },
+  "Plaça Onze de Setembre, 08191 Rubí, Barcelona, Espanya": null,
+  "Rubí, Catalunya, Espanya": {
+    "lat": 41.4936194,
+    "lon": 2.0319476
+  },
+  "Hospitalet de Llobregat, Catalunya, Espanya": {
+    "lat": 41.3595118,
+    "lon": 2.0996318
+  },
+  "Plaça de l'Església, Sant Llorenç Savall, Catalunya, Espanya": null,
+  "Sant Llorenç Savall, Catalunya, Espanya": {
+    "lat": 41.6794647,
+    "lon": 2.0579669
+  },
+  "Alfés, Catalunya, Espanya": {
+    "lat": 41.5214162,
+    "lon": 0.6200114
+  },
+  "Jafre, Catalunya, Espanya": {
+    "lat": 42.0726347,
+    "lon": 3.0107448
+  },
+  "Sant Joan de les Abadesses, Catalunya, Espanya": {
+    "lat": 42.233743,
+    "lon": 2.2854845
+  },
+  "Plaça de la Vila, 17257 Torroella de Montgrí, Girona, Espanya": {
+    "lat": 42.0410633,
+    "lon": 3.1261122
+  },
+  "Plaça de la Mercè, Ciutat Vella, 08002 Barcelona, Espanya": {
+    "lat": 41.3793492,
+    "lon": 2.1794811
+  },
+  "Plaça de l'Església, Rubí, Catalunya, Espanya": null,
+  "Plaça d'Octavià, 08172 Sant Cugat del Vallès, Barcelona, Espanya": {
+    "lat": 41.4734512,
+    "lon": 2.0842646
+  },
+  "Plaça de l'Església, 08750 Molins de Rei, Barcelona, Espanya": {
+    "lat": 41.4131651,
+    "lon": 2.0172886
+  },
+  "Plaça Mercadal, 25600 Balaguer, Lleida, Espanya": {
+    "lat": 41.7897925,
+    "lon": 0.805293
+  },
+  "Plaça de Can Fabra, Sant Andreu, 08030 Barcelona, Espanya": {
+    "lat": 41.4344449,
+    "lon": 2.1911762
+  },
+  "Parc polivalent Francesc Macià, Av. de la Costa Brava, 77, 08380 Malgrat de Mar, Barcelona, Espanya": null,
+  "Malgrat de Mar, Catalunya, Espanya": {
+    "lat": 41.6459118,
+    "lon": 2.7414054
+  },
+  "Alpicat, Catalunya, Espanya": {
+    "lat": 41.6666421,
+    "lon": 0.5554774
+  },
+  "Passeig Mossèn Cinto Verdaguer, 17320 Tossa de Mar, Girona, Espanya": null,
+  "Tossa de Mar, Catalunya, Espanya": {
+    "lat": 41.7197773,
+    "lon": 2.9312155
+  },
+  "Cunit, Catalunya, Espanya": {
+    "lat": 41.197596,
+    "lon": 1.6344596
+  },
+  "Parc de la Guineueta, Nou Barris, 08042 Barcelona, Espanya": {
+    "lat": 41.4427967,
+    "lon": 2.1710707
+  },
+  "Auditori Barradas, Rambla Just Oliveras, 56, 08901 L'Hospitalet de Llobregat, Barcelona, Espanya": null,
+  "Plaça Major, 17820 Banyoles, Girona, Espanya": {
+    "lat": 42.1181128,
+    "lon": 2.7653878
+  },
+  "Cava Centre | Visita audiovisual i experiencial, Carrer de l'Hospital, 23, 08770 Sant Sadurní d'Anoia, Barcelona, Espanya": null,
+  "Sant Sadurní d'Anoia, Catalunya, Espanya": {
+    "lat": 41.4244663,
+    "lon": 1.7863949
+  },
+  "Parc Pou d’en Fèlix, Avinguda d'Isidre Martí, 43, 08950 Esplugues de Llobregat, Barcelona, Espanya": null,
+  "Esplugues de Llobregat, Catalunya, Espanya": {
+    "lat": 41.3778094,
+    "lon": 2.0886257
+  },
+  "Plaça de l'Església, 08940 Cornellà de Llobregat, Barcelona, Espanya": {
+    "lat": 41.3555987,
+    "lon": 2.0707038
+  },
+  "Sant Quirze de Besora, Catalunya, Espanya": {
+    "lat": 42.101426,
+    "lon": 2.2170289
+  },
+  "Pista Poliesportiva, Sant Vicenç dels Horts, Catalunya, Espanya": {
+    "lat": 41.386683,
+    "lon": 1.9929948
+  },
+  "Pavelló Sant Hipòlit de Voltregà": {
+    "lat": 42.0138244,
+    "lon": 2.2385029
+  },
+  "Plaça del Ball, 25730 Artesa de Segre, Lérida, Espanya": {
+    "lat": 41.8960242,
+    "lon": 1.0486613
+  },
+  "Pavelló Municipal, Poliesportiu, Carrer Poliesportiu, 25730 Artesa de Segre, Lleida, Espanya": null,
+  "Artesa de Segre, Catalunya, Espanya": {
+    "lat": 41.9376976,
+    "lon": 1.098281
+  },
+  "La Torre de Codorniu, Carrer Can Codorniu, 08770, Barcelona, Espanya, Sant Sadurní d'Anoia, Catalunya, Espanya": null,
+  "Pavelló Municipal de Sils, Av. Barceloneta, 40, 17410 Sils, Girona, Espanya": null,
+  "Sils, Catalunya, Espanya": {
+    "lat": 41.8098347,
+    "lon": 2.743055
+  },
+  "Pavelló Municipal, Artés, Catalunya, Espanya": {
+    "lat": 41.795137,
+    "lon": 1.9496737
+  },
+  "Pavelló Municipal Germans Margall, Carrer de Josep Maria Folch i Torres, s/n, 08380 Malgrat de Mar, Barcelona, Espanya": null,
+  "El Vendrell, Catalunya, Espanya": {
+    "lat": 41.2199677,
+    "lon": 1.5348566
+  },
+  "Les Preses, Catalunya, Espanya": {
+    "lat": 42.1450901,
+    "lon": 2.4592158
+  },
+  "Teatre Municipal L’Artesana de Falset, Plaça del Teatre, s/n, 43730 Falset, Tarragona, Espanya": null,
+  "Falset, Catalunya, Espanya": {
+    "lat": 41.1450982,
+    "lon": 0.8196237
+  },
+  "Centre de Martorell El Progrés, Carrer del Mur, 64, 08760 Martorell, Barcelona, Espanya": null,
+  "Martorell, Catalunya, Espanya": {
+    "lat": 41.4743886,
+    "lon": 1.9307159
+  },
+  "Sala Mozart, Carrer de l'Església, 91, 08370 Calella, Barcelona, Espanya": null,
+  "Calella, Catalunya, Espanya": {
+    "lat": 41.6132925,
+    "lon": 2.6576102
+  },
+  "Plaça de l'Ermita, Pl. de l'Ermita, 08970 Sant Joan Despí, Barcelona, Espanya": null,
+  "Sant Joan Despí, Catalunya, Espanya": {
+    "lat": 41.3667951,
+    "lon": 2.0570346
   }
 }

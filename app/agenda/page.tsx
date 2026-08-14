@@ -52,12 +52,12 @@ export default function AgendaPage() {
       <section className="agendaMapSection sectionPad" aria-labelledby="agenda-mapa-title">
         <div className="agendaSectionHeading">
           <div>
-            <p className="eyebrow">Pròximes parades</p>
+            <p className="eyebrow">Mes a mes</p>
             <h2 id="agenda-mapa-title">La cobla,<br /><em>sobre el mapa.</em></h2>
           </div>
           <p>
-            Clica un punt vermell per consultar la data, l’hora i el lloc de
-            l’actuació, sense sortir del mapa.
+            Tria el mes i clica un punt vermell per consultar la data, l’hora
+            i el lloc de l’actuació sense sortir del mapa.
           </p>
         </div>
 
