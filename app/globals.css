@@ -213,8 +213,30 @@ img { display: block; }
 .agendaCalendarIntro > div:last-child { max-width: 520px; }
 .agendaCalendarIntro > div:last-child p { margin: 0 0 2rem; color: rgba(255,255,255,.68); font-size: 1.02rem; line-height: 1.8; }
 .agendaCalendarIntro a { display: inline-flex; gap: 1rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(255,255,255,.55); font-size: .66rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
-.agendaCalendarFrame { min-height: 760px; padding: clamp(.6rem, 1vw, 1rem); background: rgba(255,255,255,.12); box-shadow: 0 30px 80px rgba(21,2,5,.35); }
-.agendaCalendarFrame iframe { display: block; width: 100%; height: 740px; border: 0; background: white; }
+.agendaStyledCalendar { background: #fffdf8; color: var(--ink); border-top: 5px solid var(--red); box-shadow: 0 30px 80px rgba(21,2,5,.35); }
+.agendaCalendarToolbar { min-height: 104px; padding: 1.4rem clamp(1.2rem, 3vw, 2.5rem); display: grid; grid-template-columns: 48px 1fr 48px; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); }
+.agendaCalendarToolbar button { width: 48px; height: 48px; padding: 0; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--burgundy); cursor: pointer; font-size: 1.2rem; transition: .2s ease; }
+.agendaCalendarToolbar button:hover:not(:disabled), .agendaCalendarToolbar button:focus-visible:not(:disabled) { background: var(--red); border-color: var(--red); color: white; }
+.agendaCalendarToolbar button:disabled { opacity: .24; cursor: default; }
+.agendaCalendarToolbar div { text-align: center; }
+.agendaCalendarToolbar p { margin: 0 0 .3rem; color: var(--red); font-size: .58rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.agendaCalendarToolbar h3 { margin: 0; font-family: Georgia, serif; font-size: clamp(1.8rem, 3vw, 3rem); font-weight: 400; text-transform: capitalize; }
+.agendaCalendarViewport { overflow-x: auto; scrollbar-color: var(--red) #f1e9de; }
+.agendaCalendarInner { min-width: 920px; }
+.agendaCalendarWeekdays, .agendaCalendarGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.agendaCalendarWeekdays { border-bottom: 1px solid var(--ink); background: #f6efe5; }
+.agendaCalendarWeekdays span { padding: .9rem .75rem; border-right: 1px solid var(--line); color: var(--muted); font-size: .56rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.agendaCalendarWeekdays span:last-child { border-right: 0; }
+.agendaCalendarDay { min-height: 138px; padding: .75rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fffdf8; }
+.agendaCalendarDay:nth-child(7n) { border-right: 0; }
+.agendaCalendarDay.isEmpty { background: #f8f3eb; }
+.agendaCalendarDayNumber { display: block; margin-bottom: .7rem; color: var(--muted); font-family: Georgia, serif; font-size: 1rem; }
+.agendaCalendarEvents { display: flex; flex-direction: column; gap: .35rem; }
+.agendaCalendarEvent { padding: .48rem .55rem; display: block; overflow: hidden; border-left: 3px solid var(--red); background: #f7e4e2; transition: .2s ease; }
+.agendaCalendarEvent:hover, .agendaCalendarEvent:focus-visible { background: var(--red); color: white; }
+.agendaCalendarEvent time { display: block; margin-bottom: .12rem; color: var(--red); font-size: .48rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.agendaCalendarEvent:hover time, .agendaCalendarEvent:focus-visible time { color: #f9d8d3; }
+.agendaCalendarEvent strong { display: block; overflow: hidden; font-family: Georgia, serif; font-size: .78rem; font-weight: 400; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
 .agendaCalendarFooter { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-bottom: 1px solid rgba(255,255,255,.25); color: rgba(255,255,255,.5); font-size: .58rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 
 .archiveSection { background: var(--paper); }
@@ -352,8 +374,10 @@ img { display: block; }
   .agendaMapInfo article > a { margin-top: .65rem; }
   .agendaMapLabel { left: .75rem; bottom: .75rem; padding: .55rem .7rem; font-size: .9rem; }
   .agendaMapCredits { right: .25rem; bottom: .2rem; flex-direction: column; gap: 0; font-size: .4rem; }
-  .agendaCalendarFrame { min-height: 620px; padding: 4px; }
-  .agendaCalendarFrame iframe { height: 610px; }
+  .agendaCalendarToolbar { min-height: 88px; padding: 1rem; grid-template-columns: 42px 1fr 42px; }
+  .agendaCalendarToolbar button { width: 42px; height: 42px; }
+  .agendaCalendarInner { min-width: 780px; }
+  .agendaCalendarDay { min-height: 122px; padding: .6rem; }
   .agendaCalendarFooter { padding: 1rem 0; align-items: flex-start; flex-direction: column; gap: .45rem; }
   .archiveIntro br { display: none; }
   .historyHero { padding-top: 6rem; }
@@ -520,13 +544,11 @@ img { display: block; }
 
 /* Músics */
 .musiciansPage { background: var(--paper); }
-.musiciansHero { min-height: 560px; padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 7vw, 8rem); display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 4rem; overflow: hidden; background: var(--red); color: white; }
+.musiciansHero { min-height: 560px; padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 7vw, 8rem); display: grid; grid-template-columns: 1fr; align-items: end; overflow: hidden; background: var(--red); color: white; }
+.musiciansHeroCopy { max-width: 1050px; }
 .musiciansHeroCopy h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(5rem, 11vw, 11rem); font-weight: 400; line-height: .74; letter-spacing: -.065em; }
 .musiciansHeroCopy h1 em { color: #f4d7d2; font-weight: 400; }
 .musiciansHeroCopy > p:last-child { max-width: 590px; margin: 3rem 0 0; color: rgba(255,255,255,.78); font-family: Georgia, serif; font-size: clamp(1.1rem, 1.7vw, 1.5rem); line-height: 1.55; }
-.musiciansHeroNumber { min-height: 340px; display: flex; flex-direction: column; align-items: flex-end; justify-content: flex-end; border-bottom: 1px solid rgba(255,255,255,.45); }
-.musiciansHeroNumber strong { font-family: Georgia, serif; font-size: clamp(9rem, 19vw, 19rem); font-weight: 400; line-height: .64; letter-spacing: -.09em; }
-.musiciansHeroNumber span { margin: 1.7rem 0 .8rem; color: #f4d7d2; font-size: .68rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
 
 .musiciansPortrait { padding-bottom: clamp(4rem, 8vw, 8rem); }
 .musiciansPortraitHeading { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: clamp(2rem, 4vw, 4rem); }
@@ -545,10 +567,6 @@ img { display: block; }
 .musicianRosterHeading { padding: 0 0 clamp(3rem, 6vw, 6rem); display: grid; grid-template-columns: .55fr 1.45fr; gap: clamp(2rem, 5vw, 7rem); align-items: end; }
 .musicianRosterHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.2rem, 6vw, 6.8rem); font-weight: 400; line-height: .9; letter-spacing: -.055em; }
 .musicianRosterHeading h2 em { color: var(--red); font-weight: 400; }
-.musicianDirector { min-height: 210px; padding: clamp(2rem, 4vw, 4rem); display: grid; grid-template-columns: .45fr 1.2fr .35fr; gap: 2rem; align-items: end; background: var(--burgundy); color: white; }
-.musicianDirector > span, .musicianDirector p { margin: 0; color: #efa2aa; font-size: .64rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-.musicianDirector h3 { margin: 0; font-family: Georgia, serif; font-size: clamp(2.6rem, 5vw, 5.5rem); font-weight: 400; line-height: .9; letter-spacing: -.05em; }
-.musicianDirector p { text-align: right; }
 .musicianMemberGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--line); }
 .musicianMember { min-height: 235px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: .25s ease; }
 .musicianMember:hover { background: var(--red); color: white; }
@@ -573,7 +591,7 @@ img { display: block; }
   .simpleIntro { grid-template-columns: 1fr; gap: 3rem; }
   .simpleNextEvent { grid-template-columns: auto 1fr auto; }
   .simpleNextHeading { grid-column: 1 / -1; flex-direction: row; }
-  .musiciansHero { grid-template-columns: 1fr .65fr; }
+  .musiciansHero { grid-template-columns: 1fr; }
   .musiciansIntro { grid-template-columns: 1fr 1.4fr; }
   .musiciansIntro .eyebrow { grid-column: 1 / -1; }
   .musicianMemberGrid { grid-template-columns: repeat(2, 1fr); }
@@ -631,8 +649,6 @@ img { display: block; }
   .musiciansHero { min-height: 520px; padding: 5rem 1.25rem 3rem; grid-template-columns: 1fr; gap: 3rem; }
   .musiciansHeroCopy h1 { font-size: clamp(5rem, 24vw, 7rem); }
   .musiciansHeroCopy > p:last-child { margin-top: 2rem; }
-  .musiciansHeroNumber { min-height: 130px; flex-direction: row; align-items: flex-end; justify-content: space-between; }
-  .musiciansHeroNumber strong { font-size: 9rem; line-height: .7; }
   .musiciansPortrait { padding-left: 0; padding-right: 0; }
   .musiciansPortraitHeading { padding: 0 1.25rem; align-items: flex-start; flex-direction: column; }
   .musiciansPortraitHeading h2 { text-align: left; }
@@ -640,9 +656,6 @@ img { display: block; }
   .musiciansIntro { grid-template-columns: 1fr; gap: 2rem; }
   .musiciansIntro .eyebrow { grid-column: auto; }
   .musicianRosterHeading { grid-template-columns: 1fr; gap: 2rem; }
-  .musicianDirector { min-height: 250px; padding: 2rem 1.25rem; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
-  .musicianDirector h3 { margin-top: auto; }
-  .musicianDirector p { text-align: left; }
   .musicianMemberGrid { grid-template-columns: 1fr; }
   .musicianMember { min-height: 190px; }
   .musiciansCta { min-height: 410px; align-items: flex-start; flex-direction: column; }

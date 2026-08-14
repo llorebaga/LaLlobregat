@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { upcomingEvents } from "../data";
 import calendarEvents from "../calendar-events.generated.json";
 import { sitePath } from "../site-path";
+import { AgendaCalendar } from "./AgendaCalendar";
 import { AgendaMap } from "./AgendaMap";
 
 export const metadata: Metadata = {
@@ -13,28 +14,7 @@ export const dynamic = "force-static";
 
 const calendarId = "lallobregat@gmail.com";
 
-function createCalendarUrl() {
-  const parameters = new URLSearchParams({
-    src: calendarId,
-    ctz: "Europe/Madrid",
-    hl: "ca",
-    mode: "MONTH",
-    wkst: "2",
-    showTitle: "0",
-    showNav: "1",
-    showDate: "1",
-    showPrint: "0",
-    showTabs: "0",
-    showCalendars: "0",
-    showTz: "0",
-    bgcolor: "#fffdf8",
-  });
-
-  return `https://calendar.google.com/calendar/embed?${parameters.toString()}`;
-}
-
 export default function AgendaPage() {
-  const calendarSrc = createCalendarUrl();
   const events = calendarEvents.length ? calendarEvents : upcomingEvents;
 
   return (
@@ -84,14 +64,7 @@ export default function AgendaPage() {
           </div>
         </div>
 
-        <div className="agendaCalendarFrame">
-          <iframe
-            title="Calendari mensual de La Principal del Llobregat"
-            src={calendarSrc}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+        <AgendaCalendar events={events} />
         <div className="agendaCalendarFooter">
           <span>Calendari públic</span>
           <span>lallobregat@gmail.com</span>

@@ -154,7 +154,7 @@ export function AgendaMap({ events, mapSrc }: { events: AgendaEvent[]; mapSrc: s
           </aside>
         ) : null}
 
-        <div className="agendaMapLabel">Catalunya · Catalunya Nord</div>
+        <div className="agendaMapLabel">Catalunya</div>
         <div className="agendaMapCredits">
           <a href="https://commons.wikimedia.org/wiki/File:Mapa_de_localitzaci%C3%B3_a_les_comarques_catalanes.svg" target="_blank" rel="noreferrer">Mapa · Wikimedia Commons</a>
           <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">Coordenades · OpenStreetMap</a>

@@ -22,6 +22,7 @@ const members = [
   { name: "Ivan Babiloni Porqueras", instrument: "Fiscorn" },
   { name: "Joan Ballart Pedret", instrument: "Fiscorn" },
   { name: "Eduard Arribas Montagut", instrument: "Contrabaix" },
+  { name: "Marcel Sabaté Reixach", instrument: "Director" },
 ];
 
 export default function MusicsPage() {
@@ -32,13 +33,9 @@ export default function MusicsPage() {
           <p className="simpleKicker">La formació</p>
           <h1>Els<br /><em>músics</em></h1>
           <p>
-            Onze intèrprets, una mateixa respiració i un so que només existeix
-            quan tots toquem junts.
+            Una mateixa respiració i un so que només existeix quan tots toquem
+            junts.
           </p>
-        </div>
-        <div className="musiciansHeroNumber" aria-hidden="true">
-          <strong>11</strong>
-          <span>veus</span>
         </div>
       </header>
 
@@ -58,7 +55,7 @@ export default function MusicsPage() {
         </div>
         <div className="musiciansPortraitCaption">
           <span>Cobla La Principal del Llobregat</span>
-          <span>Onze músics · Un director · Una cobla</span>
+          <span>Una formació · Un sol so</span>
         </div>
       </section>
 
@@ -77,12 +74,6 @@ export default function MusicsPage() {
           <p className="eyebrow">Membres 2026</p>
           <h2 id="membres-2026">Noms propis.<br /><em>Un sol so.</em></h2>
         </div>
-
-        <article className="musicianDirector">
-          <span>Direcció</span>
-          <h3>Marcel Sabaté Reixach</h3>
-          <p>Director</p>
-        </article>
 
         <div className="musicianMemberGrid">
           {members.map((member, index) => (
