@@ -30,6 +30,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.doesNotMatch(musicians, /Jorge Serrano Quevedo/);
   assert.match(musicians, /Marcel Sabaté Reixach/);
   assert.doesNotMatch(musicians, /className="musicianDirector"/);
+  assert.doesNotMatch(musicians, /padStart|members\.map\(\(member, index\)/);
   assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Actuacions"[\s\S]*label: "Músics"[\s\S]*label: "Història"/);
   assert.match(page, /calendar-events\.generated\.json/);
   assert.match(page, /<HomeNextEvent events=\{calendarEvents\}/);

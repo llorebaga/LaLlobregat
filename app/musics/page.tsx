@@ -76,10 +76,9 @@ export default function MusicsPage() {
         </div>
 
         <div className="musicianMemberGrid">
-          {members.map((member, index) => (
+          {members.map((member) => (
             <article className="musicianMember" key={member.name}>
               <div className="musicianMemberTop">
-                <span>{String(index + 1).padStart(2, "0")}</span>
                 <span>{member.instrument}</span>
               </div>
               <h3>{member.name}</h3>

@@ -570,7 +570,7 @@ img { display: block; }
 .musicianMemberGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--line); }
 .musicianMember { min-height: 235px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: .25s ease; }
 .musicianMember:hover { background: var(--red); color: white; }
-.musicianMemberTop { display: flex; justify-content: space-between; gap: 1rem; color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.musicianMemberTop { display: flex; gap: 1rem; color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .musicianMember:hover .musicianMemberTop { color: rgba(255,255,255,.75); }
 .musicianMember h3 { max-width: 360px; margin: auto 0 0; font-family: Georgia, serif; font-size: clamp(1.8rem, 2.7vw, 3rem); font-weight: 400; line-height: .96; letter-spacing: -.04em; }
 
