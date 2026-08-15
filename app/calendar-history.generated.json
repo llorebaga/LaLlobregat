@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-3j7enk6d7l0rmgpmlduibs3kdq-google-com-2026-08-15-16-30-00-000-",
+    "day": "15",
+    "month": "AG.",
+    "dateTime": "2026-08-15T16:30:00.000Z",
+    "title": "CONCERT La Bisbal d'Empordà",
+    "place": "Plaça del Castell",
+    "town": "La Bisbal d'Empordà",
+    "time": "18.30 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=M2o3ZW5rNmQ3bDBybWdwbWxkdWliczNrZHEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "77.32%",
+      "top": "38.23%"
+    }
+  },
+  {
     "id": "calendar-7905rhn5cdt1aml17j45uhl93h-google-com-2026-08-15-09-15-00-000-",
     "day": "15",
     "month": "AG.",
