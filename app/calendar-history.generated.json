@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-3ueb4cr1pkrvfl2d8kck6u7l69-google-com-2026-08-15-20-30-00-000-",
+    "day": "15",
+    "month": "AG.",
+    "dateTime": "2026-08-15T20:30:00.000Z",
+    "title": "La Bisbal d'Empordà",
+    "place": "Ubicació no indicada al calendari",
+    "town": "La Bisbal d'Empordà",
+    "time": "22.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=M3VlYjRjcjFwa3J2ZmwyZDhrY2s2dTdsNjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "77.32%",
+      "top": "38.23%"
+    }
+  },
+  {
     "id": "calendar-3j7enk6d7l0rmgpmlduibs3kdq-google-com-2026-08-15-16-30-00-000-",
     "day": "15",
     "month": "AG.",
