@@ -26,7 +26,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   ]);
   assert.match(layout, /lang="ca"/);
   assert.match(page, /La nostra música/);
-  assert.match(page, /const SHOW_HOME_INTRO = true/);
+  assert.match(page, /const SHOW_HOME_INTRO = false/);
   assert.match(page, /<HomeIntro events=\{calendarEvents\}/);
   assert.match(homeIntro, /Tot comença[\s\S]*primera nota/);
   assert.match(homeIntro, /Fes sonar la cobla/);

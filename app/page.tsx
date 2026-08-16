@@ -7,7 +7,7 @@ import { sitePath } from "./site-path";
 
 const buildTime = Date.now();
 // Canvia-ho a false per recuperar immediatament la portada sense introducció.
-const SHOW_HOME_INTRO = true;
+const SHOW_HOME_INTRO = false;
 
 export default function Home() {
   const nextEvent = calendarEvents.find(
