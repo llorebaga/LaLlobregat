@@ -70,7 +70,9 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.doesNotMatch(header + footer + archive, /mailto:/);
   assert.match(contact, /representacio@lallobregat\.cat/);
   assert.match(contact, /629 417 377/);
+  assert.doesNotMatch(contact, /Com contactar|contactNote/);
   assert.match(copyContact, /navigator\.clipboard\.writeText/);
+  assert.match(css, /\.contactPage \+ \.siteFooter \.footerTop \{ display: none; \}/);
   assert.doesNotMatch(page, /simpleStats|<strong>1929<\/strong>|<strong>11<\/strong>|<strong>1<\/strong>/);
   assert.match(css, /prefers-reduced-motion/);
   assert.doesNotMatch(page + layout, /SkeletonPreview|codex-preview|Your site is taking shape/);

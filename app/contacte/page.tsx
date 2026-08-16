@@ -42,14 +42,6 @@ export default function ContactePage() {
             <CopyContactButton value="629 417 377" label="Copia el telèfon" />
           </article>
 
-          <aside className="contactNote">
-            <p className="eyebrow light">Com contactar</p>
-            <p>
-              Copia la dada que necessitis i escriu-nos des de l’aplicació que
-              prefereixis. Així la web no obre automàticament cap programa de
-              correu.
-            </p>
-          </aside>
         </div>
       </section>
     </main>
