@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-6t2cafq16n4jlvk1h4v9almuhr-google-com-2026-08-16-18-00-00-000-",
+    "day": "16",
+    "month": "AG.",
+    "dateTime": "2026-08-16T18:00:00.000Z",
+    "title": "Arenys de Mar",
+    "place": "Riera d'Arenys",
+    "town": "Arenys de Mar",
+    "time": "20.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NnQyY2FmcTE2bjRqbHZrMWg0djlhbG11aHIgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "66.15%",
+      "top": "51.60%"
+    }
+  },
+  {
     "id": "calendar-3ueb4cr1pkrvfl2d8kck6u7l69-google-com-2026-08-15-20-30-00-000-",
     "day": "15",
     "month": "AG.",
