@@ -1,10 +1,13 @@
 import Image from "next/image";
 import calendarEvents from "./calendar-events.generated.json";
+import { HomeIntro } from "./components/HomeIntro";
 import { HomeNextEvent } from "./components/HomeNextEvent";
 import { upcomingEvents } from "./data";
 import { sitePath } from "./site-path";
 
 const buildTime = Date.now();
+// Canvia-ho a false per recuperar immediatament la portada sense introducció.
+const SHOW_HOME_INTRO = true;
 
 export default function Home() {
   const nextEvent = calendarEvents.find(
@@ -13,6 +16,7 @@ export default function Home() {
 
   return (
     <main id="contingut" className="simpleHome">
+      {SHOW_HOME_INTRO ? <HomeIntro events={calendarEvents} initialEvent={nextEvent} /> : null}
       <section className="simpleHero">
         <div className="simpleHeroCopy">
           <p className="simpleKicker">Cobla · Des de 1929</p>

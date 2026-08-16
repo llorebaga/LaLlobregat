@@ -3,8 +3,9 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("el web es publica en català i sense el contingut temporal", async () => {
-  const [page, nextEvent, layout, header, footer, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync, multimedia, contact, copyContact] = await Promise.all([
+  const [page, homeIntro, nextEvent, layout, header, footer, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync, multimedia, contact, copyContact] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/components/HomeIntro.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/HomeNextEvent.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/SiteHeader.tsx", import.meta.url), "utf8"),
@@ -25,6 +26,11 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   ]);
   assert.match(layout, /lang="ca"/);
   assert.match(page, /La nostra música/);
+  assert.match(page, /const SHOW_HOME_INTRO = true/);
+  assert.match(page, /<HomeIntro events=\{calendarEvents\}/);
+  assert.match(homeIntro, /Tot comença[\s\S]*primera nota/);
+  assert.match(homeIntro, /Fes sonar la cobla/);
+  assert.match(homeIntro, /sessionStorage/);
   assert.match(agenda, /Mapa de Catalunya/);
   assert.match(agenda, /mapSrc=\{sitePath\("\/catalunya-mapa-complet\.png"\)\}/);
   assert.match(agenda, /<AgendaCalendar events=\{events\}/);
@@ -54,7 +60,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(calendarWorkflow, /gh workflow run deploy-pages\.yml --ref main/);
   assert.match(calendarWorkflow, /app\/calendar-history\.generated\.json/);
   assert.match(calendarSync, /historyOutputPath/);
-  assert.match(archive, /Ballades[\s\S]*Col·laboració Quartet Mèlt[\s\S]*Col·laboració Guillem Batllori/);
+  assert.match(archive, /Ballades[\s\S]*Concerts[\s\S]*Col·laboració Quartet Mèlt[\s\S]*Col·laboració Guillem Batllori/);
   assert.match(archive, /Diferents maneres[\s\S]*de trobar-nos/);
   assert.doesNotMatch(archive, /Tres maneres/);
   assert.match(archive, /<details className="proposalItem"/);

@@ -16,6 +16,13 @@ const proposals = [
     text: "La plaça és l’escenari natural de la cobla. Oferim ballades i audicions de sardanes per a festes majors, aplecs i programacions culturals, amb un repertori que combina els grans clàssics amb la creació actual.",
   },
   {
+    kicker: "Cobla a l’escenari",
+    title: "Concerts",
+    text: "En format de concert, la cobla mostra tota la seva riquesa tímbrica i expressiva. Preparem programes per a teatres, auditoris, festivals i cicles culturals, adaptats a cada ocasió i pensats per escoltar la cobla amb tots els seus matisos.",
+    detail:
+      "Del repertori clàssic als compositors contemporanis, cada concert és una oportunitat per descobrir una formació arrelada a la tradició i plenament oberta a noves sonoritats.",
+  },
+  {
     kicker: "Veu i cobla",
     title: "Col·laboració Quartet Mèlt",
     text: "La Llobregat i els Mèlt uneix el so de la cobla amb les quatre veus del Quartet Mèlt. Un espectacle d’uns noranta minuts que travessa gèneres poc habituals en aquesta formació, amb repertori propi del quartet i arranjaments de Jordi Molina.",
