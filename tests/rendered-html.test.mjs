@@ -59,12 +59,13 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.doesNotMatch(archive, /Tres maneres/);
   assert.match(archive, /<details className="proposalItem"/);
   assert.doesNotMatch(archive, /ActuacionsGrid|archiveEvents/);
-  assert.match(multimedia, /Fotografies[\s\S]*Documents/);
+  assert.match(multimedia, /Fotografies/);
   assert.match(multimedia, /la-principal-del-llobregat-2025\.png/);
   assert.match(multimedia, /la-principal-del-llobregat-negre\.png/);
-  assert.match(multimedia, /biografia-la-principal-del-llobregat\.pdf/);
+  assert.doesNotMatch(multimedia, /Documents|\.pdf/);
   assert.match(header, /sitePath\("\/contacte"\)/);
   assert.match(footer, /sitePath\("\/contacte"\)/);
+  assert.match(footer, /Escriu-nos/);
   assert.match(archive, /sitePath\("\/contacte"\)/);
   assert.doesNotMatch(header + footer + archive, /mailto:/);
   assert.match(contact, /representacio@lallobregat\.cat/);
