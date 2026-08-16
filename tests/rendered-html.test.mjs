@@ -55,6 +55,8 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(calendarWorkflow, /app\/calendar-history\.generated\.json/);
   assert.match(calendarSync, /historyOutputPath/);
   assert.match(archive, /Ballades[\s\S]*Col·laboració Quartet Mèlt[\s\S]*Col·laboració Guillem Batllori/);
+  assert.match(archive, /Diferents maneres[\s\S]*de trobar-nos/);
+  assert.doesNotMatch(archive, /Tres maneres/);
   assert.match(archive, /<details className="proposalItem"/);
   assert.doesNotMatch(archive, /ActuacionsGrid|archiveEvents/);
   assert.match(multimedia, /Fotografies[\s\S]*Documents/);

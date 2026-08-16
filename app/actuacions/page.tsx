@@ -61,7 +61,7 @@ export default function ActuacionsPage() {
       <section className="proposalSection sectionPad" aria-labelledby="propostes-title">
         <div className="proposalHeading">
           <p className="eyebrow">La cobla en directe</p>
-          <h2 id="propostes-title">Tres maneres<br /><em>de trobar-nos.</em></h2>
+          <h2 id="propostes-title">Diferents maneres<br /><em>de trobar-nos.</em></h2>
           <p>Clica cada proposta per descobrir-ne tots els detalls.</p>
         </div>
 
