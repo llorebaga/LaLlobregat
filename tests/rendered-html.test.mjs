@@ -3,11 +3,12 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("el web es publica en català i sense el contingut temporal", async () => {
-  const [page, nextEvent, layout, header, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync, multimedia] = await Promise.all([
+  const [page, nextEvent, layout, header, footer, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync, multimedia, contact, copyContact] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/HomeNextEvent.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/SiteHeader.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/components/SiteFooter.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/agenda/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/agenda/AgendaTownSearch.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/agenda/AgendaCalendar.tsx", import.meta.url), "utf8"),
@@ -19,6 +20,8 @@ test("el web es publica en català i sense el contingut temporal", async () => {
     readFile(new URL("../.github/workflows/sync-calendar.yml", import.meta.url), "utf8"),
     readFile(new URL("../scripts/sync-calendar.mjs", import.meta.url), "utf8"),
     readFile(new URL("../app/multimedia/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/contacte/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/contacte/CopyContactButton.tsx", import.meta.url), "utf8"),
   ]);
   assert.match(layout, /lang="ca"/);
   assert.match(page, /La nostra música/);
@@ -58,6 +61,13 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(multimedia, /la-principal-del-llobregat-2025\.png/);
   assert.match(multimedia, /la-principal-del-llobregat-negre\.png/);
   assert.match(multimedia, /biografia-la-principal-del-llobregat\.pdf/);
+  assert.match(header, /sitePath\("\/contacte"\)/);
+  assert.match(footer, /sitePath\("\/contacte"\)/);
+  assert.match(archive, /sitePath\("\/contacte"\)/);
+  assert.doesNotMatch(header + footer + archive, /mailto:/);
+  assert.match(contact, /representacio@lallobregat\.cat/);
+  assert.match(contact, /629 417 377/);
+  assert.match(copyContact, /navigator\.clipboard\.writeText/);
   assert.doesNotMatch(page, /simpleStats|<strong>1929<\/strong>|<strong>11<\/strong>|<strong>1<\/strong>/);
   assert.match(css, /prefers-reduced-motion/);
   assert.doesNotMatch(page + layout, /SkeletonPreview|codex-preview|Your site is taking shape/);

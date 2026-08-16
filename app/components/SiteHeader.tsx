@@ -21,12 +21,12 @@ export function SiteHeader() {
         <nav className="desktopNav" aria-label="Navegació principal">
           {navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
         </nav>
-        <a className="headerCta" href="mailto:representacio@lallobregat.cat">Contractació</a>
+        <a className="headerCta" href={sitePath("/contacte")}>Contractació</a>
         <details className="mobileNav">
           <summary aria-label="Obre el menú"><span /><span /></summary>
           <nav aria-label="Navegació mòbil">
             {navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
-            <a href="mailto:representacio@lallobregat.cat">Contractació</a>
+            <a href={sitePath("/contacte")}>Contractació</a>
           </nav>
         </details>
       </div>

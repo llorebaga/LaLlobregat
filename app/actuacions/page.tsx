@@ -92,7 +92,7 @@ export default function ActuacionsPage() {
 
       <section className="whatWeDoCta">
         <p>Vols portar La Principal del Llobregat al teu municipi?</p>
-        <a className="button lightButton" href="mailto:representacio@lallobregat.cat">
+        <a className="button lightButton" href={sitePath("/contacte")}>
           Parlem-ne <span aria-hidden="true">↗</span>
         </a>
       </section>

@@ -5,13 +5,13 @@ export function SiteFooter() {
     <footer className="siteFooter">
       <div className="footerTop">
         <div><p className="eyebrow light">Parlem-ne</p><h2>Fem sonar la teva plaça.</h2></div>
-        <a className="roundLink" href="mailto:representacio@lallobregat.cat">Escriu-nos <span aria-hidden="true">↗</span></a>
+        <a className="roundLink" href={sitePath("/contacte")}>Contacta <span aria-hidden="true">↗</span></a>
       </div>
       <div className="footerBottom">
         <a className="footerBrand" href={sitePath("/")}>La Principal del Llobregat</a>
         <div className="footerContact">
-          <a href="mailto:representacio@lallobregat.cat">representacio@lallobregat.cat</a>
-          <a href="tel:+34629417377">629 417 377</a>
+          <a href={sitePath("/contacte")}>representacio@lallobregat.cat</a>
+          <span>629 417 377</span>
           <span>Representant · Ivan Babiloni</span>
         </div>
         <div className="footerSocial">
