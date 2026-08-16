@@ -66,7 +66,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(header, /sitePath\("\/contacte"\)/);
   assert.match(footer, /sitePath\("\/contacte"\)/);
   assert.match(footer, /Escriu-nos/);
-  assert.match(archive, /sitePath\("\/contacte"\)/);
+  assert.doesNotMatch(archive, /Parlem-ne|whatWeDoCta/);
   assert.doesNotMatch(header + footer + archive, /mailto:/);
   assert.match(contact, /representacio@lallobregat\.cat/);
   assert.match(contact, /629 417 377/);

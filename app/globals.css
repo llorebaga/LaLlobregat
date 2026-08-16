@@ -664,8 +664,6 @@ img { display: block; }
 .proposalBody { max-width: 800px; padding: 0 5rem 3rem 4rem; }
 .proposalBody p { margin: 0 0 1rem; color: var(--muted); font-size: 1.02rem; line-height: 1.82; }
 .proposalBody p:first-child { color: var(--ink); font-family: Georgia,serif; font-size: 1.3rem; line-height: 1.6; }
-.whatWeDoCta { min-height: 310px; padding: 4rem clamp(1.25rem,7vw,8rem); display: flex; justify-content: space-between; align-items: center; gap: 4rem; background: var(--burgundy); color: white; }
-.whatWeDoCta p { max-width: 850px; margin: 0; font-family: Georgia,serif; font-size: clamp(2.5rem,5vw,5.5rem); line-height: .98; letter-spacing: -.045em; }
 
 .multimediaPage { background: var(--paper); }
 .multimediaHero { min-height: 610px; display: flex; flex-direction: column; justify-content: flex-end; background: var(--red); color: white; }
@@ -819,8 +817,6 @@ img { display: block; }
   .proposalToggle { width: 40px; }
   .proposalBody { padding: 0 0 2.5rem 2.45rem; }
   .proposalBody p:first-child { font-size: 1.14rem; }
-  .whatWeDoCta { min-height: 390px; align-items: flex-start; flex-direction: column; }
-  .whatWeDoCta .button { width: 100%; }
   .multimediaHero { min-height: 520px; }
   .multimediaHero h1 { font-size: clamp(5rem,25vw,7rem); }
   .multimediaHero > p:last-child { margin-left: 0; margin-top: 2rem; }

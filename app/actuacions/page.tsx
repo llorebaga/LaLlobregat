@@ -90,12 +90,6 @@ export default function ActuacionsPage() {
         </div>
       </section>
 
-      <section className="whatWeDoCta">
-        <p>Vols portar La Principal del Llobregat al teu municipi?</p>
-        <a className="button lightButton" href={sitePath("/contacte")}>
-          Parlem-ne <span aria-hidden="true">↗</span>
-        </a>
-      </section>
     </main>
   );
 }
