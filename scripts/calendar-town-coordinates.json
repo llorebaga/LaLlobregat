@@ -721,12 +721,12 @@
   },
   "la floresta": {
     "town": "La Floresta",
-    "lat": 41.5103082,
-    "lon": 0.9195489,
-    "verifiedQuery": "La Floresta, Catalunya, Espanya",
-    "displayName": "la Floresta, Garrigues, Lleida, Catalunya, 25413, Espanya",
-    "osmType": "administrative",
-    "osmId": "relation/342359"
+    "lat": 41.4478853,
+    "lon": 2.0731251,
+    "verifiedQuery": "la Floresta, Sant Cugat del Vallès, Catalunya, Espanya",
+    "displayName": "la Floresta, Sant Cugat del Vallès, Vallès Occidental, Barcelona, Catalunya, 08172, Espanya",
+    "osmType": "quarter",
+    "osmId": "node/6312331922"
   },
   "la galera": {
     "town": "La Galera",
@@ -1468,12 +1468,12 @@
   },
   "sant salvador del vendrell": {
     "town": "Sant Salvador del Vendrell",
-    "lat": 41.2200764,
-    "lon": 1.5352296,
-    "verifiedQuery": "Sant Salvador del Vendrell, Catalunya, Espanya",
-    "displayName": "Església Parroquial de Sant Salvador del Vendrell, 9, Plaça Vella, el Puig, el Vendrell, Baix Penedès, Tarragona, Catalunya, 43700, Espanya",
-    "osmType": "place_of_worship",
-    "osmId": "way/938818178"
+    "lat": 41.1838854,
+    "lon": 1.5409713,
+    "verifiedQuery": "Auditori Pau Casals, Sant Salvador, El Vendrell, Catalunya, Espanya",
+    "displayName": "Auditori Pau Casals, Plaça Bach, Sant Salvador, el Vendrell, Baix Penedès, Tarragona, Catalunya, 43880, Espanya",
+    "osmType": "theatre",
+    "osmId": "way/185764418"
   },
   "sant vicenc dels horts": {
     "town": "Sant Vicenç dels Horts",

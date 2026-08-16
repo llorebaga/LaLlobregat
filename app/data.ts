@@ -5,10 +5,10 @@ export type AgendaEvent = {
 };
 
 export const upcomingEvents: AgendaEvent[] = [
-  { id: "vendrell-2026", day: "30", month: "AG.", dateTime: "2026-08-30T19:00:00+02:00", title: "Ballada d’estiu", place: "La Rambla", town: "El Vendrell", time: "19.00 h", type: "Ballada", source: "https://capitaldelasardana.cat/", mapPosition: { left: "48%", top: "71%" } },
-  { id: "calella-2026", day: "06", month: "SET.", dateTime: "2026-09-06T19:30:00+02:00", title: "Toca sardanes, la cobla!", place: "Passeig de Manuel Puigvert", town: "Calella", time: "19.30 h", type: "Audició", source: "https://www.calellasardanista.cat/images/PROGRAMA%20TEMPORADA%202026.pdf", mapPosition: { left: "82%", top: "54%" } },
-  { id: "calafell-2026", day: "10", month: "SET.", dateTime: "2026-09-10T19:00:00+02:00", title: "Ballada de sardanes", place: "Plaça Manila · Confraria", town: "Calafell", time: "19.00 h", type: "Ballada", source: "https://seu-e.cat/documents/3017083/21069719/Acta%2B7%2B2026.pdf/7b68377c-2181-480f-a6b0-8646f60e787e", mapPosition: { left: "49%", top: "73%" } },
-  { id: "merce-2026", day: "27", month: "SET.", dateTime: "2026-09-27T11:00:00+02:00", title: "76è Concurs de colles sardanistes de la Mercè", place: "Pla de la Catedral", town: "Barcelona", time: "11.00 h", type: "Concurs", source: "https://app.somsardana.cat/competicio", mapPosition: { left: "69%", top: "63%" } },
+  { id: "vendrell-2026", day: "30", month: "AG.", dateTime: "2026-08-30T19:00:00+02:00", title: "Ballada d’estiu", place: "La Rambla", town: "El Vendrell", time: "19.00 h", type: "Ballada", source: "https://capitaldelasardana.cat/", mapPosition: { left: "41.42%", top: "65.27%" } },
+  { id: "calella-2026", day: "06", month: "SET.", dateTime: "2026-09-06T19:30:00+02:00", title: "Toca sardanes, la cobla!", place: "Passeig de Manuel Puigvert", town: "Calella", time: "19.30 h", type: "Audició", source: "https://www.calellasardanista.cat/images/PROGRAMA%20TEMPORADA%202026.pdf", mapPosition: { left: "68.80%", top: "50.30%" } },
+  { id: "calafell-2026", day: "10", month: "SET.", dateTime: "2026-09-10T19:00:00+02:00", title: "Ballada de sardanes", place: "Plaça Manila · Confraria", town: "Calafell", time: "19.00 h", type: "Ballada", source: "https://seu-e.cat/documents/3017083/21069719/Acta%2B7%2B2026.pdf/7b68377c-2181-480f-a6b0-8646f60e787e", mapPosition: { left: "42.30%", top: "65.85%" } },
+  { id: "merce-2026", day: "27", month: "SET.", dateTime: "2026-09-27T11:00:00+02:00", title: "76è Concurs de colles sardanistes de la Mercè", place: "Pla de la Catedral", town: "Barcelona", time: "11.00 h", type: "Concurs", source: "https://app.somsardana.cat/competicio", mapPosition: { left: "57.19%", top: "58.80%" } },
 ];
 
 export type ArchiveEvent = {

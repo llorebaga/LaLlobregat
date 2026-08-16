@@ -34,12 +34,18 @@ test("les poblacions ambigües tenen coordenades municipals verificades", async 
   assert.deepEqual({ lat: places.masnou.lat, lon: places.masnou.lon }, { lat: 41.4796899, lon: 2.3118347 });
   assert.deepEqual({ lat: places["prada de conflent"].lat, lon: places["prada de conflent"].lon }, { lat: 42.6181232, lon: 2.4230925 });
   assert.deepEqual({ lat: places.castellar.lat, lon: places.castellar.lon }, { lat: 41.6138122, lon: 2.0875963 });
+  // La Floresta del Vallès (Sant Cugat), no pas la de les Garrigues.
+  assert.deepEqual({ lat: places["la floresta"].lat, lon: places["la floresta"].lon }, { lat: 41.4478853, lon: 2.0731251 });
 });
 
-test("Encamp i Céret estan calibrats amb el dibuix del mapa", async () => {
+test("la projecció col·loca els punts damunt del territori dibuixat", async () => {
   const events = JSON.parse(await readFile("app/calendar-history.generated.json", "utf8"));
   const byTown = new Map(events.map((event) => [event.town, event]));
 
-  assert.deepEqual(byTown.get("Encamp")?.mapPosition, { left: "40.10%", top: "20.55%" });
-  assert.deepEqual(byTown.get("Céret")?.mapPosition, { left: "70.47%", top: "22.70%" });
+  // Encamp cau dins d'Andorra i Céret dins del Vallespir, sense correccions manuals.
+  assert.deepEqual(byTown.get("Encamp")?.mapPosition, { left: "40.27%", top: "21.00%" });
+  assert.deepEqual(byTown.get("Céret")?.mapPosition, { left: "69.52%", top: "20.86%" });
+  // Isil quedava fora de Catalunya amb la projecció anterior.
+  assert.deepEqual(byTown.get("Isil")?.mapPosition, { left: "27.54%", top: "16.99%" });
+  assert.deepEqual(byTown.get("Barcelona")?.mapPosition, { left: "57.19%", top: "58.80%" });
 });

@@ -9,19 +9,21 @@ const cachePath = path.resolve("scripts/calendar-geocode-cache.json");
 const townCoordinatesPath = path.resolve("scripts/calendar-town-coordinates.json");
 const maximumEvents = 180;
 const geocodeDelay = Number(process.env.GEOCODE_DELAY_MS ?? 1200);
-// Equirectangular bounds calibrated to the fixed Catalonia and Northern Catalonia map.
-const cataloniaBounds = { west: -0.2395, south: 40.2431, east: 4.0013, north: 43.0225 };
+// El mapa fix està dibuixat amb una projecció equirectangular lleugerament girada,
+// així que la latitud també desplaça l'eix horitzontal i la longitud el vertical.
+// Coeficients calibrats contra el contorn dibuixat de Catalunya (error ≈ 3 px sobre
+// els 1280 px de l'original).
+const mapProjection = {
+  size: 1280,
+  x: { lon: 320.27127, lat: -23.02574, offset: 987.69792 },
+  y: { lon: -20.09757, lat: -429.77257, offset: 18581.47614 },
+};
+// Finestra geogràfica que cobreix el dibuix, per acotar el geocodificador.
+const cataloniaBounds = { west: -0.19, south: 40.08, east: 4.01, north: 43.24 };
 const monthNames = ["GEN.", "FEBR.", "MARÇ", "ABR.", "MAIG", "JUNY", "JUL.", "AG.", "SET.", "OCT.", "NOV.", "DES."];
 const monthNamesLong = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"];
 const knownPlaces = {
   "bufraganya": { lat: 41.48455, lon: 1.44838, town: "Sant Magí de Brufaganya" },
-};
-// The northern part of the composite map is an illustrated montage rather than
-// a single uniform projection. These two places need a small visual calibration
-// so their markers align with the shapes drawn on the fixed map.
-const mapVisualOverrides = {
-  "ceret": { left: "70.47%", top: "22.70%" },
-  "encamp": { left: "40.10%", top: "20.55%" },
 };
 const ignoredTownNames = new Set([
   "coco", "catedral", "enregistrament cd", "festa privada", "gravacio", "grabacio",
@@ -135,8 +137,9 @@ function eventQueries(town, location) {
 }
 
 function mapPosition(latitude, longitude) {
-  const left = ((longitude - cataloniaBounds.west) / (cataloniaBounds.east - cataloniaBounds.west)) * 100;
-  const top = ((cataloniaBounds.north - latitude) / (cataloniaBounds.north - cataloniaBounds.south)) * 100;
+  const { size, x, y } = mapProjection;
+  const left = ((x.lon * longitude + x.lat * latitude + x.offset) / size) * 100;
+  const top = ((y.lon * longitude + y.lat * latitude + y.offset) / size) * 100;
   return {
     left: `${Math.min(96, Math.max(4, left)).toFixed(2)}%`,
     top: `${Math.min(96, Math.max(4, top)).toFixed(2)}%`,
@@ -286,7 +289,7 @@ async function synchronizeEvent(event, includeLocation) {
     resolvedTown = {
       town: verifiedPlace?.town ?? knownPlace?.town ?? originalTown,
       coordinates,
-      mapPosition: mapVisualOverrides[townKey] ?? mapPosition(coordinates.lat, coordinates.lon),
+      mapPosition: mapPosition(coordinates.lat, coordinates.lon),
     };
     resolvedTowns.set(townKey, resolvedTown);
   }
