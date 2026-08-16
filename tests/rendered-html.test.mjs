@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("el web es publica en català i sense el contingut temporal", async () => {
-  const [page, nextEvent, layout, header, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync] = await Promise.all([
+  const [page, nextEvent, layout, header, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync, multimedia] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/HomeNextEvent.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
@@ -18,6 +18,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
     readFile(new URL("../.github/workflows/sync-calendar.yml", import.meta.url), "utf8"),
     readFile(new URL("../scripts/sync-calendar.mjs", import.meta.url), "utf8"),
+    readFile(new URL("../app/multimedia/page.tsx", import.meta.url), "utf8"),
   ]);
   assert.match(layout, /lang="ca"/);
   assert.match(page, /La nostra música/);
@@ -40,7 +41,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(musicians, /Marcel Sabaté Reixach/);
   assert.doesNotMatch(musicians, /className="musicianDirector"/);
   assert.doesNotMatch(musicians, /padStart|members\.map\(\(member, index\)/);
-  assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Actuacions"[\s\S]*label: "Músics"[\s\S]*label: "Història"/);
+  assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Què fem\?"[\s\S]*label: "Músics"[\s\S]*label: "Història"[\s\S]*label: "Multimèdia"/);
   assert.match(page, /calendar-events\.generated\.json/);
   assert.match(page, /<HomeNextEvent events=\{calendarEvents\}/);
   assert.match(nextEvent, /setInterval\(updateCurrentTime, 60_000\)/);
@@ -50,8 +51,13 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(calendarWorkflow, /gh workflow run deploy-pages\.yml --ref main/);
   assert.match(calendarWorkflow, /app\/calendar-history\.generated\.json/);
   assert.match(calendarSync, /historyOutputPath/);
-  assert.match(archive, /MÈLT[\s\S]*Concerts[\s\S]*Ballades/);
+  assert.match(archive, /Ballades[\s\S]*Col·laboració Quartet Mèlt[\s\S]*Col·laboració Guillem Batllori/);
+  assert.match(archive, /<details className="proposalItem"/);
   assert.doesNotMatch(archive, /ActuacionsGrid|archiveEvents/);
+  assert.match(multimedia, /Fotografies[\s\S]*Documents/);
+  assert.match(multimedia, /la-principal-del-llobregat-2025\.png/);
+  assert.match(multimedia, /la-principal-del-llobregat-negre\.png/);
+  assert.match(multimedia, /biografia-la-principal-del-llobregat\.pdf/);
   assert.doesNotMatch(page, /simpleStats|<strong>1929<\/strong>|<strong>11<\/strong>|<strong>1<\/strong>/);
   assert.match(css, /prefers-reduced-motion/);
   assert.doesNotMatch(page + layout, /SkeletonPreview|codex-preview|Your site is taking shape/);

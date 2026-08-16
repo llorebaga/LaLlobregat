@@ -633,6 +633,75 @@ img { display: block; }
 .musiciansCta > a { min-width: 230px; padding: 1.1rem 1.25rem; display: flex; justify-content: space-between; gap: 2rem; background: white; color: var(--burgundy); font-size: .68rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; transition: .2s ease; }
 .musiciansCta > a:hover { background: var(--red); color: white; transform: translateY(-2px); }
 
+/* Identitat, projectes i descàrregues */
+.brandLogo { border: 1px solid rgba(89,11,20,.18); border-radius: 50%; background: var(--red); }
+.simpleHeroVisual { aspect-ratio: 4724 / 2336; }
+.simpleHeroVisual img { padding: 0; }
+
+.whatWeDoPage { background: var(--paper); }
+.whatWeDoHero { min-height: 720px; display: grid; grid-template-columns: minmax(390px,.78fr) minmax(0,1.22fr); background: #050505; color: white; }
+.whatWeDoHeroCopy { padding: clamp(5rem,9vw,10rem) clamp(2rem,6vw,7rem); display: flex; flex-direction: column; justify-content: flex-end; background: var(--red); }
+.whatWeDoHeroCopy h1 { margin: 0; font-family: Georgia,"Times New Roman",serif; font-size: clamp(5rem,10vw,11rem); font-weight: 400; line-height: .76; letter-spacing: -.065em; }
+.whatWeDoHeroCopy h1 em { color: #f4d7d2; font-weight: 400; }
+.whatWeDoHeroCopy > p:last-child { max-width: 510px; margin: 3rem 0 0; color: rgba(255,255,255,.8); font-family: Georgia,serif; font-size: clamp(1.1rem,1.55vw,1.45rem); line-height: 1.55; }
+.whatWeDoHeroImage { position: relative; min-height: 720px; overflow: hidden; background: #050505; }
+.whatWeDoHeroImage img { object-fit: contain !important; object-position: center !important; }
+.proposalSection { display: grid; grid-template-columns: minmax(280px,.65fr) minmax(0,1.35fr); gap: clamp(4rem,8vw,10rem); background: var(--cream); }
+.proposalHeading { position: sticky; top: 130px; align-self: start; }
+.proposalHeading h2, .mediaSectionHeading h2 { margin: 0; font-family: Georgia,"Times New Roman",serif; font-size: clamp(3.4rem,6vw,7rem); font-weight: 400; line-height: .88; letter-spacing: -.06em; }
+.proposalHeading h2 em, .mediaSectionHeading h2 em { color: var(--red); font-weight: 400; }
+.proposalHeading > p:last-child { max-width: 400px; margin: 2rem 0 0; color: var(--muted); }
+.proposalList { border-top: 1px solid var(--ink); }
+.proposalItem { border-bottom: 1px solid var(--line); }
+.proposalItem summary { min-height: 175px; display: grid; grid-template-columns: 48px 1fr 54px; gap: 1.5rem; align-items: center; padding: 1.5rem 0; cursor: pointer; list-style: none; }
+.proposalItem summary::-webkit-details-marker { display: none; }
+.proposalNumber { align-self: start; color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .1em; }
+.proposalTitle { display: flex; flex-direction: column; gap: .5rem; }
+.proposalTitle small { color: var(--muted); font-size: .6rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.proposalTitle strong { max-width: 720px; font-family: Georgia,"Times New Roman",serif; font-size: clamp(2rem,3.5vw,4rem); font-weight: 400; line-height: .95; letter-spacing: -.045em; }
+.proposalToggle { width: 48px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid var(--ink); border-radius: 50%; font-family: Georgia,serif; font-size: 1.7rem; transition: .2s ease; }
+.proposalItem[open] .proposalToggle { background: var(--red); border-color: var(--red); color: white; transform: rotate(45deg); }
+.proposalBody { max-width: 800px; padding: 0 5rem 3rem 4rem; }
+.proposalBody p { margin: 0 0 1rem; color: var(--muted); font-size: 1.02rem; line-height: 1.82; }
+.proposalBody p:first-child { color: var(--ink); font-family: Georgia,serif; font-size: 1.3rem; line-height: 1.6; }
+.whatWeDoCta { min-height: 310px; padding: 4rem clamp(1.25rem,7vw,8rem); display: flex; justify-content: space-between; align-items: center; gap: 4rem; background: var(--burgundy); color: white; }
+.whatWeDoCta p { max-width: 850px; margin: 0; font-family: Georgia,serif; font-size: clamp(2.5rem,5vw,5.5rem); line-height: .98; letter-spacing: -.045em; }
+
+.multimediaPage { background: var(--paper); }
+.multimediaHero { min-height: 610px; display: flex; flex-direction: column; justify-content: flex-end; background: var(--red); color: white; }
+.multimediaHero h1 { margin: 0; font-family: Georgia,"Times New Roman",serif; font-size: clamp(5rem,12vw,12rem); font-weight: 400; line-height: .72; letter-spacing: -.07em; }
+.multimediaHero h1 em { color: #f4d7d2; font-weight: 400; }
+.multimediaHero > p:last-child { max-width: 600px; margin: 3rem 0 0 auto; color: rgba(255,255,255,.8); font-family: Georgia,serif; font-size: clamp(1.1rem,1.7vw,1.5rem); line-height: 1.6; }
+.mediaSectionHeading { display: grid; grid-template-columns: .55fr 1.45fr; align-items: end; gap: 4rem; margin-bottom: clamp(3rem,6vw,6rem); }
+.mediaPhotoGrid { display: grid; grid-template-columns: 1.16fr .84fr; gap: clamp(1.5rem,3vw,3rem); align-items: start; }
+.mediaPhotoCard { min-width: 0; }
+.mediaPhoto { position: relative; width: 100%; overflow: hidden; border: 1px solid var(--line); }
+.mediaPhotoWhite { aspect-ratio: 4724 / 2336; background: white; }
+.mediaPhotoBlack { aspect-ratio: 2078 / 1524; background: black; }
+.mediaPhoto img { object-fit: contain !important; object-position: center !important; }
+.mediaPhotoMeta { min-height: 105px; padding: 1.2rem 0; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-bottom: 1px solid var(--ink); }
+.mediaPhotoMeta > div { display: flex; flex-direction: column; gap: .25rem; }
+.mediaPhotoMeta span { color: var(--muted); font-size: .58rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.mediaPhotoMeta strong { font-family: Georgia,serif; font-size: 1.18rem; font-weight: 400; }
+.mediaPhotoMeta > a { flex: 0 0 auto; min-width: 82px; padding: .7rem .8rem; display: flex; justify-content: space-between; border: 1px solid var(--red); color: var(--red); font-size: .63rem; font-weight: 800; letter-spacing: .1em; }
+.mediaPhotoMeta > a:hover { background: var(--red); color: white; }
+.mediaDocuments { display: grid; grid-template-columns: minmax(280px,.62fr) minmax(0,1.38fr); gap: clamp(4rem,8vw,10rem); background: var(--burgundy); color: white; }
+.lightHeading h2 em { color: #efa2aa; }
+.documentList { border-top: 1px solid rgba(255,255,255,.55); }
+.documentList > a { min-height: 155px; padding: 1.5rem 0; display: grid; grid-template-columns: 42px 1fr auto; gap: 2rem; align-items: center; border-bottom: 1px solid rgba(255,255,255,.22); transition: .2s ease; }
+.documentList > a:hover { padding-left: 1.2rem; padding-right: 1.2rem; background: white; color: var(--burgundy); }
+.documentList > a > span { align-self: start; color: #efa2aa; font-size: .6rem; font-weight: 800; }
+.documentList h3 { margin: 0 0 .5rem; font-family: Georgia,serif; font-size: clamp(1.5rem,2.4vw,2.7rem); font-weight: 400; line-height: 1.05; }
+.documentList p { max-width: 590px; margin: 0; color: rgba(255,255,255,.62); font-size: .82rem; }
+.documentList > a:hover p { color: var(--muted); }
+.documentList > a > strong { font-size: .62rem; letter-spacing: .12em; }
+
+@media (max-width: 1320px) and (min-width: 1101px) {
+  .headerInner { gap: 1.4rem; }
+  .desktopNav { gap: 1.25rem; font-size: .7rem; }
+  .headerCta { padding-left: .9rem; padding-right: .9rem; }
+}
+
 @media (max-width: 1100px) {
   .homeHero { min-height: 820px; }
   .homeHeroContent { width: min(900px, 90vw); }
@@ -648,6 +717,12 @@ img { display: block; }
   .musiciansIntro { grid-template-columns: 1fr 1.4fr; }
   .musiciansIntro .eyebrow { grid-column: 1 / -1; }
   .musicianMemberGrid { grid-template-columns: repeat(2, 1fr); }
+  .whatWeDoHero { min-height: auto; grid-template-columns: 1fr; }
+  .whatWeDoHeroCopy { min-height: 540px; }
+  .whatWeDoHeroImage { min-height: 680px; }
+  .proposalSection, .mediaDocuments { grid-template-columns: 1fr; gap: 4rem; }
+  .proposalHeading { position: static; }
+  .mediaSectionHeading { grid-template-columns: 1fr; gap: 2rem; }
 }
 
 @media (max-width: 760px) {
@@ -684,7 +759,7 @@ img { display: block; }
   .simpleHeroCopy { padding: 5rem 1.25rem 4rem; }
   .simpleHero h1 { font-size: clamp(4rem, 20vw, 6rem); }
   .simpleHeroVisual { width: calc(100% - 2.5rem); margin: 0 1.25rem 2.5rem; grid-row: 2; }
-  .simpleHeroVisual img { padding: .75rem; }
+  .simpleHeroVisual img { padding: 0; }
   .simpleHeroPhotoCta { left: .75rem; bottom: .75rem; }
   .simpleHeroActions { align-items: flex-start; flex-direction: column; gap: 1.4rem; }
   .homeGroupPhoto { padding-left: 0; padding-right: 0; }
@@ -713,4 +788,21 @@ img { display: block; }
   .musicianMember { min-height: 190px; }
   .musiciansCta { min-height: 410px; align-items: flex-start; flex-direction: column; }
   .musiciansCta > a { width: 100%; }
+  .whatWeDoHeroCopy { min-height: 470px; padding: 5rem 1.25rem 3.5rem; }
+  .whatWeDoHeroCopy h1 { font-size: clamp(5rem,25vw,7rem); }
+  .whatWeDoHeroCopy > p:last-child { margin-top: 2rem; }
+  .whatWeDoHeroImage { min-height: 0; aspect-ratio: 2078 / 1524; }
+  .proposalItem summary { min-height: 145px; grid-template-columns: 30px 1fr 42px; gap: .9rem; }
+  .proposalToggle { width: 40px; }
+  .proposalBody { padding: 0 0 2.5rem 2.45rem; }
+  .proposalBody p:first-child { font-size: 1.14rem; }
+  .whatWeDoCta { min-height: 390px; align-items: flex-start; flex-direction: column; }
+  .whatWeDoCta .button { width: 100%; }
+  .multimediaHero { min-height: 520px; }
+  .multimediaHero h1 { font-size: clamp(5rem,25vw,7rem); }
+  .multimediaHero > p:last-child { margin-left: 0; margin-top: 2rem; }
+  .mediaPhotoGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .mediaPhotoMeta { align-items: flex-start; }
+  .documentList > a { min-height: 165px; grid-template-columns: 28px 1fr; gap: 1rem; }
+  .documentList > a > strong { grid-column: 2; }
 }

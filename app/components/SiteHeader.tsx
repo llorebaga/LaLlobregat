@@ -4,9 +4,10 @@ import { sitePath } from "../site-path";
 const navigation = [
   { href: sitePath("/"), label: "Inici" },
   { href: sitePath("/agenda"), label: "Agenda" },
-  { href: sitePath("/actuacions"), label: "Actuacions" },
+  { href: sitePath("/actuacions"), label: "Què fem?" },
   { href: sitePath("/musics"), label: "Músics" },
   { href: sitePath("/historia"), label: "Història" },
+  { href: sitePath("/multimedia"), label: "Multimèdia" },
 ];
 
 export function SiteHeader() {

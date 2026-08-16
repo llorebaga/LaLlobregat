@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s · La Principal del Llobregat",
   },
   description:
-    "La Principal del Llobregat: sardanes, concerts i música catalana des de 1929. Consulta l’agenda, les actuacions i la nostra història.",
+    "La Principal del Llobregat: sardanes, concerts i música catalana des de 1929. Consulta l’agenda, què fem i la nostra història.",
   openGraph: {
     locale: "ca_ES",
     type: "website",

@@ -23,7 +23,7 @@ export default function Home() {
               Consulta l’agenda <span aria-hidden="true">↗</span>
             </a>
             <a className="simpleTextLink" href={sitePath("/actuacions")}>
-              Veure actuacions <span aria-hidden="true">→</span>
+              Descobreix què fem <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
@@ -34,8 +34,8 @@ export default function Home() {
           aria-label="Coneix els músics de La Principal del Llobregat"
         >
           <Image
-            src="/cobla-formacio-actual.jpg"
-            alt="La Principal del Llobregat amb els instruments de la cobla"
+            src="/la-principal-del-llobregat-2025.jpg"
+            alt="Fotografia oficial de La Principal del Llobregat, 2025"
             fill
             priority
             sizes="(max-width: 760px) 100vw, 55vw"
@@ -72,8 +72,8 @@ export default function Home() {
             <p>Consulta on sonarem pròximament.</p>
           </a>
           <a href={sitePath("/actuacions")}>
-            <span>02</span><h2>Actuacions</h2><i aria-hidden="true">↗</i>
-            <p>Concerts, projectes, vídeos i fotografies.</p>
+            <span>02</span><h2>Què fem?</h2><i aria-hidden="true">↗</i>
+            <p>Ballades, concerts i col·laboracions.</p>
           </a>
           <a href={sitePath("/historia")}>
             <span>03</span><h2>Història</h2><i aria-hidden="true">↗</i>
