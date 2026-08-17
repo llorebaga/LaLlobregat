@@ -94,7 +94,10 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
                 : [];
 
               return (
-                <div className={`agendaCalendarDay${day ? "" : " isEmpty"}`} key={`${activeMonth.key}-${index}`}>
+                <div
+                  className={`agendaCalendarDay${day ? "" : " isEmpty"}${dayEvents.length ? " hasEvents" : ""}`}
+                  key={`${activeMonth.key}-${index}`}
+                >
                   {day ? <span className="agendaCalendarDayNumber">{day}</span> : null}
                   <div className="agendaCalendarEvents">
                     {dayEvents.map((event) => (

@@ -39,6 +39,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(townSearch, /normalize\(event\.town\)\.includes/);
   assert.doesNotMatch(agenda, /<iframe|calendarSrc/);
   assert.match(styledCalendar, /Agenda mensual[\s\S]*Mes següent/);
+  assert.match(styledCalendar, /agendaCalendarDay[\s\S]*hasEvents/);
   assert.match(history, /Una història/);
   assert.match(history, /calendar-history\.generated\.json/);
   assert.match(history, /<HistoryMap events=\{historyEvents\}/);
@@ -81,5 +82,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(css, /\.contactPage \+ \.siteFooter \.footerTop \{ display: none; \}/);
   assert.doesNotMatch(page, /simpleStats|<strong>1929<\/strong>|<strong>11<\/strong>|<strong>1<\/strong>/);
   assert.match(css, /prefers-reduced-motion/);
+  assert.match(css, /agendaCalendarDay:not\(\.hasEvents\)/);
+  assert.match(css, /\.mobileNav nav \{ position: fixed;/);
   assert.doesNotMatch(page + layout, /SkeletonPreview|codex-preview|Your site is taking shape/);
 });
