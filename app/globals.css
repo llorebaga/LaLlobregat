@@ -596,11 +596,6 @@ img { display: block; }
 .homeGroupPhotoFrame img { object-fit: contain !important; object-position: center !important; filter: none !important; }
 .homeGroupPhotoCaption { display: flex; justify-content: space-between; gap: 2rem; padding: .9rem 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .62rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 
-.simpleIntro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 5rem 8rem; }
-.simpleIntro h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 6.5vw, 7.2rem); font-weight: 400; line-height: .9; letter-spacing: -.06em; }
-.simpleIntro h2 em { color: var(--red); font-weight: 400; }
-.simpleIntroCopy { max-width: 560px; align-self: end; }
-.simpleIntroCopy > p { margin: 0 0 2rem; color: var(--muted); font-size: 1.12rem; line-height: 1.85; }
 .simpleStats { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 2rem; border-top: 1px solid var(--ink); }
 .simpleStats > div { min-height: 155px; padding: 2rem 2rem 0 0; display: flex; flex-direction: column; justify-content: flex-end; border-right: 1px solid var(--line); }
 .simpleStats > div:not(:first-child) { padding-left: 2rem; }
@@ -623,7 +618,7 @@ img { display: block; }
 .simpleNextArrow:hover { background: white; color: var(--burgundy); }
 
 
-.homeCalendarSection { padding-top: clamp(2.6rem, 4.5vw, 4rem); padding-bottom: clamp(3rem, 5.5vw, 5rem); background: var(--burgundy); color: white; }
+.homeCalendarSection { padding-top: clamp(2.6rem, 4.5vw, 4rem); padding-bottom: clamp(3rem, 5.5vw, 5rem); border-top: 1px solid rgba(255,255,255,.22); background: var(--burgundy); color: white; }
 .homeCalendarHeading { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: clamp(1.5rem, 3vw, 2.4rem); }
 .homeCalendarHeading .eyebrow { margin: 0 0 .7rem; }
 .homeCalendarHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(2rem, 3.8vw, 3.4rem); font-weight: 400; line-height: .95; letter-spacing: -.045em; }
@@ -785,7 +780,6 @@ img { display: block; }
   .homeNextLabel { grid-column: 1 / -1; flex-direction: row; }
   .homeDiscoverHeading h2 br { display: none; }
   .simpleHero { min-height: 570px; grid-template-columns: minmax(0, 1fr) minmax(390px, .9fr); }
-  .simpleIntro { grid-template-columns: 1fr; gap: 3rem; }
   .simpleNextEvent { grid-template-columns: auto 1fr auto; }
   .simpleNextHeading { grid-column: 1 / -1; flex-direction: row; }
   .musiciansHero { grid-template-columns: 1fr; }

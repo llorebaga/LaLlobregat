@@ -52,6 +52,8 @@ export default function Home() {
         </a>
       </section>
 
+      <HomeNextEvent events={calendarEvents} initialEvent={nextEvent} />
+
       <section className="homeCalendarSection sectionPad" id="calendari" aria-labelledby="home-calendar-title">
         <div className="homeCalendarHeading">
           <div>
@@ -65,24 +67,6 @@ export default function Home() {
 
         <AgendaCalendar events={events} />
       </section>
-
-      <section className="simpleIntro sectionPad">
-        <div>
-          <p className="eyebrow">La nostra música</p>
-          <h2>Tradició viva.<br /><em>So de futur.</em></h2>
-        </div>
-        <div className="simpleIntroCopy">
-          <p>
-            Una formació amb gairebé un segle de trajectòria, compromesa amb la
-            sardana i amb totes les possibilitats expressives de la cobla.
-          </p>
-          <a className="textLink redLink" href={sitePath("/historia")}>
-            Coneix la nostra història <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
-
-      <HomeNextEvent events={calendarEvents} initialEvent={nextEvent} />
 
       <section className="simpleExplore sectionPad">
         <p className="eyebrow">Descobreix la cobla</p>

@@ -25,7 +25,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
     readFile(new URL("../app/contacte/CopyContactButton.tsx", import.meta.url), "utf8"),
   ]);
   assert.match(layout, /lang="ca"/);
-  assert.match(page, /La nostra música/);
+  assert.match(page, /Sardanes, concerts i música catalana/);
   assert.match(page, /const SHOW_HOME_INTRO = false/);
   assert.match(page, /<HomeIntro events=\{calendarEvents\}/);
   assert.match(homeIntro, /Tot comença[\s\S]*primera nota/);
@@ -40,10 +40,13 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   // El calendari encapçala l'agenda, per damunt del mapa i del cercador de pobles.
   assert.ok(agenda.indexOf("agendaCalendarSection") < agenda.indexOf("agendaMapSection"));
   assert.ok(agenda.indexOf("agendaMapSection") < agenda.indexOf("<AgendaTownSearch"));
-  // I a la portada és la primera secció de contingut, just sota el hero.
+  // A la portada el calendari va després de la pròxima actuació.
   assert.match(page, /<AgendaCalendar events=\{events\}/);
-  assert.ok(page.indexOf("homeCalendarSection") < page.indexOf("simpleIntro"));
-  assert.ok(page.indexOf("simpleHero") < page.indexOf("homeCalendarSection"));
+  // Ordre de la portada: hero → pròxima actuació → calendari → descobreix la cobla.
+  assert.ok(page.indexOf("simpleHero") < page.indexOf("<HomeNextEvent"));
+  assert.ok(page.indexOf("<HomeNextEvent") < page.indexOf("homeCalendarSection"));
+  assert.ok(page.indexOf("homeCalendarSection") < page.indexOf("simpleExplore"));
+  assert.doesNotMatch(page, /simpleIntro|Tradició viva/);
   assert.doesNotMatch(agenda, /<iframe|calendarSrc/);
   assert.match(styledCalendar, /Agenda mensual[\s\S]*Mes següent/);
   assert.match(styledCalendar, /agendaCalendarDay[\s\S]*hasEvents/);
