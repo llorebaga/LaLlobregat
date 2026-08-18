@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AgendaCalendar } from "./agenda/AgendaCalendar";
 import calendarEvents from "./calendar-events.generated.json";
 import { HomeIntro } from "./components/HomeIntro";
 import { HomeNextEvent } from "./components/HomeNextEvent";
@@ -13,6 +14,7 @@ export default function Home() {
   const nextEvent = calendarEvents.find(
     (event) => new Date(event.dateTime).getTime() >= buildTime,
   ) ?? upcomingEvents[0];
+  const events = calendarEvents.length ? calendarEvents : upcomingEvents;
 
   return (
     <main id="contingut" className="simpleHome">
@@ -48,6 +50,20 @@ export default function Home() {
             Coneix els músics <i aria-hidden="true">→</i>
           </span>
         </a>
+      </section>
+
+      <section className="homeCalendarSection sectionPad" id="calendari" aria-labelledby="home-calendar-title">
+        <div className="homeCalendarHeading">
+          <div>
+            <p className="eyebrow light">Calendari</p>
+            <h2 id="home-calendar-title">On sonarem, <em>mes a mes.</em></h2>
+          </div>
+          <a href={sitePath("/agenda")}>
+            Tota l’agenda <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <AgendaCalendar events={events} />
       </section>
 
       <section className="simpleIntro sectionPad">

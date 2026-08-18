@@ -37,6 +37,13 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(agenda, /<AgendaTownSearch events=\{events\}/);
   assert.match(townSearch, /Busca el teu poble|Hi sonarem/);
   assert.match(townSearch, /normalize\(event\.town\)\.includes/);
+  // El calendari encapçala l'agenda, per damunt del mapa i del cercador de pobles.
+  assert.ok(agenda.indexOf("agendaCalendarSection") < agenda.indexOf("agendaMapSection"));
+  assert.ok(agenda.indexOf("agendaMapSection") < agenda.indexOf("<AgendaTownSearch"));
+  // I a la portada és la primera secció de contingut, just sota el hero.
+  assert.match(page, /<AgendaCalendar events=\{events\}/);
+  assert.ok(page.indexOf("homeCalendarSection") < page.indexOf("simpleIntro"));
+  assert.ok(page.indexOf("simpleHero") < page.indexOf("homeCalendarSection"));
   assert.doesNotMatch(agenda, /<iframe|calendarSrc/);
   assert.match(styledCalendar, /Agenda mensual[\s\S]*Mes següent/);
   assert.match(styledCalendar, /agendaCalendarDay[\s\S]*hasEvents/);
@@ -50,6 +57,10 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.doesNotMatch(musicians, /Jorge Serrano Quevedo/);
   assert.match(musicians, /Marcel Sabaté Reixach/);
   assert.doesNotMatch(musicians, /className="musicianDirector"/);
+  // Cada músic té el seu retrat i la targeta que gira ensenya nom i instrument.
+  assert.equal(musicians.match(/photo: "\/retrats\/LL_[A-Za-z]+\.jpg"/g)?.length, 12);
+  assert.match(musicians, /musicianCardFront[\s\S]*musicianCardBack/);
+  assert.match(css, /\.musicianCard:hover \.musicianCardInner \{ transform: rotateY\(180deg\); \}/);
   assert.doesNotMatch(musicians, /padStart|members\.map\(\(member, index\)/);
   assert.match(header, /label: "Inici"[\s\S]*label: "Agenda"[\s\S]*label: "Què fem\?"[\s\S]*label: "Músics"[\s\S]*label: "Història"[\s\S]*label: "Multimèdia"/);
   assert.match(page, /calendar-events\.generated\.json/);

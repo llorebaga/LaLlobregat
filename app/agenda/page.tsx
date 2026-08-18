@@ -31,25 +31,6 @@ export default function AgendaPage() {
         </div>
       </header>
 
-      <section className="agendaMapSection sectionPad" aria-labelledby="agenda-mapa-title">
-        <div className="agendaSectionHeading">
-          <div>
-            <p className="eyebrow">Mes a mes</p>
-            <h2 id="agenda-mapa-title">La cobla,<br /><em>sobre el mapa.</em></h2>
-          </div>
-          <p>
-            Tria el mes i clica un punt vermell per consultar la data, l’hora
-            i el lloc de l’actuació sense sortir del mapa.
-          </p>
-        </div>
-
-        <div aria-label="Mapa de Catalunya">
-          <AgendaMap events={events} mapSrc={sitePath("/catalunya-mapa-complet.png")} />
-        </div>
-      </section>
-
-      <AgendaTownSearch events={events} />
-
       <section className="agendaCalendarSection sectionPad" id="calendari" aria-labelledby="agenda-calendar-title">
         <div className="agendaCalendarIntro">
           <div>
@@ -73,6 +54,25 @@ export default function AgendaPage() {
           <span>lallobregat@gmail.com</span>
         </div>
       </section>
+
+      <section className="agendaMapSection sectionPad" aria-labelledby="agenda-mapa-title">
+        <div className="agendaSectionHeading">
+          <div>
+            <p className="eyebrow">Mes a mes</p>
+            <h2 id="agenda-mapa-title">La cobla,<br /><em>sobre el mapa.</em></h2>
+          </div>
+          <p>
+            Tria el mes i clica un punt vermell per consultar la data, l’hora
+            i el lloc de l’actuació sense sortir del mapa.
+          </p>
+        </div>
+
+        <div aria-label="Mapa de Catalunya">
+          <AgendaMap events={events} mapSrc={sitePath("/catalunya-mapa-complet.png")} />
+        </div>
+      </section>
+
+      <AgendaTownSearch events={events} />
     </main>
   );
 }

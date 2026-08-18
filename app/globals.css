@@ -617,6 +617,14 @@ img { display: block; }
 .simpleNextArrow { width: 88px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; font-size: 1.7rem; transition: .2s; }
 .simpleNextArrow:hover { background: white; color: var(--burgundy); }
 
+
+.homeCalendarSection { padding-top: clamp(2.6rem, 4.5vw, 4rem); padding-bottom: clamp(3rem, 5.5vw, 5rem); background: var(--burgundy); color: white; }
+.homeCalendarHeading { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: clamp(1.5rem, 3vw, 2.4rem); }
+.homeCalendarHeading .eyebrow { margin: 0 0 .7rem; }
+.homeCalendarHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(2rem, 3.8vw, 3.4rem); font-weight: 400; line-height: .95; letter-spacing: -.045em; }
+.homeCalendarHeading h2 em { color: #efa2aa; font-weight: 400; }
+.homeCalendarHeading > a { flex-shrink: 0; display: inline-flex; gap: 1rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(255,255,255,.55); font-size: .66rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+
 .simpleExplore { background: var(--cream); }
 .simpleExploreGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); }
 .simpleExploreGrid > a { position: relative; min-height: 330px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); transition: .25s ease; }
@@ -653,12 +661,23 @@ img { display: block; }
 .musicianRosterHeading { padding: 0 0 clamp(3rem, 6vw, 6rem); display: grid; grid-template-columns: .55fr 1.45fr; gap: clamp(2rem, 5vw, 7rem); align-items: end; }
 .musicianRosterHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.2rem, 6vw, 6.8rem); font-weight: 400; line-height: .9; letter-spacing: -.055em; }
 .musicianRosterHeading h2 em { color: var(--red); font-weight: 400; }
-.musicianMemberGrid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--line); }
-.musicianMember { min-height: 235px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: .25s ease; }
-.musicianMember:hover { background: var(--red); color: white; }
-.musicianMemberTop { display: flex; gap: 1rem; color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.musicianMember:hover .musicianMemberTop { color: rgba(255,255,255,.75); }
-.musicianMember h3 { max-width: 360px; margin: auto 0 0; font-family: Georgia, serif; font-size: clamp(1.8rem, 2.7vw, 3rem); font-weight: 400; line-height: .96; letter-spacing: -.04em; }
+.musicianCardGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(.7rem, 1.4vw, 1.2rem); }
+.musicianCard { perspective: 1400px; }
+.musicianCardInner { position: relative; width: 100%; aspect-ratio: 1066 / 1600; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.22,.61,.36,1); }
+.musicianCardFace { position: absolute; overflow: hidden; }
+.musicianCardFront { inset: 0; background: white; border: 1px solid var(--line); }
+.musicianCardFront img { object-fit: cover; object-position: center top; }
+/* Base sense hover (mòbil i tauleta): el nom i l'instrument sempre a la vista. */
+.musicianCardBack { inset: auto 0 0 0; padding: .85rem .95rem; display: flex; flex-direction: column; gap: .3rem; background: rgba(188,23,38,.94); color: white; }
+.musicianCardBack p { margin: 0; color: rgba(255,255,255,.82); font-size: .6rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.musicianCardBack h3 { margin: 0; font-family: Georgia, serif; font-size: clamp(1.25rem, 1.9vw, 2rem); font-weight: 400; line-height: 1.02; letter-spacing: -.035em; }
+/* Amb ratolí: el retrat gira i ensenya el nom i l'instrument pel darrere. */
+@media (hover: hover) {
+  .musicianCardFace { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+  .musicianCardBack { inset: 0; padding: clamp(1.1rem, 1.6vw, 1.6rem); gap: 0; justify-content: flex-end; background: var(--red); transform: rotateY(180deg); }
+  .musicianCardBack p { margin: 0 0 auto; }
+  .musicianCard:hover .musicianCardInner { transform: rotateY(180deg); }
+}
 
 .musiciansCta { min-height: 340px; padding: clamp(4rem, 7vw, 7rem) clamp(1.25rem, 7vw, 8rem); display: flex; align-items: flex-end; justify-content: space-between; gap: 4rem; background: var(--burgundy); color: white; }
 .musiciansCta h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3rem, 5.5vw, 6rem); font-weight: 400; line-height: .9; letter-spacing: -.05em; }
@@ -767,7 +786,7 @@ img { display: block; }
   .musiciansHero { grid-template-columns: 1fr; }
   .musiciansIntro { grid-template-columns: 1fr 1.4fr; }
   .musiciansIntro .eyebrow { grid-column: 1 / -1; }
-  .musicianMemberGrid { grid-template-columns: repeat(2, 1fr); }
+  .musicianCardGrid { grid-template-columns: repeat(3, 1fr); }
   .whatWeDoHero { min-height: auto; grid-template-columns: 1fr; }
   .whatWeDoHeroCopy { min-height: 540px; }
   .whatWeDoHeroImage { min-height: 680px; }
@@ -780,6 +799,7 @@ img { display: block; }
 }
 
 @media (max-width: 760px) {
+  .homeCalendarHeading { flex-direction: column; align-items: flex-start; gap: 1.4rem; }
   body { overflow-x: clip; }
   .homeIntro { padding: 1.25rem; }
   .homeIntroTopline span:first-of-type, .homeIntroTopline i { display: none; }
@@ -858,9 +878,7 @@ img { display: block; }
   .musiciansIntro { grid-template-columns: 1fr; gap: 2rem; }
   .musiciansIntro .eyebrow { grid-column: auto; }
   .musicianRosterHeading { grid-template-columns: 1fr; gap: 2rem; }
-  .musicianMemberGrid { grid-template-columns: 1fr; }
-  .musicianMember { min-height: 132px; padding: 1.25rem; }
-  .musicianMember h3 { font-size: 1.75rem; }
+  .musicianCardGrid { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
   .musiciansCta { min-height: 410px; align-items: flex-start; flex-direction: column; }
   .musiciansCta > a { width: 100%; }
   .whatWeDoHeroCopy { min-height: 470px; padding: 5rem 1.25rem 3.5rem; }
