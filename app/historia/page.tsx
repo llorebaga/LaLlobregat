@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import historyEvents from "../calendar-history.generated.json";
 import { sitePath } from "../site-path";
 import { HistoryMap } from "./HistoryMap";
@@ -24,6 +25,25 @@ export default function HistoriaPage() {
 
       <section className="timeline sectionPad" aria-label="Cronologia de La Principal del Llobregat">
         {milestones.map((item, index) => <article className="timelineItem" key={item.year}><span className="timelineIndex">0{index + 1}</span><time>{item.year}</time><div><h2>{item.title}</h2><p>{item.text}</p></div></article>)}
+      </section>
+
+      <section className="historyPortrait sectionPad" aria-labelledby="formacio-avui">
+        <div className="historyPortraitHeading">
+          <p className="eyebrow">La formació d’avui</p>
+          <h2 id="formacio-avui">Gairebé cent anys<br /><em>en un retrat.</em></h2>
+        </div>
+        <div className="historyPortraitFrame">
+          <Image
+            src="/interprets-2022.avif"
+            alt="Els intèrprets de La Principal del Llobregat amb els seus instruments"
+            fill
+            sizes="(max-width: 760px) 100vw, 88vw"
+          />
+        </div>
+        <div className="historyPortraitCaption">
+          <span>Cobla La Principal del Llobregat</span>
+          <span>Una formació · Un sol so</span>
+        </div>
       </section>
 
       <section className="historyMapSection sectionPad" aria-labelledby="history-map-title">

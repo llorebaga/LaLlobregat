@@ -39,26 +39,6 @@ export default function MusicsPage() {
         </div>
       </header>
 
-      <section className="musiciansPortrait sectionPad" aria-labelledby="formacio-actual">
-        <div className="musiciansPortraitHeading">
-          <p className="eyebrow">La Principal del Llobregat</p>
-          <h2 id="formacio-actual">La formació<br /><em>actual</em></h2>
-        </div>
-        <div className="musiciansPortraitFrame">
-          <Image
-            src="/interprets-2022.avif"
-            alt="Els intèrprets de La Principal del Llobregat amb els seus instruments"
-            fill
-            priority
-            sizes="(max-width: 760px) 100vw, 88vw"
-          />
-        </div>
-        <div className="musiciansPortraitCaption">
-          <span>Cobla La Principal del Llobregat</span>
-          <span>Una formació · Un sol so</span>
-        </div>
-      </section>
-
       <section className="musicianRoster sectionPad" aria-labelledby="membres-2026">
         <div className="musicianRosterHeading">
           <p className="eyebrow">Membres 2026</p>
