@@ -83,7 +83,15 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(multimedia, /Fotografies/);
   assert.match(multimedia, /la-principal-del-llobregat-2025\.png/);
   assert.match(multimedia, /la-principal-del-llobregat-negre\.png/);
-  assert.doesNotMatch(multimedia, /Documents|\.pdf/);
+  // La foto en blanc va sense any al peu.
+  assert.match(multimedia, /<strong>La Principal del Llobregat<\/strong>/);
+  assert.doesNotMatch(multimedia, /La Principal del Llobregat · 2025/);
+  // I hi ha l'apartat de documents amb els tres PDF, després del de fotos.
+  assert.ok(multimedia.indexOf("mediaPhotoGrid") < multimedia.indexOf("mediaDocuments"));
+  assert.match(multimedia, /biografia-la-principal-del-llobregat\.pdf/);
+  assert.match(multimedia, /dossier-la-llobregat-i-els-melt\.pdf/);
+  assert.match(multimedia, /sinopsi-guillem-batllori-i-la-principal-del-llobregat\.pdf/);
+  assert.match(css, /\.mediaDocuments \{ display: grid;/);
   assert.match(header, /sitePath\("\/contacte"\)/);
   assert.match(footer, /sitePath\("\/contacte"\)/);
   assert.match(footer, /Escriu-nos/);
