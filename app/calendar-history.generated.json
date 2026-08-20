@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-5pgrrj3rbapa7hgiqouqvtr8v7-google-com-2026-08-20-20-00-00-000-",
+    "day": "20",
+    "month": "AG.",
+    "dateTime": "2026-08-20T20:00:00.000Z",
+    "title": "CONCERT Calonge",
+    "place": "Castell de Calonge",
+    "town": "Calonge",
+    "time": "22.00 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=NXBncnJqM3JiYXBhN2hnaXFvdXF2dHI4djcgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "78.79%",
+      "top": "41.29%"
+    }
+  },
+  {
     "id": "calendar-6gp36oplckpjcb9n75i6cb9k6hij0b9oc5h3gbb4clh3eopn61i34d9mcg-google-com-2026-08-17-10-00-00-000-",
     "day": "17",
     "month": "AG.",
