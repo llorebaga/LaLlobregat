@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-2c2m0thli1toqp4s98463914pa-google-com-2026-08-22-20-00-00-000-",
+    "day": "22",
+    "month": "AG.",
+    "dateTime": "2026-08-22T20:00:00.000Z",
+    "title": "Caldes de Malavella",
+    "place": "Ubicació no indicada al calendari",
+    "town": "Caldes de Malavella",
+    "time": "22.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MmMybTB0aGxpMXRvcXA0czk4NDYzOTE0cGEgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "72.16%",
+      "top": "42.84%"
+    }
+  },
+  {
     "id": "calendar-324o5ofutrsgn3g420uprisjcd-google-com-2026-08-22-14-30-00-000-",
     "day": "22",
     "month": "AG.",
