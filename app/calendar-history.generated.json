@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-324o5ofutrsgn3g420uprisjcd-google-com-2026-08-22-14-30-00-000-",
+    "day": "22",
+    "month": "AG.",
+    "dateTime": "2026-08-22T14:30:00.000Z",
+    "title": "Ripoll",
+    "place": "Passeig de Ragull",
+    "town": "Ripoll",
+    "time": "16.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MzI0bzVvZnV0cnNnbjNnNDIwdXByaXNqY2QgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "56.13%",
+      "top": "31.39%"
+    }
+  },
+  {
     "id": "calendar-5pgrrj3rbapa7hgiqouqvtr8v7-google-com-2026-08-20-20-00-00-000-",
     "day": "20",
     "month": "AG.",
