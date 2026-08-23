@@ -45,7 +45,7 @@ export function SiteFooter() {
   return (
     <footer className="siteFooter">
       <div className="footerTop">
-        <div><p className="eyebrow light">Parlem-ne</p><h2>Fem sonar la teva plaça.</h2></div>
+        <div><p className="eyebrow light">Parlem-ne</p><h2>Toquem a la teva plaça.</h2></div>
         <a className="roundLink" href={sitePath("/contacte")}>Escriu-nos <span aria-hidden="true">↗</span></a>
       </div>
       <div className="footerBottom">

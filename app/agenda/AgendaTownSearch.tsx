@@ -57,7 +57,7 @@ export function AgendaTownSearch({ events }: { events: SearchEvent[] }) {
     <section className="agendaTownSearch sectionPad" aria-labelledby="town-search-title">
       <div className="agendaTownSearchIntro">
         <p className="eyebrow">Busca el teu poble</p>
-        <h2 id="town-search-title">Hi sonarem<br /><em>aviat?</em></h2>
+        <h2 id="town-search-title">Hi toquem<br /><em>aviat?</em></h2>
         <p>
           Escriu un municipi i comprova si La Llobregat hi té alguna actuació
           programada pròximament.
@@ -94,12 +94,11 @@ export function AgendaTownSearch({ events }: { events: SearchEvent[] }) {
               </p>
               <div className="agendaTownMatchList">
                 {matches.map((event) => (
-                  <a href={event.source} target="_blank" rel="noreferrer" key={event.id}>
+                  <div key={event.id}>
                     <time dateTime={event.dateTime}>{event.day} {event.month} · {event.time}</time>
                     <strong>{event.title}</strong>
                     <span>{event.town} · {event.place}</span>
-                    <i aria-hidden="true">↗</i>
-                  </a>
+                  </div>
                 ))}
               </div>
             </>

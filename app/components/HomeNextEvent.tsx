@@ -46,12 +46,10 @@ export function HomeNextEvent({ events, initialEvent }: HomeNextEventProps) {
       </div>
       <a
         className="simpleNextArrow"
-        href={nextEvent.source}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Veure aquesta actuació al calendari"
+        href={sitePath("/agenda")}
+        aria-label="Veure tota l’agenda d’actuacions"
       >
-        ↗
+        →
       </a>
     </section>
   );

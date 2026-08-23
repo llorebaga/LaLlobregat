@@ -29,13 +29,13 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(page, /const SHOW_HOME_INTRO = false/);
   assert.match(page, /<HomeIntro events=\{calendarEvents\}/);
   assert.match(homeIntro, /Tot comença[\s\S]*primera nota/);
-  assert.match(homeIntro, /Fes sonar la cobla/);
+  assert.match(homeIntro, /Porta la cobla a la teva plaça/);
   assert.match(homeIntro, /sessionStorage/);
   assert.match(agenda, /Mapa de Catalunya/);
   assert.match(agenda, /mapSrc=\{sitePath\("\/catalunya-mapa-complet\.png"\)\}/);
   assert.match(agenda, /<AgendaCalendar events=\{events\}/);
   assert.match(agenda, /<AgendaTownSearch events=\{events\}/);
-  assert.match(townSearch, /Busca el teu poble|Hi sonarem/);
+  assert.match(townSearch, /Busca el teu poble|Hi toquem/);
   assert.match(townSearch, /normalize\(event\.town\)\.includes/);
   // El calendari encapçala l'agenda, per damunt del mapa i del cercador de pobles.
   assert.ok(agenda.indexOf("agendaCalendarSection") < agenda.indexOf("agendaMapSection"));
@@ -90,8 +90,29 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.ok(multimedia.indexOf("mediaPhotoGrid") < multimedia.indexOf("mediaDocuments"));
   assert.match(multimedia, /biografia-la-principal-del-llobregat\.pdf/);
   assert.match(multimedia, /dossier-la-llobregat-i-els-melt\.pdf/);
-  assert.match(multimedia, /sinopsi-guillem-batllori-i-la-principal-del-llobregat\.pdf/);
+  assert.match(multimedia, /dossier-guillem-batllori-i-la-principal-del-llobregat.pdf/);
   assert.match(css, /\.mediaDocuments \{ display: grid;/);
+  // Comentaris del repàs: cap "sonar" com a sinònim d'actuar, i el nom de la
+  // portada sense la cursiva partida.
+  assert.doesNotMatch(page + agenda + townSearch + footer + homeIntro, /sonarem|sonem|Fem sonar|Fes sonar/);
+  assert.match(page, /<h1>La Principal<br \/>del Llobregat<\/h1>/);
+  assert.match(footer, /Toquem a la teva plaça/);
+  assert.match(musicians, /només existeix quan toquem/);
+  assert.doesNotMatch(musicians, /quan tots toquem/);
+  // Res no enllaça a Google Calendar des dels esdeveniments: la seva pàgina
+  // sortia en castellà. Només queda el botó explícit de l'agenda.
+  assert.doesNotMatch(styledCalendar + historyMap + townSearch, /event\.source/);
+  assert.doesNotMatch(agenda, /Veure al calendari/);
+  assert.match(agenda, /Obre’l a Google Calendar/);
+  // Els dossiers viuen només a Multimèdia.
+  assert.doesNotMatch(archive, /\.pdf/);
+  assert.match(archive, /Descarrega els dossiers/);
+  assert.match(archive, /Col·laboració Emma Stratton/);
+  assert.equal(multimedia.match(/file: "\/multimedia\/[a-z-]+\.pdf"/g)?.length, 4);
+  // Vídeos i discs, i la imatge de Cobla Lírica.
+  assert.match(multimedia, /youtube\.com\/@laprincipaldelllobregat238/);
+  assert.match(multimedia, /open\.spotify\.com\/artist\/08GhB4MUhKdbiF47AlrCcd/);
+  assert.match(multimedia, /cobla-lirica\.jpg/);
   assert.match(header, /sitePath\("\/contacte"\)/);
   assert.match(footer, /sitePath\("\/contacte"\)/);
   assert.match(footer, /Escriu-nos/);

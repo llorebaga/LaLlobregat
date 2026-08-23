@@ -146,9 +146,6 @@ export function AgendaMap({ events, mapSrc }: { events: AgendaEvent[]; mapSrc: s
                 <time dateTime={event.dateTime}>{event.day} {event.month} · {event.time}</time>
                 <h3>{event.title}</h3>
                 <span>{event.place}</span>
-                <a href={event.source} target="_blank" rel="noreferrer">
-                  Veure al calendari <span aria-hidden="true">↗</span>
-                </a>
               </article>
             ))}
           </aside>

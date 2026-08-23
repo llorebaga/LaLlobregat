@@ -142,13 +142,13 @@ export function HomeIntro({ events, initialEvent }: HomeIntroProps) {
         <p className="homeIntroKicker">El so de la cobla</p>
         <h1>Tot comença<br />amb una <em>primera nota.</em></h1>
         <button ref={openingButton} className="homeIntroButton" type="button" onClick={openSite}>
-          <span>Fes sonar la cobla</span>
+          <span>Porta la cobla a la teva plaça</span>
           <span aria-hidden="true">♪</span>
         </button>
       </div>
 
       <div className="homeIntroEvent" aria-live="polite">
-        <span>Pròximament sonem a</span>
+        <span>Pròximament toquem a</span>
         <strong>{nextEvent.town}</strong>
         <small>{nextEvent.day} {nextEvent.month} · {nextEvent.time}</small>
       </div>

@@ -22,7 +22,7 @@ export default function Home() {
       <section className="simpleHero">
         <div className="simpleHeroCopy">
           <p className="simpleKicker">Cobla · Des de 1929</p>
-          <h1>La Principal<br /><em>del Llobregat</em></h1>
+          <h1>La Principal<br />del Llobregat</h1>
           <p className="simpleLead">Sardanes, concerts i música catalana amb un so propi.</p>
           <div className="simpleHeroActions">
             <a className="simpleLightButton" href={sitePath("/agenda")}>
@@ -56,10 +56,7 @@ export default function Home() {
 
       <section className="homeCalendarSection sectionPad" id="calendari" aria-labelledby="home-calendar-title">
         <div className="homeCalendarHeading">
-          <div>
-            <p className="eyebrow light">Calendari</p>
-            <h2 id="home-calendar-title">On sonarem, <em>mes a mes.</em></h2>
-          </div>
+          <h2 id="home-calendar-title">Calendari</h2>
           <a href={sitePath("/agenda")}>
             Tota l’agenda <span aria-hidden="true">→</span>
           </a>
@@ -73,7 +70,7 @@ export default function Home() {
         <div className="simpleExploreGrid">
           <a href={sitePath("/agenda")}>
             <span>01</span><h2>Agenda</h2><i aria-hidden="true">↗</i>
-            <p>Consulta on sonarem pròximament.</p>
+            <p>Consulta on actuem pròximament.</p>
           </a>
           <a href={sitePath("/actuacions")}>
             <span>02</span><h2>Què fem?</h2><i aria-hidden="true">↗</i>

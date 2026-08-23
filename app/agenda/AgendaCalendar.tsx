@@ -101,17 +101,14 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
                   {day ? <span className="agendaCalendarDayNumber">{day}</span> : null}
                   <div className="agendaCalendarEvents">
                     {dayEvents.map((event) => (
-                      <a
+                      <div
                         className="agendaCalendarEvent"
-                        href={event.source}
-                        target="_blank"
-                        rel="noreferrer"
                         key={event.id}
-                        aria-label={`${event.time}, ${event.title}, ${event.town}`}
+                        title={`${event.time} · ${event.title} · ${event.town}`}
                       >
                         <time dateTime={event.dateTime}>{event.time}</time>
                         <strong>{event.title}</strong>
-                      </a>
+                      </div>
                     ))}
                   </div>
                 </div>

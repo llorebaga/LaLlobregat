@@ -117,11 +117,11 @@ export function HistoryMap({ events, mapSrc }: { events: HistoryEvent[]; mapSrc:
             <h3>{selectedGroup.events.length} {selectedGroup.events.length === 1 ? "actuació" : "actuacions"}</h3>
             <div className="historyMapEventList">
               {selectedGroup.events.slice(0, 6).map((event) => (
-                <a href={event.source} target="_blank" rel="noreferrer" key={event.id}>
+                <div key={event.id}>
                   <time dateTime={event.dateTime}>{event.day} {event.month} {event.dateTime.slice(0, 4)}</time>
                   <strong>{event.title}</strong>
                   <span>{event.place}</span>
-                </a>
+                </div>
               ))}
             </div>
             {selectedGroup.events.length > 6 ? <small>Mostrant les 6 actuacions més recents.</small> : null}

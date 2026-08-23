@@ -33,7 +33,7 @@ export default function MusicsPage() {
           <p className="simpleKicker">La formació</p>
           <h1>Els<br /><em>músics</em></h1>
           <p>
-            Una mateixa respiració i un so que només existeix quan tots toquem
+            Una mateixa respiració i un so que només existeix quan toquem
             junts.
           </p>
         </div>

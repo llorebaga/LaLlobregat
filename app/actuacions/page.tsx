@@ -28,8 +28,6 @@ const proposals = [
     text: "La Llobregat i els Mèlt uneix el so de la cobla amb les quatre veus del Quartet Mèlt. Un espectacle d’uns noranta minuts que travessa gèneres poc habituals en aquesta formació, amb repertori propi del quartet i arranjaments de Jordi Molina.",
     detail:
       "Una proposta propera i sorprenent, amb cançons com «Que tinguem sort», «Bon dia», «Qualsevol nit pot sortir el sol» o «L’himne dels pirates», transformades pel diàleg entre la veu i la cobla.",
-    download: "/multimedia/dossier-la-llobregat-i-els-melt.pdf",
-    downloadLabel: "Descarrega el dossier",
   },
   {
     kicker: "Veu lírica i cobla",
@@ -37,8 +35,13 @@ const proposals = [
     text: "Una trobada singular entre la veu lírica de Guillem Batllori i el so inconfusible de La Principal del Llobregat. El programa combina moments brillants de la gran òpera amb cançó catalana i melodies arrelades a la nostra cultura.",
     detail:
       "La proposta crea un pont natural entre l’univers operístic i la tradició musical catalana, amb peces de compositors com Eduard Toldrà i Xavier Montsalvatge, caràcter teatral i una clara inspiració mediterrània.",
-    download: "/multimedia/sinopsi-guillem-batllori-i-la-principal-del-llobregat.pdf",
-    downloadLabel: "Descarrega la sinopsi",
+  },
+  {
+    kicker: "Veu i cobla",
+    title: "Col·laboració Emma Stratton",
+    text: "Un projecte compartit amb la cantant Emma Stratton, que suma la seva veu al so de la cobla.",
+    detail:
+      "Consulta’n el dossier a l’apartat de multimèdia per conèixer el programa i les condicions tècniques.",
   },
 ];
 
@@ -70,6 +73,9 @@ export default function ActuacionsPage() {
           <p className="eyebrow">La cobla en directe</p>
           <h2 id="propostes-title">Diferents maneres<br /><em>de trobar-nos.</em></h2>
           <p>Clica cada proposta per descobrir-ne tots els detalls.</p>
+          <a className="textLink redLink" href={sitePath("/multimedia")}>
+            Descarrega els dossiers <span aria-hidden="true">→</span>
+          </a>
         </div>
 
         <div className="proposalList">
@@ -86,11 +92,6 @@ export default function ActuacionsPage() {
               <div className="proposalBody">
                 <p>{proposal.text}</p>
                 {proposal.detail ? <p>{proposal.detail}</p> : null}
-                {proposal.download ? (
-                  <a className="textLink redLink" href={sitePath(proposal.download)} download>
-                    {proposal.downloadLabel} <span aria-hidden="true">↓</span>
-                  </a>
-                ) : null}
               </div>
             </details>
           ))}

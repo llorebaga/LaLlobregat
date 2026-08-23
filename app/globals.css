@@ -190,12 +190,10 @@ img { display: block; }
 .agendaTownSearchStatus { padding: 1rem 0; border-bottom: 1px solid var(--line); font-family: Georgia, serif; font-size: 1.2rem; }
 .agendaTownSearchStatus.isFound { color: var(--burgundy); }
 .agendaTownMatchList { max-height: 430px; overflow-y: auto; border-bottom: 1px solid var(--ink); }
-.agendaTownMatchList a { position: relative; min-height: 112px; padding: 1.15rem 3rem 1.15rem 0; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid var(--line); transition: padding .2s ease, background .2s ease; }
-.agendaTownMatchList a:hover, .agendaTownMatchList a:focus-visible { padding-left: 1rem; background: rgba(255,255,255,.58); }
+.agendaTownMatchList > div { min-height: 112px; padding: 1.15rem 0; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid var(--line); }
 .agendaTownMatchList time { color: var(--red); font-size: .6rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .agendaTownMatchList strong { margin: .3rem 0 .1rem; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 400; }
 .agendaTownMatchList span { color: var(--muted); font-size: .78rem; }
-.agendaTownMatchList i { position: absolute; right: .6rem; top: 50%; transform: translateY(-50%); font-size: 1.25rem; font-style: normal; }
 
 .agendaMapSection { background: var(--cream); }
 .agendaSectionHeading { display: grid; grid-template-columns: 1.25fr .75fr; gap: 5rem; align-items: end; margin-bottom: clamp(3rem, 6vw, 6rem); }
@@ -225,7 +223,6 @@ img { display: block; }
 .agendaMapInfo time { color: var(--red); font-size: .65rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .agendaMapInfo h3 { margin: .45rem 0 .3rem; font-family: Georgia, serif; font-size: 1.55rem; font-weight: 400; line-height: 1.05; }
 .agendaMapInfo article > span { display: block; color: var(--muted); font-size: .8rem; }
-.agendaMapInfo article > a { display: inline-flex; gap: .6rem; margin-top: 1rem; padding-bottom: .2rem; border-bottom: 1px solid currentColor; font-size: .6rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .agendaMapInfoClose { position: absolute; top: .7rem; right: .8rem; width: 32px; height: 32px; padding: 0; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1.25rem; line-height: 1; cursor: pointer; }
 .agendaMapInfoClose:hover, .agendaMapInfoClose:focus-visible { background: var(--red); border-color: var(--red); color: white; }
 .agendaMapLabel { position: absolute; z-index: 2; left: 1.25rem; bottom: 1.25rem; padding: .75rem 1rem; background: var(--burgundy); color: white; font-family: Georgia, serif; font-size: 1.1rem; }
@@ -323,8 +320,7 @@ img { display: block; }
 .historyMapPoint:hover, .historyMapPoint:focus-visible, .historyMapPoint.isSelected { z-index: 6; transform: translate(-50%,-50%) scale(1.65); background: var(--burgundy); outline: 1px solid rgba(89,11,20,.35); outline-offset: 3px; }
 .historyMapInfo > h3 { margin: 0 0 1rem; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 400; }
 .historyMapEventList { border-top: 1px solid var(--line); }
-.historyMapEventList a { padding: .9rem 0; display: flex; flex-direction: column; border-bottom: 1px solid var(--line); }
-.historyMapEventList a:hover strong { color: var(--red); }
+.historyMapEventList > div { padding: .9rem 0; display: flex; flex-direction: column; border-bottom: 1px solid var(--line); }
 .historyMapEventList time { color: var(--red); font-size: .58rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .historyMapEventList strong { margin: .22rem 0; font-family: Georgia, serif; font-size: 1.08rem; font-weight: 400; line-height: 1.15; }
 .historyMapEventList span { color: var(--muted); font-size: .72rem; }
@@ -425,7 +421,6 @@ img { display: block; }
   .agendaMapPoint { width: 13px; height: 13px; border-width: 2px; }
   .agendaMapInfo { top: .65rem; right: .65rem; width: min(300px, calc(100% - 1.3rem)); max-height: calc(100% - 1.3rem); padding: 1rem; }
   .agendaMapInfo h3 { font-size: 1.2rem; }
-  .agendaMapInfo article > a { margin-top: .65rem; }
   .agendaMapLabel { left: .75rem; bottom: .75rem; padding: .55rem .7rem; font-size: .9rem; }
   .agendaMapCredits { right: .25rem; bottom: .2rem; flex-direction: column; gap: 0; font-size: .4rem; }
   .agendaCalendarToolbar { min-height: 88px; padding: 1rem; grid-template-columns: 42px 1fr 42px; }
@@ -702,7 +697,7 @@ img { display: block; }
 .proposalHeading { position: sticky; top: 130px; align-self: start; }
 .proposalHeading h2, .mediaSectionHeading h2 { margin: 0; font-family: Georgia,"Times New Roman",serif; font-size: clamp(3.4rem,6vw,7rem); font-weight: 400; line-height: .88; letter-spacing: -.06em; }
 .proposalHeading h2 em, .mediaSectionHeading h2 em { color: var(--red); font-weight: 400; }
-.proposalHeading > p:last-child { max-width: 400px; margin: 2rem 0 0; color: var(--muted); }
+.proposalHeading > p:not(.eyebrow) { max-width: 400px; margin: 2rem 0 0; color: var(--muted); }
 .proposalList { border-top: 1px solid var(--ink); }
 .proposalItem { border-bottom: 1px solid var(--line); }
 .proposalItem summary { min-height: 175px; display: grid; grid-template-columns: 48px 1fr 54px; gap: 1.5rem; align-items: center; padding: 1.5rem 0; cursor: pointer; list-style: none; }
@@ -728,6 +723,19 @@ img { display: block; }
 .mediaPhoto { position: relative; width: 100%; overflow: hidden; border: 1px solid var(--line); }
 .mediaPhotoWhite { aspect-ratio: 4724 / 2336; background: white; }
 .mediaPhotoBlack { aspect-ratio: 2078 / 1524; background: black; }
+.mediaPhotoLirica { aspect-ratio: 1600 / 1300; background: #efe7dc; }
+.mediaChannels { background: var(--cream); }
+.mediaChannelGrid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--ink); }
+.mediaChannelGrid > a { position: relative; min-height: 280px; padding: 2rem; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: .25s ease; }
+.mediaChannelGrid > a:last-child { border-right: 0; }
+.mediaChannelGrid > a:hover, .mediaChannelGrid > a:focus-visible { background: var(--red); color: white; }
+.mediaChannelGrid > a > span { color: var(--red); font-size: .62rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.mediaChannelGrid > a:hover > span { color: rgba(255,255,255,.75); }
+.mediaChannelGrid i { position: absolute; top: 2rem; right: 2rem; font-size: 1.4rem; font-style: normal; }
+.mediaChannelGrid h3 { margin: auto 0 .6rem; font-family: Georgia,serif; font-size: clamp(1.7rem,2.6vw,2.6rem); font-weight: 400; line-height: 1.02; letter-spacing: -.03em; }
+.mediaChannelGrid p { max-width: 420px; margin: 0 0 1.5rem; color: var(--muted); font-size: .92rem; line-height: 1.6; }
+.mediaChannelGrid > a:hover p { color: rgba(255,255,255,.78); }
+.mediaChannelGrid strong { font-size: .63rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .mediaPhoto img { object-fit: contain !important; object-position: center !important; }
 .mediaPhotoMeta { min-height: 105px; padding: 1.2rem 0; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-bottom: 1px solid var(--ink); }
 .mediaPhotoMeta > div { display: flex; flex-direction: column; gap: .25rem; }
@@ -798,6 +806,7 @@ img { display: block; }
 }
 
 @media (max-width: 760px) {
+  .mediaChannelGrid { grid-template-columns: 1fr; }
   .homeCalendarHeading { flex-direction: column; align-items: flex-start; gap: 1.4rem; }
   body { overflow-x: clip; }
   .homeIntro { padding: 1.25rem; }

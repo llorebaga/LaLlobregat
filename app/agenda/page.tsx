@@ -22,7 +22,7 @@ export default function AgendaPage() {
     <main id="contingut" className="agendaPage">
       <header className="agendaPageHero">
         <div>
-          <p className="simpleKicker">On sonarem</p>
+          <p className="simpleKicker">On toquem</p>
           <h1>Agenda</h1>
         </div>
         <div className="agendaHeroCopy">
@@ -39,8 +39,8 @@ export default function AgendaPage() {
           </div>
           <div>
             <p>
-              Consulta totes les actuacions i navega entre mesos. Clica qualsevol
-              esdeveniment per veure’n la informació completa.
+              Consulta totes les actuacions i navega entre mesos. Cada dia mostra
+              l’hora i el títol de l’actuació.
             </p>
             <a href={`https://calendar.google.com/calendar/u/0/r?cid=${encodeURIComponent(calendarId)}`} target="_blank" rel="noreferrer">
               Obre’l a Google Calendar <span aria-hidden="true">↗</span>
