@@ -108,6 +108,8 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.doesNotMatch(archive, /\.pdf/);
   assert.match(archive, /Descarrega els dossiers/);
   assert.match(archive, /Col·laboració Emma Stratton/);
+  assert.match(archive, /pianista Emma Stratton/);
+  assert.doesNotMatch(archive + multimedia, /cantant Emma Stratton/);
   assert.equal(multimedia.match(/file: "\/multimedia\/[a-z-]+\.pdf"/g)?.length, 4);
   // Vídeos i discs, i la imatge de Cobla Lírica.
   assert.match(multimedia, /youtube\.com\/@laprincipaldelllobregat238/);

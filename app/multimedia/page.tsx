@@ -32,7 +32,7 @@ const documents = [
   {
     kicker: "Col·laboració Emma Stratton",
     title: "Emma Stratton i la cobla",
-    text: "Dossier del projecte compartit amb la cantant Emma Stratton.",
+    text: "Dossier del projecte compartit amb la pianista Emma Stratton.",
     file: "/multimedia/dossier-emma-stratton-i-la-principal-del-llobregat.pdf",
   },
 ];

@@ -37,9 +37,9 @@ const proposals = [
       "La proposta crea un pont natural entre l’univers operístic i la tradició musical catalana, amb peces de compositors com Eduard Toldrà i Xavier Montsalvatge, caràcter teatral i una clara inspiració mediterrània.",
   },
   {
-    kicker: "Veu i cobla",
+    kicker: "Piano i cobla",
     title: "Col·laboració Emma Stratton",
-    text: "Un projecte compartit amb la cantant Emma Stratton, que suma la seva veu al so de la cobla.",
+    text: "Un projecte compartit amb la pianista Emma Stratton, que suma el piano al so de la cobla.",
     detail:
       "Consulta’n el dossier a l’apartat de multimèdia per conèixer el programa i les condicions tècniques.",
   },
