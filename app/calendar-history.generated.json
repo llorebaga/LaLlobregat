@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-2t8li1dcjvrqa338fbcel3p0vp-google-com-2026-08-23-17-30-00-000-",
+    "day": "23",
+    "month": "AG.",
+    "dateTime": "2026-08-23T17:30:00.000Z",
+    "title": "Sant Pol de Mar",
+    "place": "Avinguda Doctor Furest",
+    "town": "Sant Pol de Mar",
+    "time": "19.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MnQ4bGkxZGNqdnJxYTMzOGZiY2VsM3AwdnAgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "67.98%",
+      "top": "50.70%"
+    }
+  },
+  {
     "id": "calendar-2c2m0thli1toqp4s98463914pa-google-com-2026-08-22-20-00-00-000-",
     "day": "22",
     "month": "AG.",
