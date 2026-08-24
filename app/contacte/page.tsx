@@ -25,7 +25,7 @@ export default function ContactePage() {
       <section className="contactDetails sectionPad" aria-labelledby="contacte-title">
         <div className="contactDetailsHeading">
           <p className="eyebrow">Dades de contacte</p>
-          <h2 id="contacte-title">Ivan<br /><em>Babiloni.</em></h2>
+          <h2 id="contacte-title">Ivan<br /><em>Babiloni Porqueras.</em></h2>
           <p>Representant de La Principal del Llobregat</p>
         </div>
 

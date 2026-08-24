@@ -53,7 +53,7 @@ export function SiteFooter() {
         <div className="footerContact">
           <a href={sitePath("/contacte")}>representacio@lallobregat.cat</a>
           <span>629 417 377</span>
-          <span>Representant · Ivan Babiloni</span>
+          <span>Representant · Ivan Babiloni Porqueras</span>
         </div>
         <ul className="footerSocial">
           {socialLinks.map((social) => (
