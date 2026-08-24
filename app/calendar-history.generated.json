@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-0rqsdlgoaj70aq034h55ftvmmt-google-com-2026-08-24-11-00-00-000-",
+    "day": "24",
+    "month": "AG.",
+    "dateTime": "2026-08-24T11:00:00.000Z",
+    "title": "Roda de Berà",
+    "place": "Plaça dels Pins",
+    "town": "Roda de Berà",
+    "time": "13.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MHJxc2RsZ29hajcwYXEwMzRoNTVmdHZtbXQgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "39.53%",
+      "top": "66.54%"
+    }
+  },
+  {
     "id": "calendar-4v4ocsfe98bpbmd83dvt2kkj29-google-com-2026-08-24-08-30-00-000-",
     "day": "24",
     "month": "AG.",
