@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-4v4ocsfe98bpbmd83dvt2kkj29-google-com-2026-08-24-08-30-00-000-",
+    "day": "24",
+    "month": "AG.",
+    "dateTime": "2026-08-24T08:30:00.000Z",
+    "title": "Roda de Berà",
+    "place": "Ajuntament de Roda de Berà",
+    "town": "Roda de Berà",
+    "time": "10.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NHY0b2NzZmU5OGJwYm1kODNkdnQya2tqMjkgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "39.53%",
+      "top": "66.54%"
+    }
+  },
+  {
     "id": "calendar-2t8li1dcjvrqa338fbcel3p0vp-google-com-2026-08-23-17-30-00-000-",
     "day": "23",
     "month": "AG.",
