@@ -53,13 +53,16 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(history, /Una història/);
   assert.match(history, /calendar-history\.generated\.json/);
   assert.match(history, /<HistoryMap events=\{historyEvents\}/);
-  // Album historic: 11 fotos, cada una amb el seu credit d'arxiu.
-  assert.equal(history.match(/file: "\d{4}-[a-z-]+\.jpg"/g)?.length, 11);
+  // Album historic: totes les fotos del post, cada una amb el seu credit d'arxiu.
+  assert.equal(history.match(/file: "\d{2}-[a-z0-9-]+\.jpg"/g)?.length, 41);
   assert.match(history, /historyArchiveGrid[\s\S]*<figcaption>[\s\S]*Foto: \{photo\.credit\}/);
   assert.match(history, /Arxiu Toni Balada/);
   assert.match(history, /Arxiu Jaume Nonell/);
-  // Cap foto d'arxius institucionals sense permis explicit.
-  assert.doesNotMatch(history, /Arxiu Nacional de Catalunya|CRDI|Català i Pic/);
+  // Les dues d'arxiu institucional van amb el credit sencer, copyright inclos.
+  assert.match(history, /Arxiu Nacional de Catalunya\. © Hereus de Pere Català i Pic/);
+  assert.match(history, /Ajuntament de Girona, CRDI/);
+  // La llista de musics de cada foto.
+  assert.match(history, /<summary>Qui hi surt<\/summary>/);
   // Credit al fons documental i enllac a la seva web general.
   assert.match(history, /Vols saber més de la història de les diferents cobles\?/);
   assert.match(history, /fotosformacionsmusicalsdecatalunya\.blogspot\.com\/"/);
