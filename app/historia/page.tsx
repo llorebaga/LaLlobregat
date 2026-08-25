@@ -103,9 +103,10 @@ export default function HistoriaPage() {
         </div>
         <div className="historyPortraitFrame">
           <Image
-            src="/interprets-2022.avif"
+            src="/historia/formacio-actual.jpg"
             alt="Els intèrprets de La Principal del Llobregat amb els seus instruments"
-            fill
+            width={1500}
+            height={742}
             sizes="(max-width: 760px) 100vw, 88vw"
           />
         </div>

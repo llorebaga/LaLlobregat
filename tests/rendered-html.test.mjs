@@ -158,8 +158,10 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(footer, /className="visuallyHidden">\{social\.name\}/);
   assert.match(css, /\.visuallyHidden \{ position: absolute;/);
   // El retrat de grup viu a Història; a Músics cada músic ja té el seu.
-  assert.match(history, /historyPortraitFrame[\s\S]*interprets-2022\.avif/);
-  assert.doesNotMatch(musicians, /interprets-2022\.avif|musiciansPortrait/);
+  assert.match(history, /historyPortraitFrame[\s\S]*formacio-actual\.jpg/);
+  assert.doesNotMatch(musicians, /interprets-2022|musiciansPortrait/);
+  // Cap AVIF enlloc: hi ha navegadors que no el descodifiquen i la foto no es veu.
+  assert.doesNotMatch(page + history + musicians + multimedia + archive, /\.avif/);
   assert.doesNotMatch(archive, /Parlem-ne|whatWeDoCta/);
   assert.doesNotMatch(header + footer + archive, /mailto:/);
   assert.match(contact, /representacio@lallobregat\.cat/);
