@@ -53,6 +53,21 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(history, /Una història/);
   assert.match(history, /calendar-history\.generated\.json/);
   assert.match(history, /<HistoryMap events=\{historyEvents\}/);
+  // Album historic: 11 fotos, cada una amb el seu credit d'arxiu.
+  assert.equal(history.match(/file: "\d{4}-[a-z-]+\.jpg"/g)?.length, 11);
+  assert.match(history, /historyArchiveGrid[\s\S]*<figcaption>[\s\S]*Foto: \{photo\.credit\}/);
+  assert.match(history, /Arxiu Toni Balada/);
+  assert.match(history, /Arxiu Jaume Nonell/);
+  // Cap foto d'arxius institucionals sense permis explicit.
+  assert.doesNotMatch(history, /Arxiu Nacional de Catalunya|CRDI|Català i Pic/);
+  // Credit al fons documental i enllac a la seva web general.
+  assert.match(history, /Vols saber més de la història de les diferents cobles\?/);
+  assert.match(history, /fotosformacionsmusicalsdecatalunya\.blogspot\.com\/"/);
+  assert.match(history, /ca\.wikipedia\.org\/wiki\/La_Principal_del_Llobregat/);
+  // Cronologia ampliada.
+  assert.ok((history.match(/\{ year: "/g) ?? []).length >= 11);
+  assert.match(history, /Llangollen/);
+  assert.match(history, /Creu de Sant Jordi/);
   assert.match(historyMap, /Tots els anys|actuacions recuperades/);
   assert.doesNotMatch(musicians, /Onze intèrprets|11<\/strong>|veus/);
   assert.match(musicians, /Josep Llauradó Cardona/);
