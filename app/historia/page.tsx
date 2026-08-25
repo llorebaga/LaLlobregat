@@ -94,13 +94,12 @@ export default function HistoriaPage() {
           </p>
         </div>
 
-        <HistoryArchive photos={archivePhotos} />
+        <HistoryArchive photos={archivePhotos} thumbBase={sitePath("/historia/min/")} fullBase={sitePath("/historia/")} />
       </section>
 
       <section className="historyPortrait sectionPad" aria-labelledby="formacio-avui">
         <div className="historyPortraitHeading">
-          <p className="eyebrow">La formació d’avui</p>
-          <h2 id="formacio-avui">Gairebé cent anys<br /><em>en un retrat.</em></h2>
+          <h2 id="formacio-avui">Formació actual</h2>
         </div>
         <div className="historyPortraitFrame">
           <Image

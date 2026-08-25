@@ -685,7 +685,7 @@ img { display: block; }
 
 .historyPortrait { padding-bottom: clamp(4rem, 8vw, 8rem); background: var(--paper); }
 .historyPortraitHeading { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: clamp(2rem, 4vw, 4rem); }
-.historyPortraitHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .82; letter-spacing: -.06em; text-align: right; }
+.historyPortraitHeading h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .82; letter-spacing: -.06em; }
 .historyPortraitHeading h2 em { color: var(--red); font-weight: 400; }
 .historyPortraitFrame { position: relative; width: 100%; aspect-ratio: 1429 / 625; overflow: hidden; background: white; border: 1px solid var(--line); }
 .historyPortraitFrame img { object-fit: contain !important; object-position: center !important; filter: none !important; }
@@ -925,7 +925,6 @@ img { display: block; }
   .musiciansHeroCopy > p:last-child { margin-top: 2rem; }
   .historyPortrait { padding-left: 0; padding-right: 0; }
   .historyPortraitHeading { padding: 0 1.25rem; align-items: flex-start; flex-direction: column; }
-  .historyPortraitHeading h2 { text-align: left; }
   .historyPortraitCaption { margin: 0 1.25rem; align-items: flex-start; flex-direction: column; gap: .35rem; }
   .musiciansIntro { grid-template-columns: 1fr; gap: 2rem; }
   .musiciansIntro .eyebrow { grid-column: auto; }

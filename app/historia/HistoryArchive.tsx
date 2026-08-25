@@ -22,7 +22,11 @@ function decadeOf(label: string) {
   return 0;
 }
 
-export function HistoryArchive({ photos }: { photos: ArchivePhoto[] }) {
+export function HistoryArchive({ photos, thumbBase, fullBase }: {
+  photos: ArchivePhoto[];
+  thumbBase: string;
+  fullBase: string;
+}) {
   const decades = useMemo(() => {
     const found = new Map<number, number>();
     for (const photo of photos) {
@@ -107,7 +111,7 @@ export function HistoryArchive({ photos }: { photos: ArchivePhoto[] }) {
               onClick={(event) => { lastTrigger.current = event.currentTarget; setOpenIndex(index); }}
             >
               <Image
-                src={`/historia/min/${photo.file}`}
+                src={`${thumbBase}${photo.file}`}
                 alt=""
                 width={400}
                 height={300}
@@ -137,7 +141,7 @@ export function HistoryArchive({ photos }: { photos: ArchivePhoto[] }) {
               <button className="albumNav albumNavPrev" type="button" onClick={() => step(-1)} aria-label="Imatge anterior">‹</button>
               <Image
                 key={open.file}
-                src={`/historia/${open.file}`}
+                src={`${fullBase}${open.file}`}
                 alt={`La Principal del Llobregat, ${open.label}: ${open.context}`}
                 width={open.width}
                 height={open.height}

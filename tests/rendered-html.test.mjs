@@ -56,19 +56,28 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(history, /<HistoryMap events=\{historyEvents\}/);
   // Album historic: totes les fotos del post, cada una amb el seu credit d'arxiu.
   assert.equal(history.match(/file: "\d{2}-[a-z0-9-]+\.jpg"/g)?.length, 41);
-  assert.match(history, /<HistoryArchive photos=\{archivePhotos\} \/>/);
+  assert.match(history, /<HistoryArchive photos=\{archivePhotos\}/);
   assert.match(history, /Arxiu Toni Balada/);
   assert.match(history, /Arxiu Jaume Nonell/);
   // Les dues d'arxiu institucional van amb el credit sencer, copyright inclos.
   assert.match(history, /Arxiu Nacional de Catalunya\. © Hereus de Pere Català i Pic/);
   assert.match(history, /Ajuntament de Girona, CRDI/);
   // El visor: graella de miniatures, filtre per decades i lightbox amb teclat.
-  assert.match(historyArchive, /\/historia\/min\/\$\{photo\.file\}/);
   assert.match(historyArchive, /role="dialog"[\s\S]*aria-modal="true"/);
   assert.match(historyArchive, /event\.key === "Escape"[\s\S]*ArrowRight[\s\S]*ArrowLeft/);
   assert.match(historyArchive, /albumFilter[\s\S]*aria-pressed/);
   assert.match(historyArchive, /\{open\.names\}/);
   assert.match(historyArchive, /Foto: \{open\.credit\}/);
+  // Els camins d'imatge del visor venen resolts del servidor: si el client
+  // els construis a ma, al web publicat perdrien el prefix i farien 404.
+  assert.match(history, /thumbBase=\{sitePath\("\/historia\/min\/"\)\}/);
+  assert.match(history, /fullBase=\{sitePath\("\/historia\/"\)\}/);
+  assert.doesNotMatch(historyArchive, /["'`]\/historia\//);
+  assert.match(historyArchive, /src=\{`\$\{thumbBase\}\$\{photo\.file\}`\}/);
+  assert.match(historyArchive, /src=\{`\$\{fullBase\}\$\{open\.file\}`\}/);
+  // El retrat de la formacio va directe, sense titol intermedi.
+  assert.match(history, /<h2 id="formacio-avui">Formació actual<\/h2>/);
+  assert.doesNotMatch(history, /en un retrat/);
   assert.match(history, /Vols saber més de la història de les diferents cobles\?/);
   assert.match(history, /fotosformacionsmusicalsdecatalunya\.blogspot\.com\/"/);
   assert.match(history, /ca\.wikipedia\.org\/wiki\/La_Principal_del_Llobregat/);
