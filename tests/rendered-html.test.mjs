@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("el web es publica en català i sense el contingut temporal", async () => {
-  const [page, homeIntro, nextEvent, layout, header, footer, agenda, townSearch, styledCalendar, archive, history, historyMap, musicians, css, calendarWorkflow, calendarSync, multimedia, contact, copyContact] = await Promise.all([
+  const [page, homeIntro, nextEvent, layout, header, footer, agenda, townSearch, styledCalendar, archive, history, historyMap, historyArchive, musicians, css, calendarWorkflow, calendarSync, multimedia, contact, copyContact] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/HomeIntro.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/HomeNextEvent.tsx", import.meta.url), "utf8"),
@@ -16,6 +16,7 @@ test("el web es publica en català i sense el contingut temporal", async () => {
     readFile(new URL("../app/actuacions/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/historia/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/historia/HistoryMap.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/historia/HistoryArchive.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/musics/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
     readFile(new URL("../.github/workflows/sync-calendar.yml", import.meta.url), "utf8"),
@@ -55,15 +56,19 @@ test("el web es publica en català i sense el contingut temporal", async () => {
   assert.match(history, /<HistoryMap events=\{historyEvents\}/);
   // Album historic: totes les fotos del post, cada una amb el seu credit d'arxiu.
   assert.equal(history.match(/file: "\d{2}-[a-z0-9-]+\.jpg"/g)?.length, 41);
-  assert.match(history, /historyArchiveGrid[\s\S]*<figcaption>[\s\S]*Foto: \{photo\.credit\}/);
+  assert.match(history, /<HistoryArchive photos=\{archivePhotos\} \/>/);
   assert.match(history, /Arxiu Toni Balada/);
   assert.match(history, /Arxiu Jaume Nonell/);
   // Les dues d'arxiu institucional van amb el credit sencer, copyright inclos.
   assert.match(history, /Arxiu Nacional de Catalunya\. © Hereus de Pere Català i Pic/);
   assert.match(history, /Ajuntament de Girona, CRDI/);
-  // La llista de musics de cada foto.
-  assert.match(history, /<summary>Qui hi surt<\/summary>/);
-  // Credit al fons documental i enllac a la seva web general.
+  // El visor: graella de miniatures, filtre per decades i lightbox amb teclat.
+  assert.match(historyArchive, /\/historia\/min\/\$\{photo\.file\}/);
+  assert.match(historyArchive, /role="dialog"[\s\S]*aria-modal="true"/);
+  assert.match(historyArchive, /event\.key === "Escape"[\s\S]*ArrowRight[\s\S]*ArrowLeft/);
+  assert.match(historyArchive, /albumFilter[\s\S]*aria-pressed/);
+  assert.match(historyArchive, /\{open\.names\}/);
+  assert.match(historyArchive, /Foto: \{open\.credit\}/);
   assert.match(history, /Vols saber més de la història de les diferents cobles\?/);
   assert.match(history, /fotosformacionsmusicalsdecatalunya\.blogspot\.com\/"/);
   assert.match(history, /ca\.wikipedia\.org\/wiki\/La_Principal_del_Llobregat/);

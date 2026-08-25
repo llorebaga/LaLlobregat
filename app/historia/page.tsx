@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import historyEvents from "../calendar-history.generated.json";
 import { sitePath } from "../site-path";
+import { HistoryArchive } from "./HistoryArchive";
 import { HistoryMap } from "./HistoryMap";
 
 export const metadata: Metadata = { title: "Història", description: "Gairebé cent anys de música, places i projectes de La Principal del Llobregat, des de la fundació a Cornellà el 1929." };
@@ -93,34 +94,7 @@ export default function HistoriaPage() {
           </p>
         </div>
 
-        <div className="historyArchiveGrid">
-          {archivePhotos.map((photo, index) => (
-            <figure className="historyArchivePhoto" key={photo.file}>
-              <Image
-                src={`/historia/${photo.file}`}
-                alt={`La Principal del Llobregat, ${photo.label}: ${photo.context}`}
-                width={photo.width}
-                height={photo.height}
-                sizes="(max-width: 760px) 100vw, 46vw"
-              />
-              <figcaption>
-                <span>
-                  {photo.label}
-                  {photo.part ? <i> · {photo.part}</i> : null}
-                  <b>{String(index + 1).padStart(2, "0")}</b>
-                </span>
-                <p>{photo.context}</p>
-                {photo.names ? (
-                  <details>
-                    <summary>Qui hi surt</summary>
-                    <p>{photo.names}</p>
-                  </details>
-                ) : null}
-                <small>Foto: {photo.credit}</small>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+        <HistoryArchive photos={archivePhotos} />
       </section>
 
       <section className="historyPortrait sectionPad" aria-labelledby="formacio-avui">
