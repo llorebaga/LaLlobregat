@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-1pqpuq1fh7h6isv26d1o47ah7h-google-com-2026-08-26-15-30-00-000-",
+    "day": "26",
+    "month": "AG.",
+    "dateTime": "2026-08-26T15:30:00.000Z",
+    "title": "Barcelona",
+    "place": "Carrer del Vallespir",
+    "town": "Barcelona",
+    "time": "17.30 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MXBxcHVxMWZoN2g2aXN2MjZkMW80N2FoN2ggbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "57.19%",
+      "top": "58.80%"
+    }
+  },
+  {
     "id": "calendar-46b1eip3s8gen8qbffh6b5ca0q-google-com-2026-08-26-10-30-00-000-",
     "day": "26",
     "month": "AG.",
