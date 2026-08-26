@@ -8,6 +8,7 @@ const navigation = [
   { href: sitePath("/musics"), label: "Músics" },
   { href: sitePath("/historia"), label: "Història" },
   { href: sitePath("/multimedia"), label: "Multimèdia" },
+  { href: sitePath("/prova"), label: "Prova" },
 ];
 
 export function SiteHeader() {
