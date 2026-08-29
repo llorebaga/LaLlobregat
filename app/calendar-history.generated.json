@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-0op7j40bcb4q22992iq8ejbcg3-google-com-2026-08-29-19-00-00-000-",
+    "day": "29",
+    "month": "AG.",
+    "dateTime": "2026-08-29T19:00:00.000Z",
+    "title": "Vidreres",
+    "place": "Plaça de Lluís Companys",
+    "town": "Vidreres",
+    "time": "21.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=MG9wN2o0MGJjYjRxMjI5OTJpcThlamJjZzMgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "71.53%",
+      "top": "44.21%"
+    }
+  },
+  {
     "id": "calendar-65d8q2deb08t0bav1f28546epu-google-com-2026-08-28-20-00-00-000-",
     "day": "28",
     "month": "AG.",
