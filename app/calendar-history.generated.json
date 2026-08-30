@@ -1,5 +1,23 @@
 [
   {
+    "id": "calendar-6cnm3iecr9k7nc6ka64r14o5pj-google-com-2026-08-30-17-00-00-000-",
+    "day": "30",
+    "month": "AG.",
+    "dateTime": "2026-08-30T17:00:00.000Z",
+    "title": "El Vendrell",
+    "place": "La Rambla",
+    "town": "El Vendrell",
+    "time": "19.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NmNubTNpZWNyOWs3bmM2a2E2NHIxNG81cGogbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-08",
+    "monthLabel": "Agost 2026",
+    "mapPosition": {
+      "left": "41.42%",
+      "top": "65.27%"
+    }
+  },
+  {
     "id": "calendar-0op7j40bcb4q22992iq8ejbcg3-google-com-2026-08-29-19-00-00-000-",
     "day": "29",
     "month": "AG.",
