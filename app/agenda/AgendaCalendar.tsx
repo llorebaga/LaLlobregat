@@ -7,6 +7,7 @@ type CalendarEvent = {
   day: string;
   dateTime: string;
   title: string;
+  place: string;
   town: string;
   time: string;
   source: string;
@@ -16,7 +17,20 @@ type CalendarEvent = {
 
 const weekdays = ["Dl.", "Dt.", "Dc.", "Dj.", "Dv.", "Ds.", "Dg."];
 
+function getTodayKey() {
+  const dateParts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Madrid",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+  const value = (type: Intl.DateTimeFormatPartTypes) => dateParts.find((part) => part.type === type)?.value;
+
+  return `${value("year")}-${value("month")}-${value("day")}`;
+}
+
 export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
+  const todayKey = getTodayKey();
   const months = useMemo(() => {
     const monthMap = new Map<string, { key: string; label: string }>();
 
@@ -36,7 +50,10 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
     return [...monthMap.values()].sort((first, second) => first.key.localeCompare(second.key));
   }, [events]);
 
-  const [monthIndex, setMonthIndex] = useState(0);
+  const [monthIndex, setMonthIndex] = useState(() => {
+    const todayMonthIndex = months.findIndex((month) => month.key === todayKey.slice(0, 7));
+    return todayMonthIndex === -1 ? 0 : todayMonthIndex;
+  });
   const activeMonth = months[monthIndex];
   const monthEvents = useMemo(
     () => events.filter((event) => (event.monthKey ?? event.dateTime.slice(0, 7)) === activeMonth?.key),
@@ -92,10 +109,11 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
               const dayEvents = day
                 ? monthEvents.filter((event) => Number(event.day) === day)
                 : [];
+              const isToday = day ? `${activeMonth.key}-${String(day).padStart(2, "0")}` === todayKey : false;
 
               return (
                 <div
-                  className={`agendaCalendarDay${day ? "" : " isEmpty"}${dayEvents.length ? " hasEvents" : ""}`}
+                  className={`agendaCalendarDay${day ? "" : " isEmpty"}${dayEvents.length ? " hasEvents" : ""}${isToday ? " isToday" : ""}`}
                   key={`${activeMonth.key}-${index}`}
                 >
                   {day ? <span className="agendaCalendarDayNumber">{day}</span> : null}
@@ -104,10 +122,11 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
                       <div
                         className="agendaCalendarEvent"
                         key={event.id}
-                        title={`${event.time} · ${event.title} · ${event.town}`}
+                        title={`${event.time} · ${event.title} · ${event.town} · ${event.place}`}
                       >
                         <time dateTime={event.dateTime}>{event.time}</time>
                         <strong>{event.title}</strong>
+                        <span>{event.town} · {event.place}</span>
                       </div>
                     ))}
                   </div>

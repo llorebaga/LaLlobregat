@@ -39,8 +39,8 @@ export default function AgendaPage() {
           </div>
           <div>
             <p>
-              Consulta totes les actuacions i navega entre mesos. Cada dia mostra
-              l’hora i el títol de l’actuació.
+              Consulta totes les actuacions i navega entre mesos. Cada actuació
+              mostra l’hora, el municipi i el lloc concret.
             </p>
             <a href={`https://calendar.google.com/calendar/u/0/r?cid=${encodeURIComponent(calendarId)}`} target="_blank" rel="noreferrer">
               Obre’l a Google Calendar <span aria-hidden="true">↗</span>
