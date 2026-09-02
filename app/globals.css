@@ -366,6 +366,7 @@ img { display: block; }
 .albumInfoYear b { margin-left: auto; color: rgba(255,255,255,.6); font-family: Arial, Helvetica, sans-serif; font-size: .62rem; font-weight: 800; letter-spacing: .12em; }
 .albumInfoText { margin: 0 0 .6rem; max-width: 760px; font-size: 1rem; line-height: 1.6; }
 .albumInfoNames { margin: 0 0 .7rem; max-width: 820px; color: rgba(255,255,255,.66); font-size: .82rem; line-height: 1.6; }
+.albumInfoNamePosition { display: block; }
 .albumInfo small { color: rgba(255,255,255,.5); font-size: .6rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .sourcesCredit { grid-column: 1 / -1; max-width: 780px; margin: clamp(2rem, 4vw, 3.5rem) 0 0; padding-top: 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; line-height: 1.75; }
 .sourcesCredit a { display: inline-flex; gap: .5rem; color: var(--red); border-bottom: 1px solid currentColor; }

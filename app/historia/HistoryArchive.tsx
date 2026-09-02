@@ -28,10 +28,7 @@ function MusicianPositions({ names }: { names: string }) {
   return (
     <p className="albumInfoNames">
       {positions.map((position, index) => (
-        <span key={`${position}-${index}`}>
-          {index > 0 ? <br /> : null}
-          {position}
-        </span>
+        <span className="albumInfoNamePosition" key={`${position}-${index}`}>{position}</span>
       ))}
     </p>
   );
