@@ -23,7 +23,7 @@ function decadeOf(label: string) {
 }
 
 function MusicianPositions({ names }: { names: string }) {
-  const positions = names.split(/\s+(?=(?:Darrere|Davant|Drets|Asseguts|Ajupits):)/);
+  const positions = names.split(/\s+(?=Davant:)/);
 
   return (
     <p className="albumInfoNames">
