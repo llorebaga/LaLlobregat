@@ -22,6 +22,21 @@ function decadeOf(label: string) {
   return 0;
 }
 
+function MusicianPositions({ names }: { names: string }) {
+  const positions = names.split(/\s+(?=(?:Darrere|Davant|Drets|Asseguts|Ajupits):)/);
+
+  return (
+    <p className="albumInfoNames">
+      {positions.map((position, index) => (
+        <span key={`${position}-${index}`}>
+          {index > 0 ? <br /> : null}
+          {position}
+        </span>
+      ))}
+    </p>
+  );
+}
+
 export function HistoryArchive({ photos, thumbBase, fullBase }: {
   photos: ArchivePhoto[];
   thumbBase: string;
@@ -156,7 +171,7 @@ export function HistoryArchive({ photos, thumbBase, fullBase }: {
                 <b>{(openIndex ?? 0) + 1} / {visible.length}</b>
               </p>
               <p className="albumInfoText">{open.context}</p>
-              {open.names ? <p className="albumInfoNames">{open.names}</p> : null}
+              {open.names ? <MusicianPositions names={open.names} /> : null}
               <small>Foto: {open.credit}</small>
             </div>
           </div>
