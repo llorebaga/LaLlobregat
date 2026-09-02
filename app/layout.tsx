@@ -20,8 +20,9 @@ export const metadata: Metadata = {
   description:
     "La Principal del Llobregat: sardanes, concerts i música catalana des de 1929. Consulta l’agenda, què fem i la nostra història.",
   icons: {
-    icon: "/favicon.svg",
-    apple: "/logo-lallobregat.png",
+    icon: [{ url: "/logo-lallobregat-circle.png?v=1", type: "image/png" }],
+    shortcut: "/logo-lallobregat-circle.png?v=1",
+    apple: [{ url: "/logo-lallobregat-circle.png?v=1", type: "image/png" }],
   },
   openGraph: {
     locale: "ca_ES",
