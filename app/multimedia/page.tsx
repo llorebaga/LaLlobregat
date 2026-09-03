@@ -125,7 +125,12 @@ export default function MultimediaPage() {
 
         <div className="documentList">
           {documents.map((doc, index) => (
-            <a href={sitePath(doc.file)} download key={doc.file}>
+            
+              href={sitePath(doc.file)}
+              target="_blank"
+              rel="noreferrer"
+              key={doc.file}
+            >
               <span>0{index + 1}</span>
               <div>
                 <h3>{doc.title}</h3>
