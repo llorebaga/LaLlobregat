@@ -28,6 +28,16 @@ const proposals = [
     text: "La Llobregat i els Mèlt uneix el so de la cobla amb les quatre veus del Quartet Mèlt. Un espectacle d’uns noranta minuts que travessa gèneres poc habituals en aquesta formació, amb repertori propi del quartet i arranjaments de Jordi Molina.",
     detail:
       "Una proposta propera i sorprenent, amb cançons com «Que tinguem sort», «Bon dia», «Qualsevol nit pot sortir el sol» o «L’himne dels pirates», transformades pel diàleg entre la veu i la cobla.",
+    videos: [
+      {
+        title: "Teaser 01",
+        file: "/multimedia/melt-teaser-01.mp4",
+      },
+      {
+        title: "Teaser 02",
+        file: "/multimedia/melt-teaser-01.mp4",
+      },
+    ],
   },
   {
     kicker: "Veu lírica i cobla",
@@ -35,6 +45,12 @@ const proposals = [
     text: "Una trobada singular entre la veu lírica de Guillem Batllori i el so inconfusible de La Principal del Llobregat. El programa combina moments brillants de la gran òpera amb cançó catalana i melodies arrelades a la nostra cultura.",
     detail:
       "La proposta crea un pont natural entre l’univers operístic i la tradició musical catalana, amb peces de compositors com Eduard Toldrà i Xavier Montsalvatge, caràcter teatral i una clara inspiració mediterrània.",
+    videos: [
+      {
+        title: "Vídeo del projecte",
+        file: "/multimedia/guillem-batllori-teaser.mp4",
+      },
+    ],
   },
   {
     kicker: "Piano i cobla",
@@ -42,6 +58,12 @@ const proposals = [
     text: "Un projecte compartit amb la pianista Emma Stratton, que suma el piano al so de la cobla.",
     detail:
       "Consulta’n el dossier a l’apartat de multimèdia per conèixer el programa i les condicions tècniques.",
+    videos: [
+      {
+        title: "Vídeo del projecte",
+        file: "/multimedia/emma-stratton-teaser.mp4",
+      },
+    ],
   },
 ];
 
@@ -92,12 +114,42 @@ export default function ActuacionsPage() {
               <div className="proposalBody">
                 <p>{proposal.text}</p>
                 {proposal.detail ? <p>{proposal.detail}</p> : null}
+
+                {proposal.videos && proposal.videos.length > 0 ? (
+                  <div className="proposalVideosContainer">
+                    {proposal.videos.map((vid) => (
+                      <div className="proposalVideoBlock" key={vid.file}>
+                        {proposal.videos.length > 1 ? <h4>{vid.title}</h4> : null}
+                        <video controls width="100%" preload="metadata">
+                          <source src={sitePath(vid.file)} type="video/mp4" />
+                          El teu navegador no suporta la reproducció de vídeo.
+                        </video>
+                        <div className="proposalVideoActions">
+                          <a
+                            href={sitePath(vid.file)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="textLink"
+                          >
+                            Veure vídeo <span aria-hidden="true">↗</span>
+                          </a>
+                          <a
+                            href={sitePath(vid.file)}
+                            download
+                            className="textLink"
+                          >
+                            Descarregar vídeo <span aria-hidden="true">↓</span>
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             </details>
           ))}
         </div>
       </section>
-
     </main>
   );
 }
