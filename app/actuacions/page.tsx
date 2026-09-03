@@ -31,11 +31,11 @@ const proposals = [
     videos: [
       {
         title: "Teaser 01",
-        file: "/multimedia/melt-teaser-01.mp4",
+        file: "/multimedia/teaser-01.mp4",
       },
       {
         title: "Teaser 02",
-        file: "/multimedia/melt-teaser-01.mp4",
+        file: "/multimedia/teaser-02.mp4",
       },
     ],
   },
@@ -48,7 +48,7 @@ const proposals = [
     videos: [
       {
         title: "Vídeo del projecte",
-        file: "/multimedia/guillem-batllori-teaser.mp4",
+        file: "/multimedia/guillem-batllori-i-la-principal-del-llobregat.mp4",
       },
     ],
   },
@@ -61,11 +61,26 @@ const proposals = [
     videos: [
       {
         title: "Vídeo del projecte",
-        file: "/multimedia/emma-stratton-teaser.mp4",
+        file: "/multimedia/emma-stratton-i-la-principal-del-llobregat.mp4",
       },
     ],
   },
 ];
+
+const buttonStyle: React.CSSProperties = {
+  display: "inline-block",
+  backgroundColor: "#b81424",
+  color: "#ffffff",
+  fontWeight: 700,
+  fontSize: "0.85rem",
+  letterSpacing: "0.05em",
+  textTransform: "uppercase",
+  textDecoration: "none",
+  padding: "0.75rem 1.5rem",
+  border: "none",
+  borderRadius: 0,
+  cursor: "pointer",
+};
 
 export default function ActuacionsPage() {
   return (
@@ -116,29 +131,25 @@ export default function ActuacionsPage() {
                 {proposal.detail ? <p>{proposal.detail}</p> : null}
 
                 {proposal.videos && proposal.videos.length > 0 ? (
-                  <div className="proposalVideosContainer">
+                  <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
                     {proposal.videos.map((vid) => (
-                      <div className="proposalVideoBlock" key={vid.file}>
-                        {proposal.videos.length > 1 ? <h4>{vid.title}</h4> : null}
-                        <video controls width="100%" preload="metadata">
-                          <source src={sitePath(vid.file)} type="video/mp4" />
-                          El teu navegador no suporta la reproducció de vídeo.
-                        </video>
-                        <div className="proposalVideoActions">
+                      <div key={vid.file} style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                        {vid.title ? <span style={{ fontWeight: 600, fontSize: "0.9rem" }}>{vid.title}:</span> : null}
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
                           <a
                             href={sitePath(vid.file)}
                             target="_blank"
                             rel="noreferrer"
-                            className="textLink"
+                            style={buttonStyle}
                           >
-                            Veure vídeo <span aria-hidden="true">↗</span>
+                            VEURE VÍDEO
                           </a>
                           <a
                             href={sitePath(vid.file)}
                             download
-                            className="textLink"
+                            style={buttonStyle}
                           >
-                            Descarregar vídeo <span aria-hidden="true">↓</span>
+                            DESCARREGAR VÍDEO
                           </a>
                         </div>
                       </div>
