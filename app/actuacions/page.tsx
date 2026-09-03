@@ -30,16 +30,16 @@ const proposals = [
       "Una proposta propera i sorprenent, amb cançons com «Que tinguem sort», «Bon dia», «Qualsevol nit pot sortir el sol» o «L’himne dels pirates», transformades pel diàleg entre la veu i la cobla.",
     videos: [
       {
-        title: "Teaser 01",
+        title: "Video 01",
         file: "/multimedia/melt-teaser-01.mp4",
       },
       {
-        title: "Teaser 02",
+        title: "Video 02",
         file: "/multimedia/melt-teaser-02.mp4",
       },
     ],
     dossier: {
-      title: "Dossier de l'espectacle",
+      title: "Document de l'espectacle",
       file: "/multimedia/dossier-la-llobregat-i-els-melt.pdf",
     },
   },
@@ -56,7 +56,7 @@ const proposals = [
       },
     ],
     dossier: {
-      title: "Dossier del programa",
+      title: "Document del programa",
       file: "/multimedia/dossier-guillem-batllori-i-la-principal-del-llobregat.pdf",
     },
   },
@@ -73,7 +73,7 @@ const proposals = [
       },
     ],
     dossier: {
-      title: "Dossier del projecte",
+      title: "Document del projecte",
       file: "/multimedia/dossier-emma-stratton-i-la-principal-del-llobregat.pdf",
     },
   },
@@ -121,10 +121,6 @@ export default function ActuacionsPage() {
         <div className="proposalHeading">
           <p className="eyebrow">La cobla en directe</p>
           <h2 id="propostes-title">Diferents maneres<br /><em>de trobar-nos.</em></h2>
-          <p>Clica cada proposta per descobrir-ne tots els detalls.</p>
-          <a className="textLink redLink" href={sitePath("/multimedia")}>
-            Descarrega els dossiers <span aria-hidden="true">→</span>
-          </a>
         </div>
 
         <div className="proposalList">
