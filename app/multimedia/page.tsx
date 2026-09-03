@@ -17,24 +17,6 @@ const documents = [
     text: "Recorregut per la trajectòria de la cobla, de la fundació el 1929 fins als projectes d’avui.",
     file: "/multimedia/biografia-la-principal-del-llobregat.pdf",
   },
-  {
-    kicker: "Col·laboració Quartet Mèlt",
-    title: "La Llobregat i els Mèlt",
-    text: "Dossier de l’espectacle que uneix el so de la cobla amb les quatre veus del Quartet Mèlt, amb arranjaments de Jordi Molina.",
-    file: "/multimedia/dossier-la-llobregat-i-els-melt.pdf",
-  },
-  {
-    kicker: "Col·laboració Guillem Batllori",
-    title: "Veu lírica i cobla",
-    text: "Dossier del programa que travessa la gran òpera, la cançó catalana i les melodies mediterrànies.",
-    file: "/multimedia/dossier-guillem-batllori-i-la-principal-del-llobregat.pdf",
-  },
-  {
-    kicker: "Col·laboració Emma Stratton",
-    title: "Emma Stratton i la cobla",
-    text: "Dossier del projecte compartit amb la pianista Emma Stratton.",
-    file: "/multimedia/dossier-emma-stratton-i-la-principal-del-llobregat.pdf",
-  },
 ];
 
 const channels = [
