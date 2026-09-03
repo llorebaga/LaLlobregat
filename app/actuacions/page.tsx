@@ -38,6 +38,10 @@ const proposals = [
         file: "/multimedia/melt-teaser-02.mp4",
       },
     ],
+    dossier: {
+      title: "Dossier de l'espectacle",
+      file: "/multimedia/dossier-la-llobregat-i-els-melt.pdf",
+    },
   },
   {
     kicker: "Veu lírica i cobla",
@@ -51,6 +55,10 @@ const proposals = [
         file: "/multimedia/guillem-batllori-teaser.mp4",
       },
     ],
+    dossier: {
+      title: "Dossier del programa",
+      file: "/multimedia/dossier-guillem-batllori-i-la-principal-del-llobregat.pdf",
+    },
   },
   {
     kicker: "Piano i cobla",
@@ -64,6 +72,10 @@ const proposals = [
         file: "/multimedia/emma-stratton-teaser.mp4",
       },
     ],
+    dossier: {
+      title: "Dossier del projecte",
+      file: "/multimedia/dossier-emma-stratton-i-la-principal-del-llobregat.pdf",
+    },
   },
 ];
 
@@ -154,6 +166,29 @@ export default function ActuacionsPage() {
                         </div>
                       </div>
                     ))}
+                  </div>
+                ) : null}
+
+                {proposal.dossier ? (
+                  <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                    <span style={{ fontWeight: 600, fontSize: "0.9rem" }}>{proposal.dossier.title}:</span>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center" }}>
+                      <a
+                        href={sitePath(proposal.dossier.file)}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={buttonStyle}
+                      >
+                        VEURE DOCUMENT
+                      </a>
+                      <a
+                        href={sitePath(proposal.dossier.file)}
+                        download
+                        style={buttonStyle}
+                      >
+                        DESCARREGAR DOCUMENT
+                      </a>
+                    </div>
                   </div>
                 ) : null}
               </div>
