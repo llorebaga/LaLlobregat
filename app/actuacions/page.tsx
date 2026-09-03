@@ -31,11 +31,11 @@ const proposals = [
     videos: [
       {
         title: "Teaser 01",
-        file: "/multimedia/teaser-01.mp4",
+        file: "/multimedia/melt-teaser-01.mp4",
       },
       {
         title: "Teaser 02",
-        file: "/multimedia/teaser-02.mp4",
+        file: "/multimedia/melt-teaser-02.mp4",
       },
     ],
   },
@@ -48,7 +48,7 @@ const proposals = [
     videos: [
       {
         title: "Vídeo del projecte",
-        file: "/multimedia/guillem-batllori-i-la-principal-del-llobregat.mp4",
+        file: "/multimedia/guillem-batllori-teaser.mp4",
       },
     ],
   },
@@ -61,7 +61,7 @@ const proposals = [
     videos: [
       {
         title: "Vídeo del projecte",
-        file: "/multimedia/emma-stratton-i-la-principal-del-llobregat.mp4",
+        file: "/multimedia/emma-stratton-teaser.mp4",
       },
     ],
   },
