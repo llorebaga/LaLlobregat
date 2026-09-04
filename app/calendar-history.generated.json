@@ -1,5 +1,41 @@
 [
   {
+    "id": "calendar-4n0282qtvqbtebb7o1a254fv3s-google-com-2026-09-04-18-00-00-000-",
+    "day": "04",
+    "month": "SET.",
+    "dateTime": "2026-09-04T18:00:00.000Z",
+    "title": "Santa Perpètua de la Mogoda",
+    "place": "Parc de Pere Bufí i Pérez",
+    "town": "Santa Perpètua de Mogoda",
+    "time": "20.00 h",
+    "type": "Sardanes",
+    "source": "https://calendar.google.com/calendar/event?eid=NG4wMjgycXR2cWJ0ZWJiN28xYTI1NGZ2M3MgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "57.08%",
+      "top": "53.69%"
+    }
+  },
+  {
+    "id": "calendar-13p0cucra48n5glpf5ptdumuod-google-com-2026-09-04-16-00-00-000-",
+    "day": "04",
+    "month": "SET.",
+    "dateTime": "2026-09-04T16:00:00.000Z",
+    "title": "CONCERT Cabrera de Mar",
+    "place": "Cal Conde",
+    "town": "Cabrera de Mar",
+    "time": "18.00 h",
+    "type": "Concert",
+    "source": "https://calendar.google.com/calendar/event?eid=MTNwMGN1Y3JhNDhuNWdscGY1cHRkdW11b2QgbGFsbG9icmVnYXRAZ21haWwuY29t",
+    "monthKey": "2026-09",
+    "monthLabel": "Setembre 2026",
+    "mapPosition": {
+      "left": "62.32%",
+      "top": "53.59%"
+    }
+  },
+  {
     "id": "calendar-58rrhh4kprb9so89mhda3b4t0o-google-com-2026-08-31-09-30-00-000-",
     "day": "31",
     "month": "AG.",
