@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type CalendarEvent = {
   id: string;
@@ -30,7 +30,24 @@ function getTodayKey() {
 }
 
 export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
-  const todayKey = getTodayKey();
+  // IMPORTANT: no calculis "avui" directament al cos del component.
+  // Si aquesta pàgina es genera de forma estàtica (SSG/ISR) o queda
+  // cachejada (CDN, Vercel, etc.), aquest valor es "congelaria" amb la
+  // data del moment en què es va generar/desplegar la pàgina, i seguiria
+  // marcant per exemple el dia 4 encara que ja fos dia 5.
+  // Calculant-ho dins d'un useEffect, garantim que sempre s'obté amb el
+  // rellotge real del navegador del visitant, un cop muntat el component.
+  const [todayKey, setTodayKey] = useState<string | null>(null);
+
+  useEffect(() => {
+    const updateToday = () => setTodayKey(getTodayKey());
+    updateToday();
+
+    // Recalcula automàticament a mitjanit per si l'usuari deixa la pestanya oberta
+    const interval = setInterval(updateToday, 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   const months = useMemo(() => {
     const monthMap = new Map<string, { key: string; label: string }>();
 
@@ -50,10 +67,15 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
     return [...monthMap.values()].sort((first, second) => first.key.localeCompare(second.key));
   }, [events]);
 
-  const [monthIndex, setMonthIndex] = useState(() => {
+  const [monthIndex, setMonthIndex] = useState(0);
+
+  // Un cop sabem quin és el "avui" real (client-side), saltem al mes corresponent
+  useEffect(() => {
+    if (!todayKey) return;
     const todayMonthIndex = months.findIndex((month) => month.key === todayKey.slice(0, 7));
-    return todayMonthIndex === -1 ? 0 : todayMonthIndex;
-  });
+    if (todayMonthIndex !== -1) setMonthIndex(todayMonthIndex);
+  }, [todayKey, months]);
+
   const activeMonth = months[monthIndex];
   const monthEvents = useMemo(
     () => events.filter((event) => (event.monthKey ?? event.dateTime.slice(0, 7)) === activeMonth?.key),
@@ -109,7 +131,9 @@ export function AgendaCalendar({ events }: { events: CalendarEvent[] }) {
               const dayEvents = day
                 ? monthEvents.filter((event) => Number(event.day) === day)
                 : [];
-              const isToday = day ? `${activeMonth.key}-${String(day).padStart(2, "0")}` === todayKey : false;
+              const isToday = day && todayKey
+                ? `${activeMonth.key}-${String(day).padStart(2, "0")}` === todayKey
+                : false;
 
               return (
                 <div
